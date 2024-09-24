@@ -1,0 +1,5583 @@
+fileFormatVersion: 2
+guid: fd80847d1edbd9f4fa1b148a6ffc60c4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Marco Rossi_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3818
+        width: 214
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0766f92c79833e479ffeb27e5d0c934
+      internalID: -1721620598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 3818
+        width: 206
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8ce3844a1cb764985d9352325a602a
+      internalID: -1934447838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3818
+        width: 208
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27298290c91f8ed4493f5eba5a0590cd
+      internalID: -998030105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_3
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 3812
+        width: 214
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120259066fc0a6b409437cd95ca54bb0
+      internalID: 130308998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_4
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 3806
+        width: 198
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af35a58e0b02d924db095be6ad5c715d
+      internalID: -30587359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_5
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 3812
+        width: 228
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8c45ed6a9266d468704db7e5ed9309
+      internalID: -232514435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_6
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3806
+        width: 228
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3360abc72fcc0e4bbc328f640a0eb1d
+      internalID: -461451802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_7
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 3812
+        width: 192
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0f13994d9c7de46a3a91bbf5a5a9bb
+      internalID: 1011470414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_8
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 3810
+        width: 206
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3513bc5e7ced146bcec02b4fddc341
+      internalID: 207731647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_9
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 3813
+        width: 225
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83117e653edef674296dfa9398e4840e
+      internalID: 2087138304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_10
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 3816
+        width: 220
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5726543f5636fc4b87ca5f853b5e4d5
+      internalID: -904617265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3710
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a2aa22d72d49e4c90eb6d011b4f56c
+      internalID: -1353316644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_12
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 3436
+        width: 260
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8522e2c3ce908458390514fa94ec51
+      internalID: -1300120429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_13
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 3704
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ab9a2b6f0d0374ab47ab763b63a93c
+      internalID: 1644340971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3436
+        width: 348
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7184ffb96fc3241b5c4c40b122a58b
+      internalID: 995642153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 3436
+        width: 358
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d2a75a5df48c342b2b61c67ba7e7f2
+      internalID: -1195118248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_16
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3436
+        width: 258
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f039c93420ea3a64f90133691e05abf3
+      internalID: 1854428107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_17
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 3436
+        width: 228
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacf626b40fbda8448bb649bfb1ab3d5
+      internalID: 1679836470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_18
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 3436
+        width: 234
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65bc94057caa1944a7bf9e84d82997a
+      internalID: -434812630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_19
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 3436
+        width: 246
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c34fb5f4e35504297ba3f0263a7db4
+      internalID: 1789707750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_20
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 3436
+        width: 252
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e722f20d5b1334787424172109ad67
+      internalID: -560301458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_21
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3436
+        width: 476
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f679a673243349d45a8993160ae62491
+      internalID: 467545736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3164
+        width: 246
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803be49e7a411e74a836d5cb9c2dcb14
+      internalID: -547740228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 3164
+        width: 258
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df35627cc4fb8bf43b0af828d9b5c30e
+      internalID: 1532063527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_24
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 3164
+        width: 248
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247276d929c91fa4eb5ed130736485e1
+      internalID: 1096780969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_25
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 3164
+        width: 246
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc102f61fca30a045b3da2a7eb1b1506
+      internalID: 1705478884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_26
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 3164
+        width: 246
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c377baec1b9c046bade1cce00c79fc
+      internalID: 1939967943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_27
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 3164
+        width: 266
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2dd9da582af8041979db5c49f02fe4
+      internalID: -1541826863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_28
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 2876
+        width: 280
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedea49f0242d7942a43c12441ed5500
+      internalID: 1725872095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_29
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 3164
+        width: 266
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd163a44027fca4ebde5620d98d80c1
+      internalID: -1466664695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_30
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 3164
+        width: 274
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5f425d9f534764e8ffb9dc9840c31b
+      internalID: -1467348606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_31
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 3156
+        width: 288
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f3a25b745d40e499bbccd339547363
+      internalID: -955704540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2890
+        width: 172
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06736e1c33375c7479beb77bf3bda8d8
+      internalID: -1939924193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_33
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 2890
+        width: 172
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2921305f5128c04e862588ecbf25e18
+      internalID: 1508284233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_34
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2884
+        width: 206
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676e79f1d2f41b04bba40c90559a5e30
+      internalID: -1577989047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_35
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2884
+        width: 228
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542eff55da4acec479b5c5bf442281c2
+      internalID: 269188331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_36
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 2884
+        width: 226
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f7687b72673114a8ce24fe71239b27
+      internalID: 1583569003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_37
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 2884
+        width: 248
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9124a09ac8b8f4a850bbd23514b6b6
+      internalID: -1815412084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_38
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 2884
+        width: 240
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256ac7bef30dc44478d7cf9a7ed2f630
+      internalID: 62143481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_39
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 2850
+        width: 206
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f23b1e1c4687845b7e6d24c83813f2
+      internalID: 1375080281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_40
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 2850
+        width: 206
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b827a4f287a2c40b29bcd107c896ee
+      internalID: 1850488401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2474
+        width: 206
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a4a69cdfc6bc74ba1f4c2a0b4fe8ec
+      internalID: 618583023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_42
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2482
+        width: 206
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22373e1db3ba694a9a7e3cd13f65d33
+      internalID: -600799040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_43
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 2488
+        width: 206
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c07a90374bc40c44a54f5327d94b638
+      internalID: 990587107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_44
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2502
+        width: 202
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafe8e3c2d1b96645a15cff50dfa1fa7
+      internalID: 623867457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_45
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 2528
+        width: 208
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c3900896af29e4d81274a018c20f34
+      internalID: -1442610020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_46
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 2494
+        width: 418
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888b1f87d02dd4642a419b13a09aa008
+      internalID: -907294931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_47
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 2482
+        width: 206
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8de610f948fe74a99939e9a0599e7f
+      internalID: 1233144357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_48
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 2776
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd388d1f3b41f74387822d168e2eed0
+      internalID: -1396412984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_49
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 2514
+        width: 206
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6971827ffea73c94192bee6cc01ebf79
+      internalID: -52844112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_50
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 2514
+        width: 206
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38ba28d46ab17c4c82bb4cad004df69
+      internalID: -1938588486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_51
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 2514
+        width: 424
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ede164bda193043a39f2022d0f17c5
+      internalID: -1483425610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_52
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 2008
+        width: 238
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0229fcd87da9240b4c0fccabf5c74d
+      internalID: 522465120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_53
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 2482
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724969296f5ea2146b3408d9a802e201
+      internalID: 1519610009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_54
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 2262
+        width: 88
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed02214f5bd46446b7d065ce8fd771b
+      internalID: -809893975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_55
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 2290
+        width: 98
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a75ba1f48b435143b44133670bc7e57
+      internalID: 746518083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_56
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 2330
+        width: 110
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6017402152d8514fa4112a1b68ac27f
+      internalID: 2074057267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_57
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2276
+        width: 124
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297567993da03de419b4b965f4555e08
+      internalID: -1690654549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_58
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2044
+        width: 262
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad76602b572c4254788850526f1da8ff
+      internalID: -1403474182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2044
+        width: 220
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d130c8cd5aa80c44da5dbb7e96eff3d7
+      internalID: -63540764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_60
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2044
+        width: 222
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6044bd94ac669e428c6e85e405564fe
+      internalID: 866791704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_61
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 2044
+        width: 220
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c14c464620ea34ab2d30bfc7cb12cf
+      internalID: 627368452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_62
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 2044
+        width: 200
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3d71683d4d5d94392254382b7a3336
+      internalID: 1868806659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_63
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 2208
+        width: 132
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e28ad62818ab724b8da8a5e6042f775
+      internalID: -1235441875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_64
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 2146
+        width: 138
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d8400e5e2f6f6438d27aa7a6ef9df5
+      internalID: -839906222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_65
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 2044
+        width: 130
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edcda15cf670084791615bf1fbad1d5
+      internalID: 56368674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_66
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2022
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91166353851c25d438e3593463555a41
+      internalID: 1140039556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_67
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2008
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f9280cc3f1a3542aca27570c7172fb
+      internalID: -367074136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_68
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1992
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e54cb08eb1c6014ba7e2957a830390a
+      internalID: 208547331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_69
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 2002
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a774f4d6887f48f4796cfc55d045aec2
+      internalID: 100446252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_70
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2004
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f917f4f1cd12b194ab2f94b0d0a9bd65
+      internalID: 86666344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_71
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1334
+        width: 338
+        height: 676
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b058d06dd635f40adcac44f51c8099
+      internalID: -573333257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_72
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1952
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7c17f25d4abb84d9b801e9e7860d0b
+      internalID: -1202081287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_73
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1958
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe1cf37c97af394392fee82a97427c3
+      internalID: 308789653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_74
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1944
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d2eef96c04eda459fce796e0881628
+      internalID: 1972952956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_75
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1348
+        width: 334
+        height: 644
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418ff5d93c8fa6f48b4fcebbd50d056c
+      internalID: 1976880410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_76
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1348
+        width: 330
+        height: 650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aa29ed4e30f98418565cd1fa43e649
+      internalID: 810773442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_77
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1340
+        width: 336
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ec53ddc4ba53644bbc8ab1295db4a2
+      internalID: -1538556860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_78
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1320
+        width: 330
+        height: 684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a0c78e0235c1841bf3f156dff0fbb5
+      internalID: 1073825141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_79
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 1300
+        width: 336
+        height: 692
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b7194d848bb1c4889393c1d17d4e0a
+      internalID: 1354489976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_80
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1362
+        width: 294
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349961e3bc8a88e459d3d2049254c618
+      internalID: 788546108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_81
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1932
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171c03ee46f74f4b8d56b7d899d8666
+      internalID: -477085647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_82
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1902
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685edeed4bf1887408c58cfce216ab04
+      internalID: 1482375460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_83
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1858
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd9a58b42c75b24cbbd8e027b288871
+      internalID: -22694451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_84
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1806
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43533855eff42274abd1a6cc108cd82d
+      internalID: -305044983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_85
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1558
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e454b27b7a51e40b6266edb468b34d
+      internalID: 1727461416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 330
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a370b808d1fb5964db411a6ecf806016
+      internalID: 2101327738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_87
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 638
+        width: 328
+        height: 684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409b317201e616445831bf97bda6d464
+      internalID: -417987002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_88
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 666
+        width: 336
+        height: 636
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a3898176073e24d9562859a43a34da
+      internalID: 96305205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_89
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 700
+        width: 336
+        height: 594
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b3573d48f5ce546bbfa66faea08e0c
+      internalID: -285071197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_90
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 734
+        width: 334
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4797e2af50ec1b642899cbcf73f061a2
+      internalID: -1373619180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_91
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 754
+        width: 336
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a43a04aa757e746acf853599754f8b
+      internalID: 849332135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_92
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 802
+        width: 336
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc07565ea6af7b4182d82a674ac766e
+      internalID: 823663007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_93
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 870
+        width: 336
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164862ab5af9dce4c8ff306ef7220754
+      internalID: 1024275499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_94
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 844
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91688e0f37101b469d618718bd63129
+      internalID: -1794542677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_95
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 850
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d036230e8c816df41bb694c355574315
+      internalID: 502801401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_96
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 858
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31ff3187333407408aae1618ba40fc4
+      internalID: 961497372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_97
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 844
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985754f17ba83df4b839343575e2458a
+      internalID: -874436662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_98
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 836
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5461be7117a431419e0da24d28f6e11
+      internalID: 655402088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_99
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 816
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e8fad6fccc5d5489c9c44f675766d7
+      internalID: -235794986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_100
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 816
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa72463f82e0894eb2c5ff0e3d96b06
+      internalID: -758271039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_101
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 802
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2768085d4118eae4faab92179345bc23
+      internalID: 1996812908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_102
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 796
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84d05220df514c4399e492b0382d330
+      internalID: 1672505486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_103
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 782
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dde4c6bb7ed5dc4b9ed2e1290fcc8a4
+      internalID: -1691846015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_104
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 782
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd7b38f9e8c767469babc1fc917d226
+      internalID: -981388479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_105
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 782
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadee1186ae757d4da97758da0b7584c
+      internalID: -1708788401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_106
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 768
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370796f0046f2a44ebb6cac0ce027281
+      internalID: 969235581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_107
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 740
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0e1df64d0c9f14186afa8e0ce59a1a
+      internalID: 1529029223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_108
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 726
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbb7cd89f899f8438f3f20ba7eec1cb
+      internalID: -432963708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_109
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 700
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59b3f00971d79e48be2b02397e8f09e
+      internalID: -1072921300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_110
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 412
+        width: 208
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0323f6b9e8d7e24488a1256d6dd4ee74
+      internalID: 428741440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_111
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 654
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf61662c2129648ab65e468409c801
+      internalID: 167419718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 336
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20de761fe3dc6f04bbb016458779176e
+      internalID: -784959397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_113
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 284
+        width: 328
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c419a88d22ffaf345960cb499d5f7765
+      internalID: 1235780494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_114
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 310
+        width: 328
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca80e20ee3ebc9d44b61083f1974e9cf
+      internalID: 1059133895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_115
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 400
+        width: 334
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fa9925b5ad7ea4d8719dff4215158d
+      internalID: -1032168346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_116
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 550
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f3092e61cea4e43aedc84a7bba81c2
+      internalID: -332239983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_117
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 562
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dacd332ca608242a169f7f5b9f95b2
+      internalID: -88713362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_118
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 556
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906016bf3211d2944a72576ca3572efc
+      internalID: 1477290504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_119
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 562
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2613a6042431e4695fe0b46e4d6cdb
+      internalID: -697541377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_120
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 556
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f84e1fa805ba2439f32e24c3d4a1cd
+      internalID: -1384281787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_121
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 564
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674770aeb0e32c74eabb5571ffd35569
+      internalID: 504908460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_122
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 556
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3874ff3c4e1f2a498f856885d5aafac
+      internalID: 916411744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_123
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 406
+        width: 206
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482e86034171ef0498d3663f5884a0a0
+      internalID: 1965868688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_124
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 406
+        width: 240
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae70b9d18852ec4cb06d4afc09fb099
+      internalID: 309822830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_125
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 406
+        width: 234
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9839fe541faf29245b638b82329f8d74
+      internalID: 1542753710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_126
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 508
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a618fdcde0388e498b2c2709f96745e
+      internalID: -1158928593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_127
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 510
+        width: 76
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed874a00745d15e448c11426cb51ca21
+      internalID: -980294071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_128
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 530
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9d7a1b8637db848bbddf65edce3a10
+      internalID: 402569762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_129
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 536
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ad26c38ead04f42bf0c264a1193778
+      internalID: 672793511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_130
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 530
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb12de3f20aa464086717167e3d71cb
+      internalID: 160464074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_131
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 528
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd3578cae6112f4dac1adbf6474aa01
+      internalID: 210789515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_132
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 516
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd6998cfa729fa4ba61397edd15e982
+      internalID: -1202455092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_133
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 516
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429ebd15ee0d9b843a693d8fe8f3d2fe
+      internalID: -593868013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_134
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 522
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d96cdd639b1554f853ef44905c8590
+      internalID: -1931645186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_135
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 480
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c303c2a6c852a448bbc59b2d245476
+      internalID: 1317959911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_136
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 516
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218b6b4c4a1b7fa48aa0ceb519045c31
+      internalID: -527480489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_137
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 494
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b3d714928696f4e8e0a8dc10f99d4a
+      internalID: -1555544966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_138
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 494
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ced5f3425a224741ab31a7a7f315feb
+      internalID: 1477307389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_139
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 494
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deed76c2f7574041a8065d793c84675
+      internalID: -961554917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_140
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 502
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eb3bfbb7d4a84409a4646bde534175
+      internalID: 2015688871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_141
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 488
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaa7a692b7664b48b846916e6f76881
+      internalID: -1197071457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_142
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 482
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc60c4cffaa63849922dfc6a18fcfb2
+      internalID: 1201532777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_143
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 460
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cbe74454f2c574baae809943c29036
+      internalID: -1402928908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_144
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 482
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282039cc30c02ab48baea615e943aa36
+      internalID: -1218343225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_145
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 474
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2809d83c93438a34c901436d85740ea7
+      internalID: -142239417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_146
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 446
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a0a98e0ad5d9e4f9a8879e92017fbd
+      internalID: -876753842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_147
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 426
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e848f56f6fd926043ac665426706557f
+      internalID: -1953439759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_148
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 440
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8212949549b562143ad5dd0d0d904860
+      internalID: -254963885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_149
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 474
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d1398829835064f9df43d45a3491c0
+      internalID: 67833958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_150
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 386
+        width: 28
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5544f30bc6460284c92028f12719fc2a
+      internalID: 4834611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_151
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 454
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab59d0301824064ca0ba1fe4c16d94b
+      internalID: 1447757822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_152
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 426
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d168eedd9e0537847849bbf34b137766
+      internalID: 1018883423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_153
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 420
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c579df8b5b986468c1b532c96b0f9a
+      internalID: -1718385207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_154
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 448
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bc0ebea7089394faa984c958d3e5b5
+      internalID: -1078542081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_155
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12154259ceb9d3b499e2575ec3c92ed0
+      internalID: -1395322632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_156
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 440
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ff57032f9bee84796a8950ad8e4f19
+      internalID: 1857913750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_157
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 426
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9e2e9971558f3499e64becf34da281
+      internalID: -717496429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_158
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 412
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ad9b4e613327046aa40343b3150925
+      internalID: 149563818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_159
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 412
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380f9870400c43344ac6d784670ce04c
+      internalID: 371729777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_160
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 420
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c626f4fdd5a7a44448dc4aff64fe8c6f
+      internalID: 62781011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_161
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 406
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ecbf709b367064fb7732ea55a3602f
+      internalID: 367998105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_162
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 420
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172b2ff516d67b146925ff6c7432097e
+      internalID: -537036107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_163
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 392
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81e49969fba1314dbbabcc67c95a8f3
+      internalID: -1967596988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_164
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 350
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d343327eee19847893d6baa30adb98
+      internalID: -187334533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_165
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 400
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541d6bdd35b067c47bcbe56687929daf
+      internalID: 2059365377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_166
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 392
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7129b0240d7225a438bf96a530b80b38
+      internalID: 837695247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_167
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 406
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c2673c54ea27a49965c2681d5a21a7
+      internalID: 8273412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_168
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 406
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a9d1f1a3006ea458e4321712d4a8af
+      internalID: -1506557525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_169
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 400
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d9f6255721ff84dbb73c1fc9eaf49e
+      internalID: 976022303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_170
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 400
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce0dad32e468914cb6ccd69531a8556
+      internalID: -2016727128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_171
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 366
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3132a9ec4edbdc645b9752f29e315a5c
+      internalID: 411095219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_172
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 338
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93b6fe812afe7548ac2007226fc0207
+      internalID: 1146445144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_173
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 372
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4398d934ccd19054f849ed314f601455
+      internalID: -514892945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_174
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 380
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf75f90b5cf96e45a6fa7e1b6d60877
+      internalID: -2030040922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_175
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 386
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b0a874dbae2547b084c2af8a66c00
+      internalID: 1338652630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_176
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 372
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9754a63bd52af842bd3b782476bddd3
+      internalID: 350438779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_177
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 358
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7a695f57cf5514586738eaa617a645
+      internalID: 1416395300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_178
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 358
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f56ec5d5545c840bb4b6bf8bade225
+      internalID: 433192546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_179
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 366
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c63344e4e6bb44b1af18556977852
+      internalID: 346980220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_180
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 208
+        width: 234
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dee38e18b02559409daaa054eebd68a
+      internalID: -1451256740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_181
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 214
+        width: 234
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783d0df4a1d52f345980e01ba51e9ac4
+      internalID: 1464778786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_182
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 344
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90b2662932e8fd4a9e01ad781f80913
+      internalID: 1800067644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_183
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 338
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71945acccfcf3e443a5c5f88efec06e7
+      internalID: 1023822934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_184
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 338
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0033c94d02f322f4d90ae71aa7413b99
+      internalID: -764037149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_185
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 344
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def11d3192127004b9d38069fb134fc6
+      internalID: -1186428352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_186
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 344
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d266af1a54e7b94fb7770d628325426
+      internalID: 1850999143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_187
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 324
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8dca2031d2c2a4b91eddd7f858ee85
+      internalID: 621634144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_188
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 324
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c4d5556a1fec94980244e36008b08c
+      internalID: -412612482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_189
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 324
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695d0cea5c8d1df4da71aa9f393cf94e
+      internalID: -961225063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_190
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 304
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec030d37b353f404d845085e9f52befd
+      internalID: 1894678381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_191
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 310
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39131246196290458599955b4d6ec0a
+      internalID: 1142598176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_192
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 290
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9d22791f4859949bbb0157f8e7221e
+      internalID: -309627655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_193
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 296
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775a9efc70f4ef742ba7420e6426bbbe
+      internalID: 455775376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_194
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 276
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a376684607e40864a89e9c48f9ad6e05
+      internalID: -622462897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_195
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 284
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e8f11cacaf6294d98846ef75167a96
+      internalID: 120488373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_196
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 290
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b375f7cf419a34e9bd382e7f6d43dc
+      internalID: 230672091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_197
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 296
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19197a99bb2f520428b1479c5ee1e02e
+      internalID: 1913709145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_198
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 290
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d40f3e8b216e914a9a697b6901fd6d9
+      internalID: 110593921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_199
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 236
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b49753e2162a747b8b23d08fa89d0d
+      internalID: -366034645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_200
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 256
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1468f10d5902a204baecb82caece45d9
+      internalID: 1625440221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_201
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 262
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8e17ed81d937b4cb822e5f83ecc67d
+      internalID: -1536511248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_202
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 276
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c55eb2d8ee524ab7162189a8d3e97
+      internalID: 631458947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_203
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 270
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40f65b77be53244598744288f8db057
+      internalID: -1387564598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_204
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 262
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99714ab6be8d2c249924eb7fec35cb91
+      internalID: -1662783923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_205
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 270
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7b53051dd38904eb40818b555aee3f
+      internalID: 1349160782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_206
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 270
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8639732bc9c86748ad13c30d69d5bbb
+      internalID: 1482883501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_207
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 270
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a13bc18b53e14b8526e909973a481
+      internalID: 303429876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_208
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 276
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712b655a2f752bb4e8974fdaed92c2c5
+      internalID: -125079215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_209
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 270
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac29ea2af513574ba29783c3e93bd8d
+      internalID: -1017651768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_210
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 250
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb0ac4e27334fc4ca27f2fd38e9c75f
+      internalID: 1726798254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_211
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 256
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680b1f73c7358b745a3d165d6ed7a5fc
+      internalID: 93391749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_212
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 256
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4e41c03c2e64647b3c7e86d8911b46
+      internalID: -1843783855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_213
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb86f450df10c647baa86b784797858
+      internalID: 1161926115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_214
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 262
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e0324a8490c26448d6abaf4ff74e86
+      internalID: -1926215169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_215
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 236
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0872bbb576c7b447ab9ba21a3eb1dec
+      internalID: 117230074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_216
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 236
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a60ecf21012d54d9425f19b2abe155
+      internalID: 1117569272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_217
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 242
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87126e4599f15b640bb86b7868e912e0
+      internalID: 937757343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_218
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 242
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07118e13efb342642914294511524f3a
+      internalID: -2076829179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_219
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 242
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0211a223d96ee842b2507a6849cb643
+      internalID: -8997042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_220
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 236
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5ede25a078f9f489c2967bc652f697
+      internalID: 994308903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_221
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 216
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff594830de3fe9040af825f8516b385f
+      internalID: 444570235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_222
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 228
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341d89f9e3f006149b274a1612ca03fc
+      internalID: -170128851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_223
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 228
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41bd8c4b07286b4da41f297def4d34e
+      internalID: -268220312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_224
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 208
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51db904970275d14fb479755dc2e871a
+      internalID: 109967584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_225
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 208
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcb9904ee7789043bb73e3592c779af
+      internalID: -730629294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_226
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 216
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1c51292d8f5554fb99dc88128d0485
+      internalID: -638475401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_227
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 194
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cae06a912465404c8b4bc635ac2d9e3
+      internalID: 1562347776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_228
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 202
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3629b2bfe866314eb94ce8e67b5867d
+      internalID: 1631977628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_229
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 202
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731699d5c5ab793488311dad7d1b62d6
+      internalID: 981438352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_230
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 202
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404c1414f2ced664581c0b50467b8f76
+      internalID: -1347686666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_231
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 194
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b356357a2e1a6c84d81a99a01c106ac4
+      internalID: 637346469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_232
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 188
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45edea6bf02a2144ab70ced255d18bad
+      internalID: 1481213348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_233
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 180
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18af2facbbe34bc41a01e32b26f84df3
+      internalID: 1325102065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_234
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 188
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae51ede0f6d16b45a4267fac59f609f
+      internalID: -1157158687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_235
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 188
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf446605857d44498777a3383c216e8
+      internalID: -352918060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_236
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 174
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77456864f898685408511bbe9ba5386b
+      internalID: 1137724317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_237
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 168
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48008d4308e5251498bf27cf8a29fc53
+      internalID: 825000033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_238
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 166
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea4348a414606e4190c021f70938a5f
+      internalID: -1932283646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_239
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 168
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4939998666c71ad469312f721dcd3a63
+      internalID: -108877267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_240
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 160
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72e8451f95887641a4a8b50063063a2
+      internalID: -2035870483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_241
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 154
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a449ac38861a5ed4aa4dfa6b6734b7cb
+      internalID: -1362380514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_242
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94cb53cfb660f448b6fb8cb79393c04
+      internalID: 1686632739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_243
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17be06687c0b32649b1ef98b7cf8a59b
+      internalID: -1386879288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_244
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 146
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12a92bd1765bb749b8eaf144bef49c4
+      internalID: 1267002706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_245
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 126
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed1bb86744c7a340b0adaaee1ffc35f
+      internalID: 1661288238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_246
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 3811
+        width: 240
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92ab300a307ee74fa6fe4721d13d8ff
+      internalID: -1239670365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_247
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2516
+        width: 202
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb23449857734f4eb7b197fb4815943
+      internalID: 643456935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Marco Rossi_0: -1721620598
+      Marco Rossi_1: -1934447838
+      Marco Rossi_10: -904617265
+      Marco Rossi_100: -758271039
+      Marco Rossi_101: 1996812908
+      Marco Rossi_102: 1672505486
+      Marco Rossi_103: -1691846015
+      Marco Rossi_104: -981388479
+      Marco Rossi_105: -1708788401
+      Marco Rossi_106: 969235581
+      Marco Rossi_107: 1529029223
+      Marco Rossi_108: -432963708
+      Marco Rossi_109: -1072921300
+      Marco Rossi_11: -1353316644
+      Marco Rossi_110: 428741440
+      Marco Rossi_111: 167419718
+      Marco Rossi_112: -784959397
+      Marco Rossi_113: 1235780494
+      Marco Rossi_114: 1059133895
+      Marco Rossi_115: -1032168346
+      Marco Rossi_116: -332239983
+      Marco Rossi_117: -88713362
+      Marco Rossi_118: 1477290504
+      Marco Rossi_119: -697541377
+      Marco Rossi_12: -1300120429
+      Marco Rossi_120: -1384281787
+      Marco Rossi_121: 504908460
+      Marco Rossi_122: 916411744
+      Marco Rossi_123: 1965868688
+      Marco Rossi_124: 309822830
+      Marco Rossi_125: 1542753710
+      Marco Rossi_126: -1158928593
+      Marco Rossi_127: -980294071
+      Marco Rossi_128: 402569762
+      Marco Rossi_129: 672793511
+      Marco Rossi_13: 1644340971
+      Marco Rossi_130: 160464074
+      Marco Rossi_131: 210789515
+      Marco Rossi_132: -1202455092
+      Marco Rossi_133: -593868013
+      Marco Rossi_134: -1931645186
+      Marco Rossi_135: 1317959911
+      Marco Rossi_136: -527480489
+      Marco Rossi_137: -1555544966
+      Marco Rossi_138: 1477307389
+      Marco Rossi_139: -961554917
+      Marco Rossi_14: 995642153
+      Marco Rossi_140: 2015688871
+      Marco Rossi_141: -1197071457
+      Marco Rossi_142: 1201532777
+      Marco Rossi_143: -1402928908
+      Marco Rossi_144: -1218343225
+      Marco Rossi_145: -142239417
+      Marco Rossi_146: -876753842
+      Marco Rossi_147: -1953439759
+      Marco Rossi_148: -254963885
+      Marco Rossi_149: 67833958
+      Marco Rossi_15: -1195118248
+      Marco Rossi_150: 4834611
+      Marco Rossi_151: 1447757822
+      Marco Rossi_152: 1018883423
+      Marco Rossi_153: -1718385207
+      Marco Rossi_154: -1078542081
+      Marco Rossi_155: -1395322632
+      Marco Rossi_156: 1857913750
+      Marco Rossi_157: -717496429
+      Marco Rossi_158: 149563818
+      Marco Rossi_159: 371729777
+      Marco Rossi_16: 1854428107
+      Marco Rossi_160: 62781011
+      Marco Rossi_161: 367998105
+      Marco Rossi_162: -537036107
+      Marco Rossi_163: -1967596988
+      Marco Rossi_164: -187334533
+      Marco Rossi_165: 2059365377
+      Marco Rossi_166: 837695247
+      Marco Rossi_167: 8273412
+      Marco Rossi_168: -1506557525
+      Marco Rossi_169: 976022303
+      Marco Rossi_17: 1679836470
+      Marco Rossi_170: -2016727128
+      Marco Rossi_171: 411095219
+      Marco Rossi_172: 1146445144
+      Marco Rossi_173: -514892945
+      Marco Rossi_174: -2030040922
+      Marco Rossi_175: 1338652630
+      Marco Rossi_176: 350438779
+      Marco Rossi_177: 1416395300
+      Marco Rossi_178: 433192546
+      Marco Rossi_179: 346980220
+      Marco Rossi_18: -434812630
+      Marco Rossi_180: -1451256740
+      Marco Rossi_181: 1464778786
+      Marco Rossi_182: 1800067644
+      Marco Rossi_183: 1023822934
+      Marco Rossi_184: -764037149
+      Marco Rossi_185: -1186428352
+      Marco Rossi_186: 1850999143
+      Marco Rossi_187: 621634144
+      Marco Rossi_188: -412612482
+      Marco Rossi_189: -961225063
+      Marco Rossi_19: 1789707750
+      Marco Rossi_190: 1894678381
+      Marco Rossi_191: 1142598176
+      Marco Rossi_192: -309627655
+      Marco Rossi_193: 455775376
+      Marco Rossi_194: -622462897
+      Marco Rossi_195: 120488373
+      Marco Rossi_196: 230672091
+      Marco Rossi_197: 1913709145
+      Marco Rossi_198: 110593921
+      Marco Rossi_199: -366034645
+      Marco Rossi_2: -998030105
+      Marco Rossi_20: -560301458
+      Marco Rossi_200: 1625440221
+      Marco Rossi_201: -1536511248
+      Marco Rossi_202: 631458947
+      Marco Rossi_203: -1387564598
+      Marco Rossi_204: -1662783923
+      Marco Rossi_205: 1349160782
+      Marco Rossi_206: 1482883501
+      Marco Rossi_207: 303429876
+      Marco Rossi_208: -125079215
+      Marco Rossi_209: -1017651768
+      Marco Rossi_21: 467545736
+      Marco Rossi_210: 1726798254
+      Marco Rossi_211: 93391749
+      Marco Rossi_212: -1843783855
+      Marco Rossi_213: 1161926115
+      Marco Rossi_214: -1926215169
+      Marco Rossi_215: 117230074
+      Marco Rossi_216: 1117569272
+      Marco Rossi_217: 937757343
+      Marco Rossi_218: -2076829179
+      Marco Rossi_219: -8997042
+      Marco Rossi_22: -547740228
+      Marco Rossi_220: 994308903
+      Marco Rossi_221: 444570235
+      Marco Rossi_222: -170128851
+      Marco Rossi_223: -268220312
+      Marco Rossi_224: 109967584
+      Marco Rossi_225: -730629294
+      Marco Rossi_226: -638475401
+      Marco Rossi_227: 1562347776
+      Marco Rossi_228: 1631977628
+      Marco Rossi_229: 981438352
+      Marco Rossi_23: 1532063527
+      Marco Rossi_230: -1347686666
+      Marco Rossi_231: 637346469
+      Marco Rossi_232: 1481213348
+      Marco Rossi_233: 1325102065
+      Marco Rossi_234: -1157158687
+      Marco Rossi_235: -352918060
+      Marco Rossi_236: 1137724317
+      Marco Rossi_237: 825000033
+      Marco Rossi_238: -1932283646
+      Marco Rossi_239: -108877267
+      Marco Rossi_24: 1096780969
+      Marco Rossi_240: -2035870483
+      Marco Rossi_241: -1362380514
+      Marco Rossi_242: 1686632739
+      Marco Rossi_243: -1386879288
+      Marco Rossi_244: 1267002706
+      Marco Rossi_245: 1661288238
+      Marco Rossi_246: -1239670365
+      Marco Rossi_247: 643456935
+      Marco Rossi_25: 1705478884
+      Marco Rossi_26: 1939967943
+      Marco Rossi_27: -1541826863
+      Marco Rossi_28: 1725872095
+      Marco Rossi_29: -1466664695
+      Marco Rossi_3: 130308998
+      Marco Rossi_30: -1467348606
+      Marco Rossi_31: -955704540
+      Marco Rossi_32: -1939924193
+      Marco Rossi_33: 1508284233
+      Marco Rossi_34: -1577989047
+      Marco Rossi_35: 269188331
+      Marco Rossi_36: 1583569003
+      Marco Rossi_37: -1815412084
+      Marco Rossi_38: 62143481
+      Marco Rossi_39: 1375080281
+      Marco Rossi_4: -30587359
+      Marco Rossi_40: 1850488401
+      Marco Rossi_41: 618583023
+      Marco Rossi_42: -600799040
+      Marco Rossi_43: 990587107
+      Marco Rossi_44: 623867457
+      Marco Rossi_45: -1442610020
+      Marco Rossi_46: -907294931
+      Marco Rossi_47: 1233144357
+      Marco Rossi_48: -1396412984
+      Marco Rossi_49: -52844112
+      Marco Rossi_5: -232514435
+      Marco Rossi_50: -1938588486
+      Marco Rossi_51: -1483425610
+      Marco Rossi_52: 522465120
+      Marco Rossi_53: 1519610009
+      Marco Rossi_54: -809893975
+      Marco Rossi_55: 746518083
+      Marco Rossi_56: 2074057267
+      Marco Rossi_57: -1690654549
+      Marco Rossi_58: -1403474182
+      Marco Rossi_59: -63540764
+      Marco Rossi_6: -461451802
+      Marco Rossi_60: 866791704
+      Marco Rossi_61: 627368452
+      Marco Rossi_62: 1868806659
+      Marco Rossi_63: -1235441875
+      Marco Rossi_64: -839906222
+      Marco Rossi_65: 56368674
+      Marco Rossi_66: 1140039556
+      Marco Rossi_67: -367074136
+      Marco Rossi_68: 208547331
+      Marco Rossi_69: 100446252
+      Marco Rossi_7: 1011470414
+      Marco Rossi_70: 86666344
+      Marco Rossi_71: -573333257
+      Marco Rossi_72: -1202081287
+      Marco Rossi_73: 308789653
+      Marco Rossi_74: 1972952956
+      Marco Rossi_75: 1976880410
+      Marco Rossi_76: 810773442
+      Marco Rossi_77: -1538556860
+      Marco Rossi_78: 1073825141
+      Marco Rossi_79: 1354489976
+      Marco Rossi_8: 207731647
+      Marco Rossi_80: 788546108
+      Marco Rossi_81: -477085647
+      Marco Rossi_82: 1482375460
+      Marco Rossi_83: -22694451
+      Marco Rossi_84: -305044983
+      Marco Rossi_85: 1727461416
+      Marco Rossi_86: 2101327738
+      Marco Rossi_87: -417987002
+      Marco Rossi_88: 96305205
+      Marco Rossi_89: -285071197
+      Marco Rossi_9: 2087138304
+      Marco Rossi_90: -1373619180
+      Marco Rossi_91: 849332135
+      Marco Rossi_92: 823663007
+      Marco Rossi_93: 1024275499
+      Marco Rossi_94: -1794542677
+      Marco Rossi_95: 502801401
+      Marco Rossi_96: 961497372
+      Marco Rossi_97: -874436662
+      Marco Rossi_98: 655402088
+      Marco Rossi_99: -235794986
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
