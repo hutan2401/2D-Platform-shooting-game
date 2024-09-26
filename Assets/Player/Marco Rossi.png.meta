@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Marco Rossi_0
+      name: Marco Rossi_idle_0
       rect:
         serializedVersion: 2
         x: 6
@@ -131,12 +131,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_1
+      name: Marco Rossi_idle_1
       rect:
         serializedVersion: 2
         x: 218
-        y: 3818
-        width: 206
+        y: 3820
+        width: 199
         height: 268
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_2
+      name: Marco Rossi_idle_2
       rect:
         serializedVersion: 2
         x: 416
@@ -161,7 +161,7 @@ TextureImporter:
         height: 268
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_3
+      name: Marco Rossi_run_0
       rect:
         serializedVersion: 2
         x: 710
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_4
+      name: Marco Rossi_run_1
       rect:
         serializedVersion: 2
         x: 930
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_5
+      name: Marco Rossi_run_2
       rect:
         serializedVersion: 2
         x: 1126
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_6
+      name: Marco Rossi_run_3
       rect:
         serializedVersion: 2
         x: 1352
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_7
+      name: Marco Rossi_run_4
       rect:
         serializedVersion: 2
         x: 1584
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_8
+      name: Marco Rossi_run_5
       rect:
         serializedVersion: 2
         x: 1796
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_9
+      name: Marco Rossi_run_6
       rect:
         serializedVersion: 2
         x: 2009
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_10
+      name: Marco Rossi_run_7
       rect:
         serializedVersion: 2
         x: 2479
@@ -5276,7 +5276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_246
+      name: Marco Rossi_run_
       rect:
         serializedVersion: 2
         x: 2238
@@ -5305,7 +5305,7 @@ TextureImporter:
         width: 202
         height: 276
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5313,6 +5313,27 @@ TextureImporter:
       bones: []
       spriteID: abb23449857734f4eb7b197fb4815943
       internalID: 643456935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_0
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 3773
+        width: 245
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba7a4e91b92beb47a77906e52b11853
+      internalID: -442145977
       vertices: []
       indices: 
       edges: []
@@ -5328,9 +5349,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Marco Rossi_0: -1721620598
-      Marco Rossi_1: -1934447838
-      Marco Rossi_10: -904617265
+      Marco Rossi_0: -442145977
       Marco Rossi_100: -758271039
       Marco Rossi_101: 1996812908
       Marco Rossi_102: 1672505486
@@ -5440,7 +5459,6 @@ TextureImporter:
       Marco Rossi_197: 1913709145
       Marco Rossi_198: 110593921
       Marco Rossi_199: -366034645
-      Marco Rossi_2: -998030105
       Marco Rossi_20: -560301458
       Marco Rossi_200: 1625440221
       Marco Rossi_201: -1536511248
@@ -5492,14 +5510,12 @@ TextureImporter:
       Marco Rossi_243: -1386879288
       Marco Rossi_244: 1267002706
       Marco Rossi_245: 1661288238
-      Marco Rossi_246: -1239670365
       Marco Rossi_247: 643456935
       Marco Rossi_25: 1705478884
       Marco Rossi_26: 1939967943
       Marco Rossi_27: -1541826863
       Marco Rossi_28: 1725872095
       Marco Rossi_29: -1466664695
-      Marco Rossi_3: 130308998
       Marco Rossi_30: -1467348606
       Marco Rossi_31: -955704540
       Marco Rossi_32: -1939924193
@@ -5510,7 +5526,6 @@ TextureImporter:
       Marco Rossi_37: -1815412084
       Marco Rossi_38: 62143481
       Marco Rossi_39: 1375080281
-      Marco Rossi_4: -30587359
       Marco Rossi_40: 1850488401
       Marco Rossi_41: 618583023
       Marco Rossi_42: -600799040
@@ -5521,7 +5536,6 @@ TextureImporter:
       Marco Rossi_47: 1233144357
       Marco Rossi_48: -1396412984
       Marco Rossi_49: -52844112
-      Marco Rossi_5: -232514435
       Marco Rossi_50: -1938588486
       Marco Rossi_51: -1483425610
       Marco Rossi_52: 522465120
@@ -5532,7 +5546,6 @@ TextureImporter:
       Marco Rossi_57: -1690654549
       Marco Rossi_58: -1403474182
       Marco Rossi_59: -63540764
-      Marco Rossi_6: -461451802
       Marco Rossi_60: 866791704
       Marco Rossi_61: 627368452
       Marco Rossi_62: 1868806659
@@ -5543,7 +5556,6 @@ TextureImporter:
       Marco Rossi_67: -367074136
       Marco Rossi_68: 208547331
       Marco Rossi_69: 100446252
-      Marco Rossi_7: 1011470414
       Marco Rossi_70: 86666344
       Marco Rossi_71: -573333257
       Marco Rossi_72: -1202081287
@@ -5554,7 +5566,6 @@ TextureImporter:
       Marco Rossi_77: -1538556860
       Marco Rossi_78: 1073825141
       Marco Rossi_79: 1354489976
-      Marco Rossi_8: 207731647
       Marco Rossi_80: 788546108
       Marco Rossi_81: -477085647
       Marco Rossi_82: 1482375460
@@ -5565,7 +5576,6 @@ TextureImporter:
       Marco Rossi_87: -417987002
       Marco Rossi_88: 96305205
       Marco Rossi_89: -285071197
-      Marco Rossi_9: 2087138304
       Marco Rossi_90: -1373619180
       Marco Rossi_91: 849332135
       Marco Rossi_92: 823663007
@@ -5576,6 +5586,18 @@ TextureImporter:
       Marco Rossi_97: -874436662
       Marco Rossi_98: 655402088
       Marco Rossi_99: -235794986
+      Marco Rossi_idle_0: -1721620598
+      Marco Rossi_idle_1: -1934447838
+      Marco Rossi_idle_2: -998030105
+      Marco Rossi_run_: -1239670365
+      Marco Rossi_run_0: 130308998
+      Marco Rossi_run_1: -30587359
+      Marco Rossi_run_2: -232514435
+      Marco Rossi_run_3: -461451802
+      Marco Rossi_run_4: 1011470414
+      Marco Rossi_run_5: 207731647
+      Marco Rossi_run_6: 2087138304
+      Marco Rossi_run_7: -904617265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

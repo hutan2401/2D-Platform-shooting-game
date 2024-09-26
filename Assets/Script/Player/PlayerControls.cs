@@ -13,10 +13,14 @@ public class PlayerControls : MonoBehaviour
     private  PlayerController playerController;
     private Vector2 movement;
 
+    //Animator
+    private Animator animator;
+
     private void Awake()
     {
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -47,6 +51,8 @@ public class PlayerControls : MonoBehaviour
     private void PlayerInput()
     {
         movement = playerController.Player.Move.ReadValue<Vector2>();
+        animator.SetFloat("xVelocity",movement.x);
+       // animator.SetFloat("yVelocity", movement.y);
     }
     private void Move()
     {
@@ -62,5 +68,10 @@ public class PlayerControls : MonoBehaviour
     private bool CheckGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    private void FlipSprite()
+    {
+        
     }
 }
