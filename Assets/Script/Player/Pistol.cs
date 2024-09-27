@@ -7,15 +7,34 @@ public class Pistol : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletSpawnPoint;
 
+    private PlayerController playerController;
 
-    void Start()
+    private void Awake()
     {
-        
+        playerController = new PlayerController();
     }
 
-   public void Attack()
+    private void Start()
     {
-        GameObject newBullet = Instantiate(bulletPrefab,bulletSpawnPoint.position,transform.rotation);
+        playerController.Player.Fire.performed += _ => Attack();
+    }
+
+    private void OnEnable()
+    {
+        playerController.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerController.Disable();
+    }
+
+    public void Attack()
+    {
+        Debug.Log("Shooting");
+        GameObject newBullet = Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
        // newBullet.GetComponent<ProjectTile>().UpdateProjectTileRange(/*weaponInfo*/); 
     }
+   
+
 }

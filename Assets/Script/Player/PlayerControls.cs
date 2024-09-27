@@ -16,8 +16,8 @@ public class PlayerControls : MonoBehaviour
 
     //Animator
     private Animator animator;
-    private SpriteRenderer mySprite;
-    //private bool isFacing = true;
+    //private SpriteRenderer mySprite;
+    private bool isFacing = true;
 
     private void Awake()
     {
@@ -79,9 +79,11 @@ public class PlayerControls : MonoBehaviour
 
     private void FlipSprite()
     {
-        if (movement.x != 0) // Only flip when the character is moving horizontally
+        if ((movement.x > 0 && !isFacing) || (movement.x < 0 && isFacing))
         {
-            transform.localScale = new Vector3(Mathf.Sign(movement.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            isFacing = !isFacing;
+            transform.Rotate(0f, 180f, 0f);
         }
+            
     }
 }
