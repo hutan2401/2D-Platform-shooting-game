@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class PlayerControls : MonoBehaviour
 
     //Animator
     private Animator animator;
+    private SpriteRenderer mySprite;
+    //private bool isFacing = true;
 
     private void Awake()
     {
@@ -35,6 +38,7 @@ public class PlayerControls : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        FlipSprite();
         CheckGrounded();
     }
 
@@ -51,8 +55,8 @@ public class PlayerControls : MonoBehaviour
     private void PlayerInput()
     {
         movement = playerController.Player.Move.ReadValue<Vector2>();
-        animator.SetFloat("xVelocity",movement.x);
-       // animator.SetFloat("yVelocity", movement.y);
+        animator.SetFloat("xVelocity",Math.Abs(movement.x));
+        
     }
     private void Move()
     {
@@ -63,15 +67,21 @@ public class PlayerControls : MonoBehaviour
         if (CheckGrounded())
         {
             rb.AddForce(new Vector2(0f, jumpingPower), ForceMode2D.Impulse);
+            animator.SetFloat("yVelocity", movement.y);
         }
     }
     private bool CheckGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        bool isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        animator.SetBool("isGround",!isGround);
+        return isGround;
     }
 
     private void FlipSprite()
     {
-        
+        if (movement.x != 0) // Only flip when the character is moving horizontally
+        {
+            transform.localScale = new Vector3(Mathf.Sign(movement.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 }

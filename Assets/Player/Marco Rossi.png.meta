@@ -912,7 +912,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1298
-        y: 2884
+        y: 2874
         width: 240
         height: 274
       alignment: 0
@@ -971,7 +971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_41
+      name: Marco Rossi_jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -992,7 +992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_42
+      name: Marco Rossi_jump_1
       rect:
         serializedVersion: 2
         x: 211
@@ -1013,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_43
+      name: Marco Rossi_jump_2
       rect:
         serializedVersion: 2
         x: 410
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_44
+      name: Marco Rossi_jump_3
       rect:
         serializedVersion: 2
         x: 626
@@ -1055,7 +1055,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_45
+      name: Marco Rossi_jump_5
       rect:
         serializedVersion: 2
         x: 1044
@@ -1076,12 +1076,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_46
+      name: Marco Rossi_jump_6
       rect:
         serializedVersion: 2
         x: 1256
         y: 2494
-        width: 418
+        width: 209
         height: 288
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1097,7 +1097,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_47
+      name: Marco Rossi_jump_8
       rect:
         serializedVersion: 2
         x: 1688
@@ -5297,7 +5297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_247
+      name: Marco Rossi_jump_4
       rect:
         serializedVersion: 2
         x: 832
@@ -5326,7 +5326,7 @@ TextureImporter:
         width: 245
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5334,6 +5334,27 @@ TextureImporter:
       bones: []
       spriteID: 0ba7a4e91b92beb47a77906e52b11853
       internalID: -442145977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco Rossi_jump_7
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2493
+        width: 206
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2390270960a574e9efef12d684fb24
+      internalID: 1888508083
       vertices: []
       indices: 
       edges: []
@@ -5510,7 +5531,6 @@ TextureImporter:
       Marco Rossi_243: -1386879288
       Marco Rossi_244: 1267002706
       Marco Rossi_245: 1661288238
-      Marco Rossi_247: 643456935
       Marco Rossi_25: 1705478884
       Marco Rossi_26: 1939967943
       Marco Rossi_27: -1541826863
@@ -5527,13 +5547,6 @@ TextureImporter:
       Marco Rossi_38: 62143481
       Marco Rossi_39: 1375080281
       Marco Rossi_40: 1850488401
-      Marco Rossi_41: 618583023
-      Marco Rossi_42: -600799040
-      Marco Rossi_43: 990587107
-      Marco Rossi_44: 623867457
-      Marco Rossi_45: -1442610020
-      Marco Rossi_46: -907294931
-      Marco Rossi_47: 1233144357
       Marco Rossi_48: -1396412984
       Marco Rossi_49: -52844112
       Marco Rossi_50: -1938588486
@@ -5589,6 +5602,15 @@ TextureImporter:
       Marco Rossi_idle_0: -1721620598
       Marco Rossi_idle_1: -1934447838
       Marco Rossi_idle_2: -998030105
+      Marco Rossi_jump_0: 618583023
+      Marco Rossi_jump_1: -600799040
+      Marco Rossi_jump_2: 990587107
+      Marco Rossi_jump_3: 623867457
+      Marco Rossi_jump_4: 643456935
+      Marco Rossi_jump_5: -1442610020
+      Marco Rossi_jump_6: -907294931
+      Marco Rossi_jump_7: 1888508083
+      Marco Rossi_jump_8: 1233144357
       Marco Rossi_run_: -1239670365
       Marco Rossi_run_0: 130308998
       Marco Rossi_run_1: -30587359
