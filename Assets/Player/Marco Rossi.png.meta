@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_12
+      name: Marco Rossi_attack_3
       rect:
         serializedVersion: 2
         x: 1018
-        y: 3436
+        y: 3438
         width: 260
-        height: 270
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 275
+      alignment: 9
+      pivot: {x: 0.4090698, y: 0.4999991}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,15 +404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_14
+      name: Marco Rossi_attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3436
-        width: 348
-        height: 262
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2
+        y: 3440
+        width: 350
+        height: 275
+      alignment: 9
+      pivot: {x: 0.2826826, y: 0.4923171}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,15 +425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_15
+      name: Marco Rossi_attack_1
       rect:
         serializedVersion: 2
         x: 354
-        y: 3436
-        width: 358
-        height: 258
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 3438
+        width: 360
+        height: 275
+      alignment: 9
+      pivot: {x: 0.2740471, y: 0.4961586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,15 +446,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_16
+      name: Marco Rossi_attack_2
       rect:
         serializedVersion: 2
         x: 732
-        y: 3436
-        width: 258
-        height: 262
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 3432
+        width: 260
+        height: 275
+      alignment: 9
+      pivot: {x: 0.3839144, y: 0.5148322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_17
+      name: Marco Rossi_attack_4
       rect:
         serializedVersion: 2
         x: 1290
@@ -5347,7 +5347,7 @@ TextureImporter:
         width: 206
         height: 291
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5392,7 +5392,6 @@ TextureImporter:
       Marco Rossi_117: -88713362
       Marco Rossi_118: 1477290504
       Marco Rossi_119: -697541377
-      Marco Rossi_12: -1300120429
       Marco Rossi_120: -1384281787
       Marco Rossi_121: 504908460
       Marco Rossi_122: 916411744
@@ -5414,7 +5413,6 @@ TextureImporter:
       Marco Rossi_137: -1555544966
       Marco Rossi_138: 1477307389
       Marco Rossi_139: -961554917
-      Marco Rossi_14: 995642153
       Marco Rossi_140: 2015688871
       Marco Rossi_141: -1197071457
       Marco Rossi_142: 1201532777
@@ -5425,7 +5423,6 @@ TextureImporter:
       Marco Rossi_147: -1953439759
       Marco Rossi_148: -254963885
       Marco Rossi_149: 67833958
-      Marco Rossi_15: -1195118248
       Marco Rossi_150: 4834611
       Marco Rossi_151: 1447757822
       Marco Rossi_152: 1018883423
@@ -5436,7 +5433,6 @@ TextureImporter:
       Marco Rossi_157: -717496429
       Marco Rossi_158: 149563818
       Marco Rossi_159: 371729777
-      Marco Rossi_16: 1854428107
       Marco Rossi_160: 62781011
       Marco Rossi_161: 367998105
       Marco Rossi_162: -537036107
@@ -5447,7 +5443,6 @@ TextureImporter:
       Marco Rossi_167: 8273412
       Marco Rossi_168: -1506557525
       Marco Rossi_169: 976022303
-      Marco Rossi_17: 1679836470
       Marco Rossi_170: -2016727128
       Marco Rossi_171: 411095219
       Marco Rossi_172: 1146445144
@@ -5599,6 +5594,11 @@ TextureImporter:
       Marco Rossi_97: -874436662
       Marco Rossi_98: 655402088
       Marco Rossi_99: -235794986
+      Marco Rossi_attack_0: 995642153
+      Marco Rossi_attack_1: -1195118248
+      Marco Rossi_attack_2: 1854428107
+      Marco Rossi_attack_3: -1300120429
+      Marco Rossi_attack_4: 1679836470
       Marco Rossi_idle_0: -1721620598
       Marco Rossi_idle_1: -1934447838
       Marco Rossi_idle_2: -998030105

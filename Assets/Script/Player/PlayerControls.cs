@@ -58,6 +58,8 @@ public class PlayerControls : MonoBehaviour
         animator.SetFloat("xVelocity",Math.Abs(movement.x));
         
     }
+
+    
     private void Move()
     {
         rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);

@@ -8,10 +8,12 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform bulletSpawnPoint;
 
     private PlayerController playerController;
+    private Animator animator;
 
     private void Awake()
     {
         playerController = new PlayerController();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -32,6 +34,7 @@ public class Pistol : MonoBehaviour
     public void Attack()
     {
         Debug.Log("Shooting");
+        animator.SetTrigger("Attack");
         GameObject newBullet = Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
        // newBullet.GetComponent<ProjectTile>().UpdateProjectTileRange(/*weaponInfo*/); 
     }
