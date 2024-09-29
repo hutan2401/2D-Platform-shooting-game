@@ -1475,7 +1475,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_65
+      name: bomb_0
       rect:
         serializedVersion: 2
         x: 2070
@@ -5559,7 +5559,6 @@ TextureImporter:
       Marco Rossi_62: 1868806659
       Marco Rossi_63: -1235441875
       Marco Rossi_64: -839906222
-      Marco Rossi_65: 56368674
       Marco Rossi_66: 1140039556
       Marco Rossi_67: -367074136
       Marco Rossi_68: 208547331
@@ -5620,6 +5619,7 @@ TextureImporter:
       Marco Rossi_run_5: 207731647
       Marco Rossi_run_6: 2087138304
       Marco Rossi_run_7: -904617265
+      bomb_0: 56368674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -153,6 +153,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1094216233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &220411988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220411989}
+  m_Layer: 0
+  m_Name: ThrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &220411989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220411988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.93, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1094216233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245779486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1462,7 @@ GameObject:
   - component: {fileID: 1094216229}
   - component: {fileID: 1094216234}
   - component: {fileID: 1094216235}
+  - component: {fileID: 1094216236}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1586,6 +1618,7 @@ Transform:
   m_Children:
   - {fileID: 144745132}
   - {fileID: 990369234}
+  - {fileID: 220411989}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1094216234
@@ -1623,6 +1656,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 512747475933251704, guid: b96f69369a4e03e45a0c111afeb8bcac, type: 3}
   bulletSpawnPoint: {fileID: 990369234}
+--- !u!114 &1094216236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094216228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b826685a12c9d4096db528ac63fa94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 6
+  transFormPointGrenade: {fileID: 220411989}
+  grenadePrefab: {fileID: 8817363779110134193, guid: 70d868d22babbcd429ae12fe165ae41a, type: 3}
 --- !u!1 &1342154226
 GameObject:
   m_ObjectHideFlags: 0

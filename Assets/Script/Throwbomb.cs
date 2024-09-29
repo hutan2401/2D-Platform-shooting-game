@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Throwbomb : MonoBehaviour
 {
-    [SerializeField] private float speedThrow = 4f;
-    
-    void Start()
+    [SerializeField] private float throwForce = 6f;
+    [SerializeField] private Transform transFormPointGrenade;
+    [SerializeField] private GameObject grenadePrefab;
+
+    private PlayerController playerController;
+
+    private void Awake()
     {
-        
+        playerController = new PlayerController();
+    }
+
+    private void Start()
+    {
+        playerController.Player.ThrowGrenade.performed += _ => ThrowGrenade();
     }
 
     // Update is called once per frame
@@ -17,9 +26,16 @@ public class Throwbomb : MonoBehaviour
         
     }
 
-    public void thrown()
+    private void OnEnable()
     {
+        playerController.Enable();
+    }
+
+    public void ThrowGrenade()
+    {
+        GameObject grenade = Instantiate(grenadePrefab, transform.position, transform.rotation);
+        Rigidbody2D rb =  grenade.GetComponent<Rigidbody2D>();
         var direction = transform.right + Vector3.up;
-        GetComponent<Rigidbody2D>().AddForce(direction *speedThrow,ForceMode2D.Impulse);
+        rb.AddForce(direction * throwForce, ForceMode2D.Impulse);
     }
 }
