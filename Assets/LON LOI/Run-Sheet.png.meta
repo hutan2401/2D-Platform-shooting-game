@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d9a2a94df9173408f3c2946236e45e
+guid: 14c3ad9d35dbede46803043bb80b3105
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -175,13 +175,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk-Base-Sheet_0
+      name: Run-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
+        y: 0
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3aa724f1127634288f813f2bc675f1
+      internalID: -1470505470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 52
         y: 0
         width: 41
-        height: 27
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069848070a5459149b651d3aa4dae369
-      internalID: 1166408303
+      spriteID: 379eda4e973bace4287fd9930db94668
+      internalID: -465260780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Base-Sheet_1
+      name: Run-Sheet_2
       rect:
         serializedVersion: 2
-        x: 49
+        x: 100
         y: 0
-        width: 42
-        height: 26
+        width: 40
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,41 +231,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd0fdb6f1d41ac4b87855e7530a4f83
-      internalID: -360809710
+      spriteID: 92facae89699ac94d81c142a1a2fa682
+      internalID: -248141204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Base-Sheet_2
+      name: Run-Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 148
         y: 0
-        width: 1
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 41
+        height: 29
+      alignment: 9
+      pivot: {x: 0.52596617, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3333e0c0a7668324591ea8be904e793c
-      internalID: 2104524261
+      spriteID: 88b64b466c2b1704aab25063f3800a79
+      internalID: 77479923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Base-Sheet_3
+      name: Run-Sheet_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 196
         y: 0
-        width: 43
-        height: 27
+        width: 41
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d0690159b3c6aa45b3adadeeb03995c
-      internalID: -1433929555
+      spriteID: aecbd5bdbf0e51341aa7f9ded89b7fb7
+      internalID: 1220966553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Base-Sheet_4
+      name: Run-Sheet_5
       rect:
         serializedVersion: 2
-        x: 145
+        x: 244
         y: 0
-        width: 42
-        height: 27
+        width: 40
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,50 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd2cd11ec06054741ac4f58ca21230a1
-      internalID: -1593367897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk-Base-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 0
-        width: 38
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a900266d7e468d544a1a2626a929790f
-      internalID: -481211765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk-Base-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 0
-        width: 38
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6015acca68a1e943aba9c144795f814
-      internalID: -1934530373
+      spriteID: 9371a86fee094474ebf857552bb30849
+      internalID: 252977999
       vertices: []
       indices: 
       edges: []
@@ -332,13 +311,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk-Base-Sheet_0: 1166408303
-      Walk-Base-Sheet_1: -360809710
-      Walk-Base-Sheet_2: 2104524261
-      Walk-Base-Sheet_3: -1433929555
-      Walk-Base-Sheet_4: -1593367897
-      Walk-Base-Sheet_5: -481211765
-      Walk-Base-Sheet_6: -1934530373
+      Run-Sheet_0: -1470505470
+      Run-Sheet_1: -465260780
+      Run-Sheet_2: -248141204
+      Run-Sheet_3: 77479923
+      Run-Sheet_4: 1220966553
+      Run-Sheet_5: 252977999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
