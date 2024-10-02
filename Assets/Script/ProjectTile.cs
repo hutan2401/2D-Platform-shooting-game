@@ -32,7 +32,10 @@ public class ProjectTile : MonoBehaviour
     {
         transform.Translate(Vector3.right *speed* Time.deltaTime);
     }
-
+    public void UpdateMoveSpeed(float speed)
+    {
+        this.speed = speed;
+    }
     private void DectectFireDistance()
     {
         if(Vector3.Distance(transform.position, startPostion) > projectTileRange)

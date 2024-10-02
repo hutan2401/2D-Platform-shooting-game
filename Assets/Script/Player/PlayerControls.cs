@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControls : MonoBehaviour
+public class PlayerControls : SingleTon<PlayerControls>
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpingPower = 15f;
@@ -19,8 +19,10 @@ public class PlayerControls : MonoBehaviour
     //private SpriteRenderer mySprite;
     private bool isFacing = true;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

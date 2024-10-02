@@ -47,6 +47,14 @@ public class EnemyPathFinding : MonoBehaviour
         moveDir = movingRight ? Vector2.right : Vector2.left;
         spriteRenderer.flipX = !spriteRenderer.flipX;
     }
+    public void MoveTo(Vector2 targetPosition)
+    {
+        moveDir = targetPosition;
+    }
+    public void StopMoving()
+    {
+        moveDir = Vector3.zero;
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
