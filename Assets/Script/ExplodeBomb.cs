@@ -6,7 +6,6 @@ public class ExplodeBomb : MonoBehaviour
 {
     [SerializeField] private float radius = 2f;
     [SerializeField] private int damageGrenade = 2;
-    private bool isGround = true;
 
     public void Explode()
     {

@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2
+  enemyHealth: 7
 --- !u!50 &559637362
 Rigidbody2D:
   serializedVersion: 4
@@ -1506,7 +1506,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!70 &559637363
 CapsuleCollider2D:
@@ -1604,7 +1604,7 @@ Transform:
   m_GameObject: {fileID: 559637360}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.33, y: -0.86, z: 0}
+  m_LocalPosition: {x: 5.5, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 2.1965, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1902,6 +1902,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  crouchPercentofHeihgt: 0.5
 --- !u!70 &1094216230
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2097,6 +2098,7 @@ GameObject:
   - component: {fileID: 1237337482}
   - component: {fileID: 1237337481}
   - component: {fileID: 1237337480}
+  - component: {fileID: 1237337485}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -2249,7 +2251,7 @@ Transform:
   m_GameObject: {fileID: 1237337479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.63, y: -0.8, z: 0}
+  m_LocalPosition: {x: -10.1, y: 0.93, z: 0}
   m_LocalScale: {x: 1, y: 2.2934, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2258,6 +2260,19 @@ Transform:
   - {fileID: 577613321}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237337485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237337479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
 --- !u!1 &1342154226
 GameObject:
   m_ObjectHideFlags: 0

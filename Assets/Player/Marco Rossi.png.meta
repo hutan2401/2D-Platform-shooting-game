@@ -2420,13 +2420,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_110
+      name: Marco Rossi_crouch_0
       rect:
         serializedVersion: 2
         x: 1802
-        y: 412
+        y: 406
         width: 208
-        height: 288
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2436,27 +2436,6 @@ TextureImporter:
       bones: []
       spriteID: 0323f6b9e8d7e24488a1256d6dd4ee74
       internalID: 428741440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marco Rossi_111
-      rect:
-        serializedVersion: 2
-        x: 2086
-        y: 654
-        width: 30
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4faf61662c2129648ab65e468409c801
-      internalID: 167419718
       vertices: []
       indices: 
       edges: []
@@ -2693,13 +2672,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_123
+      name: Marco Rossi_crouch_1
       rect:
         serializedVersion: 2
         x: 2014
         y: 406
         width: 206
-        height: 248
+        height: 268
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2714,7 +2693,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_124
+      name: Marco Rossi_crouch_2
       rect:
         serializedVersion: 2
         x: 2234
@@ -2735,7 +2714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_125
+      name: Marco Rossi_crouch_3
       rect:
         serializedVersion: 2
         x: 2458
@@ -3890,14 +3869,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marco Rossi_180
+      name: Marco Rossi_crouch_5
       rect:
         serializedVersion: 2
         x: 1782
-        y: 208
+        y: 188
         width: 234
-        height: 172
-      alignment: 0
+        height: 199
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -5382,7 +5361,6 @@ TextureImporter:
       Marco Rossi_108: -432963708
       Marco Rossi_109: -1072921300
       Marco Rossi_11: -1353316644
-      Marco Rossi_110: 428741440
       Marco Rossi_111: 167419718
       Marco Rossi_112: -784959397
       Marco Rossi_113: 1235780494
@@ -5395,9 +5373,6 @@ TextureImporter:
       Marco Rossi_120: -1384281787
       Marco Rossi_121: 504908460
       Marco Rossi_122: 916411744
-      Marco Rossi_123: 1965868688
-      Marco Rossi_124: 309822830
-      Marco Rossi_125: 1542753710
       Marco Rossi_126: -1158928593
       Marco Rossi_127: -980294071
       Marco Rossi_128: 402569762
@@ -5454,7 +5429,6 @@ TextureImporter:
       Marco Rossi_178: 433192546
       Marco Rossi_179: 346980220
       Marco Rossi_18: -434812630
-      Marco Rossi_180: -1451256740
       Marco Rossi_181: 1464778786
       Marco Rossi_182: 1800067644
       Marco Rossi_183: 1023822934
@@ -5598,6 +5572,11 @@ TextureImporter:
       Marco Rossi_attack_2: 1854428107
       Marco Rossi_attack_3: -1300120429
       Marco Rossi_attack_4: 1679836470
+      Marco Rossi_crouch_0: 428741440
+      Marco Rossi_crouch_1: 1965868688
+      Marco Rossi_crouch_2: 309822830
+      Marco Rossi_crouch_3: 1542753710
+      Marco Rossi_crouch_5: -1451256740
       Marco Rossi_idle_0: -1721620598
       Marco Rossi_idle_1: -1934447838
       Marco Rossi_idle_2: -998030105

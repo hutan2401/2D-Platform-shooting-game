@@ -22,7 +22,6 @@ public class JumpingAIEnemy : MonoBehaviour
 
     [Header("Other Settings")]
     private Rigidbody2D rb;
-    private float minFlipDistance = 0.5f;
 
     private void Start()
     {
@@ -40,6 +39,7 @@ public class JumpingAIEnemy : MonoBehaviour
         if (isPlayerDetected && isGrounded)
         {
             JumpTowardsPlayer();
+            //FlipTowardPlayer();
         }
         else
         {
@@ -80,13 +80,6 @@ public class JumpingAIEnemy : MonoBehaviour
     private void JumpTowardsPlayer()
     {
         float directionToPlayer = player.position.x - transform.position.x;
-
-        //// Flip towards player before jumping
-        //if (Mathf.Abs(directionToPlayer) > minFlipDistance)
-        //{
-        //    FlipTowardPlayer();
-        //}
-
         // Jump towards the player
         rb.AddForce(new Vector2(Mathf.Sign(directionToPlayer) , jumpForce), ForceMode2D.Impulse);
     }

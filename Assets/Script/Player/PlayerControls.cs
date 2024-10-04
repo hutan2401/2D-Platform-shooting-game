@@ -18,6 +18,14 @@ public class PlayerControls : SingleTon<PlayerControls>
     private Animator animator;
     //private SpriteRenderer mySprite;
     private bool isFacing = true;
+    //crouch
+    private bool isCrouch;
+    public float crouchPercentofHeihgt = 0.5f;
+    private Vector2 standColliderSize;
+    private Vector2 standColliderOffset;
+    private Vector2 crouchColliderSize;
+    private Vector2 crouchColliderOffset;
+    private CapsuleCollider2D playerCollider;
 
     protected override void Awake()
     {
@@ -26,15 +34,23 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        playerCollider = GetComponent<CapsuleCollider2D>();
+        standColliderSize = playerCollider.size;
+        standColliderOffset = playerCollider.offset;
+        crouchColliderSize = new Vector2(standColliderSize.x, standColliderSize.y *crouchPercentofHeihgt);
+        crouchColliderOffset = new Vector2(standColliderOffset.x, standColliderOffset.y * crouchPercentofHeihgt);
     }
 
     private void Start()
     {
         playerController.Player.Jump.performed += _ => Jump();
+        
     }
     private void Update()
     {
         PlayerInput();
+        
     }
 
     private void FixedUpdate()
@@ -47,7 +63,8 @@ public class PlayerControls : SingleTon<PlayerControls>
     private void OnEnable()
     {
         playerController.Enable();
-
+        playerController.Player.Crouching.started += _ => Crouch();
+        playerController.Player.Crouching.canceled += _ => StandUp();
     }
     private void OnDisable()
     {
@@ -74,6 +91,21 @@ public class PlayerControls : SingleTon<PlayerControls>
             animator.SetFloat("yVelocity", movement.y);
         }
     }
+    private void Crouch()
+    {
+       isCrouch = true;
+        playerCollider.size = crouchColliderSize;
+        playerCollider.offset = crouchColliderOffset;
+        animator.SetBool("isCrouch", isCrouch);
+    }
+    private void StandUp()
+    {
+        isCrouch = false;
+        playerCollider.size = standColliderSize;
+        playerCollider.offset = standColliderOffset;
+        animator.SetBool("isCrouch", isCrouch);
+    }
+
     private bool CheckGrounded()
     {
         bool isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
