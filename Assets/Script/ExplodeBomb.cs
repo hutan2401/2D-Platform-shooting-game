@@ -6,6 +6,8 @@ public class ExplodeBomb : MonoBehaviour
 {
     [SerializeField] private float radius = 2f;
     [SerializeField] private int damageGrenade = 2;
+    [SerializeField] private GameObject explode;
+    
 
     public void Explode()
     {
@@ -27,7 +29,7 @@ public class ExplodeBomb : MonoBehaviour
 
                     // Apply damage to the enemy
                     Debug.Log(totalDamage);
-                    enemy.TakeDamage(totalDamage);
+                    enemy.TakeDamage(totalDamage);      
                 }
             }
             Destroy(gameObject); 
@@ -37,8 +39,10 @@ public class ExplodeBomb : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
+            Instantiate(explode,transform.position,Quaternion.identity);
             Explode();
         }
+
     }
 
     private void OnDrawGizmos()

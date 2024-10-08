@@ -19,11 +19,14 @@ public class Pistol : MonoBehaviour
     private void Start()
     {
         playerController.Player.Fire.performed += _ => Attack();
+
     }
 
     private void OnEnable()
     {
         playerController.Enable();
+        playerController.Player.changeRotation.performed += _ => ChangeRotate(90);
+        playerController.Player.changeRotation.canceled += _ => ChangeRotate(180);
     }
 
     private void OnDisable()
@@ -39,5 +42,9 @@ public class Pistol : MonoBehaviour
        // newBullet.GetComponent<ProjectTile>().UpdateProjectTileRange(/*weaponInfo*/); 
     }
    
-
+    public void ChangeRotate(float angle)
+    {
+     
+            bulletSpawnPoint.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
 }

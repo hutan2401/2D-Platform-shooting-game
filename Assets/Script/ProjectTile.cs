@@ -7,6 +7,7 @@ public class ProjectTile : MonoBehaviour
     [SerializeField] private float speed = 22f;
     [SerializeField] private float projectTileRange = 10f;
     [SerializeField] private int damage = 1;
+    [SerializeField] private bool isEnemyProjectile = false;
     //[SerializeField] private GameObject particleOnHitPrefabVFX;
     //[SerializeField] private bool isEnemyProjecttile = false;
 
@@ -44,14 +45,25 @@ public class ProjectTile : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(collision.name);
-        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
-        if (!collision.isTrigger && enemy )
+        EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+        //Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
+        PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
+
+        if (!other.isTrigger && (enemyHealth || player))
         {
-            enemy.TakeDamage(damage);
+            if ((player && isEnemyProjectile) || (enemyHealth && !isEnemyProjectile))
+            {
+                player?.TakeDamage(1, transform);
+                //Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
+            //else if (!other.isTrigger && indestructible)
+            //{
+            //    Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+            //    Destroy(gameObject);
+            //}
         }
-        Destroy(gameObject);
     }
 }

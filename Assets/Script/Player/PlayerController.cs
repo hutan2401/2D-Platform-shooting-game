@@ -80,6 +80,15 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""changeRotation"",
+                    ""type"": ""Button"",
+                    ""id"": ""dd7e2f58-cfd8-4f89-930d-e797b4fc0dae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -333,6 +342,17 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Crouching"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""687dd21a-eb98-45b8-9578-0675df15a51d"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""changeRotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -926,6 +946,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_ThrowGrenade = m_Player.FindAction("ThrowGrenade", throwIfNotFound: true);
         m_Player_Crouching = m_Player.FindAction("Crouching", throwIfNotFound: true);
+        m_Player_changeRotation = m_Player.FindAction("changeRotation", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1005,6 +1026,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_ThrowGrenade;
     private readonly InputAction m_Player_Crouching;
+    private readonly InputAction m_Player_changeRotation;
     public struct PlayerActions
     {
         private @PlayerController m_Wrapper;
@@ -1015,6 +1037,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @ThrowGrenade => m_Wrapper.m_Player_ThrowGrenade;
         public InputAction @Crouching => m_Wrapper.m_Player_Crouching;
+        public InputAction @changeRotation => m_Wrapper.m_Player_changeRotation;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1042,6 +1065,9 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
             @Crouching.started += instance.OnCrouching;
             @Crouching.performed += instance.OnCrouching;
             @Crouching.canceled += instance.OnCrouching;
+            @changeRotation.started += instance.OnChangeRotation;
+            @changeRotation.performed += instance.OnChangeRotation;
+            @changeRotation.canceled += instance.OnChangeRotation;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1064,6 +1090,9 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
             @Crouching.started -= instance.OnCrouching;
             @Crouching.performed -= instance.OnCrouching;
             @Crouching.canceled -= instance.OnCrouching;
+            @changeRotation.started -= instance.OnChangeRotation;
+            @changeRotation.performed -= instance.OnChangeRotation;
+            @changeRotation.canceled -= instance.OnChangeRotation;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1252,6 +1281,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnThrowGrenade(InputAction.CallbackContext context);
         void OnCrouching(InputAction.CallbackContext context);
+        void OnChangeRotation(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

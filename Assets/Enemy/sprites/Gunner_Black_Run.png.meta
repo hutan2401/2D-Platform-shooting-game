@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gunner_Black_Run_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5042028, y: 0.4008579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2ab2e97205bda46bd25b96e2edb439
+      internalID: 110661046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Black_Run_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 8
+        width: 40
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5294195, y: 0.41152057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254c54c9b6b94254dabb8f3ecc4ef970
+      internalID: 552098604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Black_Run_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 8
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5084053, y: 0.3491316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1ba24e82e0efd43802f038415cbe73
+      internalID: 235183872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Black_Run_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 8
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5084057, y: 0.39654732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc83540bd00da545aa984ce9cf8d6ea
+      internalID: 2054027544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Black_Run_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 8
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5043108, y: 0.3922369}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a9e875c7205cc429467b1c57af53c2
+      internalID: -1934750906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Black_Run_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 8
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51293164, y: 0.3749947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788cd8756f2badd4aafad35a67f483d1
+      internalID: -2119005327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gunner_Black_Run_0: 110661046
+      Gunner_Black_Run_1: 552098604
+      Gunner_Black_Run_2: -815998489
+      Gunner_Black_Run_3: 235183872
+      Gunner_Black_Run_4: 2054027544
+      Gunner_Black_Run_5: -1934750906
+      Gunner_Black_Run_6: 169407648
+      Gunner_Black_Run_7: -2119005327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

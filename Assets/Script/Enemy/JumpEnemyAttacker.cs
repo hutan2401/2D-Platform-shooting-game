@@ -7,17 +7,20 @@ public class JumpingAIEnemy : MonoBehaviour
     [Header("Patrol Settings")]
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private Transform groundCheckPoint;
+    [SerializeField] private Transform wallCheckPoint;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float circleRadius = 0.2f;
-    [SerializeField] private Transform wallCheckPoint;
     private float moveDirection = 1;
     private bool isFacingRight = true;
-    private bool isGrounded;
+    private bool checkingGround;
 
     [Header("Jump Attack Settings")]
     [SerializeField] private float jumpForce = 7f;
     [SerializeField] private Transform player;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector2 boxSize;
     [SerializeField] private float detectionRange = 5f;
+    private bool isGrounded;
     private bool isPlayerDetected;
 
     [Header("Other Settings")]
@@ -30,8 +33,8 @@ public class JumpingAIEnemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Check if the enemy is grounded
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
+        checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius,groundLayer);  
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, boxSize,0, groundLayer);
 
         // Detect player within range
         DetectPlayer();
@@ -39,12 +42,12 @@ public class JumpingAIEnemy : MonoBehaviour
         if (isPlayerDetected && isGrounded)
         {
             JumpTowardsPlayer();
-            //FlipTowardPlayer();
+            FlipTowardPlayer();
         }
-        else
-        {
-            Patrol();
-        }
+        //else
+        //{
+        //    Patrol();
+        //}
     }
 
     // Detect the player within a certain range
@@ -67,7 +70,7 @@ public class JumpingAIEnemy : MonoBehaviour
         bool hittingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
 
         // Flip direction if hitting a wall or reaching the edge
-        if (!isGrounded || hittingWall)
+        if (!checkingGround || hittingWall)
         {
             Flip();
         }
@@ -81,7 +84,10 @@ public class JumpingAIEnemy : MonoBehaviour
     {
         float directionToPlayer = player.position.x - transform.position.x;
         // Jump towards the player
-        rb.AddForce(new Vector2(Mathf.Sign(directionToPlayer) , jumpForce), ForceMode2D.Impulse);
+        if (isGrounded)
+        {
+            rb.AddForce(new Vector2(Mathf.Sign(directionToPlayer), jumpForce), ForceMode2D.Impulse);
+        }
     }
 
     // Flip the enemy to change its direction
@@ -90,19 +96,18 @@ public class JumpingAIEnemy : MonoBehaviour
         moveDirection *= -1;
         isFacingRight = !isFacingRight;
 
-        // Rotate the sprite by 180 degrees on the y-axis to face the opposite direction
         transform.Rotate(0f, 180f, 0f);
     }
     private void FlipTowardPlayer()
     {
-        float playerPosition = player.position.x - transform.position.x;
+        //float playerPosition = player.position.x - transform.position.x;
 
         // Only flip when the enemy is facing the wrong direction and is grounded
-        if (playerPosition > 0 && isFacingRight )
+        if (this.transform.position.x > player.position.x && isFacingRight )
         {
             Flip();
         }
-        else if (playerPosition < 0 && !isFacingRight)
+        else if (this.transform.position.x < player.position.x && !isFacingRight)
         {
             Flip();
         }

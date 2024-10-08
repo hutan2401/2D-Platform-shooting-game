@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EnemyPathFinding : MonoBehaviour
 {
@@ -15,27 +16,27 @@ public class EnemyPathFinding : MonoBehaviour
     public bool isGround;
     private bool movingRight = true;
     private SpriteRenderer spriteRenderer;
-
+    private Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
     private void Start()
     {
         moveDir = Vector2.right;
     }
 
-    // Update is called once per frame
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveDir * (enemySpeed * Time.fixedDeltaTime));
+        //rb.MovePosition(rb.position + moveDir * (enemySpeed * Time.fixedDeltaTime));
+        rb.velocity = new Vector2(enemySpeed *moveDir.x , rb.velocity.y);
         isGround = Physics2D.OverlapCircle(groundCheck.transform.position,circleRadius,groundLayer);
         if(!isGround )
         {
             Flip();
         }
-     
     }
 
     private void Flip()
@@ -46,6 +47,10 @@ public class EnemyPathFinding : MonoBehaviour
 
         moveDir = movingRight ? Vector2.right : Vector2.left;
         spriteRenderer.flipX = !spriteRenderer.flipX;
+        //moveDir *= -1;
+        //movingRight = !movingRight;
+
+        //transform.Rotate(0f, 180f, 0f);
     }
     public void MoveTo(Vector2 targetPosition)
     {

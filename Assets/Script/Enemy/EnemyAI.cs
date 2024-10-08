@@ -102,6 +102,14 @@ public class EnemyAI : MonoBehaviour
     private Vector2 GetRoamingPositon()
     {
         timeRoaming = 0f;
-        return new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)).normalized;
+        float randomX = UnityEngine.Random.Range(-1f, 1f);  
+        float fixedYPosition = transform.position.y;
+        return new Vector2(transform.position.x + randomX, fixedYPosition).normalized;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8817363779110134193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.55283254, w: 0.8332923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.38647038, y: -0.011121906, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 67.123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8357706560670937842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   damageGrenade: 10
+  explode: {fileID: 2341868678020168412, guid: 40071d171b4f9fd44bcb9681cb5865d3, type: 3}
