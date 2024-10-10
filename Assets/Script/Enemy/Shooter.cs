@@ -22,13 +22,13 @@ public class Shooter : MonoBehaviour,IEnemy
     private bool isShooting = false;
     public void Attack()
     {
-        //if (!isShooting)
-        //{
-        //    StartCoroutine(ShootRoutine());
-        //}
-        Vector2 target = PlayerControls.Instance.transform.position - transform.position;
-        GameObject newB = Instantiate(bulletPrefab,transform.position,Quaternion.identity);
-        newB.transform.right = target;
+        if (!isShooting)
+        {
+            StartCoroutine(ShootRoutine());
+        }
+        //Vector2 target = PlayerControls.Instance.transform.position - transform.position;
+        //GameObject newB = Instantiate(bulletPrefab,transform.position,Quaternion.identity);
+        //newB.transform.right = target;
     }
     private IEnumerator ShootRoutine()
     {

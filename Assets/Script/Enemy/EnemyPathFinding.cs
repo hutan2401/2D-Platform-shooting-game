@@ -30,7 +30,7 @@ public class EnemyPathFinding : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb.MovePosition(rb.position + moveDir * (enemySpeed * Time.fixedDeltaTime));
+        
         rb.velocity = new Vector2(enemySpeed *moveDir.x , rb.velocity.y);
         isGround = Physics2D.OverlapCircle(groundCheck.transform.position,circleRadius,groundLayer);
         if(!isGround )
@@ -41,16 +41,11 @@ public class EnemyPathFinding : MonoBehaviour
 
     private void Flip()
     {
+        
+        moveDir *= -1;
         movingRight = !movingRight;
-        float rotationAngle = movingRight ? 0 : 180;
-        transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
 
-        moveDir = movingRight ? Vector2.right : Vector2.left;
-        spriteRenderer.flipX = !spriteRenderer.flipX;
-        //moveDir *= -1;
-        //movingRight = !movingRight;
-
-        //transform.Rotate(0f, 180f, 0f);
+        transform.Rotate(0f, 180f, 0f);
     }
     public void MoveTo(Vector2 targetPosition)
     {
@@ -65,5 +60,14 @@ public class EnemyPathFinding : MonoBehaviour
         Gizmos.color = Color.green;
        
         Gizmos.DrawWireSphere(groundCheck.transform.position,circleRadius);
+
+        //rb.MovePosition(rb.position + moveDir * (enemySpeed * Time.fixedDeltaTime));
+
+        //movingRight = !movingRight;
+        //float rotationAngle = movingRight ? 0 : 180;
+        //transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
+
+        //moveDir = movingRight ? Vector2.right : Vector2.left;
+        //spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 }

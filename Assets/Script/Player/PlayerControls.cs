@@ -21,11 +21,7 @@ public class PlayerControls : SingleTon<PlayerControls>
     //crouch
     private bool isCrouch;
     public float crouchPercentofHeihgt = 0.5f;
-    private Vector2 standColliderSize;
-    private Vector2 standColliderOffset;
-    private Vector2 crouchColliderSize;
-    private Vector2 crouchColliderOffset;
-    private CapsuleCollider2D playerCollider;
+    
 
     protected override void Awake()
     {
@@ -34,12 +30,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        playerCollider = GetComponent<CapsuleCollider2D>();
-        standColliderSize = playerCollider.size;
-        standColliderOffset = playerCollider.offset;
-        crouchColliderSize = new Vector2(standColliderSize.x, standColliderSize.y *crouchPercentofHeihgt);
-        crouchColliderOffset = new Vector2(standColliderOffset.x, standColliderOffset.y * crouchPercentofHeihgt);
+       
     }
 
     private void Start()
@@ -81,7 +72,16 @@ public class PlayerControls : SingleTon<PlayerControls>
     
     private void Move()
     {
-        rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
+        //rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
+        if (isCrouch)
+        {
+            rb.velocity = new Vector2(movement.x * moveSpeed * 0.5f, rb.velocity.y);
+            animator.SetFloat("crouchMoving", Mathf.Abs(rb.velocity.x));
+        }
+        else
+        {
+            rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y); 
+        }
     }
     private void Jump()
     {
@@ -93,16 +93,12 @@ public class PlayerControls : SingleTon<PlayerControls>
     }
     private void Crouch()
     {
-       isCrouch = true;
-        playerCollider.size = crouchColliderSize;
-        playerCollider.offset = crouchColliderOffset;
+        isCrouch = true;
         animator.SetBool("isCrouch", isCrouch);
     }
     private void StandUp()
     {
         isCrouch = false;
-        playerCollider.size = standColliderSize;
-        playerCollider.offset = standColliderOffset;
         animator.SetBool("isCrouch", isCrouch);
     }
 
