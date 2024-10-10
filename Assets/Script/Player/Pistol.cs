@@ -9,6 +9,7 @@ public class Pistol : MonoBehaviour
 
     private PlayerController playerController;
     private Animator animator;
+    private bool isLookUp;
 
     private void Awake()
     {
@@ -44,7 +45,6 @@ public class Pistol : MonoBehaviour
    
     public void ChangeRotate(float angle)
     {
-     
-            bulletSpawnPoint.rotation = Quaternion.Euler(0f, 0f, angle);
+        bulletSpawnPoint.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 }

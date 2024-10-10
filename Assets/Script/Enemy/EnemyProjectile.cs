@@ -7,7 +7,7 @@ public class EnemyProjectile : MonoBehaviour
    
     [SerializeField] private float speed = 22f;
     [SerializeField] private float projectTileRange = 10f;
-    [SerializeField] private bool isEnemyProjecttile = false;
+    //[SerializeField] private bool isEnemyProjecttile = false;
     [SerializeField] private int damage = 1;
 
 
@@ -47,13 +47,11 @@ public class EnemyProjectile : MonoBehaviour
         Debug.Log(collision.name);
         PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
         EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
-        if (!collision.isTrigger && (player || enemy))
+        if (!collision.isTrigger && player)
         {
-           if ((player && isEnemyProjecttile) || (enemy && !isEnemyProjecttile))
-            {
-                player?.TakeDamage(damage, transform);
-            }
+            player.TakeDamage(damage, transform);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+       
     }
 }

@@ -6,7 +6,7 @@ public class ExplodeBomb : MonoBehaviour
 {
     [SerializeField] private float radius = 2f;
     [SerializeField] private int damageGrenade = 2;
-    [SerializeField] private GameObject explode;
+    [SerializeField] private GameObject explodeEffect;
     
 
     public void Explode()
@@ -37,14 +37,13 @@ public class ExplodeBomb : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Ground"))
+        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy"))
         {
-            Instantiate(explode,transform.position,Quaternion.identity);
+            Instantiate(explodeEffect, transform.position,Quaternion.identity);
             Explode();
         }
 
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

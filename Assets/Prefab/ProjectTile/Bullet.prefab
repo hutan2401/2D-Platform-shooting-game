@@ -129,6 +129,7 @@ MonoBehaviour:
   speed: 22
   projectTileRange: 10
   damage: 2
+  isEnemyProjectile: 0
 --- !u!70 &9036030119593684324
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

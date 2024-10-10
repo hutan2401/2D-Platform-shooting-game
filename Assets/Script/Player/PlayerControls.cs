@@ -30,7 +30,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-       
+
     }
 
     private void Start()
@@ -117,5 +117,9 @@ public class PlayerControls : SingleTon<PlayerControls>
             transform.Rotate(0f, 180f, 0f);
         }
             
+    }
+    private void LookUPShooting()
+    {
+
     }
 }

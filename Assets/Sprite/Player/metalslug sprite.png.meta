@@ -1021,7 +1021,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_44
+      name: marco_lookup_6
       rect:
         serializedVersion: 2
         x: 207
@@ -2748,6 +2748,7 @@ TextureImporter:
       marco_idle_2: -1238979242
       marco_idle_3: 1830905850
       marco_jump_0: -546286329
+      marco_lookup_6: -153428218
       marco_run_0: -1798766541
       marco_run_1: -1017665160
       marco_run_10: -1607191439
@@ -2812,7 +2813,6 @@ TextureImporter:
       metalslug sprite_41: -631932815
       metalslug sprite_42: -1061274432
       metalslug sprite_43: 588723821
-      metalslug sprite_44: -153428218
       metalslug sprite_45: 1856456667
       metalslug sprite_46: 505165352
       metalslug sprite_47: 1072361462

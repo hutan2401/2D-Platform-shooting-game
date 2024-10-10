@@ -163,4 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   damageGrenade: 10
-  explode: {fileID: 2341868678020168412, guid: 40071d171b4f9fd44bcb9681cb5865d3, type: 3}
+  explodeEffect: {fileID: 2341868678020168412, guid: 40071d171b4f9fd44bcb9681cb5865d3, type: 3}
