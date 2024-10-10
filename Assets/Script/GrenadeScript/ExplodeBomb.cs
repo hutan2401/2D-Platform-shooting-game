@@ -7,8 +7,15 @@ public class ExplodeBomb : MonoBehaviour
     [SerializeField] private float radius = 2f;
     [SerializeField] private int damageGrenade = 2;
     [SerializeField] private GameObject explodeEffect;
-    
 
+    private void Start()
+    {
+        Collider2D playerCollider = GameObject.FindWithTag("Player").GetComponent<Collider2D>();
+        Collider2D bombCollider = GetComponent<Collider2D>();
+
+        // Ignore collision between the bomb and the player
+        Physics2D.IgnoreCollision(playerCollider, bombCollider);
+    }
     public void Explode()
     {
         if (radius > 0)
