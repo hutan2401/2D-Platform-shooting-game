@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,24 +11,19 @@ public class PlayerHealth : MonoBehaviour
 
     private int currentHealth;
     private bool canTakeDamage = true;
+    private Slider healthSlider;
 
     private void Start()
     {
         currentHealth = maxHealth;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        EnemyAI enemy = collision.gameObject.GetComponent<EnemyAI>();
-        if (enemy)
-        {
-            TakeDamage(1, collision.transform);
-        }
+        UpdateHealthSlider();
     }
     public void TakeDamage(int damageAmount, Transform hitTransform)
     {
@@ -38,9 +35,30 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damageAmount;
         Debug.Log("heal:" +currentHealth);
         StartCoroutine(DamageRecoveryRoutine());
-        //UpdateHealthSlider();
+        UpdateHealthSlider();
         //CheckIfPlayerDeath();
     }
+
+    private void UpdateHealthSlider()
+    {
+        if (healthSlider == null)
+        {
+            healthSlider = GameObject.Find("HealthBar").GetComponent<Slider>(); 
+        }
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = currentHealth;
+
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        EnemyAI enemy = collision.gameObject.GetComponent<EnemyAI>();
+        if (enemy)
+        {
+            TakeDamage(1, collision.transform);
+        }
+    }
+    
 
     private IEnumerator DamageRecoveryRoutine()
     {
