@@ -439,7 +439,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!19719996 &434344608
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -3553,7 +3553,7 @@ GameObject:
   - component: {fileID: 2110858529}
   - component: {fileID: 2110858528}
   m_Layer: 8
-  m_Name: Tilemap2
+  m_Name: PlatformOneWay
   m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
