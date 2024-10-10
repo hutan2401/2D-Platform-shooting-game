@@ -1732,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemyshootingtest2
       objectReference: {fileID: 0}
+    - target: {fileID: 1181700683106118442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6426537473981793117, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: bulletMoveSpeed
       value: 4
@@ -1832,6 +1836,14 @@ PrefabInstance:
     - target: {fileID: 5135781814469485594, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464862240912434898, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464862240912434898, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
