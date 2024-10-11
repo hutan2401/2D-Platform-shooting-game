@@ -109,7 +109,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         return isGround;
     }
 
-    private void FlipSprite()
+    public void FlipSprite()
     {
         if ((movement.x > 0 && !isFacing) || (movement.x < 0 && isFacing))
         {
@@ -118,8 +118,8 @@ public class PlayerControls : SingleTon<PlayerControls>
         }
             
     }
-    private void LookUPShooting()
+    public bool IsFacingRight()
     {
-
+        return isFacing; // Assuming 'isFacing' is true when the player is facing right.
     }
 }
