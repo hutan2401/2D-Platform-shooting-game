@@ -874,15 +874,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_37
+      name: player_lookup_0
       rect:
         serializedVersion: 2
         x: 15
         y: 707
         width: 22
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5268892, y: 0.2820708}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -895,36 +895,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_38
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 765
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2aebddb73c681648af84774c05df762
-      internalID: -330713350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: metalslug sprite_39
+      name: player_lookup_1
       rect:
         serializedVersion: 2
         x: 42
         y: 707
         width: 22
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 76
+      alignment: 9
+      pivot: {x: 0.51510966, y: 0.2946601}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -937,15 +916,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_40
+      name: player_lookup_2
       rect:
         serializedVersion: 2
         x: 78
         y: 706
         width: 23
         height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.525721, y: 0.3575971}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -958,15 +937,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_41
+      name: player_lookup_3
       rect:
         serializedVersion: 2
         x: 118
         y: 706
         width: 25
         height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.522478, y: 0.3936392}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -979,15 +958,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_42
+      name: player_lookup_4
       rect:
         serializedVersion: 2
         x: 148
         y: 706
         width: 25
         height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3802174}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1000,15 +979,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_43
+      name: player_lookup_5
       rect:
         serializedVersion: 2
         x: 178
         y: 706
         width: 24
         height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46149826, y: 0.3991954}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1021,15 +1000,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: marco_lookup_6
+      name: player_lookup_6
       rect:
         serializedVersion: 2
         x: 207
         y: 706
         width: 26
         height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4822294, y: 0.38021624}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2748,7 +2727,6 @@ TextureImporter:
       marco_idle_2: -1238979242
       marco_idle_3: 1830905850
       marco_jump_0: -546286329
-      marco_lookup_6: -153428218
       marco_run_0: -1798766541
       marco_run_1: -1017665160
       marco_run_10: -1607191439
@@ -2806,13 +2784,7 @@ TextureImporter:
       metalslug sprite_25: 1907926552
       metalslug sprite_26: -1704129177
       metalslug sprite_27: 337285722
-      metalslug sprite_37: 494380889
       metalslug sprite_38: -330713350
-      metalslug sprite_39: 1505985539
-      metalslug sprite_40: -498784706
-      metalslug sprite_41: -631932815
-      metalslug sprite_42: -1061274432
-      metalslug sprite_43: 588723821
       metalslug sprite_45: 1856456667
       metalslug sprite_46: 505165352
       metalslug sprite_47: 1072361462
@@ -2857,6 +2829,13 @@ TextureImporter:
       metalslug sprite_97: 1095211598
       metalslug sprite_98: 1985247329
       metalslug sprite_99: 1451757990
+      player_lookup_0: 494380889
+      player_lookup_1: 1505985539
+      player_lookup_2: -498784706
+      player_lookup_3: -631932815
+      player_lookup_4: -1061274432
+      player_lookup_5: 588723821
+      player_lookup_6: -153428218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

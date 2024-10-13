@@ -2,21 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : SingleTon<PlayerHealth>
 {
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float damageRecoveryTime = 1f;
 
     private int currentHealth;
     private bool canTakeDamage = true;
+    //private bool isDead;
     private Slider healthSlider;
-
+    public bool isDead { get; private set; }
     private void Start()
     {
         currentHealth = maxHealth;
-
+        isDead = false;
 
     }
 
@@ -24,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         UpdateHealthSlider();
+        CheckIfPlayerDeath();
     }
     public void TakeDamage(int damageAmount, Transform hitTransform)
     {
@@ -39,6 +42,23 @@ public class PlayerHealth : MonoBehaviour
         //CheckIfPlayerDeath();
     }
 
+    private void CheckIfPlayerDeath()
+    {
+        if(currentHealth <= 0)
+        {
+            isDead = true;
+            currentHealth = 0;            
+
+            GetComponent<Animator>().SetTrigger("isDead");
+            StartCoroutine(DeathLoadSceneRoutine());
+        }
+    }
+    private IEnumerator DeathLoadSceneRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
+        SceneManager.LoadScene("testScene");
+    }
     private void UpdateHealthSlider()
     {
         if (healthSlider == null)

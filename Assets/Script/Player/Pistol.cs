@@ -48,10 +48,11 @@ public class Pistol : MonoBehaviour
         {
             bulletSpawnPoint.position = headPosition.position;
             bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 90);
+            animator.SetTrigger("ShootingUp");
         }
         else
         {
-            if (playerControls.IsFacingRight()) // Check the facing direction from PlayerControls
+            if (playerControls.IsFacingRight()) 
             {
                 bulletSpawnPoint.position = defaultPosition.position;
                 bulletSpawnPoint.rotation = Quaternion.identity;               

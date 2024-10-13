@@ -72,11 +72,12 @@ public class PlayerControls : SingleTon<PlayerControls>
     
     private void Move()
     {
+        if(PlayerHealth.Instance.isDead) return;
         //rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
         if (isCrouch)
         {
             rb.velocity = new Vector2(movement.x * moveSpeed * 0.5f, rb.velocity.y);
-            animator.SetFloat("crouchMoving", Mathf.Abs(rb.velocity.x));
+            //animator.SetFloat("crouchMoving", Mathf.Abs(rb.velocity.x));
         }
         else
         {
