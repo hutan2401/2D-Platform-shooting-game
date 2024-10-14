@@ -8,6 +8,7 @@ public class Destructible : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<ProjectTile>())
         {
+            GetComponent<LootBag>().DropItems(transform.position);
             Destroy(gameObject);
         }
     }

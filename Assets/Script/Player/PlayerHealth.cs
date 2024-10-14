@@ -57,7 +57,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
     {
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
-        SceneManager.LoadScene("testScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     private void UpdateHealthSlider()
     {
