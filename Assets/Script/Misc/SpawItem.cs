@@ -7,15 +7,15 @@ public class SpawItem : MonoBehaviour
     [SerializeField] private GameObject itemScore, healthGlobe;
     public void DropItems()
     {
-        int randomNum = Random.Range(1, 5);
+        int randomNum = Random.Range(1, 2);
 
-        if (randomNum == 1)
+        if (randomNum == 2)
         {
             Instantiate(healthGlobe, transform.position, Quaternion.identity);
         }
 
 
-        if (randomNum == 3)
+        if (randomNum == 1)
         {
             Instantiate(itemScore, transform.position, Quaternion.identity);
             //int randomAmountOfGold = Random.Range(1, 4);
