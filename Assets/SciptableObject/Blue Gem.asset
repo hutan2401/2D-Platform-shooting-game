@@ -15,3 +15,6 @@ MonoBehaviour:
   loopSprite: {fileID: -1123310702, guid: 443f99c2097efb149a62dc5c61bdf4cd, type: 3}
   lootName: bluegem
   dropChance: 100
+  pickUpType: 0
+  score: 10
+  healpoint: 0

@@ -41,6 +41,14 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         UpdateHealthSlider();
         //CheckIfPlayerDeath();
     }
+    public void HealPlayer()
+    {
+        if (currentHealth < maxHealth)
+        {
+            currentHealth += 1;
+            UpdateHealthSlider();
+        }
+    }
 
     private void CheckIfPlayerDeath()
     {
