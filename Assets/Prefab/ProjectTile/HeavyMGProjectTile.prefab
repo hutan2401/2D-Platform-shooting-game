@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2359491099893089730}
   - component: {fileID: 9079140128690010684}
   m_Layer: 0
-  m_Name: 32x16_FX_4
+  m_Name: HeavyMGProjectTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2a718ed13ae46a4baac169a5be4f8b9, type: 3}
-  m_Color: {r: 0.06914194, g: 0.31534144, b: 0.93962264, a: 1}
+  m_Sprite: {fileID: 1473151143, guid: 21b8f8aab3692f141a4c73ca2092fb98, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

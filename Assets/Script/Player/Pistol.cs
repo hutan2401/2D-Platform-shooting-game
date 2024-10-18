@@ -12,6 +12,9 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform defaultPosition;
 
     private BulletType currentBulletType;
+    private int currentAmmo;
+
+
     private PlayerControls playerControls;
     private PlayerController playerController;
     private Animator animator;
@@ -28,6 +31,7 @@ public class Pistol : MonoBehaviour
         playerControls = PlayerControls.Instance;
 
         currentBulletType = defaultBulletType;
+        currentAmmo = currentBulletType.isUnlimited ? int.MaxValue : currentBulletType.maxAmmo;
 
         playerController.Player.Fire.performed += _ => Attack();
         playerController.Player.changeRotation.performed += _=> SetLookUp(true);
@@ -70,21 +74,37 @@ public class Pistol : MonoBehaviour
         GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
         bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("AmmoBox"))
+        if(!currentBulletType.isUnlimited)
         {
-            // Assume AmmoBox has a reference to a BulletType
-            BulletType newBulletType = collision.gameObject.GetComponent<AmmoBox>().GetBulletType();
-            SwitchBullet(newBulletType);
-            Destroy(collision.gameObject); // Destroy the ammo box after pickup
+            currentAmmo--;
+            {
+                if (currentAmmo <= 0)
+                {
+                    SwitchToDefaultWeapon();
+                }
+            }
         }
     }
+    private void SwitchToDefaultWeapon()
+    {
+        currentBulletType = defaultBulletType;
+        currentAmmo = int.MaxValue;
+    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("AmmoBox"))
+    //    {
+    //        // Assume AmmoBox has a reference to a BulletType
+    //        BulletType newBulletType = collision.gameObject.GetComponent<AmmoBox>().GetBulletType();
+    //        SwitchBullet(newBulletType);
+    //        Destroy(collision.gameObject); // Destroy the ammo box after pickup
+    //    }
+    //}
 
-    private void SwitchBullet(BulletType newBulletType)
+    public void SwitchWeapon(BulletType newBulletType)
     {
         currentBulletType = newBulletType;
+        currentAmmo = currentBulletType.isUnlimited ? int.MaxValue : currentBulletType.maxAmmo;
         Debug.Log("Switched to new bullet type: " + currentBulletType.name);
     }
     private void SetLookUp(bool lookUp)
@@ -92,7 +112,4 @@ public class Pistol : MonoBehaviour
         isLookUp = lookUp;
     }
 
-    //newBullet.transform.parent = bulletPrefab.transform;
-    //newBullet.GetComponent<WeaponPickUp>().(/*weaponInfo*/); 
-    //if(hit the box change bullet)
 }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: HeavyMG
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7543976731989496016, guid: 2d7e2180cd4fa0847a43b97a402a7074, type: 3}
-  speed: 2
-  damage: 1
+  speed: 12
+  damage: 3
   projectTileRange: 12
-  icon: {fileID: 589247525, guid: 8b7e151a3512ec24585111f3b254adc5, type: 3}
+  isUnlimited: 0
+  maxAmmo: 10

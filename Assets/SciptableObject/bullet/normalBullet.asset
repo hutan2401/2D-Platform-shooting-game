@@ -16,4 +16,5 @@ MonoBehaviour:
   speed: 22
   damage: 1
   projectTileRange: 12
-  icon: {fileID: 0}
+  isUnlimited: 1
+  maxAmmo: 0

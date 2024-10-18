@@ -1733,7 +1733,7 @@ GameObject:
   - component: {fileID: 1722224223}
   - component: {fileID: 1722224226}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Box HeavyMG
   m_TagString: AmmoBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1775,7 +1775,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.3125, y: 1.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1825,7 +1825,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 589247525, guid: 8b7e151a3512ec24585111f3b254adc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1872,6 +1872,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 964764953894066442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
+      propertyPath: enemyHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1181700683106118442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_Name
       value: Enemyshootingtest2
@@ -1882,11 +1886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.79
+      value: 6.71
       objectReference: {fileID: 0}
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.55
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalPosition.z

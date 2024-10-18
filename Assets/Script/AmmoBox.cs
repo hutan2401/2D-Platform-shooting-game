@@ -6,11 +6,23 @@ public class AmmoBox : MonoBehaviour
 {
     [SerializeField] private BulletType bulletType;
 
-    public BulletType GetBulletType()
-    {
-        return bulletType;
-    }
+    //public BulletType GetBulletType()
+    //{
+    //    return bulletType;
+    //}
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Pistol pistol = collision.gameObject.GetComponent<Pistol>();
+            if (pistol != null)
+            {
+                pistol.SwitchWeapon(bulletType);
+                Destroy(gameObject);  // Ammo box disappears after pickup
+            }
+        }
+    }
     /* public int weaponIndex; // Index of the weapon to switch to
 
     void OnTriggerEnter(Collider other)

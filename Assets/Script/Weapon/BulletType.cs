@@ -9,5 +9,6 @@ public class BulletType : ScriptableObject
     public float speed; // Speed of the bullet
     public int damage; // Damage value of the bullet
     public int projectTileRange;
-    public Sprite icon; // Icon for the bullet type (if you want to show it on UI)
+    public bool isUnlimited;
+    public int maxAmmo;
 }
