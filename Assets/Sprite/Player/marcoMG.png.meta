@@ -1,0 +1,1393 @@
+fileFormatVersion: 2
+guid: 26e331450a5183146a522cb6a0bec4e7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marcoMG_crouch_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 465
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.50362515, y: 0.7787323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53277212b48e244398752b2d51b45f3
+      internalID: -1459819702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouch_01
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 465
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7911186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2954586eaf77b50479220d5a9e717e44
+      internalID: -848030094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouch_02
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 465
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49999982, y: 0.8035062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159670330f98a8043ab151571f73bd3b
+      internalID: -1089369773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouch_03
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 465
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49274835, y: 0.8035062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4920bc918d6c0469c13687a2786469
+      internalID: -1939442098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4885418, y: 0.7805748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4675f1fb291d4864caa810094e993c46
+      internalID: 1982111262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_01
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7805761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f619f3c0150e94dab9965aacea6480
+      internalID: -1290110646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_02
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7805761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9b885bef55a5c4ea7c342e074c4be9
+      internalID: -885449552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_03
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.50763905, y: 0.7871005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3a10c7bd82bd4488b845c633002bf9
+      internalID: 397125581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_04
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7871005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2d02549e215c34982610319fdf8b23
+      internalID: 1679982406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_05
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7936249}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a163d481f377564a9732119b9575a0e
+      internalID: 1298925101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchMove_06
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 436
+        width: 41
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7871005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0240b6299ecf98040818ad7b59cbe886
+      internalID: 1607720740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_crouchshooting_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 402
+        width: 67
+        height: 28
+      alignment: 9
+      pivot: {x: 0.1810035, y: 0.5000011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b330802be089dfa4bb8b0328764110f0
+      internalID: -1029889879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 402
+        width: 67
+        height: 26
+      alignment: 9
+      pivot: {x: 0.1558698, y: 0.5301631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e071da5e7ff4d684589f4c3ce4c370d1
+      internalID: -306411034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 402
+        width: 67
+        height: 26
+      alignment: 9
+      pivot: {x: 0.1582109, y: 0.52413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4e602ed466bd142996a33bb1b538a8
+      internalID: 531393806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 402
+        width: 67
+        height: 26
+      alignment: 9
+      pivot: {x: 0.1634148, y: 0.5000023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23258e2b777a040419580560eee613fa
+      internalID: 1682358726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 366
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfd48af51bcd8649b9de3279a0ee065
+      internalID: -1725666784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 366
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ff313723e863b4fa3b4cd452f1f09b
+      internalID: 1974420928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 366
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f5bf955e5bff94f9636f12a1eb70c2
+      internalID: 1080840388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_20
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 366
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00dc06634a30f74f9d77191373bf850
+      internalID: 1080312495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 366
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274f9f54ceaae2145b32ae9d2cc7dc27
+      internalID: 77695197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_22
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 366
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bbd61e9e214564093cf7dc442519e4
+      internalID: -1834374233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_23
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 366
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fa6b45b2e2085478c6c5c982c4b4f6
+      internalID: -901967989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_24
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 366
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2c40302ab41a14eae3267389e5c4d4
+      internalID: 1201152415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 366
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0293225c81fe4fa4f93d373b7ef9bbf0
+      internalID: -816116100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_26
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 366
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634acb005356ed43b9f1a2e7d60e2be
+      internalID: 96171608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 328
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d19a8affda6e244be5dcbb2622c7ff
+      internalID: -1346959600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 328
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218e244c4f5aad844a6dafe51ebf2685
+      internalID: -566006437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_29
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 328
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9790e7864430b4090cd29699e44f19
+      internalID: 822378757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_30
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 328
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e76e34b019ebd45839a6b87536ffdc
+      internalID: -957549786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_31
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 328
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97412dc86f5ea1447a38587ab41f2549
+      internalID: 607913115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_32
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 328
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c30548e101d9643adcb7a630c36fb3
+      internalID: 1069237508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_33
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 296
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2da893908b14204ab6c2c559c747260
+      internalID: -2134108212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 296
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb77cc24cc9607f4a9f471b1869ce5ce
+      internalID: -1884092806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_35
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 296
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3f32d76eb033841a7c7b7d35ee8503
+      internalID: 51866748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 261
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920026b62b993b64c94ac59b4acd74f9
+      internalID: -1405173601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_37
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 261
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec33ad37478efcd43bc16e5dfb4df213
+      internalID: -2002689110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_38
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 261
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d74b64c4d859a4ba2544406ffb8795
+      internalID: -1801926726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_39
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 261
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881f86faedf3288439bf8ea6ff7da1e1
+      internalID: -669758922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_40
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 261
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbcf05241787a24799017a33a96c142
+      internalID: 1204115013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_41
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 261
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5647db0e85be8743a652708770b5892
+      internalID: 1627110719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_42
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 229
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbfffcb4e3ae9942b1991be35d72267
+      internalID: -1595546951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 229
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb93725d2c8b5784d9e541743275dba2
+      internalID: -795036468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_44
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 229
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2216d49c171b686498eae4ba619c6f7d
+      internalID: 1665993112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 229
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f708ff1dc867e9442844e29692e4dab9
+      internalID: 1954643732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUp_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 164
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19cceac1e911e144ba5074a711577e6
+      internalID: -1462018834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUp_01
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 164
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cc635e4ef3f49408cea1cc69d2a0b4
+      internalID: 1450560263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUp_02
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 164
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e37dbed433a8e847acaae5215834394
+      internalID: 1903538415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUp_03
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 164
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0d690a34b4af340b6dabd0824c1d88
+      internalID: 731601099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUpShoot_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 52
+        width: 23
+        height: 84
+      alignment: 9
+      pivot: {x: 0.45563564, y: 0.2206108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edb49f51142bd5419bbb4efbc338884
+      internalID: -626913784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUpShoot_01
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 22
+        height: 86
+      alignment: 9
+      pivot: {x: 0.46907946, y: 0.238973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff555831281ece40a6b01c8d2395cfe
+      internalID: 1484448107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUpShoot_02
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 52
+        width: 22
+        height: 84
+      alignment: 9
+      pivot: {x: 0.48453972, y: 0.2287092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa209ec2d14f9384eb0ac5fe3af441f8
+      internalID: 1724387338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_lookUpShoot_03
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 52
+        width: 24
+        height: 87
+      alignment: 9
+      pivot: {x: 0.4433117, y: 0.1911497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493e363440320c14eb41fc3d48f0b215
+      internalID: 1485117090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_55
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 52
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14180ef6b968ee408b9ca5deb6b614d
+      internalID: 1643251854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_56
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 52
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006b975dfc988af4cabb3233ba1fd924
+      internalID: -1810486328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_57
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 52
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8c065311755a1488f4d82ef37966a3
+      internalID: -768859061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_58
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 51
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3a29497c1010d46890b35c5d40ab47
+      internalID: 1079547101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_59
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 51
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f077a0ab8a4b0546b32f261b3a744fc
+      internalID: 1533057243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_60
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 51
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96b4ac7772326b4ea1e0574d2f6bb45
+      internalID: -1866931794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      marcoMG_12: -306411034
+      marcoMG_13: -676982748
+      marcoMG_14: 531393806
+      marcoMG_15: 1682358726
+      marcoMG_16: 1963236214
+      marcoMG_17: -1725666784
+      marcoMG_18: 1974420928
+      marcoMG_19: 1080840388
+      marcoMG_20: 1080312495
+      marcoMG_21: 77695197
+      marcoMG_22: -1834374233
+      marcoMG_23: -901967989
+      marcoMG_24: 1201152415
+      marcoMG_25: -816116100
+      marcoMG_26: 96171608
+      marcoMG_27: -1346959600
+      marcoMG_28: -566006437
+      marcoMG_29: 822378757
+      marcoMG_30: -957549786
+      marcoMG_31: 607913115
+      marcoMG_32: 1069237508
+      marcoMG_33: -2134108212
+      marcoMG_34: -1884092806
+      marcoMG_35: 51866748
+      marcoMG_36: -1405173601
+      marcoMG_37: -2002689110
+      marcoMG_38: -1801926726
+      marcoMG_39: -669758922
+      marcoMG_40: 1204115013
+      marcoMG_41: 1627110719
+      marcoMG_42: -1595546951
+      marcoMG_43: -795036468
+      marcoMG_44: 1665993112
+      marcoMG_45: 1954643732
+      marcoMG_53: -7445431
+      marcoMG_55: 1643251854
+      marcoMG_56: -1810486328
+      marcoMG_57: -768859061
+      marcoMG_58: 1079547101
+      marcoMG_59: 1533057243
+      marcoMG_60: -1866931794
+      marcoMG_crouchMove_0: 1982111262
+      marcoMG_crouchMove_01: -1290110646
+      marcoMG_crouchMove_02: -885449552
+      marcoMG_crouchMove_03: 397125581
+      marcoMG_crouchMove_04: 1679982406
+      marcoMG_crouchMove_05: 1298925101
+      marcoMG_crouchMove_06: 1607720740
+      marcoMG_crouch_0: -1459819702
+      marcoMG_crouch_01: -848030094
+      marcoMG_crouch_02: -1089369773
+      marcoMG_crouch_03: -1939442098
+      marcoMG_crouchshooting_0: -1029889879
+      marcoMG_lookUpShoot_0: -626913784
+      marcoMG_lookUpShoot_01: 1484448107
+      marcoMG_lookUpShoot_02: 1724387338
+      marcoMG_lookUpShoot_03: 1485117090
+      marcoMG_lookUp_0: -1462018834
+      marcoMG_lookUp_01: 1450560263
+      marcoMG_lookUp_02: 1903538415
+      marcoMG_lookUp_03: 731601099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

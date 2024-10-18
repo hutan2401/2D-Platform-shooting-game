@@ -21,7 +21,8 @@ public class PlayerControls : SingleTon<PlayerControls>
     //crouch
     private bool isCrouch;
     public float crouchPercentofHeihgt = 0.5f;
-    
+
+    private int currentLayer;
 
     protected override void Awake()
     {
@@ -49,6 +50,10 @@ public class PlayerControls : SingleTon<PlayerControls>
         Move();
         FlipSprite();
         CheckGrounded();
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            ChangeLayer();
+        }
     }
 
     private void OnEnable()
@@ -123,4 +128,21 @@ public class PlayerControls : SingleTon<PlayerControls>
     {
         return isFacing; // Assuming 'isFacing' is true when the player is facing right.
     }
+
+    public void ChangeLayer()
+    {
+        if (currentLayer == 0)
+        {
+            currentLayer += 1;
+            animator.SetLayerWeight(currentLayer - 1, 0);
+            animator.SetLayerWeight(currentLayer, 1);   
+        }
+        else
+        {
+            currentLayer -= 1;
+            animator.SetLayerWeight(currentLayer + 1, 0);
+            animator.SetLayerWeight(currentLayer, 0);
+        }
+    }
+
 }

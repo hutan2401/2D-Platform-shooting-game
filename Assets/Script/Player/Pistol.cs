@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class Pistol : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletPrefab;
+    //[SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private BulletType defaultBulletType;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private Transform headPosition; 
     [SerializeField] private Transform defaultPosition;
 
+    private BulletType currentBulletType;
     private PlayerControls playerControls;
     private PlayerController playerController;
     private Animator animator;
@@ -24,6 +26,8 @@ public class Pistol : MonoBehaviour
     private void Start()
     {
         playerControls = PlayerControls.Instance;
+
+        currentBulletType = defaultBulletType;
 
         playerController.Player.Fire.performed += _ => Attack();
         playerController.Player.changeRotation.performed += _=> SetLookUp(true);
@@ -63,11 +67,32 @@ public class Pistol : MonoBehaviour
                 bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
             }
         }
-        GameObject newBullet = Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        // newBullet.GetComponent<ProjectTile>().UpdateProjectTileRange(/*weaponInfo*/); 
+        GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
+        bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("AmmoBox"))
+        {
+            // Assume AmmoBox has a reference to a BulletType
+            BulletType newBulletType = collision.gameObject.GetComponent<AmmoBox>().GetBulletType();
+            SwitchBullet(newBulletType);
+            Destroy(collision.gameObject); // Destroy the ammo box after pickup
+        }
+    }
+
+    private void SwitchBullet(BulletType newBulletType)
+    {
+        currentBulletType = newBulletType;
+        Debug.Log("Switched to new bullet type: " + currentBulletType.name);
     }
     private void SetLookUp(bool lookUp)
     {
         isLookUp = lookUp;
     }
+
+    //newBullet.transform.parent = bulletPrefab.transform;
+    //newBullet.GetComponent<WeaponPickUp>().(/*weaponInfo*/); 
+    //if(hit the box change bullet)
 }
