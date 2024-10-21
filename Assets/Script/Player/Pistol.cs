@@ -10,6 +10,7 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private Transform headPosition; 
     [SerializeField] private Transform defaultPosition;
+    [SerializeField] private Transform crouchPostion;
 
     private BulletType currentBulletType;
     private int currentAmmo;
@@ -19,6 +20,7 @@ public class Pistol : MonoBehaviour
     private PlayerController playerController;
     private Animator animator;
     private bool isLookUp;
+    private bool isCrouch;
 
     private void Awake()
     {
@@ -36,6 +38,9 @@ public class Pistol : MonoBehaviour
         playerController.Player.Fire.performed += _ => Attack();
         playerController.Player.changeRotation.performed += _=> SetLookUp(true);
         playerController.Player.changeRotation.canceled += _ => SetLookUp(false);
+
+        playerController.Player.Crouching.performed += _ => SetCrouchp(true);
+        playerController.Player.Crouching.canceled += _ => SetCrouchp(false);
     }
 
     private void OnEnable()
@@ -57,6 +62,22 @@ public class Pistol : MonoBehaviour
             bulletSpawnPoint.position = headPosition.position;
             bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 90);
             animator.SetTrigger("ShootingUp");
+        }
+        else if(isCrouch)
+        {
+            //bulletSpawnPoint.position = crouchPostion.position;
+            //bulletSpawnPoint.rotation = Quaternion.identity;
+            if (playerControls.IsFacingRight())
+            {
+                bulletSpawnPoint.position = crouchPostion.position;
+                bulletSpawnPoint.rotation = Quaternion.identity;
+            }
+            else
+            {
+                bulletSpawnPoint.position = crouchPostion.position;
+                bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
+            }
+            animator.SetTrigger("ShootingCrouch");
         }
         else
         {
@@ -81,8 +102,24 @@ public class Pistol : MonoBehaviour
                 if (currentAmmo <= 0)
                 {
                     SwitchToDefaultWeapon();
+                    ChangeLayer(1);
                 }
             }
+        }
+    }
+    public void ChangeLayer(int currentLayer)
+    {
+        if (currentLayer == 0)
+        {
+            currentLayer += 1;
+            animator.SetLayerWeight(currentLayer - 1, 0);
+            animator.SetLayerWeight(currentLayer, 1);
+        }
+        else
+        {
+            currentLayer -= 1;
+            animator.SetLayerWeight(currentLayer + 1, 0);
+            animator.SetLayerWeight(currentLayer, 0);
         }
     }
     private void SwitchToDefaultWeapon()
@@ -111,5 +148,8 @@ public class Pistol : MonoBehaviour
     {
         isLookUp = lookUp;
     }
-
+    private void SetCrouchp(bool crouch)
+    {
+        isCrouch = crouch;
+    }
 }

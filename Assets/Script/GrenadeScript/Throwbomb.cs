@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwbomb : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Throwbomb : MonoBehaviour
     [SerializeField] private Transform transFormPointGrenade;
     [SerializeField] private GameObject grenadePrefab;
     [SerializeField] private int maxGrenade = 10;
+    [SerializeField] private Text grenadeText;
     private int currentGrenade;
 
 
@@ -22,6 +24,7 @@ public class Throwbomb : MonoBehaviour
     private void Start()
     {
         currentGrenade = maxGrenade;
+        UpdateGrenadeUI();
         playerController.Player.ThrowGrenade.performed += _ => ThrowGrenade();
     }
 
@@ -46,6 +49,7 @@ public class Throwbomb : MonoBehaviour
             rb.AddForce(direction * throwForce, ForceMode2D.Impulse);
             currentGrenade--;
             Debug.Log("grenade: "+ currentGrenade);
+            UpdateGrenadeUI();
         }
     }
 
@@ -53,5 +57,14 @@ public class Throwbomb : MonoBehaviour
     {
         currentGrenade += 10;
         Debug.Log("Add" +currentGrenade);
+        UpdateGrenadeUI();
+    }
+
+    private void UpdateGrenadeUI()
+    {
+        if(grenadeText != null)
+        {
+            grenadeText.text = ":"+ currentGrenade;
+        }
     }
 }

@@ -336,7 +336,7 @@ TextureImporter:
         width: 67
         height: 28
       alignment: 9
-      pivot: {x: 0.1810035, y: 0.5000011}
+      pivot: {x: 0.2453715, y: 0.6951545}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: marcoMG_12
+      name: marcoMG_crouchshooting_01
       rect:
         serializedVersion: 2
         x: 87
@@ -357,7 +357,7 @@ TextureImporter:
         width: 67
         height: 26
       alignment: 9
-      pivot: {x: 0.1558698, y: 0.5301631}
+      pivot: {x: 0.2641417, y: 0.7471713}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: marcoMG_14
+      name: marcoMG_crouchshooting_02
       rect:
         serializedVersion: 2
         x: 159
@@ -378,7 +378,7 @@ TextureImporter:
         width: 67
         height: 26
       alignment: 9
-      pivot: {x: 0.1582109, y: 0.52413}
+      pivot: {x: 0.26648268, y: 0.7394726}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: marcoMG_15
+      name: marcoMG_crouchshooting_03
       rect:
         serializedVersion: 2
         x: 231
@@ -399,7 +399,7 @@ TextureImporter:
         width: 67
         height: 26
       alignment: 9
-      pivot: {x: 0.1634148, y: 0.5000023}
+      pivot: {x: 0.25679561, y: 0.7372941}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1113,7 +1113,7 @@ TextureImporter:
         width: 23
         height: 84
       alignment: 9
-      pivot: {x: 0.45563564, y: 0.2206108}
+      pivot: {x: 0.4556356, y: 0.2206108}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1134,7 +1134,7 @@ TextureImporter:
         width: 22
         height: 86
       alignment: 9
-      pivot: {x: 0.46907946, y: 0.238973}
+      pivot: {x: 0.4690795, y: 0.238973}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1155,7 +1155,7 @@ TextureImporter:
         width: 22
         height: 84
       alignment: 9
-      pivot: {x: 0.48453972, y: 0.2287092}
+      pivot: {x: 0.4845397, y: 0.2287092}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1325,10 +1325,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      marcoMG_12: -306411034
       marcoMG_13: -676982748
-      marcoMG_14: 531393806
-      marcoMG_15: 1682358726
       marcoMG_16: 1963236214
       marcoMG_17: -1725666784
       marcoMG_18: 1974420928
@@ -1378,6 +1375,9 @@ TextureImporter:
       marcoMG_crouch_02: -1089369773
       marcoMG_crouch_03: -1939442098
       marcoMG_crouchshooting_0: -1029889879
+      marcoMG_crouchshooting_01: -306411034
+      marcoMG_crouchshooting_02: 531393806
+      marcoMG_crouchshooting_03: 1682358726
       marcoMG_lookUpShoot_0: -626913784
       marcoMG_lookUpShoot_01: 1484448107
       marcoMG_lookUpShoot_02: 1724387338

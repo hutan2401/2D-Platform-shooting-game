@@ -18,6 +18,7 @@ public class AmmoBox : MonoBehaviour
             Pistol pistol = collision.gameObject.GetComponent<Pistol>();
             if (pistol != null)
             {
+                pistol.ChangeLayer(0);
                 pistol.SwitchWeapon(bulletType);
                 Destroy(gameObject);  // Ammo box disappears after pickup
             }

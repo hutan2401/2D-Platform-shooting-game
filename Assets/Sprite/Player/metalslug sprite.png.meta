@@ -1630,15 +1630,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_74
+      name: marco_crouchShooting_0
       rect:
         serializedVersion: 2
         x: 2
         y: 365
         width: 50
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.268289, y: 0.7656341}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1651,15 +1651,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_75
+      name: marco_crouchShooting_01
       rect:
         serializedVersion: 2
         x: 57
         y: 365
         width: 51
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.2722823, y: 0.7800858}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1672,15 +1672,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_76
+      name: marco_crouchShooting_02
       rect:
         serializedVersion: 2
         x: 113
         y: 365
-        width: 37
+        width: 53
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.27587, y: 0.788321}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1693,36 +1693,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_77
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 379
-        width: 13
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41180361beafde9458b412308a1cd049
-      internalID: 1683019846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: metalslug sprite_78
+      name: marco_crouchShooting_03
       rect:
         serializedVersion: 2
         x: 170
         y: 365
         width: 37
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.404746, y: 0.78349584}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1735,15 +1714,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_79
+      name: marco_crouchShooting_04
       rect:
         serializedVersion: 2
         x: 213
         y: 365
         width: 37
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3859055, y: 0.6963143}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1756,15 +1735,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_80
+      name: marco_crouchShooting_05
       rect:
         serializedVersion: 2
         x: 255
         y: 365
         width: 37
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3796453, y: 0.72180283}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1777,15 +1756,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_81
+      name: marco_crouchShooting_06
       rect:
         serializedVersion: 2
         x: 297
         y: 365
         width: 37
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.37721625, y: 0.7991322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1805,8 +1784,8 @@ TextureImporter:
         y: 365
         width: 34
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3849452, y: 0.7827747}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1819,15 +1798,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_83
+      name: marco_crouchShooting_07
       rect:
         serializedVersion: 2
         x: 378
         y: 365
         width: 33
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4196944, y: 0.8131533}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1840,15 +1819,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_84
+      name: marco_crouchShooting_08
       rect:
         serializedVersion: 2
         x: 416
         y: 365
         width: 32
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4435663, y: 0.8075997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2723,6 +2702,15 @@ TextureImporter:
       marco_crouchMoving_4: -1612227771
       marco_crouchMoving_5: -546528101
       marco_crouchMoving_6: -851912343
+      marco_crouchShooting_0: -541906256
+      marco_crouchShooting_01: -1770475781
+      marco_crouchShooting_02: -1156850765
+      marco_crouchShooting_03: 1258385329
+      marco_crouchShooting_04: -285921258
+      marco_crouchShooting_05: -595397862
+      marco_crouchShooting_06: 323249911
+      marco_crouchShooting_07: 1333997860
+      marco_crouchShooting_08: -446052072
       marco_crouch_0: -217221512
       marco_crouch_1: 521751292
       marco_crouch_2: -1834063673
@@ -2792,17 +2780,8 @@ TextureImporter:
       metalslug sprite_60: -1367042095
       metalslug sprite_61: -1904491829
       metalslug sprite_62: 304462406
-      metalslug sprite_74: -541906256
-      metalslug sprite_75: -1770475781
-      metalslug sprite_76: -1156850765
       metalslug sprite_77: 1683019846
-      metalslug sprite_78: 1258385329
-      metalslug sprite_79: -285921258
-      metalslug sprite_80: -595397862
-      metalslug sprite_81: 323249911
       metalslug sprite_82: -1000055097
-      metalslug sprite_83: 1333997860
-      metalslug sprite_84: -446052072
       metalslug sprite_85: 1664472085
       metalslug sprite_86: 1314573467
       metalslug sprite_87: 781288136

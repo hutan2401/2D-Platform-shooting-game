@@ -24,6 +24,8 @@ public class PlayerControls : SingleTon<PlayerControls>
 
     private int currentLayer;
 
+    //private Pistol pistol;
+
     protected override void Awake()
     {
         base.Awake();
@@ -31,7 +33,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        //pistol = GetComponent<Pistol>();
     }
 
     private void Start()
@@ -50,10 +52,10 @@ public class PlayerControls : SingleTon<PlayerControls>
         Move();
         FlipSprite();
         CheckGrounded();
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            ChangeLayer();
-        }
+        //if(Input.GetKeyDown(KeyCode.C))
+        //{
+        //    ChangeLayer();
+        //}
     }
 
     private void OnEnable()
