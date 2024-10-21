@@ -10,6 +10,12 @@ public class ProjectTile : MonoBehaviour
 
     private Vector3 startPostion;
 
+    public void Initialize(float bulletSpeed, float bulletRange, int bulletDamage)
+    {
+        speed = bulletSpeed;
+        projectTileRange = bulletRange;
+        damage = bulletDamage;
+    }
     void Start()
     {
         startPostion = transform.position;

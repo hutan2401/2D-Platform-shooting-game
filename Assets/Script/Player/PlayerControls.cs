@@ -21,7 +21,10 @@ public class PlayerControls : SingleTon<PlayerControls>
     //crouch
     private bool isCrouch;
     public float crouchPercentofHeihgt = 0.5f;
-    
+
+    private int currentLayer;
+
+    //private Pistol pistol;
 
     protected override void Awake()
     {
@@ -30,7 +33,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        //pistol = GetComponent<Pistol>();
     }
 
     private void Start()
@@ -49,6 +52,10 @@ public class PlayerControls : SingleTon<PlayerControls>
         Move();
         FlipSprite();
         CheckGrounded();
+        //if(Input.GetKeyDown(KeyCode.C))
+        //{
+        //    ChangeLayer();
+        //}
     }
 
     private void OnEnable()
@@ -72,11 +79,12 @@ public class PlayerControls : SingleTon<PlayerControls>
     
     private void Move()
     {
+        if(PlayerHealth.Instance.isDead) return;
         //rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
         if (isCrouch)
         {
             rb.velocity = new Vector2(movement.x * moveSpeed * 0.5f, rb.velocity.y);
-            animator.SetFloat("crouchMoving", Mathf.Abs(rb.velocity.x));
+            //animator.SetFloat("crouchMoving", Mathf.Abs(rb.velocity.x));
         }
         else
         {
@@ -109,7 +117,7 @@ public class PlayerControls : SingleTon<PlayerControls>
         return isGround;
     }
 
-    private void FlipSprite()
+    public void FlipSprite()
     {
         if ((movement.x > 0 && !isFacing) || (movement.x < 0 && isFacing))
         {
@@ -118,8 +126,25 @@ public class PlayerControls : SingleTon<PlayerControls>
         }
             
     }
-    private void LookUPShooting()
+    public bool IsFacingRight()
     {
-
+        return isFacing; // Assuming 'isFacing' is true when the player is facing right.
     }
+
+    public void ChangeLayer()
+    {
+        if (currentLayer == 0)
+        {
+            currentLayer += 1;
+            animator.SetLayerWeight(currentLayer - 1, 0);
+            animator.SetLayerWeight(currentLayer, 1);   
+        }
+        else
+        {
+            currentLayer -= 1;
+            animator.SetLayerWeight(currentLayer + 1, 0);
+            animator.SetLayerWeight(currentLayer, 0);
+        }
+    }
+
 }
