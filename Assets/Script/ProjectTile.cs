@@ -7,6 +7,11 @@ public class ProjectTile : MonoBehaviour
     [SerializeField] private float speed = 22f;
     [SerializeField] private float projectTileRange = 10f;
     [SerializeField] private int damage = 1;
+    [SerializeField] private GameObject particleOnHitPrefabVFX;
+
+    [SerializeField] private bool isCanExplode = false; // New boolean to check if projectile can explode
+    [SerializeField] private float explosionRadius = 2f;
+    //[SerializeField] private int explosionDamage = 2;
 
     private Vector3 startPostion;
 
@@ -51,11 +56,68 @@ public class ProjectTile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-
-        if (!other.isTrigger && enemyHealth )
+        Destructible destruct = other.gameObject.GetComponent<Destructible>();
+        if (!other.isTrigger && enemyHealth)
         {
-            enemyHealth.TakeDamage(damage);
+            if(isCanExplode)
+            {
+                Explode();
+            }
+            else
+            {
+                enemyHealth.TakeDamage(damage);
+                if (particleOnHitPrefabVFX != null)
+                {
+                    Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
+            }           
+        }
+        else if (other.isTrigger && destruct)
+        {
+            if (particleOnHitPrefabVFX != null)
+            {
+                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+            }
+            Destroy(gameObject) ;
+        }
+    }
+
+    private void Explode()
+    {
+        if (explosionRadius > 0)
+        {
+            var hitColliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+
+            foreach (var hitCollider in hitColliders)
+            {
+                var enemy = hitCollider.GetComponent<EnemyHealth>();
+                if (enemy != null)
+                {
+                    var closestPoint = hitCollider.ClosestPoint(transform.position);
+                    var distance = Vector3.Distance(closestPoint, transform.position);
+                    var damagePercent = Mathf.InverseLerp(explosionRadius, 0, distance);
+                    var totalDamage = (int)(damagePercent + damage);
+
+                    Debug.Log("Damage:" + totalDamage);
+                    enemy.TakeDamage(totalDamage);
+                }
+            }
+
+            if (particleOnHitPrefabVFX != null)
+            {
+                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+            }
+
             Destroy(gameObject);
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        if (isCanExplode)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, explosionRadius);
         }
     }
 }
