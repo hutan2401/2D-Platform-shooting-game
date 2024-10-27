@@ -6,7 +6,9 @@ public class DestroyAmmoBox : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<ProjectTile>())
+        ProjectTile projectTile = collision.gameObject.GetComponent<ProjectTile>();
+        ExplodeBomb grenade = collision.gameObject.GetComponent<ExplodeBomb>();
+        if (projectTile || grenade)
         {
             GetComponent<DropAmmo>().DropAmmoBox();
             Destroy(gameObject);

@@ -11,7 +11,8 @@ public class ProjectTile : MonoBehaviour
 
     [SerializeField] private bool isCanExplode = false; // New boolean to check if projectile can explode
     [SerializeField] private float explosionRadius = 2f;
-    //[SerializeField] private int explosionDamage = 2;
+
+    private AudioHitSound hitSound;
 
     private Vector3 startPostion;
 
@@ -21,9 +22,14 @@ public class ProjectTile : MonoBehaviour
         projectTileRange = bulletRange;
         damage = bulletDamage;
     }
+    private void Awake()
+    {
+        hitSound =GameObject.FindGameObjectWithTag("Audio"). GetComponent<AudioHitSound>();
+    }
     void Start()
     {
         startPostion = transform.position;
+
     }
 
     // Update is called once per frame
@@ -57,14 +63,17 @@ public class ProjectTile : MonoBehaviour
     {
         EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
         Destructible destruct = other.gameObject.GetComponent<Destructible>();
+        DestroyAmmoBox destroyBox = other.gameObject.GetComponent<DestroyAmmoBox>();
         if (!other.isTrigger && enemyHealth)
         {
+
             if(isCanExplode)
             {
                 Explode();
             }
             else
             {
+                hitSound.PlaySFX(hitSound.hitSoundSFX);
                 enemyHealth.TakeDamage(damage);
                 if (particleOnHitPrefabVFX != null)
                 {
@@ -73,8 +82,9 @@ public class ProjectTile : MonoBehaviour
                 Destroy(gameObject);
             }           
         }
-        else if (other.isTrigger && destruct)
+        else if (other.isTrigger && (destruct|| destroyBox))
         {
+            //AudioManager.Instance.PlayImpactSound(bulletTypeName);
             if (particleOnHitPrefabVFX != null)
             {
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);

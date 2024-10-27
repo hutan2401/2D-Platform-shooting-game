@@ -207,7 +207,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 59157d6392079ac44aa11ae8ba73daef, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -324,6 +324,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 2294354028476201858}
   headPosition: {fileID: 5744399216450991221}
   defaultPosition: {fileID: 304062268706490649}
+  crouchPostion: {fileID: 4266472622874076722}
 --- !u!114 &9053804356246894010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 8157563886243649183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.86, y: -0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

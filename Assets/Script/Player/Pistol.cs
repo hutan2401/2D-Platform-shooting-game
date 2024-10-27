@@ -22,6 +22,7 @@ public class Pistol : MonoBehaviour
     private bool isLookUp;
     private bool isCrouch;
 
+
     private void Awake()
     {
         playerController = new PlayerController();
@@ -65,8 +66,6 @@ public class Pistol : MonoBehaviour
         }
         else if(isCrouch)
         {
-            //bulletSpawnPoint.position = crouchPostion.position;
-            //bulletSpawnPoint.rotation = Quaternion.identity;
             if (playerControls.IsFacingRight())
             {
                 bulletSpawnPoint.position = crouchPostion.position;
@@ -92,6 +91,7 @@ public class Pistol : MonoBehaviour
                 bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
             }
         }
+        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
         GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
         bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
@@ -127,17 +127,6 @@ public class Pistol : MonoBehaviour
         currentBulletType = defaultBulletType;
         currentAmmo = int.MaxValue;
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("AmmoBox"))
-    //    {
-    //        // Assume AmmoBox has a reference to a BulletType
-    //        BulletType newBulletType = collision.gameObject.GetComponent<AmmoBox>().GetBulletType();
-    //        SwitchBullet(newBulletType);
-    //        Destroy(collision.gameObject); // Destroy the ammo box after pickup
-    //    }
-    //}
-
     public void SwitchWeapon(BulletType newBulletType)
     {
         currentBulletType = newBulletType;

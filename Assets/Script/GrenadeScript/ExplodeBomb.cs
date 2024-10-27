@@ -44,12 +44,12 @@ public class ExplodeBomb : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy"))
+        Destructible destruct = collision.gameObject.GetComponent<Destructible>();
+        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy") || destruct)
         {
             Instantiate(explodeEffect, transform.position,Quaternion.identity);
             Explode();
         }
-
     }
     private void OnDrawGizmos()
     {
