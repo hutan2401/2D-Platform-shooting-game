@@ -6,6 +6,7 @@ public class AudioHitSound : MonoBehaviour
 {
     public AudioSource SFXSource;
     public AudioClip hitSoundSFX;
+    public AudioClip hitSoundRocketSFX;
 
     public void PlaySFX(AudioClip clip)
     {

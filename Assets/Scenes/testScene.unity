@@ -1575,6 +1575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SFXSource: {fileID: 921150489}
   hitSoundSFX: {fileID: 8300000, guid: b9f256d4ca106ee4fbf930f455b0aeeb, type: 3}
+  hitSoundRocketSFX: {fileID: 8300000, guid: 5422e1ca6416f6548ad01ea75b87dea6, type: 3}
 --- !u!4 &921150491
 Transform:
   m_ObjectHideFlags: 0
@@ -2118,17 +2119,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 964764953894066442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
-      propertyPath: enemyHealth
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 1181700683106118442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_Name
       value: Enemyshootingtest2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6426537473981793117, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
-      propertyPath: bulletMoveSpeed
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2169,10 +2162,6 @@ PrefabInstance:
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9034768682526697168, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
-      propertyPath: attackRange
-      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2230,6 +2219,10 @@ PrefabInstance:
     - target: {fileID: 5135781814469485594, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688631525010970236, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: damageAmount
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9053804356246894010, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: grenadeText
@@ -2479,12 +2472,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2494359569491167128, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0314064
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494359569491167128, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88249856
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494359569491167128, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.39
+      value: -0.2426
       objectReference: {fileID: 0}
     - target: {fileID: 2494359569491167128, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.99
+      value: -1.1488
       objectReference: {fileID: 0}
     - target: {fileID: 2494359569491167128, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
       propertyPath: m_LocalPosition.z

@@ -70,6 +70,7 @@ public class ProjectTile : MonoBehaviour
             if(isCanExplode)
             {
                 Explode();
+                hitSound.PlaySFX(hitSound.hitSoundRocketSFX);
             }
             else
             {
@@ -88,6 +89,14 @@ public class ProjectTile : MonoBehaviour
             if (particleOnHitPrefabVFX != null)
             {
                 Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+            }
+            if (isCanExplode)
+            {
+                hitSound.PlaySFX(hitSound.hitSoundRocketSFX);
+            }
+            else
+            {
+                hitSound.PlaySFX(hitSound.hitSoundSFX);
             }
             Destroy(gameObject) ;
         }

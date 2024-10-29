@@ -12,6 +12,10 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform defaultPosition;
     [SerializeField] private Transform crouchPostion;
 
+    public Transform damageCollider; // Collider for melee attack
+    public int damageAmount = 10;     // Damage for the melee attack
+    public float distance = 1.5f;    // Melee attack range
+
     private BulletType currentBulletType;
     private int currentAmmo;
 
@@ -56,55 +60,12 @@ public class Pistol : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("Shooting");
-        animator.SetTrigger("Attack");
-        if (isLookUp)
+        if (EnemyInMeleeRange())
         {
-            bulletSpawnPoint.position = headPosition.position;
-            bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 90);
-            animator.SetTrigger("ShootingUp");
-        }
-        else if(isCrouch)
+            TriggerMeleeAttack();
+        }else
         {
-            if (playerControls.IsFacingRight())
-            {
-                bulletSpawnPoint.position = crouchPostion.position;
-                bulletSpawnPoint.rotation = Quaternion.identity;
-            }
-            else
-            {
-                bulletSpawnPoint.position = crouchPostion.position;
-                bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
-            }
-            animator.SetTrigger("ShootingCrouch");
-        }
-        else
-        {
-            if (playerControls.IsFacingRight()) 
-            {
-                bulletSpawnPoint.position = defaultPosition.position;
-                bulletSpawnPoint.rotation = Quaternion.identity;               
-            }
-            else
-            {
-                bulletSpawnPoint.position = defaultPosition.position;
-                bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
-            }
-        }
-        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
-        GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
-        bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
-        if(!currentBulletType.isUnlimited)
-        {
-            currentAmmo--;
-            {
-                if (currentAmmo <= 0)
-                {
-                    SwitchToDefaultWeapon();
-                    ChangeLayer(1);
-                }
-            }
+            TriggerRangedAttack();
         }
     }
     public void ChangeLayer(int currentLayer)
@@ -140,5 +101,83 @@ public class Pistol : MonoBehaviour
     private void SetCrouchp(bool crouch)
     {
         isCrouch = crouch;
+    }
+    private bool EnemyInMeleeRange()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(damageCollider.position, distance);
+        foreach (var enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy")) 
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    private void TriggerMeleeAttack()
+    {
+        animator.SetTrigger("MeleeAttack"); // Trigger knife animation
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(damageCollider.position, distance);
+        foreach (var enemy in hitEnemies)
+        {
+            var enemyHealth = enemy.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damageAmount);
+            }
+        }
+    }
+    private void TriggerRangedAttack()
+    {
+        Debug.Log("Shooting");
+        animator.SetTrigger("Attack");
+        if (isLookUp)
+        {
+            bulletSpawnPoint.position = headPosition.position;
+            bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 90);
+            animator.SetTrigger("ShootingUp");
+        }
+        else if (isCrouch)
+        {
+            if (playerControls.IsFacingRight())
+            {
+                bulletSpawnPoint.position = crouchPostion.position;
+                bulletSpawnPoint.rotation = Quaternion.identity;
+            }
+            else
+            {
+                bulletSpawnPoint.position = crouchPostion.position;
+                bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
+            }
+            animator.SetTrigger("ShootingCrouch");
+        }
+        else
+        {
+            if (playerControls.IsFacingRight())
+            {
+                bulletSpawnPoint.position = defaultPosition.position;
+                bulletSpawnPoint.rotation = Quaternion.identity;
+            }
+            else
+            {
+                bulletSpawnPoint.position = defaultPosition.position;
+                bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
+            }
+        }
+        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
+        GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
+        bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+        if (!currentBulletType.isUnlimited)
+        {
+            currentAmmo--;
+            {
+                if (currentAmmo <= 0)
+                {
+                    SwitchToDefaultWeapon();
+                    ChangeLayer(1);
+                }
+            }
+        }
     }
 }
