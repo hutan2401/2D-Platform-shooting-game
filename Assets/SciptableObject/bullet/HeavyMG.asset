@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b4765aaff2dd7488d19bd28b24ade9, type: 3}
   m_Name: HeavyMG
   m_EditorClassIdentifier: 
+  bulletTypeName: MachineGun
   bulletPrefab: {fileID: 7543976731989496016, guid: 2d7e2180cd4fa0847a43b97a402a7074, type: 3}
   speed: 25
   damage: 3

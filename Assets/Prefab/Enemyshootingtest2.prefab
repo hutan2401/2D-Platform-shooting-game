@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 8856654560619312270}
   m_Layer: 0
   m_Name: Enemyshootingtest2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 7
+  enemyHealth: 6
 --- !u!114 &3890609570146924616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
-  attackRange: 8.93
+  attackRange: 12
   enemyType: {fileID: 6426537473981793117}
   attackCooldown: 2
   stopMovingWhileAttacking: 1
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5102683372699214267, guid: 678bd70a77c863547823371a49aead55, type: 3}
-  bulletMoveSpeed: 1
+  bulletMoveSpeed: 4
   burstCount: 2
   timeBetweenBursts: 1
   restTime: 0.5

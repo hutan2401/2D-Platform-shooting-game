@@ -102,6 +102,9 @@ MonoBehaviour:
   speed: 22
   projectTileRange: 10
   damage: 1
+  particleOnHitPrefabVFX: {fileID: 4932042523241954632, guid: 0539354d09b12c34d972fde5b1524970, type: 3}
+  isCanExplode: 0
+  explosionRadius: 2
 --- !u!70 &2359491099893089730
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -129,7 +129,7 @@ MonoBehaviour:
   speed: 22
   projectTileRange: 10
   damage: 2
-  isEnemyProjectile: 0
+  particleOnHitPrefabVFX: {fileID: 4932042523241954632, guid: 0539354d09b12c34d972fde5b1524970, type: 3}
 --- !u!70 &9036030119593684324
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
