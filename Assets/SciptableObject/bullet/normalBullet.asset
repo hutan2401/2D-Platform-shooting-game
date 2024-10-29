@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b4765aaff2dd7488d19bd28b24ade9, type: 3}
   m_Name: normalBullet
   m_EditorClassIdentifier: 
+  bulletTypeName: Pistol
   bulletPrefab: {fileID: 512747475933251704, guid: b96f69369a4e03e45a0c111afeb8bcac, type: 3}
   speed: 22
   damage: 1

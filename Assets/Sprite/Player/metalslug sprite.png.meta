@@ -1147,7 +1147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_51
+      name: player_melee_0
       rect:
         serializedVersion: 2
         x: 5
@@ -1168,7 +1168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_52
+      name: player_melee_01
       rect:
         serializedVersion: 2
         x: 38
@@ -1189,7 +1189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_53
+      name: player_melee_02
       rect:
         serializedVersion: 2
         x: 72
@@ -1210,7 +1210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_54
+      name: player_melee_03
       rect:
         serializedVersion: 2
         x: 128
@@ -1231,7 +1231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_55
+      name: player_melee_04
       rect:
         serializedVersion: 2
         x: 180
@@ -1252,7 +1252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_56
+      name: player_melee_05
       rect:
         serializedVersion: 2
         x: 239
@@ -2768,12 +2768,6 @@ TextureImporter:
       metalslug sprite_48: -1676655463
       metalslug sprite_49: 1963442382
       metalslug sprite_50: 956553638
-      metalslug sprite_51: -1591935814
-      metalslug sprite_52: -1778440438
-      metalslug sprite_53: 1710484485
-      metalslug sprite_54: 477442057
-      metalslug sprite_55: -1108997613
-      metalslug sprite_56: 1513067503
       metalslug sprite_57: 621911230
       metalslug sprite_58: -1580201155
       metalslug sprite_59: -1074686777
@@ -2795,6 +2789,12 @@ TextureImporter:
       player_lookup_4: -1061274432
       player_lookup_5: 588723821
       player_lookup_6: -153428218
+      player_melee_0: -1591935814
+      player_melee_01: -1778440438
+      player_melee_02: 1710484485
+      player_melee_03: 477442057
+      player_melee_04: -1108997613
+      player_melee_05: 1513067503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

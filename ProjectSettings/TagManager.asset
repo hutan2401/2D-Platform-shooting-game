@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - ProjectTileEnemy
   - AmmoBox
+  - Box
+  - Audio
   layers:
   - Default
   - TransparentFX
