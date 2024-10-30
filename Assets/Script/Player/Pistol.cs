@@ -165,9 +165,17 @@ public class Pistol : MonoBehaviour
             }
         }
         AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
-        GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
-        bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+        //GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        //ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
+        //bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+        if (currentBulletType.burstCount > 1)
+        {
+            StartCoroutine(BurstFire());
+        }
+        else
+        {
+            FireBullet();
+        }
         if (!currentBulletType.isUnlimited)
         {
             currentAmmo--;
@@ -178,6 +186,20 @@ public class Pistol : MonoBehaviour
                     ChangeLayer(1);
                 }
             }
+        }
+    }
+    private void FireBullet()
+    {
+        GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
+        bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+    }
+    private IEnumerator BurstFire()
+    {
+        for(int i = 0; i < currentBulletType.burstCount; i++)
+        {
+            FireBullet();
+            yield return new WaitForSeconds(currentBulletType.burstDelayTime);
         }
     }
 }
