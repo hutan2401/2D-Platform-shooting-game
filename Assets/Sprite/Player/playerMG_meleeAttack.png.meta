@@ -104,15 +104,15 @@ TextureImporter:
         y: 142
         width: 36
         height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5913708, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70cbb7d5bd4d145488a790c3aad566ff
-      internalID: -1520423102
+      spriteID: b1604317edd850e4488ee909bc228616
+      internalID: 569773630
       vertices: []
       indices: 
       edges: []
@@ -126,14 +126,14 @@ TextureImporter:
         width: 38
         height: 39
       alignment: 9
-      pivot: {x: 0.7050649, y: 0.5117548}
+      pivot: {x: 0.8132013, y: 0.49544504}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f11ce668c1d7fb4792e56fe26517b18
-      internalID: 752132557
+      spriteID: 1541d8279189004448b9a731f8c5ad52
+      internalID: -1231384321
       vertices: []
       indices: 
       edges: []
@@ -147,14 +147,14 @@ TextureImporter:
         width: 51
         height: 39
       alignment: 9
-      pivot: {x: 0.5808907, y: 0.52350676}
+      pivot: {x: 0.6079751, y: 0.5045549}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdd5a35bab7df404f995bca490fcde4a
-      internalID: 923658884
+      spriteID: 2d9af2c26dac64a4c9807ac7faf1b598
+      internalID: -1392614081
       vertices: []
       indices: 
       edges: []
@@ -168,14 +168,14 @@ TextureImporter:
         width: 53
         height: 52
       alignment: 9
-      pivot: {x: 0.561309, y: 0.37134844}
+      pivot: {x: 0.620659, y: 0.3770203}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf4548389b82bb4cb7c6b0dd8d04067
-      internalID: -730341695
+      spriteID: 38978bb24c792b240a4c584e4fdce52c
+      internalID: 1811585039
       vertices: []
       indices: 
       edges: []
@@ -189,14 +189,14 @@ TextureImporter:
         width: 53
         height: 53
       alignment: 9
-      pivot: {x: 0.5934972, y: 0.3731114}
+      pivot: {x: 0.6441201, y: 0.369286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e03eba8c83b24b43adbd2731e678e2d
-      internalID: -1247666766
+      spriteID: ca23492634af1b64d8fe389a70fd1a2f
+      internalID: -493805343
       vertices: []
       indices: 
       edges: []
@@ -205,193 +205,172 @@ TextureImporter:
       name: playerMG_meleeAttack_5
       rect:
         serializedVersion: 2
-        x: 342
-        y: 143
+        x: 341
+        y: 141
         width: 52
         height: 56
       alignment: 9
-      pivot: {x: 0.65655696, y: 0.3483064}
+      pivot: {x: 0.68105316, y: 0.3794602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029d9a436b0059047895eef0eed24c3b
-      internalID: -563511381
+      spriteID: 145a3db0b0ad5b74f8279a9c6c39076c
+      internalID: -929071157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_6
+      name: playerMG_meleeAttack_6
       rect:
         serializedVersion: 2
         x: 24
         y: 94
         width: 31
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7232709, y: 0.5349579}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1730c81201171ef44a8e7ee742c9115d
-      internalID: 520891693
+      spriteID: aad69fa8a93f0184f8c382b65ab19385
+      internalID: 239921230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_7
+      name: playerMG_meleeAttack_7
       rect:
         serializedVersion: 2
         x: 60
         y: 94
         width: 31
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7070323, y: 0.53495663}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb2a93a2e852364382b3a45535e417b
-      internalID: 827718995
+      spriteID: d344e17f028f9444e8a8ed16c9be29d5
+      internalID: -144896909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_8
+      name: playerMG_meleeAttack_8
       rect:
         serializedVersion: 2
         x: 96
         y: 94
         width: 31
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7110918, y: 0.5384521}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64ca97565dab40b4783fb98cdcedc312
-      internalID: -121847435
+      spriteID: 85c133aa9cd917245980caf3e2268834
+      internalID: -350590746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_9
+      name: playerMG_meleeAttack_9
       rect:
         serializedVersion: 2
         x: 132
         y: 94
         width: 44
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4942804, y: 0.5314609}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06546e3cb9b4be14cbf5c644be978b30
-      internalID: -517449140
+      spriteID: f09ca12a37e72de4e9b42be3efedcde3
+      internalID: -1545446680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_10
+      name: playerMG_meleeAttack_10
       rect:
         serializedVersion: 2
         x: 181
         y: 94
-        width: 35
+        width: 46
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4940285, y: 0.5405197}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b077052cecb57740b76452bee0385a2
-      internalID: -692421733
+      spriteID: ffb90e1059c1ee1428da576abae56376
+      internalID: -1135044201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_11
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 108
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e0aa39c86d708646bdb0b9daaa405ba
-      internalID: 1549675160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meleeAttack_12
+      name: playerMG_meleeAttack_12
       rect:
         serializedVersion: 2
         x: 230
         y: 94
         width: 37
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.595233, y: 0.54194766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98be8c9445f3d745aa82e8f0753a8d1
-      internalID: 44964355
+      spriteID: e4bc6d364e6a57544b5cd6e0a2e8104e
+      internalID: 1130624236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_13
+      name: playerMG_meleeAttack_13
       rect:
         serializedVersion: 2
         x: 272
         y: 94
         width: 36
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.61186135, y: 0.5384524}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a26ea5775eb861746990495529cf92e3
-      internalID: -108716613
+      spriteID: cb3c072623fc1cb4aac5707342c9b324
+      internalID: -728478280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_14
+      name: playerMG_meleeAttack_14
       rect:
         serializedVersion: 2
         x: 24
@@ -405,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc907430857dbeb4fb02e155baeb7aa8
-      internalID: -2115050204
+      spriteID: c99da05bf81de514bb2df54d0b905c11
+      internalID: 763814588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_15
+      name: playerMG_meleeAttack_15
       rect:
         serializedVersion: 2
         x: 71
@@ -426,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075be15003b5d6c4cab0c5d2910d3222
-      internalID: 1319940133
+      spriteID: 34ae8483474f56143a46652c86c22ffe
+      internalID: -542173652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_16
+      name: playerMG_meleeAttack_16
       rect:
         serializedVersion: 2
         x: 119
@@ -447,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512e7e0b5ce36c844b1ad0baa00faa28
-      internalID: -1446047942
+      spriteID: 7e9e8cc04bab54a458fcd009b1e9ca8d
+      internalID: 2001523605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_17
+      name: playerMG_meleeAttack_17
       rect:
         serializedVersion: 2
         x: 162
@@ -468,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd6af2cb916ef4646af89d04d7102904
-      internalID: -267246795
+      spriteID: d800f027265ddcf44aa05e8ce59d1429
+      internalID: -1448482383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_18
+      name: playerMG_meleeAttack_18
       rect:
         serializedVersion: 2
         x: 222
@@ -489,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a80996ac56913c4588a42d9af2b43a7
-      internalID: -1989415495
+      spriteID: dd0bfb4d494a792418a7e5b37fbdd2ca
+      internalID: -811455649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meleeAttack_19
+      name: playerMG_meleeAttack_19
       rect:
         serializedVersion: 2
         x: 286
@@ -510,8 +489,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f2fb7eef4c1a064c9ac739eed7545d9
-      internalID: 1548886282
+      spriteID: 48fe8977566592e459ef92f0f0fb61cc
+      internalID: -837877017
       vertices: []
       indices: 
       edges: []
@@ -527,26 +506,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      meleeAttack_10: -692421733
-      meleeAttack_11: 1549675160
-      meleeAttack_12: 44964355
-      meleeAttack_13: -108716613
-      meleeAttack_14: -2115050204
-      meleeAttack_15: 1319940133
-      meleeAttack_16: -1446047942
-      meleeAttack_17: -267246795
-      meleeAttack_18: -1989415495
-      meleeAttack_19: 1548886282
-      meleeAttack_6: 520891693
-      meleeAttack_7: 827718995
-      meleeAttack_8: -121847435
-      meleeAttack_9: -517449140
-      playerMG_meleeAttack_0: -1520423102
-      playerMG_meleeAttack_1: 752132557
-      playerMG_meleeAttack_2: 923658884
-      playerMG_meleeAttack_3: -730341695
-      playerMG_meleeAttack_4: -1247666766
-      playerMG_meleeAttack_5: -563511381
+      playerMG_meleeAttack_0: 569773630
+      playerMG_meleeAttack_1: -1231384321
+      playerMG_meleeAttack_10: -1135044201
+      playerMG_meleeAttack_11: -706573424
+      playerMG_meleeAttack_12: 1130624236
+      playerMG_meleeAttack_13: -728478280
+      playerMG_meleeAttack_14: 763814588
+      playerMG_meleeAttack_15: -542173652
+      playerMG_meleeAttack_16: 2001523605
+      playerMG_meleeAttack_17: -1448482383
+      playerMG_meleeAttack_18: -811455649
+      playerMG_meleeAttack_19: -837877017
+      playerMG_meleeAttack_2: -1392614081
+      playerMG_meleeAttack_3: 1811585039
+      playerMG_meleeAttack_4: -493805343
+      playerMG_meleeAttack_5: -929071157
+      playerMG_meleeAttack_6: 239921230
+      playerMG_meleeAttack_7: -144896909
+      playerMG_meleeAttack_8: -350590746
+      playerMG_meleeAttack_9: -1545446680
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

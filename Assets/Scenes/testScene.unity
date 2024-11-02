@@ -1796,9 +1796,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 964764953894066442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
+      propertyPath: enemyHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1181700683106118442, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_Name
       value: Enemyshootingtest2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426537473981793117, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
+      propertyPath: burstCount
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243569187482430119, guid: adc118be64a1140449dfc8cc32fa95c1, type: 3}
       propertyPath: m_LocalPosition.x

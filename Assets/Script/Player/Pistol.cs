@@ -116,7 +116,16 @@ public class Pistol : MonoBehaviour
     }
     private void TriggerMeleeAttack()
     {
-        animator.SetTrigger("MeleeAttack"); // Trigger knife animation
+        if (isCrouch)
+        {
+            // Trigger crouching melee attack animation
+            animator.SetTrigger("CrouchingMeleeAttack");
+        }
+        else
+        {
+            // Trigger regular melee attack animation
+            animator.SetTrigger("MeleeAttack");
+        }
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(damageCollider.position, distance);
         foreach (var enemy in hitEnemies)
         {
@@ -130,7 +139,7 @@ public class Pistol : MonoBehaviour
     private void TriggerRangedAttack()
     {
         Debug.Log("Shooting");
-        animator.SetTrigger("Attack");
+
         if (isLookUp)
         {
             bulletSpawnPoint.position = headPosition.position;
@@ -176,6 +185,7 @@ public class Pistol : MonoBehaviour
         {
             FireBullet();
         }
+        animator.SetTrigger("Attack");
         if (!currentBulletType.isUnlimited)
         {
             currentAmmo--;

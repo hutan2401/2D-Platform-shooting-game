@@ -11,14 +11,14 @@ public class Throwbomb : MonoBehaviour
     [SerializeField] private int maxGrenade = 10;
     [SerializeField] private Text grenadeText;
     private int currentGrenade;
-
+    private Animator animator;
 
     private PlayerController playerController;
 
     private void Awake()
     {
         playerController = new PlayerController();
-
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -48,6 +48,7 @@ public class Throwbomb : MonoBehaviour
             var direction = transform.right + Vector3.up;
             rb.AddForce(direction * throwForce, ForceMode2D.Impulse);
             currentGrenade--;
+            animator.SetTrigger("throwBomb");
             Debug.Log("grenade: "+ currentGrenade);
             UpdateGrenadeUI();
         }
