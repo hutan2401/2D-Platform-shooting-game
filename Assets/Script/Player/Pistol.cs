@@ -26,11 +26,14 @@ public class Pistol : MonoBehaviour
     private bool isLookUp;
     private bool isCrouch;
 
+    private AudioHitSound hitSound;
 
     private void Awake()
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
+        hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+
     }
 
     private void Start()
@@ -127,12 +130,14 @@ public class Pistol : MonoBehaviour
             animator.SetTrigger("MeleeAttack");
         }
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(damageCollider.position, distance);
+        
         foreach (var enemy in hitEnemies)
         {
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damageAmount);
+                hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
             }
         }
     }

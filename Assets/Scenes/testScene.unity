@@ -1861,6 +1861,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 191846506389348321, guid: 70b36414a660dbc46a643e5b9ec81ef6, type: 3}
+      propertyPath: bulletSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 191846506389348321, guid: 70b36414a660dbc46a643e5b9ec81ef6, type: 3}
+      propertyPath: bulletSounds.Array.data[2].shootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0366ebc121171424b9d27a103a0ebac4, type: 3}
+    - target: {fileID: 191846506389348321, guid: 70b36414a660dbc46a643e5b9ec81ef6, type: 3}
+      propertyPath: bulletSounds.Array.data[2].bulletTypeName
+      value: Rocket
+      objectReference: {fileID: 0}
     - target: {fileID: 1985272576646671310, guid: 70b36414a660dbc46a643e5b9ec81ef6, type: 3}
       propertyPath: m_Name
       value: ManagerAudio
@@ -2333,6 +2345,10 @@ PrefabInstance:
     - target: {fileID: 5060945205921496771, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446119103210095722, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

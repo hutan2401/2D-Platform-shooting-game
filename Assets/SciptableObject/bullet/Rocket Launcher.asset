@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b4765aaff2dd7488d19bd28b24ade9, type: 3}
   m_Name: Rocket Launcher
   m_EditorClassIdentifier: 
+  bulletTypeName: Rocket
   bulletPrefab: {fileID: 3126459523664668767, guid: 520c03f2aad6d2847beec64eb45d28f3, type: 3}
   speed: 22
   damage: 10
+  burstCount: 1
+  burstDelayTime: 0.1
   projectTileRange: 20
   isUnlimited: 0
   maxAmmo: 20
