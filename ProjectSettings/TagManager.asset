@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ground
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
@@ -54,4 +55,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 422222511
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 2325478661
     locked: 0
