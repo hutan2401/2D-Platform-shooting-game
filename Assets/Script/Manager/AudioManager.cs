@@ -18,6 +18,8 @@ public class AudioManager : MonoBehaviour
 
     public List<BulletSound> bulletSounds;
     private Dictionary<string, BulletSound> bulletSoundDict;
+    private float soundCooldown = 0.5f; 
+    private float lastSoundPlayTime = 0f;
     private void Awake()
     {
         if (Instance == null)
@@ -39,11 +41,16 @@ public class AudioManager : MonoBehaviour
 
     public void PlayShootingSound(string bulletTypeName)
     {
+        if (Time.time - lastSoundPlayTime < soundCooldown)
+        {
+            return;
+        }
         if (bulletSoundDict.TryGetValue(bulletTypeName, out var bulletSound))
         {
             if(bulletSound.shootingSound != null)
             {
                 audioSource.PlayOneShot(bulletSound.shootingSound);
+                lastSoundPlayTime = Time.time;
             }
         }
         else

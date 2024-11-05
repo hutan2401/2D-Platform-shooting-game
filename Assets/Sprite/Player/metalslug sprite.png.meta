@@ -1154,8 +1154,8 @@ TextureImporter:
         y: 568
         width: 23
         height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6960308, y: 0.4999984}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1175,8 +1175,8 @@ TextureImporter:
         y: 568
         width: 28
         height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.71785897, y: 0.5069789}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1196,8 +1196,8 @@ TextureImporter:
         y: 567
         width: 41
         height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5287321, y: 0.50000155}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1217,8 +1217,8 @@ TextureImporter:
         y: 565
         width: 42
         height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49368578, y: 0.3865644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1238,8 +1238,8 @@ TextureImporter:
         y: 565
         width: 44
         height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5754762, y: 0.375961}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1259,8 +1259,8 @@ TextureImporter:
         y: 565
         width: 43
         height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5997329, y: 0.35029298}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1273,7 +1273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_57
+      name: player_throwBomb_0
       rect:
         serializedVersion: 2
         x: 5
@@ -1294,7 +1294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_58
+      name: player_throwBomb_01
       rect:
         serializedVersion: 2
         x: 44
@@ -1315,7 +1315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_59
+      name: player_throwBomb_02
       rect:
         serializedVersion: 2
         x: 81
@@ -1336,7 +1336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_60
+      name: player_throwBomb_03
       rect:
         serializedVersion: 2
         x: 125
@@ -1357,7 +1357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_61
+      name: player_throwBomb_04
       rect:
         serializedVersion: 2
         x: 172
@@ -1378,7 +1378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: metalslug sprite_62
+      name: player_throwBomb_05
       rect:
         serializedVersion: 2
         x: 221
@@ -2768,12 +2768,6 @@ TextureImporter:
       metalslug sprite_48: -1676655463
       metalslug sprite_49: 1963442382
       metalslug sprite_50: 956553638
-      metalslug sprite_57: 621911230
-      metalslug sprite_58: -1580201155
-      metalslug sprite_59: -1074686777
-      metalslug sprite_60: -1367042095
-      metalslug sprite_61: -1904491829
-      metalslug sprite_62: 304462406
       metalslug sprite_77: 1683019846
       metalslug sprite_82: -1000055097
       metalslug sprite_85: 1664472085
@@ -2795,6 +2789,12 @@ TextureImporter:
       player_melee_03: 477442057
       player_melee_04: -1108997613
       player_melee_05: 1513067503
+      player_throwBomb_0: 621911230
+      player_throwBomb_01: -1580201155
+      player_throwBomb_02: -1074686777
+      player_throwBomb_03: -1367042095
+      player_throwBomb_04: -1904491829
+      player_throwBomb_05: 304462406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

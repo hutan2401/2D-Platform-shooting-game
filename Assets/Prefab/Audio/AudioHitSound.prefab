@@ -48,6 +48,7 @@ MonoBehaviour:
   SFXSource: {fileID: 6397288936468820354}
   hitSoundSFX: {fileID: 8300000, guid: b9f256d4ca106ee4fbf930f455b0aeeb, type: 3}
   hitSoundRocketSFX: {fileID: 8300000, guid: 5422e1ca6416f6548ad01ea75b87dea6, type: 3}
+  KnifeHitSoundSFX: {fileID: 8300000, guid: f57e2280ceacb2a48b854f6fb7ad17ff, type: 3}
 --- !u!82 &6397288936468820354
 AudioSource:
   m_ObjectHideFlags: 0

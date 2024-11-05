@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 2f0d8dc00e5b663488af75f695bcc628
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_crouchMelee_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 103
+        width: 28
+        height: 26
+      alignment: 9
+      pivot: {x: 0.7054389, y: 0.7452331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7528ea970f1e14247af6ce220c0db9be
+      internalID: 873508824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 103
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.7021016, y: 0.748423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87e8f169dfcaa849a32f22e375706d1
+      internalID: 2021765325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 103
+        width: 28
+        height: 26
+      alignment: 9
+      pivot: {x: 0.7007757, y: 0.7484225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9f5f41739662144bbd4294002ba4c8
+      internalID: 13162300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 103
+        width: 42
+        height: 27
+      alignment: 9
+      pivot: {x: 0.47721717, y: 0.7170715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e4cd741a92c1f45b4271c4e9b92069
+      internalID: -289266333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 104
+        width: 43
+        height: 36
+      alignment: 9
+      pivot: {x: 0.3970802, y: 0.539871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452d171395417ba449f63bfd653b4a84
+      internalID: -51762337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 103
+        width: 35
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5649322, y: 0.5546795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7817254e8ebcf428a0582678cd799d
+      internalID: 462027291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouchMelee_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 103
+        width: 34
+        height: 35
+      alignment: 9
+      pivot: {x: 0.59498596, y: 0.5580969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590f54edf975d914690920e8eeac652d
+      internalID: -6168882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953a98012a1311d44805b034991ddff4
+      internalID: 507649898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 65
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d71c763dc619447bb9f7b4ff9a3d09
+      internalID: 207414272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4c25a7f8c88b248860184aab79dc1e
+      internalID: -340980836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 65
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d269fa2056c9640b347440e7b5f23a
+      internalID: 963948131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_12
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 65
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ab4b7765690bc44a498f14abdddfca
+      internalID: 238409942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 65
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00caca921516f5b4c9e13c55c6b89306
+      internalID: -1683455263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      player_crouchMelee_0: 873508824
+      player_crouchMelee_1: 2021765325
+      player_crouchMelee_2: 13162300
+      player_crouchMelee_3: -289266333
+      player_crouchMelee_4: -51762337
+      player_crouchMelee_5: 462027291
+      player_crouchMelee_6: -6168882
+      player_crouch_10: -340980836
+      player_crouch_11: 963948131
+      player_crouch_12: 238409942
+      player_crouch_13: -1683455263
+      player_crouch_5: -470539229
+      player_crouch_8: 507649898
+      player_crouch_9: 207414272
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

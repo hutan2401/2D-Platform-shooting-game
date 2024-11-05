@@ -16,6 +16,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7543976731989496016, guid: 2d7e2180cd4fa0847a43b97a402a7074, type: 3}
   speed: 25
   damage: 3
+  burstCount: 4
+  burstDelayTime: 0.1
   projectTileRange: 12
   isUnlimited: 0
   maxAmmo: 50
