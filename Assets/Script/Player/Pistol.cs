@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform headPosition; 
     [SerializeField] private Transform defaultPosition;
     [SerializeField] private Transform crouchPostion;
+    [SerializeField] private Text bulletAmmoText;
 
     public Transform damageCollider; // Collider for melee attack
     public int damageAmount = 10;     // Damage for the melee attack
@@ -49,6 +51,7 @@ public class Pistol : MonoBehaviour
 
         playerController.Player.Crouching.performed += _ => SetCrouchp(true);
         playerController.Player.Crouching.canceled += _ => SetCrouchp(false);
+        UpdateAmmoUI();
     }
 
     private void OnEnable()
@@ -90,6 +93,7 @@ public class Pistol : MonoBehaviour
     {
         currentBulletType = defaultBulletType;
         currentAmmo = int.MaxValue;
+        UpdateAmmoUI();
     }
     public void SwitchWeapon(BulletType newBulletType)
     {
@@ -189,17 +193,19 @@ public class Pistol : MonoBehaviour
         else
         {
             FireBullet();
+            currentAmmo--;
         }
         animator.SetTrigger("Attack");
         if (!currentBulletType.isUnlimited)
         {
-            currentAmmo--;
+            //currentAmmo--;
             {
                 if (currentAmmo <= 0)
                 {
                     SwitchToDefaultWeapon();
                     ChangeLayer(1);
                 }
+                UpdateAmmoUI();
             }
         }
     }
@@ -211,10 +217,46 @@ public class Pistol : MonoBehaviour
     }
     private IEnumerator BurstFire()
     {
-        for(int i = 0; i < currentBulletType.burstCount; i++)
+        //for(int i = 0; i < currentBulletType.burstCount; i++)
+        //{
+        //    FireBullet();
+        //    yield return new WaitForSeconds(currentBulletType.burstDelayTime);
+        //}
+        int shotsFired = 0;
+        for (int i = 0; i < currentBulletType.burstCount; i++)
         {
+            // Check if there's enough ammo before each shot
+            if (currentAmmo <= 0)
+            {
+                SwitchToDefaultWeapon();
+                ChangeLayer(1);
+                yield break;  // Exit the burst if out of ammo
+            }
+
             FireBullet();
+            shotsFired++;
             yield return new WaitForSeconds(currentBulletType.burstDelayTime);
+        }
+
+        // Deduct ammo based on the number of shots fired in the burst
+        currentAmmo -= shotsFired;
+
+        // Check if we've run out of ammo after the burst
+        if (currentAmmo <= 0)
+        {
+            SwitchToDefaultWeapon();
+            ChangeLayer(1);
+        }
+    }
+    private void UpdateAmmoUI()
+    {
+        if (currentBulletType.isUnlimited)
+        {
+            bulletAmmoText.text = "∞";
+        }
+        else
+        {
+            bulletAmmoText.text =currentAmmo.ToString();
         }
     }
 }
