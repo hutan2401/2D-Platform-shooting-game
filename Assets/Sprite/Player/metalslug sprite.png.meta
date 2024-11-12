@@ -1,0 +1,2802 @@
+fileFormatVersion: 2
+guid: cbe13b750383ae747ac137a903d02b78
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marco_idle_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 912
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1182a2122213f5c4eb742bf20a67bb09
+      internalID: -1359170103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_idle_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 912
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4445e00d9091168419e6379769dbcf56
+      internalID: -1056554178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_idle_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 912
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e4f727899aac34784bf0524c00c00e
+      internalID: -1238979242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_idle_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 912
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f1de898b0bb4f4ebbd49e4dff2beb5
+      internalID: 1830905850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_0
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 912
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03718f96e84f835439a8f0f1241aa9a7
+      internalID: -1798766541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 911
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030d813d5aec02c438be5e262df8bba4
+      internalID: -1017665160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 912
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74676e33c43b14844a51cb20796ff3af
+      internalID: 1340055572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 910
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14a86e12638f67419885f38e856a21b
+      internalID: 884101199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 910
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e8409bdc72c546bc4347237b48d6c
+      internalID: 1763207164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_5
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 911
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0f860f878a402479eb5f565a6bf291
+      internalID: 1049297083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 911
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e9f9940f89f4648a5eb6cd594311da
+      internalID: 2126006829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 912
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a182dcb0dea9ee44abdf4438e2d34af9
+      internalID: -941677989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 911
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ba1e6ef1468ca4b9cd463e6d2f55b0
+      internalID: -993627898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 911
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c51eb6feca209449a6983893f376d1
+      internalID: 920777423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_10
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 911
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcd658fb492d8246851718509ae716c
+      internalID: -1607191439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_run_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 911
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37209293d0f46874aa1a7712e40f0a1c
+      internalID: 665533846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_jump_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 848
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf56c47bde39449a12f0ac35ce99fa
+      internalID: -546286329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 849
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b411141c99bf94bb0b3727f2b690e6
+      internalID: -925546771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 848
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc42d4dacff539498d61471b2cf9d7d
+      internalID: 955482101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 848
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a6283f50e81cb40ab2c31085c2c98e
+      internalID: -2018527339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 848
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2383b15402fdae74c9d133b1fdb411bd
+      internalID: 1513422841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 848
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9802850d2e74e488fadcc0f1db28e4
+      internalID: -1749922455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 848
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00782c518dbe47a469c72e701a94bdea
+      internalID: 1587105079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 850
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63609c90814c1cb47b62af48f7601ba1
+      internalID: -1014955270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_24
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 852
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6892970355008c41afb4e7fb6aac5ad
+      internalID: -1843745487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_25
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 854
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c0867f79a4fc44f81b7ffa365cbb75
+      internalID: 1907926552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 853
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1e3a6d7a6a85a44aa4d0e78d7d0aa4
+      internalID: -1704129177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_27
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 852
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545b81948674b934490ec1607930076c
+      internalID: 337285722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 800
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3282839, y: 0.50595737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae116ce589a566e45876b54f5ba43f79
+      internalID: -649465218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 800
+        width: 50
+        height: 38
+      alignment: 9
+      pivot: {x: 0.2712702, y: 0.5476636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f92b158282bfe4289096375ddb1866
+      internalID: -1356769790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 799
+        width: 51
+        height: 38
+      alignment: 9
+      pivot: {x: 0.23580244, y: 0.5351691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb552ce5c23b90b4988a7dcc0a019d85
+      internalID: 421544239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 799
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3347898, y: 0.5357473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e58c7cd6e5b6744a16884c6b7b992f
+      internalID: 873932568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 799
+        width: 37
+        height: 40
+      alignment: 9
+      pivot: {x: 0.3347898, y: 0.505661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66df5e63a8ffee4cb947645dd6f354b
+      internalID: 528063293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 800
+        width: 37
+        height: 40
+      alignment: 9
+      pivot: {x: 0.3164335, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1897a099040eb429e9a57365a81118
+      internalID: 206467109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 801
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3347894, y: 0.50595737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d739661628d36b4792a4df6eb185b13
+      internalID: 1309964918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 800
+        width: 34
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3535067, y: 0.5238326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f0089ce3e98ef4db4f494d44e9f162
+      internalID: -683118290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_shooting_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 800
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3559284, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0422ee0dcba775347a6a41d4177d9291
+      internalID: -301844578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 707
+        width: 22
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5268892, y: 0.2820708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794f54e3a81ff634e8903c71e1037b8c
+      internalID: 494380889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 707
+        width: 22
+        height: 76
+      alignment: 9
+      pivot: {x: 0.51510966, y: 0.2946601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8240a48edbe93d2449d3aa6026a401b3
+      internalID: 1505985539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 706
+        width: 23
+        height: 54
+      alignment: 9
+      pivot: {x: 0.525721, y: 0.3575971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d843f04b38d4f744afd3b51cf9d00a7
+      internalID: -498784706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 706
+        width: 25
+        height: 52
+      alignment: 9
+      pivot: {x: 0.522478, y: 0.3936392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fdf547231ce0d4098648dbbe704078
+      internalID: -631932815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 706
+        width: 25
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3802174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06fb5baf54f30347b09a4b95f96dcd8
+      internalID: -1061274432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 706
+        width: 24
+        height: 55
+      alignment: 9
+      pivot: {x: 0.46149826, y: 0.3991954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a89e9c16e8e514e98c03bab452bfb9
+      internalID: 588723821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_lookup_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 706
+        width: 26
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4822294, y: 0.38021624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8df8ce2c177a974e916165f00a0e899
+      internalID: -153428218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_45
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 645
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9f0f3e3bab7fe4799f31a95cf15818
+      internalID: 1856456667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 637
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b656eed4ee9a8d4ba77d24de336af27
+      internalID: 505165352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_47
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 633
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c059a155ea30c1b46a1ff05aacf5e455
+      internalID: 1072361462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_48
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 641
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4ca44a967a4d84ab43706f7add4e26
+      internalID: -1676655463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_49
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 642
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8209d96a0a3834ca2395c0ffaa2214
+      internalID: 1963442382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_50
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 640
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2cc82fa09c6b34abc9a7874170fa62
+      internalID: 956553638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 568
+        width: 23
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6960308, y: 0.4999984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06311ca687da7041bc0b6e7dbf5a11f
+      internalID: -1591935814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_01
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 568
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0.71785897, y: 0.5069789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c0e5d12ae8c5243a1266eff59b591d
+      internalID: -1778440438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_02
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 567
+        width: 41
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5287321, y: 0.50000155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f3c101f46d304498c9e31fcd965b11
+      internalID: 1710484485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_03
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 565
+        width: 42
+        height: 51
+      alignment: 9
+      pivot: {x: 0.49368578, y: 0.3865644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0c7857186ae41409b49aef217ee880
+      internalID: 477442057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_04
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 565
+        width: 44
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5754762, y: 0.375961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c86cf60a01e7c499fc59400a2fba81
+      internalID: -1108997613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_melee_05
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 565
+        width: 43
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5997329, y: 0.35029298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8822436d4c92c584f9f1396782d7b2f8
+      internalID: 1513067503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 510
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86e59c9c930bf34f95e63452eed9a8b
+      internalID: 621911230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_01
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 510
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0d7a07e81045148a3657938b859821
+      internalID: -1580201155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_02
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 510
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64945fde4e08c614896d811057ac832e
+      internalID: -1074686777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_03
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 510
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f3e5d776efddb43ba40010ab7ab6a1
+      internalID: -1367042095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_04
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 509
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab310a6e0c3a1a44bfa94cf8af6025e
+      internalID: -1904491829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_throwBomb_05
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 509
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2ef6fcb9341724496fa3ae4db6fc0f
+      internalID: 304462406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouch_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 462
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5162435, y: 0.814537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0723fe7062c4940b33117613a29dce
+      internalID: -217221512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouch_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 462
+        width: 33
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5342807, y: 0.8058993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482711fd796aa4846b5c1d9d146b4ad7
+      internalID: 521751292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouch_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 462
+        width: 33
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5084201, y: 0.8293317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e60f3b09aa3794fa64d842a2dcea71
+      internalID: -1834063673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouch_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 462
+        width: 33
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5117539, y: 0.8197467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5826e9a4495111e4cb484b1f146ead0f
+      internalID: -235983672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 414
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5170897, y: 0.8216756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b686a404625f82c4493920743508a08f
+      internalID: 572227454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 414
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.511857, y: 0.8439395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd5ad6eba61531418c1a64fc98aaec2
+      internalID: -1097929635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 414
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.50820947, y: 0.8146439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6820ae88e3dd3274ba3b51c97e93cc7e
+      internalID: -910743880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 414
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5085701, y: 0.8036868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ffece9618e1f84593b018fbb04e2c6
+      internalID: 2077485433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 414
+        width: 35
+        height: 24
+      alignment: 9
+      pivot: {x: 0.514539, y: 0.80631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793a025a763b8e2419e4892fc2f90c01
+      internalID: -1612227771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 414
+        width: 35
+        height: 24
+      alignment: 9
+      pivot: {x: 0.509644, y: 0.8135402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d02f3dccdf43740a3e286dbcef19ab
+      internalID: -546528101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchMoving_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 414
+        width: 35
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5099339, y: 0.833327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e234491385db324d840f903b6344d42
+      internalID: -851912343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 365
+        width: 50
+        height: 27
+      alignment: 9
+      pivot: {x: 0.268289, y: 0.7656341}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705a96d3813b64d408ce7079b820b6db
+      internalID: -541906256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_01
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 365
+        width: 51
+        height: 27
+      alignment: 9
+      pivot: {x: 0.2722823, y: 0.7800858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ceb8f64e822dc6469f8bc1e5ea8d49a
+      internalID: -1770475781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_02
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 365
+        width: 53
+        height: 27
+      alignment: 9
+      pivot: {x: 0.27587, y: 0.788321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c25eb12a0683bc40983fc8f91497066
+      internalID: -1156850765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_03
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 365
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.404746, y: 0.78349584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119d40f520fc9d949a81d29330dead95
+      internalID: 1258385329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_04
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 365
+        width: 37
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3859055, y: 0.6963143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a599835f7fd6e494f82389da04298f38
+      internalID: -285921258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_05
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 365
+        width: 37
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3796453, y: 0.72180283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6ea536525c1ce448830fae46a41fa6
+      internalID: -595397862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_06
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 365
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.37721625, y: 0.7991322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d26348e5f83d9143908ecff8e8df7c5
+      internalID: 323249911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_82
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 365
+        width: 34
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3849452, y: 0.7827747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1769c79dfa94b944d841645dcfed70ef
+      internalID: -1000055097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_07
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 365
+        width: 33
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4196944, y: 0.8131533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44a43e64a406a0418265e1969ed7958
+      internalID: 1333997860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marco_crouchShooting_08
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 365
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4435663, y: 0.8075997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbcd310284a6494d8e86ab882641baf
+      internalID: -446052072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097e3ad45cdfd40489682cd506cfe0e8
+      internalID: 1664472085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_86
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 319
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb30ab178e6b214698724a199fb9a9c
+      internalID: 1314573467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_87
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 319
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532f6edff0ae9de4084d78516a18a9a8
+      internalID: 781288136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_88
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 319
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3091178c99c9074e851f54d6e86a567
+      internalID: 34897450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_89
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 319
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7dcfb8791f8f141ba7581cd7b63da4
+      internalID: 1206278468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_90
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 319
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167fd6a4e92f6c94c9ea7ef17a92288a
+      internalID: -791041816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_idle_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 258
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8a0e484e769e54e9b3111020d86c24
+      internalID: -1511547844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_idle_01
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 256
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e631b504f8667343b89a9a2e43d30c0
+      internalID: -1880058609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_idle_02
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 257
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36939bbca76b00b40829aea51b0a2920
+      internalID: -1395774924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_idle_03
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 257
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb061bc30b73f443802283c5cc0fe5d
+      internalID: -199664291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20933a4cfe042147b06f7961eb8cf5e
+      internalID: -224827601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_01
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45d16e6f1ffef544889effbccac1bbf
+      internalID: 54319701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_02
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 257
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f683d01feb53846a98369dcecc4f06
+      internalID: 1095211598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_03
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267dcde400ae68f4fa024cfb8936730b
+      internalID: 1985247329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_04
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8e78e1450c96438a28236434326ba
+      internalID: 1451757990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_05
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de4afba30a352648baadf21afb97505
+      internalID: -1450725513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_06
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a378aa038740647b1dfb540659c8d8
+      internalID: 219790539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_07
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f8993a807b21d459b9d27dd8d6b8ea
+      internalID: -1840613179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_08
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 256
+        width: 40
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4752121, y: 0.4040561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd208e78b7153045be0791e5c12ee9f
+      internalID: 95461975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_09
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 256
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fd42bbe46c76844a82ef06576959ef
+      internalID: -996611366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_010
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 256
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c22c3a0dfef538429ee467b7557b9b3
+      internalID: -988511400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_run_011
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 256
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f40306bb4b2c7c4a839bf7df514d16f
+      internalID: -1940736630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 191
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdf8130b4a0d504286c48e8bb8d3eef
+      internalID: 333013394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_01
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 191
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dc21818c7330148a957f54f8b3a789
+      internalID: -915589241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_02
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 192
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72759a4b9236d5c4dbbe19232d7d0bd7
+      internalID: 1444017657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_03
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 192
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5710884609a865b4cb6f5fd274ed4f32
+      internalID: -1214539302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_04
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 192
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4803b4267da745040b22249224539029
+      internalID: 398205705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_jump_05
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 192
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d32d25247357fe4c92f54b35535c912
+      internalID: -217464456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_113
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 128
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73863cd712e37fc409dcc08366f2f032
+      internalID: -1170093524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_114
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 129
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b6d4079a49801469c78f8c05452e6c
+      internalID: 2094475588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_115
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 135
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dc4346a07a2f84688a342a6752b417
+      internalID: -479148996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_116
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 137
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cd81b15be5a8a4ba8e2186ac507050
+      internalID: -2089619733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_117
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 136
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526367dc0e6bdd943857b4bf0acf2ab5
+      internalID: -801324906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_118
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 128
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3b8063b94651f48b82a9c5c1a4bb5e
+      internalID: 1744989611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_shoot_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 81
+        width: 60
+        height: 39
+      alignment: 9
+      pivot: {x: 0.25202656, y: 0.4766922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a52ebbe5d56de34095296629777cab3
+      internalID: 230532884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_shoot_01
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 61
+        height: 39
+      alignment: 9
+      pivot: {x: 0.2772149, y: 0.49553642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941adf10830efef4c91ac928003afac7
+      internalID: 564958385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_shoot_02
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 80
+        width: 60
+        height: 39
+      alignment: 9
+      pivot: {x: 0.2934802, y: 0.5008435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f37b044143eb04bafd06b45b7d8d60
+      internalID: 78227515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marcoMG_shoot_03
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 80
+        width: 61
+        height: 39
+      alignment: 9
+      pivot: {x: 0.2585299, y: 0.48372045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef5dedb40339b04a9e96ef8be20a70e
+      internalID: 1403958579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalslug sprite_0
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 858
+        width: 4
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93218f4b41e129d448f22db3bb945648
+      internalID: -1149416610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      marcoMG_idle_0: -1511547844
+      marcoMG_idle_01: -1880058609
+      marcoMG_idle_02: -1395774924
+      marcoMG_idle_03: -199664291
+      marcoMG_jump_0: 333013394
+      marcoMG_jump_01: -915589241
+      marcoMG_jump_02: 1444017657
+      marcoMG_jump_03: -1214539302
+      marcoMG_jump_04: 398205705
+      marcoMG_jump_05: -217464456
+      marcoMG_run_0: -224827601
+      marcoMG_run_01: 54319701
+      marcoMG_run_010: -988511400
+      marcoMG_run_011: -1940736630
+      marcoMG_run_02: 1095211598
+      marcoMG_run_03: 1985247329
+      marcoMG_run_04: 1451757990
+      marcoMG_run_05: -1450725513
+      marcoMG_run_06: 219790539
+      marcoMG_run_07: -1840613179
+      marcoMG_run_08: 95461975
+      marcoMG_run_09: -996611366
+      marcoMG_shoot_0: 230532884
+      marcoMG_shoot_01: 564958385
+      marcoMG_shoot_02: 78227515
+      marcoMG_shoot_03: 1403958579
+      marco_crouchMoving_0: 572227454
+      marco_crouchMoving_1: -1097929635
+      marco_crouchMoving_2: -910743880
+      marco_crouchMoving_3: 2077485433
+      marco_crouchMoving_4: -1612227771
+      marco_crouchMoving_5: -546528101
+      marco_crouchMoving_6: -851912343
+      marco_crouchShooting_0: -541906256
+      marco_crouchShooting_01: -1770475781
+      marco_crouchShooting_02: -1156850765
+      marco_crouchShooting_03: 1258385329
+      marco_crouchShooting_04: -285921258
+      marco_crouchShooting_05: -595397862
+      marco_crouchShooting_06: 323249911
+      marco_crouchShooting_07: 1333997860
+      marco_crouchShooting_08: -446052072
+      marco_crouch_0: -217221512
+      marco_crouch_1: 521751292
+      marco_crouch_2: -1834063673
+      marco_crouch_3: -235983672
+      marco_idle_0: -1359170103
+      marco_idle_1: -1056554178
+      marco_idle_2: -1238979242
+      marco_idle_3: 1830905850
+      marco_jump_0: -546286329
+      marco_run_0: -1798766541
+      marco_run_1: -1017665160
+      marco_run_10: -1607191439
+      marco_run_11: 665533846
+      marco_run_2: 1340055572
+      marco_run_3: 884101199
+      marco_run_4: 1763207164
+      marco_run_5: 1049297083
+      marco_run_6: 2126006829
+      marco_run_7: -941677989
+      marco_run_8: -993627898
+      marco_run_9: 920777423
+      marco_shooting_: -925546771
+      marco_shooting_0: -649465218
+      marco_shooting_1: -1356769790
+      marco_shooting_2: 421544239
+      marco_shooting_3: 873932568
+      marco_shooting_4: 528063293
+      marco_shooting_5: 206467109
+      marco_shooting_6: 1309964918
+      marco_shooting_7: -683118290
+      marco_shooting_8: -301844578
+      metalslug sprite_0: -1149416610
+      metalslug sprite_113: -1170093524
+      metalslug sprite_114: 2094475588
+      metalslug sprite_115: -479148996
+      metalslug sprite_116: -2089619733
+      metalslug sprite_117: -801324906
+      metalslug sprite_118: 1744989611
+      metalslug sprite_121: 2063382211
+      metalslug sprite_124: -1803257462
+      metalslug sprite_18: 955482101
+      metalslug sprite_19: -2018527339
+      metalslug sprite_20: 1513422841
+      metalslug sprite_21: -1749922455
+      metalslug sprite_22: 1587105079
+      metalslug sprite_23: -1014955270
+      metalslug sprite_24: -1843745487
+      metalslug sprite_25: 1907926552
+      metalslug sprite_26: -1704129177
+      metalslug sprite_27: 337285722
+      metalslug sprite_38: -330713350
+      metalslug sprite_45: 1856456667
+      metalslug sprite_46: 505165352
+      metalslug sprite_47: 1072361462
+      metalslug sprite_48: -1676655463
+      metalslug sprite_49: 1963442382
+      metalslug sprite_50: 956553638
+      metalslug sprite_77: 1683019846
+      metalslug sprite_82: -1000055097
+      metalslug sprite_85: 1664472085
+      metalslug sprite_86: 1314573467
+      metalslug sprite_87: 781288136
+      metalslug sprite_88: 34897450
+      metalslug sprite_89: 1206278468
+      metalslug sprite_90: -791041816
+      player_lookup_0: 494380889
+      player_lookup_1: 1505985539
+      player_lookup_2: -498784706
+      player_lookup_3: -631932815
+      player_lookup_4: -1061274432
+      player_lookup_5: 588723821
+      player_lookup_6: -153428218
+      player_melee_0: -1591935814
+      player_melee_01: -1778440438
+      player_melee_02: 1710484485
+      player_melee_03: 477442057
+      player_melee_04: -1108997613
+      player_melee_05: 1513067503
+      player_throwBomb_0: 621911230
+      player_throwBomb_01: -1580201155
+      player_throwBomb_02: -1074686777
+      player_throwBomb_03: -1367042095
+      player_throwBomb_04: -1904491829
+      player_throwBomb_05: 304462406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

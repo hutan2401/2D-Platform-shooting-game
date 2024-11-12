@@ -1,0 +1,1280 @@
+fileFormatVersion: 2
+guid: 443f99c2097efb149a62dc5c61bdf4cd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 289
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d31273c7d65165409a5e64f811cedcc
+      internalID: -1758760738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 289
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df7bf83cc6961941b608376b4e06a10
+      internalID: -93532456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 261
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95e51ba22e24a449b64e46c35b08297
+      internalID: 1120654682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 261
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d13cccb26bb26045b34030e91cca052
+      internalID: -1917709223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 261
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58422bb244fa3af46aa0507da298cd9b
+      internalID: 1699879057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 261
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45458866b37207f46a9b5408938a7308
+      internalID: 2111390696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 261
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c551ab9ebeea39e41b6597406367090f
+      internalID: -1417324908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_7
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 261
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcb4a0c38f178743bb95aacc4b00e2b
+      internalID: 1177349483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_8
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 262
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ca426717ba8fc40a18859fb49f757e
+      internalID: 1539669903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 262
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727d9dcfeedffc14e800faedac81d799
+      internalID: -2052881575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 262
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5023a10996a9f3f4c8e080b3fe2e2e7d
+      internalID: -1510203941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_11
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 262
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5e022748e95934795a1de5d3a4c27e
+      internalID: 101113911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_12
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 262
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f963d31a67748b4497eb04662af58ca
+      internalID: -764550571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 262
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f6f13a1f3a92e49a7d103f5180ff46
+      internalID: 502869995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b3c9e60f0df34881bb56c6448b0f4
+      internalID: -84277072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ea5d3d6262656499633f8ad0c55f20
+      internalID: -336998541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_16
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a8b4a8c75ad9a4ea1608ea6a831a96
+      internalID: 162071881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b037cc2902f64234ba974db704ed03f3
+      internalID: 1736564712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9eb3ab969abe04b848768f375fe78e
+      internalID: -510995284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6060dc6e19be40c438bb37077ed262a1
+      internalID: 596209655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6b6a9f065c40e4a8d8630cd1025d75
+      internalID: 1920651417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_21
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa9cddce9e291d4799e9b404f331e07
+      internalID: 2119030534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_22
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1573c9bb349d57049b3f481cb296f523
+      internalID: -978161576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_23
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07948e4ea76ccc469ecc800473edc8a
+      internalID: 1832927394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_24
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6103ee072bbd63f4e99110368aa3df4d
+      internalID: -2002446318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_25
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 217
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393c423ca1c54d84eb9094ca419e8b99
+      internalID: -2083463073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_26
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 218
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4247e759a2d75499290cbb68fd80a2
+      internalID: 670215788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 181
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bfcb2bee0cd794a94b698bae19f487
+      internalID: 2038688987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 181
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03eef6e4d4c1e4345a8f05df48d5e57e
+      internalID: -1438131576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 181
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7db6ab485eec34bb01fad2a7b6c61b
+      internalID: 1946918334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_30
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 181
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30ad498b6f62b24f8705f7b7a78ebb5
+      internalID: -1594621693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 181
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724f077ace32b24080439e366cfcba0
+      internalID: 1624836702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_32
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 181
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a411e73d562b4374185cc90942abad4e
+      internalID: 968620310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_33
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 181
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ae6a30d8651df439e924774ba24bdb
+      internalID: 1731609661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 146
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1358baa9d36eafa40bb645c7da946511
+      internalID: -545897443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_35
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 146
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1cb3586eb151649a4c41211db774ca
+      internalID: 1241196892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 146
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9353826cdfbba1f48a23173acad529f1
+      internalID: -1082954116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_37
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 146
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122b9d770c1639d41b1dd806a6565fb1
+      internalID: -1153827406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_38
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 146
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f4919490fc3ac4f894dbf3398281d7
+      internalID: 890698059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_39
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 146
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095f45f8f41968141ab12b718916ea9c
+      internalID: -1123310702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c2267bdf856944e95cb4d3aa7d6063
+      internalID: -1995938307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 96
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af88708abb795b4abbe7e84eca045aa
+      internalID: -983047789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_42
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 96
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ac2cd90fe547b45a39ff55dde0471c
+      internalID: 860301504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_43
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 78
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b74361abe5dd048a135e98b52ae1d6
+      internalID: -614190604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_44
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 78
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c050f92117c53594d8564e34e4a9f673
+      internalID: 1398369146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_45
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 78
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78368d7470953964b90354ea86b2f501
+      internalID: 551169827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_46
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 78
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae600b2b7c70624d8253068589eed7e
+      internalID: -132006306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_47
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 78
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061e38eb46a3d3f40ac9a58860ad0670
+      internalID: -1969172478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_48
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 78
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbb511d7198cb849948ea8dddb79517
+      internalID: 624942048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_49
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 78
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3455658dd0bf05749bba073e2cc9a3b7
+      internalID: 2127045597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_50
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 78
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4b620e064c2484db6d32bdd4ebf71a
+      internalID: -339217137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_51
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 78
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88b6aa1862c44142812f416d3a3af49
+      internalID: -277608588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser Games - Commando Battle of Britain - Items_52
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 78
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81021807356f62947b2ac4a81a5c7f4a
+      internalID: 1711918041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Browser Games - Commando Battle of Britain - Items_0: -1758760738
+      Browser Games - Commando Battle of Britain - Items_1: -93532456
+      Browser Games - Commando Battle of Britain - Items_10: -1510203941
+      Browser Games - Commando Battle of Britain - Items_11: 101113911
+      Browser Games - Commando Battle of Britain - Items_12: -764550571
+      Browser Games - Commando Battle of Britain - Items_13: 502869995
+      Browser Games - Commando Battle of Britain - Items_14: -84277072
+      Browser Games - Commando Battle of Britain - Items_15: -336998541
+      Browser Games - Commando Battle of Britain - Items_16: 162071881
+      Browser Games - Commando Battle of Britain - Items_17: 1736564712
+      Browser Games - Commando Battle of Britain - Items_18: -510995284
+      Browser Games - Commando Battle of Britain - Items_19: 596209655
+      Browser Games - Commando Battle of Britain - Items_2: 1120654682
+      Browser Games - Commando Battle of Britain - Items_20: 1920651417
+      Browser Games - Commando Battle of Britain - Items_21: 2119030534
+      Browser Games - Commando Battle of Britain - Items_22: -978161576
+      Browser Games - Commando Battle of Britain - Items_23: 1832927394
+      Browser Games - Commando Battle of Britain - Items_24: -2002446318
+      Browser Games - Commando Battle of Britain - Items_25: -2083463073
+      Browser Games - Commando Battle of Britain - Items_26: 670215788
+      Browser Games - Commando Battle of Britain - Items_27: 2038688987
+      Browser Games - Commando Battle of Britain - Items_28: -1438131576
+      Browser Games - Commando Battle of Britain - Items_29: 1946918334
+      Browser Games - Commando Battle of Britain - Items_3: -1917709223
+      Browser Games - Commando Battle of Britain - Items_30: -1594621693
+      Browser Games - Commando Battle of Britain - Items_31: 1624836702
+      Browser Games - Commando Battle of Britain - Items_32: 968620310
+      Browser Games - Commando Battle of Britain - Items_33: 1731609661
+      Browser Games - Commando Battle of Britain - Items_34: -545897443
+      Browser Games - Commando Battle of Britain - Items_35: 1241196892
+      Browser Games - Commando Battle of Britain - Items_36: -1082954116
+      Browser Games - Commando Battle of Britain - Items_37: -1153827406
+      Browser Games - Commando Battle of Britain - Items_38: 890698059
+      Browser Games - Commando Battle of Britain - Items_39: -1123310702
+      Browser Games - Commando Battle of Britain - Items_4: 1699879057
+      Browser Games - Commando Battle of Britain - Items_40: -1995938307
+      Browser Games - Commando Battle of Britain - Items_41: -983047789
+      Browser Games - Commando Battle of Britain - Items_42: 860301504
+      Browser Games - Commando Battle of Britain - Items_43: -614190604
+      Browser Games - Commando Battle of Britain - Items_44: 1398369146
+      Browser Games - Commando Battle of Britain - Items_45: 551169827
+      Browser Games - Commando Battle of Britain - Items_46: -132006306
+      Browser Games - Commando Battle of Britain - Items_47: -1969172478
+      Browser Games - Commando Battle of Britain - Items_48: 624942048
+      Browser Games - Commando Battle of Britain - Items_49: 2127045597
+      Browser Games - Commando Battle of Britain - Items_5: 2111390696
+      Browser Games - Commando Battle of Britain - Items_50: -339217137
+      Browser Games - Commando Battle of Britain - Items_51: -277608588
+      Browser Games - Commando Battle of Britain - Items_52: 1711918041
+      Browser Games - Commando Battle of Britain - Items_6: -1417324908
+      Browser Games - Commando Battle of Britain - Items_7: 1177349483
+      Browser Games - Commando Battle of Britain - Items_8: 1539669903
+      Browser Games - Commando Battle of Britain - Items_9: -2052881575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
