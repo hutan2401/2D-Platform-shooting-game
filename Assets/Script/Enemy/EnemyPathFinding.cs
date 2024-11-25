@@ -30,10 +30,10 @@ public class EnemyPathFinding : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-        rb.velocity = new Vector2(enemySpeed *moveDir.x , rb.velocity.y);
-        isGround = Physics2D.OverlapCircle(groundCheck.transform.position,circleRadius,groundLayer);
-        if(!isGround )
+
+        rb.velocity = new Vector2(enemySpeed * moveDir.x, rb.velocity.y);
+        isGround = Physics2D.OverlapCircle(groundCheck.transform.position, circleRadius, groundLayer);
+        if (!isGround)
         {
             Flip();
         }
@@ -41,7 +41,7 @@ public class EnemyPathFinding : MonoBehaviour
 
     private void Flip()
     {
-        
+
         moveDir *= -1;
         movingRight = !movingRight;
 
@@ -58,8 +58,8 @@ public class EnemyPathFinding : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-       
-        Gizmos.DrawWireSphere(groundCheck.transform.position,circleRadius);
+
+        Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
 
         //rb.MovePosition(rb.position + moveDir * (enemySpeed * Time.fixedDeltaTime));
 

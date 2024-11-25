@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int enemyHealth =1;
 
     private int currentHealth;
+
+    public UnityEvent OnEnemyDeath;
 
     private void Start()
     {
@@ -24,6 +27,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        OnEnemyDeath?.Invoke();
+        Destroy(gameObject,1f);
     }
 }

@@ -1,0 +1,114 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class EnemyRiffle : MonoBehaviour
+{
+    public Transform findPlayer;
+    [SerializeField] private float enemyMoveSpeed = 2f;
+    [SerializeField] private float distance = 1f;
+    [SerializeField] private Transform checkPoint;
+    public LayerMask groundLayer;
+    public bool facingLeft = true;
+
+    [SerializeField] private Transform pointShooting;
+    [SerializeField] private float shootingRange = 5f;
+    [SerializeField] private float fireCooldown = 1.0f;
+    private float cooldownTimer = 0f;
+
+    public GameObject bulletPrefab;
+    public bool inRange = false;
+
+    private Animator animator;
+    private bool isDead = false;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        EnemyHealth healthComponent = GetComponent<EnemyHealth>();
+        if (healthComponent != null)
+        {
+            healthComponent.OnEnemyDeath.AddListener(DeathAnimation);
+        }
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        float speed = 0f;
+        if (isDead) { return; }
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        if (Vector2.Distance(transform.position, findPlayer.position) <= shootingRange)
+        {
+            inRange = true;
+        }
+        else { inRange = false; }
+
+        if (inRange)
+        {
+
+            if (findPlayer.position.x > transform.position.x && facingLeft == true)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                facingLeft = false;
+            }         
+            if (cooldownTimer <= 0)
+            {
+                Debug.Log("Attack"); // set animator setbool
+                animator.SetTrigger("Shooting");
+                FireBullet();
+                cooldownTimer = fireCooldown;
+            }
+        }
+        else
+        {
+            transform.Translate(Vector2.left * Time.deltaTime * enemyMoveSpeed);
+            RaycastHit2D hitGround = Physics2D.Raycast(checkPoint.position, Vector2.down, distance, groundLayer);
+
+            if (hitGround == false && facingLeft )
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                facingLeft = false;
+            }
+            else if (hitGround == false && facingLeft == false)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                facingLeft = true;
+            }
+            speed = enemyMoveSpeed;
+        }
+        animator.SetFloat("xSpeed",speed);
+    }
+
+    private void FireBullet()
+    {
+        GameObject newBullet = Instantiate(bulletPrefab, pointShooting.position, pointShooting.rotation);
+        EnemyProjectile bulletScript = newBullet.GetComponent<EnemyProjectile>();
+        newBullet.GetComponent<EnemyProjectile>().UpdateMoveSpeed(5f);
+    }
+
+    public void DeathAnimation()
+    {
+        isDead = true;
+        if (animator != null)
+        {
+            animator.SetTrigger("Die");
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        if (checkPoint == null)
+        {
+            return;
+        }
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(checkPoint.position, Vector2.down * distance);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, shootingRange);
+    }
+   }

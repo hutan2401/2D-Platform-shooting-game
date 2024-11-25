@@ -8,7 +8,7 @@ public class EnemyProjectile : MonoBehaviour
     [SerializeField] private float speed = 22f;
     [SerializeField] private float projectTileRange = 10f;
     //[SerializeField] private bool isEnemyProjecttile = false;
-    [SerializeField] private int damage = 1;
+    [SerializeField] private int damage =0;
 
 
     private Vector3 startPostion;
@@ -22,7 +22,12 @@ public class EnemyProjectile : MonoBehaviour
         MoveProjectTile();
         DectectFireDistance();
     }
-
+    public void Initialize(float bulletSpeed, float bulletRange, int bulletDamage)
+    {
+        speed = bulletSpeed;
+        projectTileRange = bulletRange;
+        damage = bulletDamage;
+    }
     public void UpdateProjectTileRange(float projectTileRange)
     {
         this.projectTileRange = projectTileRange;
@@ -33,7 +38,7 @@ public class EnemyProjectile : MonoBehaviour
     }
     private void MoveProjectTile()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
     private void DectectFireDistance()
     {
@@ -44,14 +49,14 @@ public class EnemyProjectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
+       // Debug.Log(collision.name);
         PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
-        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+        
         if (!collision.isTrigger && player)
         {
             player.TakeDamage(damage, transform);
             Destroy(gameObject);
         }
-       
+
     }
 }

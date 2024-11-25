@@ -86,7 +86,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
             TakeDamage(1, collision.transform);
         }
     }
-    
+
 
     private IEnumerator DamageRecoveryRoutine()
     {
