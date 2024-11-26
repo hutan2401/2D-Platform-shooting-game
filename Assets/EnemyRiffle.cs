@@ -58,7 +58,6 @@ public class EnemyRiffle : MonoBehaviour
             }         
             if (cooldownTimer <= 0)
             {
-                Debug.Log("Attack"); // set animator setbool
                 animator.SetTrigger("Shooting");
                 FireBullet();
                 cooldownTimer = fireCooldown;

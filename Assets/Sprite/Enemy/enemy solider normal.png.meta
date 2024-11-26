@@ -124,7 +124,7 @@ TextureImporter:
         x: 46
         y: 553
         width: 27
-        height: 37
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +145,7 @@ TextureImporter:
         x: 78
         y: 553
         width: 26
-        height: 36
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +166,7 @@ TextureImporter:
         x: 109
         y: 553
         width: 24
-        height: 35
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1693,7 +1693,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_76
+      name: enemy solider melee_0
       rect:
         serializedVersion: 2
         x: 23
@@ -1714,7 +1714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_77
+      name: enemy solider melee_01
       rect:
         serializedVersion: 2
         x: 53
@@ -1735,7 +1735,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_78
+      name: enemy solider melee_02
       rect:
         serializedVersion: 2
         x: 80
@@ -1756,7 +1756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_79
+      name: enemy solider melee_03
       rect:
         serializedVersion: 2
         x: 106
@@ -1777,7 +1777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_80
+      name: enemy solider melee_011
       rect:
         serializedVersion: 2
         x: 399
@@ -1903,7 +1903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_86
+      name: enemy solider melee_04
       rect:
         serializedVersion: 2
         x: 133
@@ -1924,7 +1924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_87
+      name: enemy solider melee_05
       rect:
         serializedVersion: 2
         x: 162
@@ -1945,7 +1945,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_88
+      name: enemy solider melee_06
       rect:
         serializedVersion: 2
         x: 194
@@ -1966,7 +1966,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_89
+      name: enemy solider melee_07
       rect:
         serializedVersion: 2
         x: 228
@@ -1987,7 +1987,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_90
+      name: enemy solider melee_08
       rect:
         serializedVersion: 2
         x: 262
@@ -2008,7 +2008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_91
+      name: enemy solider melee_09
       rect:
         serializedVersion: 2
         x: 297
@@ -2029,7 +2029,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy solider normal_92
+      name: enemy solider melee_010
       rect:
         serializedVersion: 2
         x: 345
@@ -2308,7 +2308,7 @@ TextureImporter:
         x: 83
         y: 201
         width: 24
-        height: 36
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2329,7 +2329,7 @@ TextureImporter:
         x: 112
         y: 201
         width: 24
-        height: 35
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2350,7 +2350,7 @@ TextureImporter:
         x: 141
         y: 201
         width: 27
-        height: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2371,7 +2371,7 @@ TextureImporter:
         x: 173
         y: 201
         width: 27
-        height: 33
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2392,7 +2392,7 @@ TextureImporter:
         x: 205
         y: 201
         width: 27
-        height: 31
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2413,7 +2413,7 @@ TextureImporter:
         x: 237
         y: 201
         width: 27
-        height: 27
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2434,7 +2434,7 @@ TextureImporter:
         x: 269
         y: 201
         width: 26
-        height: 22
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2455,7 +2455,7 @@ TextureImporter:
         x: 300
         y: 201
         width: 28
-        height: 18
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2476,7 +2476,7 @@ TextureImporter:
         x: 333
         y: 201
         width: 29
-        height: 18
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3362,6 +3362,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      enemy solider melee_0: -537716250
+      enemy solider melee_01: -1689661500
+      enemy solider melee_010: 326636346
+      enemy solider melee_011: -164560065
+      enemy solider melee_02: 708910499
+      enemy solider melee_03: -1438122985
+      enemy solider melee_04: 719904318
+      enemy solider melee_05: 879988728
+      enemy solider melee_06: -1179301709
+      enemy solider melee_07: -81670422
+      enemy solider melee_08: 1171861182
+      enemy solider melee_09: 1903355399
       enemy solider normal_0: -68313946
       enemy solider normal_1: -963013872
       enemy solider normal_10: 1547701653
@@ -3491,25 +3503,13 @@ TextureImporter:
       enemy solider normal_73: 1181009947
       enemy solider normal_74: 2024901975
       enemy solider normal_75: -848746634
-      enemy solider normal_76: -537716250
-      enemy solider normal_77: -1689661500
-      enemy solider normal_78: 708910499
-      enemy solider normal_79: -1438122985
       enemy solider normal_8: 574250961
-      enemy solider normal_80: -164560065
       enemy solider normal_81: 649085228
       enemy solider normal_82: -2114803271
       enemy solider normal_83: 1628825480
       enemy solider normal_84: 891918581
       enemy solider normal_85: 187262111
-      enemy solider normal_86: 719904318
-      enemy solider normal_87: 879988728
-      enemy solider normal_88: -1179301709
-      enemy solider normal_89: -81670422
       enemy solider normal_9: -1354321617
-      enemy solider normal_90: 1171861182
-      enemy solider normal_91: 1903355399
-      enemy solider normal_92: 326636346
       enemy solider normal_93: 644228901
       enemy solider normal_94: 534720918
       enemy solider normal_95: -139723148
