@@ -1940,6 +1940,8 @@ GameObject:
   - component: {fileID: 1689897743}
   - component: {fileID: 1689897742}
   - component: {fileID: 1689897744}
+  - component: {fileID: 1689897745}
+  - component: {fileID: 1689897746}
   m_Layer: 0
   m_Name: 'Boss Tank '
   m_TagString: Untagged
@@ -1988,7 +1990,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1149859395, guid: c1017d7089dcd3341a217c5468bcd432, type: 3}
+  m_Sprite: {fileID: 1332955689, guid: 097468bcb2cad26469b7f8a08ee29bce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2103,16 +2105,53 @@ MonoBehaviour:
   pointThrow: {fileID: 139151012}
   throwRange: 15
   thrownCooldown: 2
-  grenadePrefab: {fileID: 8784895214249566536, guid: 2b888ed81ec817b4cb63ad264e430bcf, type: 3}
+  grenadePrefab: {fileID: 1195393570594307575, guid: 1e98e9b3a79b2374bac8108c9b347b13, type: 3}
   pointShooting: {fileID: 1509178425}
   shootingRange: 15
   fireCooldown: 1
-  bulletPrefab: {fileID: 1195393570594307575, guid: 1e98e9b3a79b2374bac8108c9b347b13, type: 3}
+  bulletPrefab: {fileID: 1276342305999904026, guid: fd501ca0209738a439cecfb95c799a5a, type: 3}
   specialAttackThreshold: 1.89
   specialAttackCooldown: 3
-  specialAttackPrefab: {fileID: 1441438971}
-  specialAttackPoint: {fileID: 833457722760722760, guid: 2b888ed81ec817b4cb63ad264e430bcf, type: 3}
+  specialAttackPrefab: {fileID: 8784895214249566536, guid: 2b888ed81ec817b4cb63ad264e430bcf, type: 3}
+  specialAttackPoint: {fileID: 1441438972}
   randomAttackCooldown: 2
+--- !u!114 &1689897745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689897739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 30
+  OnEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!95 &1689897746
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689897739}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a941fcae7dab6ed48840dfcef7f600bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1732115369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioHitSound
       objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: hitBombSoundSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ee06a07c8c73ab4fb8f1751c4e93740, type: 3}
     - target: {fileID: 858348680389491730, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3902261
