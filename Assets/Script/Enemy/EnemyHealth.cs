@@ -11,7 +11,8 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
 
     public UnityEvent OnEnemyDeath;
-
+    public int CurrentHealth => currentHealth; 
+    public int MaxHealth => enemyHealth;
     private void Start()
     {
         currentHealth = enemyHealth;

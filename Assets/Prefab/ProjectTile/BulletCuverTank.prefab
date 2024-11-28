@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -905325115, guid: c1017d7089dcd3341a217c5468bcd432, type: 3}
+  m_Sprite: {fileID: 714397877, guid: 097468bcb2cad26469b7f8a08ee29bce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.9375}
+  m_Size: {x: 0.6666667, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,3 +188,5 @@ MonoBehaviour:
     m_RotationOrder: 4
   heightY: 3
   splatterPrefab: {fileID: 0}
+  isRotatingProjectile: 0
+  damageEnemy: 1

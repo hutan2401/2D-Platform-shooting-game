@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1017d7089dcd3341a217c5468bcd432
+guid: 097468bcb2cad26469b7f8a08ee29bce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss Tank_0
+      name: Boss Tank 1_0
       rect:
         serializedVersion: 2
         x: 31
@@ -105,62 +105,62 @@ TextureImporter:
         width: 270
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9679d8054c49f7644b54625d61d8526b
-      internalID: 1149859395
+      spriteID: 1835ae7af8aca084fbbd1c3584cafa4a
+      internalID: 1332955689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_1
+      name: Boss Tank 1_1
       rect:
         serializedVersion: 2
         x: 5
-        y: 627
-        width: 269
+        y: 628
+        width: 270
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239fa3f47d82304419b22360d0ad3920
-      internalID: -520346747
+      spriteID: f3bb556865551434a99ebd9b52d869d1
+      internalID: -452560934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_2
+      name: Boss Tank 1_2
       rect:
         serializedVersion: 2
-        x: 340
+        x: 339
         y: 626
         width: 270
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc3c19792f7fcc74eb3d35af419e62fb
-      internalID: -1776153933
+      spriteID: 948ca5048508bab40909addd2c8c5e9c
+      internalID: -2088035449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_3
+      name: Boss Tank 1_3
       rect:
         serializedVersion: 2
         x: 682
@@ -168,20 +168,20 @@ TextureImporter:
         width: 268
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514abbe4fba14144aae1fb5bc32aa8c7
-      internalID: -119189520
+      spriteID: dcce943995e58724c9070e07e64842cf
+      internalID: -713416174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_4
+      name: Boss Tank 1_4
       rect:
         serializedVersion: 2
         x: 6
@@ -189,20 +189,20 @@ TextureImporter:
         width: 271
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4a018a8dff08a44b36a173135cf59d
-      internalID: 949200589
+      spriteID: 7e23d3087b7f36643a9b57b23bfbc0e6
+      internalID: -228856192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_5
+      name: Boss Tank 1_5
       rect:
         serializedVersion: 2
         x: 327
@@ -210,41 +210,62 @@ TextureImporter:
         width: 270
         height: 187
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7078666dd274771459a97ded60444069
-      internalID: -725159575
+      spriteID: 07376f7db63f7ac48a96dabbaf9fa483
+      internalID: -39429711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_6
+      name: Boss Tank 1_6
       rect:
         serializedVersion: 2
         x: 630
         y: 411
         width: 270
-        height: 204
+        height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9c1788003526d64c966f9c18731ad32
-      internalID: -830678681
+      spriteID: c5fbc8484c2029c419fee63c2172370f
+      internalID: -560092009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_8
+      name: Boss Tank 1_7
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 531
+        width: 27
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d453772101481b34481c113acb259dde
+      internalID: 1655284625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Tank 1_8
       rect:
         serializedVersion: 2
         x: 969
@@ -252,41 +273,41 @@ TextureImporter:
         width: 270
         height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb3fab9b187837941880585fc2626bf8
-      internalID: -914778210
+      spriteID: a026b78b9b146b046aaa06b87f609f60
+      internalID: -1067883662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_9
+      name: Boss Tank 1_9
       rect:
         serializedVersion: 2
         x: 23
         y: 250
         width: 256
         height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.74660397}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ca355d8ca3e4f64fae176aad89ce9f4
-      internalID: 1881456058
+      spriteID: 619f849609ddd0749be5b7ad53531e42
+      internalID: -818726666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_10
+      name: Boss Tank 1_10
       rect:
         serializedVersion: 2
         x: 50
@@ -294,20 +315,20 @@ TextureImporter:
         width: 31
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0f4bca09176781448d945cc5cdf40e5
-      internalID: -1089798377
+      spriteID: d2c52b6675d581b47b2e2f453048724c
+      internalID: 1073827198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_11
+      name: Boss Tank 1_11
       rect:
         serializedVersion: 2
         x: 86
@@ -315,20 +336,20 @@ TextureImporter:
         width: 21
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 238fec79483f78d4e84137e1ee5fbdf1
-      internalID: 1956848694
+      spriteID: 88d796a561bfb98439e590d7f38520eb
+      internalID: 1225197646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_12
+      name: Boss Tank 1_12
       rect:
         serializedVersion: 2
         x: 61
@@ -336,20 +357,20 @@ TextureImporter:
         width: 122
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efbf64b647d71bf4a8a6edcc7099445c
-      internalID: -502064793
+      spriteID: 1e0e2ef1c8509694ca2af73c169227f6
+      internalID: 1500027180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_13
+      name: Boss Tank 1_13
       rect:
         serializedVersion: 2
         x: 227
@@ -357,20 +378,20 @@ TextureImporter:
         width: 107
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35601b3f3690b4349892c762cc563738
-      internalID: -1220485979
+      spriteID: 12fe7370b34da6a468d57986edf35314
+      internalID: -678860954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_14
+      name: Boss Tank 1_14
       rect:
         serializedVersion: 2
         x: 61
@@ -378,20 +399,20 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a637b4cdbe5a4a34f8626ce377adfd74
-      internalID: -905325115
+      spriteID: 182e9f06c63580c4f876351bfca331ce
+      internalID: 714397877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_15
+      name: Boss Tank 1_15
       rect:
         serializedVersion: 2
         x: 82
@@ -399,20 +420,20 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 220df5dfbd5c2b64086af9e3e8693d15
-      internalID: 1637492231
+      spriteID: 8f9cc5dc3fc778b43b70943b91f282be
+      internalID: 1228499125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_16
+      name: Boss Tank 1_16
       rect:
         serializedVersion: 2
         x: 103
@@ -420,20 +441,20 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d982736e14b1ff4e93407f5c14cac68
-      internalID: -1278974273
+      spriteID: 92807c1361a1bc047a802fad1281cfd5
+      internalID: 1759107745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_17
+      name: Boss Tank 1_17
       rect:
         serializedVersion: 2
         x: 124
@@ -441,20 +462,20 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ab0a03fa32c114dabf93e978ec4d70
-      internalID: 1859851116
+      spriteID: 029a158800a1d98459c34d2dcfa6b14a
+      internalID: 256031309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_18
+      name: Boss Tank 1_18
       rect:
         serializedVersion: 2
         x: 145
@@ -462,20 +483,20 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3aadc53e54396f448c20f5dc474d874
-      internalID: -935070363
+      spriteID: bef4656a2ae372647a4cc8bd7101ee80
+      internalID: 907964129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_19
+      name: Boss Tank 1_19
       rect:
         serializedVersion: 2
         x: 61
@@ -483,20 +504,20 @@ TextureImporter:
         width: 64
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73f0aa28a99afb488cb426115810ee4
-      internalID: 385729814
+      spriteID: e107e6018d467cd4db8875bd86f57341
+      internalID: -834333993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Tank_20
+      name: Boss Tank 1_20
       rect:
         serializedVersion: 2
         x: 133
@@ -504,14 +525,14 @@ TextureImporter:
         width: 53
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31e62149e93aee4f894e49a5132e242
-      internalID: -2128698202
+      spriteID: 35dc6993fab23e24a920bb0495285d6c
+      internalID: 1730762339
       vertices: []
       indices: 
       edges: []
@@ -527,27 +548,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boss Tank_0: 1149859395
-      Boss Tank_1: -520346747
-      Boss Tank_10: -1089798377
-      Boss Tank_11: 1956848694
-      Boss Tank_12: -502064793
-      Boss Tank_13: -1220485979
-      Boss Tank_14: -905325115
-      Boss Tank_15: 1637492231
-      Boss Tank_16: -1278974273
-      Boss Tank_17: 1859851116
-      Boss Tank_18: -935070363
-      Boss Tank_19: 385729814
-      Boss Tank_2: -1776153933
-      Boss Tank_20: -2128698202
-      Boss Tank_3: -119189520
-      Boss Tank_4: 949200589
-      Boss Tank_5: -725159575
-      Boss Tank_6: -830678681
-      Boss Tank_7: -1510676728
-      Boss Tank_8: -914778210
-      Boss Tank_9: 1881456058
+      Boss Tank 1_0: 1332955689
+      Boss Tank 1_1: -452560934
+      Boss Tank 1_10: 1073827198
+      Boss Tank 1_11: 1225197646
+      Boss Tank 1_12: 1500027180
+      Boss Tank 1_13: -678860954
+      Boss Tank 1_14: 714397877
+      Boss Tank 1_15: 1228499125
+      Boss Tank 1_16: 1759107745
+      Boss Tank 1_17: 256031309
+      Boss Tank 1_18: 907964129
+      Boss Tank 1_19: -834333993
+      Boss Tank 1_2: -2088035449
+      Boss Tank 1_20: 1730762339
+      Boss Tank 1_3: -713416174
+      Boss Tank 1_4: -228856192
+      Boss Tank 1_5: -39429711
+      Boss Tank 1_6: -560092009
+      Boss Tank 1_7: 1655284625
+      Boss Tank 1_8: -1067883662
+      Boss Tank 1_9: -818726666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

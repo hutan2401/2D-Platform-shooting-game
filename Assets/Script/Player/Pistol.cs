@@ -147,7 +147,7 @@ public class Pistol : MonoBehaviour
     }
     private void TriggerRangedAttack()
     {
-        Debug.Log("Shooting");
+        //Debug.Log("Shooting");
 
         if (isLookUp)
         {
