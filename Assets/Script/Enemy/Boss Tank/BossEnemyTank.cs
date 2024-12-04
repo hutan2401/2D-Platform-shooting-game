@@ -141,7 +141,6 @@ public class BossEnemyTank : MonoBehaviour
 
     private void ThrowBomb()
     {
-       // Debug.Log("Boss throws a bomb!");
         Instantiate(grenadePrefab, pointThrow.position, Quaternion.identity);
     }
 

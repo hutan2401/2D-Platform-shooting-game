@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,15 +20,24 @@ public class Shooter : MonoBehaviour,IEnemy
 
 
     private bool isShooting = false;
+    private void OnValidate()
+    {
+        if (oscillate) { stagger = true; }
+        if (!oscillate) { stagger = false; }
+        if (projectilesPerBurst < 1) { projectilesPerBurst = 1; }
+        if (burstCount < 1) { burstCount = 1; }
+        if (timeBetweenBursts < 0.1f) { timeBetweenBursts = 0.1f; }
+        if (restTime < 0.1f) { restTime = 0.1f; }
+        if (startingDistance < 0.1f) { startingDistance = 0.1f; }
+        if (angleSpread == 0) { projectilesPerBurst = 1; }
+        if (bulletMoveSpeed <= 0) { bulletMoveSpeed = 0.1f; }
+    }
     public void Attack()
     {
         if (!isShooting)
         {
             StartCoroutine(ShootRoutine());
         }
-        //Vector2 target = PlayerControls.Instance.transform.position - transform.position;
-        //GameObject newB = Instantiate(bulletPrefab,transform.position,Quaternion.identity);
-        //newB.transform.right = target;
     }
     private IEnumerator ShootRoutine()
     {
@@ -115,5 +124,45 @@ public class Shooter : MonoBehaviour,IEnemy
         Vector2 pos = new Vector2(x, y);
 
         return pos;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+
+        // Lấy hướng đến Player
+        if (Application.isPlaying && PlayerControls.Instance != null)
+        {
+            Vector2 targetDirection = PlayerControls.Instance.transform.position - transform.position;
+            float targetAngle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+
+            // Tính toán góc bắn
+            float halfAngleSpread = angleSpread / 2f;
+
+            // Tính toán điểm đầu và cuối của góc bắn
+            Vector3 startAnglePos = new Vector3(
+                transform.position.x + Mathf.Cos((targetAngle - halfAngleSpread) * Mathf.Deg2Rad) * 2f,
+                transform.position.y + Mathf.Sin((targetAngle - halfAngleSpread) * Mathf.Deg2Rad) * 2f,
+                transform.position.z
+            );
+
+            Vector3 endAnglePos = new Vector3(
+                transform.position.x + Mathf.Cos((targetAngle + halfAngleSpread) * Mathf.Deg2Rad) * 2f,
+                transform.position.y + Mathf.Sin((targetAngle + halfAngleSpread) * Mathf.Deg2Rad) * 2f,
+                transform.position.z
+            );
+
+            // Vẽ nửa hình nón đại diện cho góc bắn
+            Gizmos.DrawLine(transform.position, startAnglePos);
+            Gizmos.DrawLine(transform.position, endAnglePos);
+
+            // Vẽ đường thẳng hướng trực tiếp đến Player
+            Gizmos.color = Color.black;
+            Gizmos.DrawLine(transform.position, transform.position + (Vector3)targetDirection.normalized * 2f);
+        }
+
+        // Vẽ vị trí xuất hiện của viên đạn
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, startingDistance);
     }
 }

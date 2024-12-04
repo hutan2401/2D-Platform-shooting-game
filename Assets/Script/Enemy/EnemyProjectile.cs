@@ -9,7 +9,7 @@ public class EnemyProjectile : MonoBehaviour
     [SerializeField] private float projectTileRange = 10f;
     //[SerializeField] private bool isEnemyProjecttile = false;
     [SerializeField] private int damage =0;
-
+    [SerializeField] private Vector3 direction = Vector3.right;
 
     private Vector3 startPostion;
     void Start()
@@ -36,9 +36,13 @@ public class EnemyProjectile : MonoBehaviour
     {
         this.speed = speed;
     }
+    public void SetDirection(Vector3 newDirection)
+    {
+        direction = newDirection.normalized;
+    }
     private void MoveProjectTile()
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime);
     }
     private void DectectFireDistance()
     {

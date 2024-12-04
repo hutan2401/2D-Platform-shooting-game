@@ -12,9 +12,11 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
     private int currentHealth;
     private bool canTakeDamage = true;
-    //private bool isDead;
     private Slider healthSlider;
+
+    public Transform lastSafePosition;
     public bool isDead { get; private set; }
+    private Vector3 respawnPosition;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -55,18 +57,15 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         if(currentHealth <= 0)
         {
             isDead = true;
-            currentHealth = 0;            
+            currentHealth = 0;
+
+            respawnPosition = transform.position;
 
             GetComponent<Animator>().SetTrigger("isDead");
             StartCoroutine(DeathLoadSceneRoutine());
         }
     }
-    private IEnumerator DeathLoadSceneRoutine()
-    {
-        yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    
     private void UpdateHealthSlider()
     {
         if (healthSlider == null)
@@ -78,6 +77,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
     }
 
+    
     private void OnCollisionStay2D(Collision2D collision)
     {
         EnemyAI enemy = collision.gameObject.GetComponent<EnemyAI>();
@@ -87,10 +87,35 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         }
     }
 
+    private IEnumerator DeathLoadSceneRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //transform.position = lastSafePosition.position;
+    }
 
     private IEnumerator DamageRecoveryRoutine()
     {
         yield return new WaitForSeconds(damageRecoveryTime);
         canTakeDamage = true;
+    }
+
+    private IEnumerator RespawnRoutine()
+    {
+        // Delay for death animation or effects
+        yield return new WaitForSeconds(2f);
+
+        // Reset the player's state and health
+        isDead = false;
+        currentHealth = maxHealth;
+        UpdateHealthSlider();
+
+        // Respawn the player at the saved position
+        transform.position = respawnPosition;
+
+        // Reactivate any necessary components (like movement or collision)
+        canTakeDamage = true;
+        Debug.Log("Player respawned at position: " + respawnPosition);
     }
 }
