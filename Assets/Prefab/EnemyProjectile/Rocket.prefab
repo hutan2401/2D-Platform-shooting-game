@@ -187,6 +187,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   heightY: 5
-  splatterPrefab: {fileID: 0}
+  splatterPrefab: {fileID: 7071183561270099121, guid: ad2be0ebf9c9a8c48838202c28084034, type: 3}
   isRotatingProjectile: 1
   damageEnemy: 1

@@ -16,10 +16,21 @@ public class BossAirplane : MonoBehaviour
     [SerializeField] private GameObject RocketPrefab;
     [SerializeField] private float rocketCooldown = 5f; // Cooldown between rockets
     private bool canShootRocket = true;
-
-
+    private Animator animator;
+    private bool isDead = false;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        EnemyHealth enemyHealth = GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
+        {
+            enemyHealth.OnEnemyDeath.AddListener(BossDeath);
+        }
+    }
     private void Update()
     {
+        if (isDead) return;
+
         if (Vector2.Distance(transform.position, PlayerControls.Instance.transform.position) <= distance)
         {
             if (canAttack)
@@ -98,6 +109,12 @@ public class BossAirplane : MonoBehaviour
         // Wait for cooldown before allowing another rocket shot
         yield return new WaitForSeconds(rocketCooldown);
         canShootRocket = true;
+    }
+    private void BossDeath()
+    {
+        isDead = true;
+        Debug.Log("Boss is dead!");
+        animator.SetTrigger("Die");
     }
 
     private void OnDrawGizmosSelected()

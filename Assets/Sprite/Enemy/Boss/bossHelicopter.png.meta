@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -667,10 +680,10 @@ TextureImporter:
       name: bossHelicopter_27
       rect:
         serializedVersion: 2
-        x: 382
-        y: 28
+        x: 381
+        y: 18
         width: 30
-        height: 40
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -685,33 +698,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossHelicopter_28
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 55
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09790b7b8c96ad646a82f2d6e83699f5
-      internalID: -1368743160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bossHelicopter_29
       rect:
         serializedVersion: 2
-        x: 474
+        x: 466
         y: 22
-        width: 24
+        width: 32
         height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -727,97 +719,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossHelicopter_30
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 44
-        width: 5
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16a9e780ba2811f4abfde71ad204851b
-      internalID: -1223157495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_31
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 49
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fe2d39a04fd76140a274938c1171687
-      internalID: -1196377691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_32
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 38
-        width: 20
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5b194a27b5a54c418e4119886556970
-      internalID: 1020948488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_33
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 36
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40daaa8b06f1c6b44a6b7d104d2c165e
-      internalID: 1680338356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bossHelicopter_34
       rect:
         serializedVersion: 2
-        x: 422
-        y: 27
-        width: 29
-        height: 15
+        x: 421
+        y: 18
+        width: 39
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,132 +735,6 @@ TextureImporter:
       bones: []
       spriteID: 6898869d16b890945b6290ffcdf0ff4d
       internalID: 2066472962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_35
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 24
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a0dabdcd42216b45950d920491570eb
-      internalID: -812460771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_36
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 19
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04049d82ed8460a4eacf8b016d024313
-      internalID: 157260894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_37
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 23
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22483879b115bf049b66a0304cda2de9
-      internalID: 487905984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_38
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 19
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6c00808448c8894bb54a4566e5c055f
-      internalID: 277775803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_39
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 21
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3c5bea56a20fc7419de43781908e412
-      internalID: 1511356364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossHelicopter_40
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 23
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39f9edd52b93e094fa0edf004c128c83
-      internalID: -2057641454
       vertices: []
       indices: 
       edges: []
