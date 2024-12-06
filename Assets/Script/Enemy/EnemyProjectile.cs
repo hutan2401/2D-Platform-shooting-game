@@ -10,7 +10,7 @@ public class EnemyProjectile : MonoBehaviour
     //[SerializeField] private bool isEnemyProjecttile = false;
     [SerializeField] private int damage =0;
     [SerializeField] private Vector3 direction = Vector3.right;
-
+    [SerializeField] private GameObject effectPrefab;
     private Vector3 startPostion;
     void Start()
     {
@@ -59,6 +59,11 @@ public class EnemyProjectile : MonoBehaviour
         if (!collision.isTrigger && player)
         {
             player.TakeDamage(damage, transform);
+            if (effectPrefab != null)
+            {
+                Instantiate(effectPrefab, transform.position,Quaternion.identity);
+            }
+
             Destroy(gameObject);
         }
 

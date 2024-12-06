@@ -7,20 +7,28 @@ using UnityEngine.UI;
 
 public class PlayerHealth : SingleTon<PlayerHealth>
 {
+    [Header("Health Settings")]
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float damageRecoveryTime = 1f;
 
+    [Header("Lives Settings")]
+    [SerializeField] private int maxLives = 3; // Maximum lives
+    private int currentLives;
+
     private int currentHealth;
     private bool canTakeDamage = true;
+    private bool isRespawning = false;
     private Slider healthSlider;
 
-    public Transform lastSafePosition;
+   // public Transform lastSafePosition;
     public bool isDead { get; private set; }
     private Vector3 respawnPosition;
     private void Start()
     {
         currentHealth = maxHealth;
+        currentLives = maxLives;
         isDead = false;
+        isRespawning = false;
 
     }
 
@@ -32,7 +40,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
     }
     public void TakeDamage(int damageAmount, Transform hitTransform)
     {
-        if (!canTakeDamage) { return; }
+        if (!canTakeDamage || isDead) { return; }
 
    
         //StartCoroutine(flash.FlashRoutine());
@@ -41,7 +49,10 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         Debug.Log("heal:" +currentHealth);
         StartCoroutine(DamageRecoveryRoutine());
         UpdateHealthSlider();
-        //CheckIfPlayerDeath();
+        if (currentHealth <= 0)
+        {
+            CheckIfPlayerDeath();
+        }
     }
     public void HealPlayer()
     {
@@ -54,15 +65,24 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
     private void CheckIfPlayerDeath()
     {
-        if(currentHealth <= 0)
+        if (isRespawning || currentHealth > 0) return;
+
+        currentHealth = 0;
+        currentLives--;
+        isDead = true;
+
+        if (currentLives > 0)
         {
-            isDead = true;
-            currentHealth = 0;
-
-            respawnPosition = transform.position;
-
+            // Player respawns
+            Debug.Log($"Player died. Remaining lives: {currentLives}");
             GetComponent<Animator>().SetTrigger("isDead");
-            StartCoroutine(DeathLoadSceneRoutine());
+            StartCoroutine(RespawnRoutine());
+        }
+        else
+        {
+            // Game Over
+            Debug.Log("Game Over! No lives remaining.");
+            StartCoroutine(GameOverRoutine());
         }
     }
     
@@ -100,22 +120,23 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         yield return new WaitForSeconds(damageRecoveryTime);
         canTakeDamage = true;
     }
-
     private IEnumerator RespawnRoutine()
     {
-        // Delay for death animation or effects
+        isRespawning = true;
         yield return new WaitForSeconds(2f);
 
-        // Reset the player's state and health
+        currentHealth = maxHealth; // Reset health on respawn
         isDead = false;
-        currentHealth = maxHealth;
-        UpdateHealthSlider();
+        isRespawning = false;
 
-        // Respawn the player at the saved position
-        transform.position = respawnPosition;
-
-        // Reactivate any necessary components (like movement or collision)
-        canTakeDamage = true;
-        Debug.Log("Player respawned at position: " + respawnPosition);
+        transform.position = Vector3.zero; // Change to your respawn point
+        Debug.Log("Player respawned.");
     }
+    private IEnumerator GameOverRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Returning to Main Menu...");
+        //SceneManager.LoadScene("MainMenu"); // Load your main menu or game over scene
+    }
+   
 }

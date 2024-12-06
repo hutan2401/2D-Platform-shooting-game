@@ -25,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
             Die();
         }
     }
-
+   
     private void Die()
     {
         OnEnemyDeath?.Invoke();
