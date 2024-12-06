@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class EnemyRiffle : MonoBehaviour
 {
-    public Transform findPlayer;
     [SerializeField] private float enemyMoveSpeed = 2f;
     [SerializeField] private float distance = 1f;
     [SerializeField] private Transform checkPoint;
@@ -36,13 +35,14 @@ public class EnemyRiffle : MonoBehaviour
     private void Update()
     {
         float speed = 0f;
+        Vector3 playerPosition = PlayerControls.Instance.transform.position;
         if (isDead) { return; }
         if (cooldownTimer > 0)
         {
             cooldownTimer -= Time.deltaTime;
         }
 
-        if (Vector2.Distance(transform.position, findPlayer.position) <= shootingRange)
+        if (Vector2.Distance(transform.position, playerPosition) <= shootingRange)
         {
             inRange = true;
         }
@@ -51,7 +51,7 @@ public class EnemyRiffle : MonoBehaviour
         if (inRange)
         {
 
-            if (findPlayer.position.x > transform.position.x && facingLeft == true)
+            if (playerPosition.x > transform.position.x && facingLeft == true)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 facingLeft = false;

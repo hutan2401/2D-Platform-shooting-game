@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossEnemyTank : MonoBehaviour
 {
-    [SerializeField] private Transform findPlayer;
     [SerializeField] private float enemyMoveSpeed = 2f;
     [SerializeField] private float distance = 1f;
     [SerializeField] private Transform checkPoint;
@@ -107,7 +106,8 @@ public class BossEnemyTank : MonoBehaviour
     private void PerformRandomAttack()
     {
         // Check if the player is in range
-        float playerDistance = Vector2.Distance(transform.position, findPlayer.position);
+        Vector3 playerPosition = PlayerControls.Instance.transform.position;
+        float playerDistance = Vector2.Distance(transform.position, playerPosition);
         bool inThrowRange = playerDistance <= throwRange;
         bool inShootingRange = playerDistance <= shootingRange;
 

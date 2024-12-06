@@ -11,7 +11,6 @@ public class enemyMelee : MonoBehaviour
     public bool facingLeft = true;
 
     [Header("Find Player")]
-    public Transform findPlayer;
     public bool inRange = false;
     [SerializeField] private float attackRange = 10f;
     public float retrieveDistance = 2.0f;
@@ -38,7 +37,8 @@ public class enemyMelee : MonoBehaviour
     {
         float speed = 0f;
         if(isDead) { return; }
-        if (Vector2.Distance(transform.position, findPlayer.position) <= attackRange)
+        Vector3 playerPosition = PlayerControls.Instance.transform.position;
+        if (Vector2.Distance(transform.position, playerPosition) <= attackRange)
         {
             inRange = true;
         }
@@ -48,15 +48,15 @@ public class enemyMelee : MonoBehaviour
         {
             Debug.Log("chasing player");
 
-            if (findPlayer.position.x > transform.position.x && facingLeft == true)
+            if (playerPosition.x > transform.position.x && facingLeft == true)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 facingLeft = false;
             }
 
-            if (Vector2.Distance(transform.position, findPlayer.position) > retrieveDistance)
+            if (Vector2.Distance(transform.position, playerPosition) > retrieveDistance)
             {
-                transform.position = Vector2.MoveTowards(transform.position, findPlayer.position, chaseSpeed * Time.fixedDeltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, playerPosition, chaseSpeed * Time.fixedDeltaTime);
 
                 speed = chaseSpeed;
             }

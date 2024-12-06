@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemySolider : MonoBehaviour
 {
-    [SerializeField] private Transform findPlayer;
     [SerializeField] private float enemyMoveSpeed = 2f;
     [SerializeField] private float distance = 1f;
     [SerializeField] private Transform checkPoint;
@@ -42,24 +41,25 @@ public class EnemySolider : MonoBehaviour
     private void Update()
     {
         float speed = 0f;
+        Vector3 playerPosition = PlayerControls.Instance.transform.position;
         if (isDead) { return; }
         // Cooldowns
         if (cooldownTimer > 0) cooldownTimer -= Time.deltaTime;
        
 
         // Check distance to player
-        float playerDistance = Vector2.Distance(transform.position, findPlayer.position);
+        float playerDistance = Vector2.Distance(transform.position, playerPosition);
         inRange = playerDistance <= throwRange;
 
         if (inRange)
         {
             // Face the player
-            if (findPlayer.position.x > transform.position.x && facingLeft)
+            if (playerPosition.x > transform.position.x && facingLeft)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 facingLeft = false;
             }
-            else if (findPlayer.position.x < transform.position.x && !facingLeft)
+            else if (playerPosition.x < transform.position.x && !facingLeft)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 facingLeft = true;
