@@ -13,7 +13,10 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
     [Header("Lives Settings")]
     [SerializeField] private int maxLives = 3; // Maximum lives
+    [SerializeField] private Text textLives;
     private int currentLives;
+
+    [SerializeField] private GameObject respawnPoint;
 
     private int currentHealth;
     private bool canTakeDamage = true;
@@ -29,6 +32,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         currentLives = maxLives;
         isDead = false;
         isRespawning = false;
+        UpdateUITextLive();
 
     }
 
@@ -69,6 +73,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
         currentHealth = 0;
         currentLives--;
+        UpdateUITextLive();
         isDead = true;
 
         if (currentLives > 0)
@@ -82,6 +87,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         {
             // Game Over
             Debug.Log("Game Over! No lives remaining.");
+            GetComponent<Animator>().SetTrigger("isDead");
             StartCoroutine(GameOverRoutine());
         }
     }
@@ -95,6 +101,14 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
 
+    }
+    private void UpdateUITextLive()
+    {
+        if(currentLives <=0) return;
+        if (textLives != null)
+        {
+            textLives.text = "x" + currentLives;
+        }
     }
 
     
@@ -129,7 +143,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         isDead = false;
         isRespawning = false;
 
-        transform.position = Vector3.zero; // Change to your respawn point
+        transform.position = new Vector2(respawnPoint.transform.position.x,0); // Change to your respawn point
         Debug.Log("Player respawned.");
     }
     private IEnumerator GameOverRoutine()
