@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform defaultPosition;
     [SerializeField] private Transform crouchPostion;
     [Header("Other Settings")]
-    [SerializeField] private Text bulletAmmoText;
+    [SerializeField] private TMP_Text bulletAmmoText;
 
     public Transform damageCollider; // Collider for melee attack
     public int damageAmount = 10;     // Damage for the melee attack

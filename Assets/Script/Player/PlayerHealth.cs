@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
     [Header("Lives Settings")]
     [SerializeField] private int maxLives = 3; // Maximum lives
-    [SerializeField] private Text textLives;
+    [SerializeField] private TMP_Text textLives;
     private int currentLives;
     [Header("Respawn Point Settings")]
     [SerializeField] private GameObject respawnPoint;
