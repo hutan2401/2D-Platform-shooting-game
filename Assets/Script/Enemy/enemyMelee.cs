@@ -63,7 +63,6 @@ public class enemyMelee : MonoBehaviour
             else
             {
                 Debug.Log("Attack"); // set animator setbool
-                //animator.SetTrigger("Attack");
                 TriggerAttack();
             }
         }

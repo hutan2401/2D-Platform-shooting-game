@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
-    //[SerializeField] private GameObject bulletPrefab;
+    [Header("Shooting Settings")]
     [SerializeField] private BulletType defaultBulletType;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private Transform headPosition; 
     [SerializeField] private Transform defaultPosition;
     [SerializeField] private Transform crouchPostion;
+    [Header("Other Settings")]
     [SerializeField] private Text bulletAmmoText;
 
     public Transform damageCollider; // Collider for melee attack

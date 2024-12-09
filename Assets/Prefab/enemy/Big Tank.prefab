@@ -75,8 +75,8 @@ GameObject:
   - component: {fileID: 1046195009812688836}
   - component: {fileID: 2994619968556695484}
   - component: {fileID: 8040783314985520683}
-  - component: {fileID: 7237520518447969469}
   - component: {fileID: 2247997635478896875}
+  - component: {fileID: 7237520518447969469}
   m_Layer: 0
   m_Name: Big Tank
   m_TagString: Untagged
@@ -237,7 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa341e0bdfedf5b41bfb2c56fcb72a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findPlayer: {fileID: 0}
   enemyMoveSpeed: 2
   distance: 1
   checkPoint: {fileID: 4975702701952572268}
@@ -250,6 +249,22 @@ MonoBehaviour:
   fireCooldown: 5
   bulletPrefab: {fileID: 1276342305999904026, guid: fd501ca0209738a439cecfb95c799a5a, type: 3}
   inRange: 0
+--- !u!114 &2247997635478896875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348422768879677701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  OnEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &7237520518447969469
 Animator:
   serializedVersion: 5
@@ -271,19 +286,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2247997635478896875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6348422768879677701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 1
-  OnEnemyDeath:
-    m_PersistentCalls:
-      m_Calls: []

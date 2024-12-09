@@ -15,13 +15,20 @@ public class PlayerHealth : SingleTon<PlayerHealth>
     [SerializeField] private int maxLives = 3; // Maximum lives
     [SerializeField] private Text textLives;
     private int currentLives;
-
+    [Header("Respawn Point Settings")]
     [SerializeField] private GameObject respawnPoint;
+
+    [Header("Death Menu Settings")]
+    [SerializeField] private GameObject deathMenu;
+    [SerializeField] private Animator showMenuDeathAnimator;
 
     private int currentHealth;
     private bool canTakeDamage = true;
     private bool isRespawning = false;
     private Slider healthSlider;
+
+    private Animator deathAnimator;
+   
 
    // public Transform lastSafePosition;
     public bool isDead { get; private set; }
@@ -33,11 +40,15 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         isDead = false;
         isRespawning = false;
         UpdateUITextLive();
-
+        deathAnimator = GetComponent<Animator>();
+        GameObject menuObject = GameObject.Find("DeathMenu"); // Replace with the correct name of your GameObject
+        if (menuObject != null)
+        {
+            showMenuDeathAnimator = menuObject.GetComponent<Animator>();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
         UpdateHealthSlider();
         CheckIfPlayerDeath();
@@ -80,14 +91,14 @@ public class PlayerHealth : SingleTon<PlayerHealth>
         {
             // Player respawns
             Debug.Log($"Player died. Remaining lives: {currentLives}");
-            GetComponent<Animator>().SetTrigger("isDead");
+            deathAnimator.SetTrigger("isDead");
             StartCoroutine(RespawnRoutine());
         }
         else
         {
             // Game Over
             Debug.Log("Game Over! No lives remaining.");
-            GetComponent<Animator>().SetTrigger("isDead");
+            deathAnimator.SetTrigger("isDead");
             StartCoroutine(GameOverRoutine());
         }
     }
@@ -149,6 +160,15 @@ public class PlayerHealth : SingleTon<PlayerHealth>
     private IEnumerator GameOverRoutine()
     {
         yield return new WaitForSeconds(2f);
+        if (deathMenu != null) // Check if the GameObject is assigned
+        {
+            deathMenu.SetActive(true); // Show the death menu
+            if (showMenuDeathAnimator != null) // Optional: Animate the menu
+            {
+                showMenuDeathAnimator.SetTrigger("ShowMenu");
+            }
+        }
+
         Debug.Log("Returning to Main Menu...");
         //SceneManager.LoadScene("MainMenu"); // Load your main menu or game over scene
     }

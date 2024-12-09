@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3950934794165461068}
   m_Layer: 0
   m_Name: Enemy Rifle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa341e0bdfedf5b41bfb2c56fcb72a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findPlayer: {fileID: 0}
   enemyMoveSpeed: 2
   distance: 1
   checkPoint: {fileID: 869702322643073193}
