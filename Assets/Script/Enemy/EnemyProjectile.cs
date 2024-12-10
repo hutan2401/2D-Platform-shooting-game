@@ -7,7 +7,6 @@ public class EnemyProjectile : MonoBehaviour
    
     [SerializeField] private float speed = 22f;
     [SerializeField] private float projectTileRange = 10f;
-    //[SerializeField] private bool isEnemyProjecttile = false;
     [SerializeField] private int damage =0;
     [SerializeField] private Vector3 direction = Vector3.right;
     [SerializeField] private GameObject effectPrefab;

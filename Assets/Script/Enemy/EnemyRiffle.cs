@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class EnemyRiffle : MonoBehaviour
 {
+    [Header("Enemy Settings")]
     [SerializeField] private float enemyMoveSpeed = 2f;
     [SerializeField] private float distance = 1f;
     [SerializeField] private Transform checkPoint;
-    public LayerMask groundLayer;
+    [SerializeField] private LayerMask groundLayer;
     public bool facingLeft = true;
-
+    [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform pointShooting;
     [SerializeField] private float shootingRange = 5f;
     [SerializeField] private float fireCooldown = 1.0f;
+
+    [Header("Points Settings")]
+    [SerializeField] private int score = 5;
     private float cooldownTimer = 0f;
 
-    public GameObject bulletPrefab;
+    
     public bool inRange = false;
 
     private Animator animator;
@@ -93,6 +97,7 @@ public class EnemyRiffle : MonoBehaviour
     public void DeathAnimation()
     {
         isDead = true;
+        ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {
             animator.SetTrigger("Die");

@@ -12,6 +12,7 @@ public class EnemySolider : MonoBehaviour
 
     [Header("Ranged Attack Settings")]
     [SerializeField] private Transform pointShooting;
+    [SerializeField] private GameObject grenadePrefab;
     [SerializeField] private float throwRange = 5f;
     [SerializeField] private float thrownCooldown = 2.0f;
     private float cooldownTimer = 0f;
@@ -23,13 +24,15 @@ public class EnemySolider : MonoBehaviour
     [SerializeField] private Transform meleeAttackPoint;
     [SerializeField] private float meleeRadius = 0.5f;
 
-    public GameObject grenadePrefab;
+    [Header("Points Settings")]
+    [SerializeField] private int score = 5;
+    
 
     public bool inRange = false;
 
     private Animator animator;
     private bool isDead = false;
-    private int score = 5;
+    
     private void Start()
     {
         animator = GetComponent<Animator>();
