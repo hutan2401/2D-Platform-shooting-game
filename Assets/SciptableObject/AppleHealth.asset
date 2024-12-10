@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22df400b3b2f72c4ba51e42352f399c7, type: 3}
   m_Name: AppleHealth
   m_EditorClassIdentifier: 
-  loopSprite: {fileID: 0}
+  loopSprite: {fileID: 1946918334, guid: 443f99c2097efb149a62dc5c61bdf4cd, type: 3}
   lootName: appleHealth
   dropChance: 30
   pickUpType: 1

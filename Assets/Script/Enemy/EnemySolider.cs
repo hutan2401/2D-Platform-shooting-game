@@ -29,6 +29,7 @@ public class EnemySolider : MonoBehaviour
 
     private Animator animator;
     private bool isDead = false;
+    private int score = 5;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -145,6 +146,7 @@ public class EnemySolider : MonoBehaviour
     public void DeathAnimation()
     {
         isDead = true;
+        ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {
             animator.SetTrigger("Die");
