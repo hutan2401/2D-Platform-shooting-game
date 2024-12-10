@@ -70,11 +70,11 @@ public class PlayerHealth : SingleTon<PlayerHealth>
             CheckIfPlayerDeath();
         }
     }
-    public void HealPlayer()
+    public void HealPlayer(int healAmount)
     {
         if (currentHealth < maxHealth)
         {
-            currentHealth += 1;
+            currentHealth = Mathf.Min(currentHealth + healAmount, maxHealth);
             UpdateHealthSlider();
         }
     }
