@@ -1,0 +1,774 @@
+fileFormatVersion: 2
+guid: 9bba29798abb54a4790a3f53651abe18
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy solider rifle_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 304
+        width: 40
+        height: 38
+      alignment: 9
+      pivot: {x: 0.8048055, y: 0.454842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6a8e8a48c596d46ada2d259dc1299e
+      internalID: 1802759579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 40
+        height: 38
+      alignment: 9
+      pivot: {x: 0.81651556, y: 0.4624577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ff11ffa9c4e2c44bb865aaedee70de
+      internalID: 1900392320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 304
+        width: 39
+        height: 37
+      alignment: 9
+      pivot: {x: 0.7971982, y: 0.49036056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455fd94497c07b942a2cc233de6b00a8
+      internalID: -1057233774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 243
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962ba76803eab834da56426f28412cab
+      internalID: -820443746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 243
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf90fa1beafa8941a90be9b2ad3dd14
+      internalID: 1628603670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 248
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7543aeab6b08c7041ae75071eb26373c
+      internalID: 551527686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 246
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6084736e1359c56468b4ac0cc5492be6
+      internalID: 1211201581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 244
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79965e7dc2b059740b888150af4cd858
+      internalID: 204723989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 243
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25b010b79f26584eb89177939a3e1c5
+      internalID: 111820110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 243
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef19b1ade6c2e4e4481b99ef5c59ed8c
+      internalID: -1522295367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 244
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd459e90bd0a8604383084a940954093
+      internalID: 368370849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 249
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f10b85927da094d9359797c41aa96e
+      internalID: -1299449611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 247
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bd3a21dc9d3fc45bb7c4aae81a6bed
+      internalID: -1232992298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 244
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf099450e93b944693dc753e0b6ad2a
+      internalID: -1324249997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 243
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37de54b73190be4e880c9d1b8721587
+      internalID: -1960526660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 180
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7749088, y: 0.4718435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61f54ce80bede347b88454f0a4705bf
+      internalID: 416687069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 180
+        width: 47
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7864865, y: 0.4675919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd28aa7fc7156f499d5de27b5ba686c
+      internalID: -147189120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 180
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7039917, y: 0.4826576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257e1291ca6b9bf4fbbf796780b49e99
+      internalID: 1760605237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 180
+        width: 41
+        height: 47
+      alignment: 9
+      pivot: {x: 0.74545586, y: 0.3844121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86d49adc59a2d46b6f955b720f4d5e
+      internalID: -668405717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_19
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 180
+        width: 41
+        height: 47
+      alignment: 9
+      pivot: {x: 0.7454562, y: 0.3825174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082d2ae13c7c10e45b2d6d95780a043f
+      internalID: 730759085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 180
+        width: 43
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7671778, y: 0.4109407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15323beea51f0348bfad16afb052486
+      internalID: -359150501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_21
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 180
+        width: 47
+        height: 38
+      alignment: 9
+      pivot: {x: 0.79181105, y: 0.4718761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b64ffb3e4c6154c8dfb96775aa9d26
+      internalID: 1634162718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 123
+        width: 243
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ee2f09018bd6745b0e685bb3cfac68
+      internalID: -1015169250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_23
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 140
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd8601cc4615ff43b54b480196105a8
+      internalID: -1442729715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_24
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 140
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd034b75c81354f40b64b927e1d28834
+      internalID: -876196731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 45
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b7767870fc12f4780b785cdaca1ccc
+      internalID: 401667566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 45
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90ea183f49a35f4fa4685460511ea4d
+      internalID: 2116016291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_27
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 45
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becf32886d72c094aa64d49938359b94
+      internalID: -1783409152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 45
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ebb2ae7cb4ee641879cc9b98e7876c
+      internalID: -1939844000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider rifle_29
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 45
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44889bc64b2c51442a574eb0acbb90a3
+      internalID: -1831873744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      enemy solider rifle_0: 1802759579
+      enemy solider rifle_1: 1900392320
+      enemy solider rifle_10: 368370849
+      enemy solider rifle_11: -1299449611
+      enemy solider rifle_12: -1232992298
+      enemy solider rifle_13: -1324249997
+      enemy solider rifle_14: -1960526660
+      enemy solider rifle_15: 416687069
+      enemy solider rifle_16: -147189120
+      enemy solider rifle_17: 1760605237
+      enemy solider rifle_18: -668405717
+      enemy solider rifle_19: 730759085
+      enemy solider rifle_2: -1057233774
+      enemy solider rifle_20: -359150501
+      enemy solider rifle_21: 1634162718
+      enemy solider rifle_22: -1015169250
+      enemy solider rifle_23: -1442729715
+      enemy solider rifle_24: -876196731
+      enemy solider rifle_25: 401667566
+      enemy solider rifle_26: 2116016291
+      enemy solider rifle_27: -1783409152
+      enemy solider rifle_28: -1939844000
+      enemy solider rifle_29: -1831873744
+      enemy solider rifle_3: -820443746
+      enemy solider rifle_4: 1628603670
+      enemy solider rifle_5: 551527686
+      enemy solider rifle_6: 1211201581
+      enemy solider rifle_7: 204723989
+      enemy solider rifle_8: 111820110
+      enemy solider rifle_9: -1522295367
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

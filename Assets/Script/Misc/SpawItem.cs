@@ -4,26 +4,15 @@ using UnityEngine;
 
 public class SpawItem : MonoBehaviour
 {
-    [SerializeField] private GameObject itemScore, healthGlobe;
+    [SerializeField] private List<GameObject> spawnableItems;
     public void DropItems()
     {
-        int randomNum = Random.Range(1, 2);
+        int randomIndex = Random.Range(0, spawnableItems.Count);
+        GameObject selectedItem = spawnableItems[randomIndex];
 
-        if (randomNum == 2)
+        if (selectedItem != null)
         {
-            Instantiate(healthGlobe, transform.position, Quaternion.identity);
-        }
-
-
-        if (randomNum == 1)
-        {
-            Instantiate(itemScore, transform.position, Quaternion.identity);
-            //int randomAmountOfGold = Random.Range(1, 4);
-
-            //for (int i = 0; i < randomAmountOfGold; i++)
-            //{
-            //    Instantiate(itemScore, transform.position, Quaternion.identity);
-            //}
+            Instantiate(selectedItem, transform.position, Quaternion.identity);
         }
     }
 }

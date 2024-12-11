@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
-    //[SerializeField] private GameObject bulletPrefab;
+    [Header("Shooting Settings")]
     [SerializeField] private BulletType defaultBulletType;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private Transform headPosition; 
     [SerializeField] private Transform defaultPosition;
     [SerializeField] private Transform crouchPostion;
-    [SerializeField] private Text bulletAmmoText;
+    [Header("Other Settings")]
+    [SerializeField] private TMP_Text bulletAmmoText;
 
     public Transform damageCollider; // Collider for melee attack
     public int damageAmount = 10;     // Damage for the melee attack
@@ -147,7 +149,7 @@ public class Pistol : MonoBehaviour
     }
     private void TriggerRangedAttack()
     {
-        Debug.Log("Shooting");
+        //Debug.Log("Shooting");
 
         if (isLookUp)
         {

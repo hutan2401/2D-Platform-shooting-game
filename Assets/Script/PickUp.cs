@@ -2,12 +2,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    private enum PickUpType
-    {
-        ScorePoint,
-        HealthPoint,
-    }
-    [SerializeField] private PickUpType pickUpType;
+    [SerializeField] private LootItem lootItem;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -18,15 +13,18 @@ public class PickUp : MonoBehaviour
     }
     private void DetectPickupType()
     {
-        switch (pickUpType)
+        switch (lootItem.GetPickUpType())
         {
-            case PickUpType.ScorePoint:
-                ScoreManager.Instance.UpdateScore();
-                Debug.Log("Coin");
+            case LootItem.PickUpType.ScorePoint:
+                ScoreManager.Instance.UpdateScore(lootItem.score); // Use score from LootItem
                 break;
-            case PickUpType.HealthPoint:
-                PlayerHealth.Instance.HealPlayer();
-                Debug.Log("health");
+
+            case LootItem.PickUpType.HealthGlobe:
+                PlayerHealth.Instance.HealPlayer(lootItem.healpoint); // Use heal points from LootItem
+                break;
+
+            default:
+                Debug.LogWarning("Unknown pickup type!");
                 break;
         }
     }

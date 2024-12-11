@@ -51,6 +51,8 @@ MonoBehaviour:
     shootingSound: {fileID: 8300000, guid: 7b600a900e2edf54696437f49c6baa18, type: 3}
   - bulletTypeName: MachineGun
     shootingSound: {fileID: 8300000, guid: 9b58e3fe14726c7429dc8074ff95b84f, type: 3}
+  - bulletTypeName: Rocket
+    shootingSound: {fileID: 8300000, guid: 0366ebc121171424b9d27a103a0ebac4, type: 3}
 --- !u!1 &4497678788556003375
 GameObject:
   m_ObjectHideFlags: 0

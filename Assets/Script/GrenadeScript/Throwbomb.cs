@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ public class Throwbomb : MonoBehaviour
     [SerializeField] private Transform transFormPointGrenade;
     [SerializeField] private GameObject grenadePrefab;
     [SerializeField] private int maxGrenade = 10;
-    [SerializeField] private Text grenadeText;
+    [SerializeField] private TMP_Text grenadeText;
     private int currentGrenade;
     private Animator animator;
 
