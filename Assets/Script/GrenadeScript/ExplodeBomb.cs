@@ -43,7 +43,7 @@ public class ExplodeBomb : MonoBehaviour
 
                     // Apply damage to the enemy
                     Debug.Log(totalDamage);
-                    enemy.TakeDamage(totalDamage);      
+                    //enemy.TakeDamage(totalDamage);      
                 }
             }
             Destroy(gameObject); 

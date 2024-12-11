@@ -140,7 +140,7 @@ public class Pistol : MonoBehaviour
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damageAmount);
+                //enemyHealth.TakeDamage(damageAmount);
                 hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
             }
         }
