@@ -1385,6 +1385,53 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &527098891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527098893}
+  - component: {fileID: 527098892}
+  m_Layer: 0
+  m_Name: ManagerSceneLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &527098892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527098891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4920909b26e969c4e8d02e860e0fd5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victoryMenu: {fileID: 0}
+  nextScene: 
+  delayBeforeTranstion: 3
+--- !u!4 &527098893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527098891}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 521.37335, y: 229.66536, z: -13.49084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &714999484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
@@ -1396,6 +1443,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &930847668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6820602257396841969, guid: d8c7347370f383449a173f2f25fe5fb9, type: 3}
+  m_PrefabInstance: {fileID: 7929055043069835821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &977421944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,13 +1815,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2392845983740309253, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
+      propertyPath: enemyHealth
+      value: 111
+      objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.842658
+      value: -2.91
       objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.689482
+      value: 7.44
       objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2152,6 +2208,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioHitSound
       objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[0].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: b9f256d4ca106ee4fbf930f455b0aeeb, type: 3}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[1].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0366ebc121171424b9d27a103a0ebac4, type: 3}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[2].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: f57e2280ceacb2a48b854f6fb7ad17ff, type: 3}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[3].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ee06a07c8c73ab4fb8f1751c4e93740, type: 3}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[0].nameSound
+      value: HitSoundSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[1].nameSound
+      value: HitSoundRocketSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[2].nameSound
+      value: KnifeHitSoundSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 763741038569461010, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
+      propertyPath: audioClipList.Array.data[3].nameSound
+      value: HitBombSoundSFX
+      objectReference: {fileID: 0}
     - target: {fileID: 858348680389491730, guid: 64ae5b18333c789458d047760d9bc9c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3902261
@@ -2265,6 +2357,18 @@ PrefabInstance:
       propertyPath: healthGlobe
       value: 
       objectReference: {fileID: 6820602257396841969, guid: d8c7347370f383449a173f2f25fe5fb9, type: 3}
+    - target: {fileID: 4601541697380019645, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: spawnableItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601541697380019645, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: spawnableItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 930847668}
+    - target: {fileID: 4601541697380019645, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
+      propertyPath: spawnableItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 930847668}
     - target: {fileID: 5060945205921496771, guid: 7909105816575424bb9172f55f8a32f9, type: 3}
       propertyPath: m_Name
       value: Chest
@@ -2383,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5171890853614892804, guid: d8c7347370f383449a173f2f25fe5fb9, type: 3}
+      propertyPath: lootItem
+      value: 
+      objectReference: {fileID: 11400000, guid: b89ac27acecfb964abe62a565975d9c5, type: 2}
     - target: {fileID: 6820602257396841969, guid: d8c7347370f383449a173f2f25fe5fb9, type: 3}
       propertyPath: m_Name
       value: apple
@@ -2409,3 +2517,4 @@ SceneRoots:
   - {fileID: 730919190588012011}
   - {fileID: 3571878284845473330}
   - {fileID: 1922926232}
+  - {fileID: 527098893}

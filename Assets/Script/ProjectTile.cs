@@ -70,11 +70,11 @@ public class ProjectTile : MonoBehaviour
             if(isCanExplode)
             {
                 Explode();
-                hitSound.PlaySFX(hitSound.hitSoundRocketSFX);
+                AudioHitSound.Instance.PlaySFX("HitSoundRocketSFX"); ;
             }
             else
             {
-                hitSound.PlaySFX(hitSound.hitSoundSFX);
+                AudioHitSound.Instance.PlaySFX("HitSoundSFX");
                 enemyHealth.TakeDamage(damage);
                 if (particleOnHitPrefabVFX != null)
                 {
@@ -93,11 +93,11 @@ public class ProjectTile : MonoBehaviour
             }
             if (isCanExplode)
             {
-                hitSound.PlaySFX(hitSound.hitSoundRocketSFX);
+                AudioHitSound.Instance.PlaySFX("HitSoundRocketSFX");
             }
             else
             {
-                hitSound.PlaySFX(hitSound.hitSoundSFX);
+                AudioHitSound.Instance.PlaySFX("HitSoundSFX");
             }
             Destroy(gameObject) ;
         }

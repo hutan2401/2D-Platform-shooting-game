@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
 
     public List<BulletSound> bulletSounds;
     private Dictionary<string, BulletSound> bulletSoundDict;
-    private float soundCooldown = 0.5f; 
+    private float soundCooldown = 0.25f; 
     private float lastSoundPlayTime = 0f;
     private void Awake()
     {

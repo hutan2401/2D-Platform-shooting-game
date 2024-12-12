@@ -143,7 +143,7 @@ public class Pistol : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damageAmount);
-                hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
+                AudioHitSound.Instance.PlaySFX("KnifeHitSoundSFX");
             }
         }
     }
@@ -185,9 +185,7 @@ public class Pistol : MonoBehaviour
             }
         }
         AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
-        //GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        //ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
-        //bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+
         if (currentBulletType.burstCount > 1)
         {
             StartCoroutine(BurstFire());
@@ -200,7 +198,6 @@ public class Pistol : MonoBehaviour
         animator.SetTrigger("Attack");
         if (!currentBulletType.isUnlimited)
         {
-            //currentAmmo--;
             {
                 if (currentAmmo <= 0)
                 {

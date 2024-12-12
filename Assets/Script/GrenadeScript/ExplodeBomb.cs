@@ -55,7 +55,7 @@ public class ExplodeBomb : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy") || destruct)
         {
             Instantiate(explodeEffect, transform.position,Quaternion.identity);
-            hitSound.PlaySFX(hitSound.hitBombSoundSFX);
+            AudioHitSound.Instance.PlaySFX("HitBombSoundSFX");
             Explode();
         }
     }
