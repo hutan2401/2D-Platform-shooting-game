@@ -62,6 +62,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7972432032440669899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5836169627690031658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6337241559443469254}
+  m_Layer: 0
+  m_Name: Explode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6337241559443469254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5836169627690031658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.04, y: 0.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7972432032440669899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6348422768879677701
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,9 +105,11 @@ GameObject:
   - component: {fileID: 1191063556514255346}
   - component: {fileID: 1046195009812688836}
   - component: {fileID: 2994619968556695484}
-  - component: {fileID: 8040783314985520683}
+  - component: {fileID: 7209827696909686667}
   - component: {fileID: 2247997635478896875}
   - component: {fileID: 7237520518447969469}
+  - component: {fileID: 8869249622390828802}
+  - component: {fileID: 7421324678365470577}
   m_Layer: 0
   m_Name: Big Tank
   m_TagString: Untagged
@@ -99,6 +132,8 @@ Transform:
   m_Children:
   - {fileID: 4975702701952572268}
   - {fileID: 1589907757426514939}
+  - {fileID: 6337241559443469254}
+  - {fileID: 5292084635352213351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1191063556514255346
@@ -225,7 +260,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.8672724, y: 3.1585863}
   m_EdgeRadius: 0
---- !u!114 &8040783314985520683
+--- !u!114 &7209827696909686667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6348422768879677701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa341e0bdfedf5b41bfb2c56fcb72a26, type: 3}
+  m_Script: {fileID: 11500000, guid: 84a6b5ea259a5274ca9fb2e5480696d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMoveSpeed: 2
@@ -243,12 +278,14 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  facingLeft: 0
-  pointShooting: {fileID: 1589907757426514939}
-  shootingRange: 14.4
-  fireCooldown: 5
+  facingLeft: 1
   bulletPrefab: {fileID: 1276342305999904026, guid: fd501ca0209738a439cecfb95c799a5a, type: 3}
+  pointShooting: {fileID: 1589907757426514939}
+  shootingRange: 14
+  fireCooldown: 5
+  score: 5
   inRange: 0
+  explosionController: {fileID: 8869249622390828802}
 --- !u!114 &2247997635478896875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,3 +323,152 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8869249622390828802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348422768879677701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c9ec223ac08464eaf702159fae95c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPoints:
+  - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
+    delay: 0
+    explosionTransform: {fileID: 6337241559443469254}
+    explosionSound: {fileID: 0}
+  - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
+    delay: 2
+    explosionTransform: {fileID: 5292084635352213351}
+    explosionSound: {fileID: 0}
+  audioSource: {fileID: 7421324678365470577}
+--- !u!82 &7421324678365470577
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348422768879677701}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &8371581850937656238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5292084635352213351}
+  m_Layer: 0
+  m_Name: Explode (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5292084635352213351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371581850937656238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.64, y: 1.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7972432032440669899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

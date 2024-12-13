@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ManagerLevel : MonoBehaviour
 {
     [SerializeField] private GameObject victoryMenu;
-    [SerializeField] private string nextScene;
     [SerializeField] private float delayBeforeTranstion = 3f;
 
     private bool hasWon =false;
@@ -15,25 +14,31 @@ public class ManagerLevel : MonoBehaviour
         if (victoryMenu != null)
         {
             victoryMenu.SetActive(false);
-
         }
     }
-        // Update is called once per frame
-    public void OnbossDefeated()
+
+    public void OnBossDefeated()
     {
         if (hasWon) return;
         hasWon = true;
-        victoryMenu.SetActive(true);
-        StartCoroutine(TransitionNextScene());
+
+        // Display victory menu
+        if (victoryMenu != null)
+        {
+            victoryMenu.SetActive(true);
+        }
+
+        // Trigger GameManager's stage completion
+        StartCoroutine(HandleBossDefeat());
     }
 
-    private IEnumerator TransitionNextScene()
+    private IEnumerator HandleBossDefeat()
     {
-
         yield return new WaitForSeconds(delayBeforeTranstion);
-        if (!string.IsNullOrEmpty(nextScene))
+
+        if (GameManager.Instance != null)
         {
-            SceneManager.LoadScene(nextScene);
+            GameManager.Instance.OnBossDefeated();
         }
     }
 

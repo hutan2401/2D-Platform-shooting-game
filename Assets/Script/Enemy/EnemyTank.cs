@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyRiffle : MonoBehaviour
+public class EnemyTank : MonoBehaviour
 {
     [Header("Enemy Settings")]
     [SerializeField] private float enemyMoveSpeed = 2f;
@@ -20,13 +19,14 @@ public class EnemyRiffle : MonoBehaviour
     [SerializeField] private int score = 5;
     private float cooldownTimer = 0f;
 
-    
+
     public bool inRange = false;
+    public BossExplosionController explosionController;
     private Animator animator;
     private bool isDead = false;
     private void Start()
     {
-       // explosionController = GetComponent<BossExplosionController>();
+        // explosionController = GetComponent<BossExplosionController>();
         animator = GetComponent<Animator>();
         EnemyHealth healthComponent = GetComponent<EnemyHealth>();
         if (healthComponent != null)
@@ -59,7 +59,7 @@ public class EnemyRiffle : MonoBehaviour
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 facingLeft = false;
-            }         
+            }
             if (cooldownTimer <= 0)
             {
                 animator.SetTrigger("Shooting");
@@ -72,7 +72,7 @@ public class EnemyRiffle : MonoBehaviour
             transform.Translate(Vector2.left * Time.deltaTime * enemyMoveSpeed);
             RaycastHit2D hitGround = Physics2D.Raycast(checkPoint.position, Vector2.down, distance, groundLayer);
 
-            if (hitGround == false && facingLeft )
+            if (hitGround == false && facingLeft)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 facingLeft = false;
@@ -84,7 +84,7 @@ public class EnemyRiffle : MonoBehaviour
             }
             speed = enemyMoveSpeed;
         }
-        animator.SetFloat("xSpeed",speed);
+        animator.SetFloat("xSpeed", speed);
     }
 
     private void FireBullet()
@@ -97,6 +97,10 @@ public class EnemyRiffle : MonoBehaviour
     public void DeathAnimation()
     {
         isDead = true;
+        if (explosionController != null)
+        {
+            explosionController.TriggerExplosions();
+        }
         ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {
@@ -115,4 +119,4 @@ public class EnemyRiffle : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, shootingRange);
     }
-   }
+}

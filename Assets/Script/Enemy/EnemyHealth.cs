@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int enemyHealth =1;
-
+    [SerializeField] private float timingDestroy = 1f;
     private int currentHealth;
 
     public UnityEvent OnEnemyDeath;
@@ -29,6 +29,6 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         OnEnemyDeath?.Invoke();
-        Destroy(gameObject,1f);
+        Destroy(gameObject, timingDestroy);
     }
 }
