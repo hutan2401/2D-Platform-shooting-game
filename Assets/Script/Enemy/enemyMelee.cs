@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class enemyMelee : MonoBehaviour
 {
@@ -20,7 +21,12 @@ public class enemyMelee : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float radius;
     [SerializeField] private float delayAttackAnimation = 1.5f;
-   
+
+    [Header("Points Settings")]
+    [SerializeField] private int score = 5;
+
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipSoundEnemyDie;
     private Animator animator;
     private bool isDead = false;
     private void Start()
@@ -109,7 +115,14 @@ public class enemyMelee : MonoBehaviour
 
     public void DeathAnimation()
     {
+        if (isDead) return;
         isDead = true;
+        if (audioSource != null && audioClipSoundEnemyDie != null)
+        {
+            audioSource.PlayOneShot(audioClipSoundEnemyDie);
+        }
+
+        ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {
             animator.SetTrigger("Die");

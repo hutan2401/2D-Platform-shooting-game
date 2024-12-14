@@ -183,6 +183,7 @@ public class Pistol : MonoBehaviour
                 bulletSpawnPoint.position = defaultPosition.position;
                 bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
             }
+            animator.SetTrigger("Attack");
         }
         AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
 
@@ -195,7 +196,7 @@ public class Pistol : MonoBehaviour
             FireBullet();
             currentAmmo--;
         }
-        animator.SetTrigger("Attack");
+
         if (!currentBulletType.isUnlimited)
         {
             {

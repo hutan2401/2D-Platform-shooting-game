@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a6b5ea259a5274ca9fb2e5480696d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMoveSpeed: 2
+  enemyMoveSpeed: 0
   distance: 1
   checkPoint: {fileID: 4975702701952572268}
   groundLayer:
@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 1
+  timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -339,7 +340,7 @@ MonoBehaviour:
   - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
     delay: 0
     explosionTransform: {fileID: 6337241559443469254}
-    explosionSound: {fileID: 0}
+    explosionSound: {fileID: 8300000, guid: 631cb0493acaa1d40a9ad50bfe8d8180, type: 3}
   - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
     delay: 2
     explosionTransform: {fileID: 5292084635352213351}
