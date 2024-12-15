@@ -354,7 +354,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1851728134977997124}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   crouchPercentofHeihgt: 0.5
 --- !u!95 &8099877744210420885
 Animator:

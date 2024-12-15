@@ -75,7 +75,7 @@ public class ProjectTile : MonoBehaviour
             else
             {
                 hitSound.PlaySFX(hitSound.hitSoundSFX);
-                enemyHealth.TakeDamage(damage);
+                //enemyHealth.TakeDamage(damage);
                 if (particleOnHitPrefabVFX != null)
                 {
                     Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
@@ -120,7 +120,7 @@ public class ProjectTile : MonoBehaviour
                     var totalDamage = (int)(damagePercent + damage);
 
                     Debug.Log("Damage:" + totalDamage);
-                    enemy.TakeDamage(totalDamage);
+                    //enemy.TakeDamage(totalDamage);
                 }
             }
 
@@ -140,4 +140,6 @@ public class ProjectTile : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position, explosionRadius);
         }
     }
+
+    
 }

@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
+  - OneWayPlatform
   - Ground
-  - ProjectTileEnemy
-  - AmmoBox
-  - Box
   - Audio
+  - Box
+  - AmmoBox
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,10 +17,10 @@ TagManager:
   - Camera
   - Water
   - UI
-  - 
-  - 
   - Ground
-  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -46,16 +46,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 1719422975
-    locked: 0
-  - name: New Layer 2
-    uniqueID: 1625610715
-    locked: 0
-  - name: Player
-    uniqueID: 1008275965
-    locked: 0
-  - name: Ground
-    uniqueID: 422222511
     locked: 0

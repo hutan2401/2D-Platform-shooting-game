@@ -15,4 +15,5 @@ public class BulletType : ScriptableObject
     public bool isUnlimited;
     public int maxAmmo;
 
+    
 }

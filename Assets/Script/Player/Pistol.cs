@@ -142,7 +142,7 @@ public class Pistol : MonoBehaviour
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damageAmount);
+                //enemyHealth.TakeDamage(damageAmount);
                 hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
             }
         }
@@ -254,7 +254,7 @@ public class Pistol : MonoBehaviour
     {
         if (currentBulletType.isUnlimited)
         {
-            bulletAmmoText.text = "∞";
+            bulletAmmoText.text = "0";
         }
         else
         {
