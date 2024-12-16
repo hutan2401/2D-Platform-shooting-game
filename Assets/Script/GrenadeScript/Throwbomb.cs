@@ -15,6 +15,7 @@ public class Throwbomb : MonoBehaviour
     private Animator animator;
 
     private PlayerController playerController;
+    private bool isCrouch;
 
     private void Awake()
     {
@@ -27,6 +28,8 @@ public class Throwbomb : MonoBehaviour
         currentGrenade = maxGrenade;
         UpdateGrenadeUI();
         playerController.Player.ThrowGrenade.performed += _ => ThrowGrenade();
+        playerController.Player.Crouching.performed += _ => SetCrouch(true);
+        playerController.Player.Crouching.canceled += _ => SetCrouch(false);
     }
 
     // Update is called once per frame
@@ -40,6 +43,11 @@ public class Throwbomb : MonoBehaviour
         playerController.Enable();
     }
 
+    private void SetCrouch(bool crouch)
+    {
+        isCrouch = crouch;
+    }
+
     public void ThrowGrenade()
     {
        if(currentGrenade >0)
@@ -49,7 +57,15 @@ public class Throwbomb : MonoBehaviour
             var direction = transform.right + Vector3.up;
             rb.AddForce(direction * throwForce, ForceMode2D.Impulse);
             currentGrenade--;
-            animator.SetTrigger("throwBomb");
+            if (isCrouch)
+            {
+                animator.SetTrigger("CrouchThrow");
+            }
+            else
+            {
+                animator.SetTrigger("throwBomb");
+            }
+            
             Debug.Log("grenade: "+ currentGrenade);
             UpdateGrenadeUI();
         }
