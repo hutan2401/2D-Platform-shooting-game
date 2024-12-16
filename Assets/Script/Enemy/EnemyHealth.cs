@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int enemyHealth = 1;
-
+    [SerializeField] private int enemyHealths = 1;
+    [SerializeField] private float timingDestroy = 1f;
     private int currentHealth;
 
     public UnityEvent OnEnemyDeath;
     public int CurrentHealth => currentHealth;
-    public int MaxHealth => enemyHealth;
+    public int MaxHealth => enemyHealths;
     private void Start()
     {
-        currentHealth = enemyHealth;
+        currentHealth = enemyHealths;
     }
     public void TakeDamage(int damage)
     {
@@ -28,6 +28,6 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         OnEnemyDeath?.Invoke();
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, timingDestroy);
     }
 }

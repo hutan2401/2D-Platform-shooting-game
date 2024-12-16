@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 
-public class EnemyHealth : MonoBehaviour
+public class EHeathBar : MonoBehaviour
 {
     public Text text;
     public Image healthBarFill;
