@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &70837475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5080397860697888221, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 1391373056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &84381821
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +291,17 @@ MonoBehaviour:
   FollowSpeed: 2
   yOffset: 1
   target: {fileID: 555883700}
+--- !u!114 &88958159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 1391373056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &276245843
 GameObject:
   m_ObjectHideFlags: 0
@@ -23735,6 +23757,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1897135222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097751786163014516, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 1391373056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1897135225 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8560207491410289084, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 1391373056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1964440519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23876,6 +23908,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2097634117 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 312438282860802321, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 1391373056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2138785116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23932,6 +23975,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 1897135222}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: textLives
+      value: 
+      objectReference: {fileID: 2097634117}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: showMenuDeathAnimator
+      value: 
+      objectReference: {fileID: 1897135225}
     - target: {fileID: 7089538649862364213, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_SortingOrder
       value: 7
@@ -23939,7 +23994,11 @@ PrefabInstance:
     - target: {fileID: 7688631525010970236, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: bulletAmmoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 88958159}
+    - target: {fileID: 9053804356246894010, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: grenadeText
+      value: 
+      objectReference: {fileID: 70837475}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
