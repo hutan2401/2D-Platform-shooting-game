@@ -30,13 +30,13 @@ public class Pistol : MonoBehaviour
     private bool isLookUp;
     private bool isCrouch;
 
-    private AudioHitSound hitSound;
+    //private AudioHitSound hitSound;
 
     private void Awake()
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-        hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+       // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
 
     }
 
@@ -143,7 +143,7 @@ public class Pistol : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damageAmount);
-                AudioHitSound.Instance.PlaySFX("KnifeHitSoundSFX");
+                ManagerAudioSound.Instance.PlayHitSound("KnifeHitSoundSFX");
             }
         }
     }
@@ -185,7 +185,7 @@ public class Pistol : MonoBehaviour
             }
             animator.SetTrigger("Attack");
         }
-        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
+        ManagerAudioSound.Instance.PlayBulletSound(currentBulletType.bulletTypeName);
 
         if (currentBulletType.burstCount > 1)
         {

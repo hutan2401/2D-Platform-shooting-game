@@ -12,7 +12,7 @@ public class ProjectTile : MonoBehaviour
     [SerializeField] private bool isCanExplode = false; // New boolean to check if projectile can explode
     [SerializeField] private float explosionRadius = 2f;
 
-    private AudioHitSound hitSound;
+    //private AudioHitSound hitSound;
 
     private Vector3 startPostion;
 
@@ -24,7 +24,7 @@ public class ProjectTile : MonoBehaviour
     }
     private void Awake()
     {
-        hitSound =GameObject.FindGameObjectWithTag("Audio"). GetComponent<AudioHitSound>();
+        //hitSound =GameObject.FindGameObjectWithTag("Audio"). GetComponent<AudioHitSound>();
     }
     void Start()
     {
@@ -70,11 +70,11 @@ public class ProjectTile : MonoBehaviour
             if(isCanExplode)
             {
                 Explode();
-                AudioHitSound.Instance.PlaySFX("HitSoundRocketSFX"); ;
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundRocketSFX"); ;
             }
             else
             {
-                AudioHitSound.Instance.PlaySFX("HitSoundSFX");
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundSFX");
                 enemyHealth.TakeDamage(damage);
                 if (particleOnHitPrefabVFX != null)
                 {
@@ -93,11 +93,11 @@ public class ProjectTile : MonoBehaviour
             }
             if (isCanExplode)
             {
-                AudioHitSound.Instance.PlaySFX("HitSoundRocketSFX");
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundRocketSFX");
             }
             else
             {
-                AudioHitSound.Instance.PlaySFX("HitSoundSFX");
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundSFX");
             }
             Destroy(gameObject) ;
         }

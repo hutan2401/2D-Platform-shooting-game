@@ -46,10 +46,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFXSource: {fileID: 6397288936468820354}
-  hitSoundSFX: {fileID: 8300000, guid: b9f256d4ca106ee4fbf930f455b0aeeb, type: 3}
-  hitSoundRocketSFX: {fileID: 8300000, guid: 5422e1ca6416f6548ad01ea75b87dea6, type: 3}
-  KnifeHitSoundSFX: {fileID: 8300000, guid: f57e2280ceacb2a48b854f6fb7ad17ff, type: 3}
-  hitBombSoundSFX: {fileID: 8300000, guid: 7ee06a07c8c73ab4fb8f1751c4e93740, type: 3}
+  audioClipList:
+  - nameSound: HitSoundSFX
+    sound: {fileID: 8300000, guid: b9f256d4ca106ee4fbf930f455b0aeeb, type: 3}
+  - nameSound: HitSoundRocketSFX
+    sound: {fileID: 8300000, guid: 0366ebc121171424b9d27a103a0ebac4, type: 3}
+  - nameSound: KnifeHitSoundSFX
+    sound: {fileID: 8300000, guid: f57e2280ceacb2a48b854f6fb7ad17ff, type: 3}
+  - nameSound: HitBombSoundSFX
+    sound: {fileID: 8300000, guid: 7ee06a07c8c73ab4fb8f1751c4e93740, type: 3}
 --- !u!82 &6397288936468820354
 AudioSource:
   m_ObjectHideFlags: 0

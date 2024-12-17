@@ -11,12 +11,11 @@ public class BossExplosionController : MonoBehaviour
         public GameObject explosionPrefab; // Prefab hiệu ứng cháy nổ
         public float delay; // Thời gian chờ trước khi kích hoạt
         public Transform explosionTransform; // Vị trí để tạo hiệu ứng
-        public AudioClip explosionSound; // Âm thanh nổ
+        public string explosionSoundName; // Âm thanh nổ
     }
 
     [Header("Explosion Settings")]
     public List<ExplosionPoint> explosionPoints; // Danh sách các vị trí nổ
-    public AudioSource audioSource; // AudioSource để phát âm thanh
 
     public void TriggerExplosions()
     {
@@ -43,10 +42,10 @@ public class BossExplosionController : MonoBehaviour
             Instantiate(point.explosionPrefab, point.explosionTransform.position, Quaternion.identity);
 
             // Phát âm thanh nổ nếu có
-            if (point.explosionSound != null && audioSource != null)
+            if (!string.IsNullOrEmpty(point.explosionSoundName))
             {
-                audioSource.PlayOneShot(point.explosionSound);
-                Debug.Log($"Playing sound: {point.explosionSound.name} at {point.explosionTransform.position}");
+                ManagerAudioSound.Instance.PlayExplodeSound(point.explosionSoundName);
+                Debug.Log($"Playing sound: {point.explosionSoundName} at {point.explosionTransform.position}");
             }
 
             // Chờ trước khi tiếp tục tới điểm nổ tiếp theo

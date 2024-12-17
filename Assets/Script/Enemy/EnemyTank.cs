@@ -19,6 +19,8 @@ public class EnemyTank : MonoBehaviour
     [SerializeField] private int score = 5;
     private float cooldownTimer = 0f;
 
+    [SerializeField] private AudioSource audioSFX;
+    [SerializeField] private AudioClip FireSound;
 
     public bool inRange = false;
     public BossExplosionController explosionController;
@@ -64,6 +66,11 @@ public class EnemyTank : MonoBehaviour
             {
                 animator.SetTrigger("Shooting");
                 FireBullet();
+                if(audioSFX !=null && FireSound != null)
+                {
+                    audioSFX.PlayOneShot(FireSound);
+                }
+
                 cooldownTimer = fireCooldown;
             }
         }

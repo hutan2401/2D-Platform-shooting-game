@@ -284,6 +284,8 @@ MonoBehaviour:
   shootingRange: 14
   fireCooldown: 5
   score: 5
+  audioSFX: {fileID: 7421324678365470577}
+  FireSound: {fileID: 8300000, guid: a2b0bac38736e404e95b7d8199663a45, type: 3}
   inRange: 0
   explosionController: {fileID: 8869249622390828802}
 --- !u!114 &2247997635478896875
@@ -338,14 +340,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPoints:
   - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
-    delay: 0
+    delay: 1
     explosionTransform: {fileID: 6337241559443469254}
-    explosionSound: {fileID: 8300000, guid: 631cb0493acaa1d40a9ad50bfe8d8180, type: 3}
+    explosionSoundName: ExplodeTank
   - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
     delay: 2
     explosionTransform: {fileID: 5292084635352213351}
-    explosionSound: {fileID: 0}
-  audioSource: {fileID: 7421324678365470577}
+    explosionSoundName: 
 --- !u!82 &7421324678365470577
 AudioSource:
   m_ObjectHideFlags: 0
