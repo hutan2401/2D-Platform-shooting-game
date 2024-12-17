@@ -16,5 +16,5 @@ MonoBehaviour:
   lootName: bluegem
   dropChance: 100
   pickUpType: 0
-  score: 10
+  score: 100
   healpoint: 0

@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058fdb74316e2247b7a692d4a8a2798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpType: 1
+  lootItem: {fileID: 11400000, guid: b89ac27acecfb964abe62a565975d9c5, type: 2}

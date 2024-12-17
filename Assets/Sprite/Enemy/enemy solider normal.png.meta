@@ -1,0 +1,3524 @@
+fileFormatVersion: 2
+guid: 2dc64cf2ecf50c6409188a429c090686
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy solider normal_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 553
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52bc1fe392662c4eb3e88520ca2266b
+      internalID: -68313946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 553
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79822e6c910f428488152509a0255f03
+      internalID: -963013872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 553
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c93deb382fc56f488c9bd1917068f89
+      internalID: 1685906271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 553
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96d623fb060cdb478c432f0cd6f9a58
+      internalID: 1607858256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 564
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccae03d54792d348a1808b673c9ca63
+      internalID: 651132309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 564
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b434993c1607b4c94c8ff295c6dbd0
+      internalID: 1904823943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 564
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7518e13d48385de4f95ade36a4d58c69
+      internalID: -777325114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 565
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336b4dfb5be57b543927e0e5b497c997
+      internalID: 1900494686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_8
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 566
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d494adffaacbdc9428c8e8f10f27588e
+      internalID: 574250961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_9
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 567
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb43e7e351e21f44c89c40360f8bfb46
+      internalID: -1354321617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_10
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 568
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9421a40697a179748bdc9c6818355d96
+      internalID: 1547701653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 569
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c2849b68469d44cab92eea6a4a5948
+      internalID: 1768079175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_12
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 568
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafd029075a7d6f4b9e228e03e49827a
+      internalID: 660921168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 568
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cbcba1e6edc9346b4f9aad3d0dc73e
+      internalID: -451184569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_14
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 567
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf48ba04bd469e478fd43ad26753d34
+      internalID: 955760695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_15
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 566
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cf34d5b9f2c0e49b3f7ca3d8b8de15
+      internalID: -1900848164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_16
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 565
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e782b05c25279664b918b31f63771df2
+      internalID: 1341059717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_17
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 564
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c79da77faaa2974b806dce9fd03820f
+      internalID: 2059863910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_18
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 564
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f1945a011b7af48b92f7d7e8dfba47
+      internalID: -1937074630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_19
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 564
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b103d3b8219e6174cb5a826c782667a9
+      internalID: -1907537578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 494
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28b1cba4e95f29498e3a63f54f15f9a
+      internalID: -476396689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 494
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f102a4264baa4f040bee9a37daf58be7
+      internalID: -1854219806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 494
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6571a03067313b5408623b01a12ae350
+      internalID: -354468878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_23
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 494
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca43fb5715e97384ca1ad0247c2fb48e
+      internalID: -886215258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_24
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 494
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ece1690d75e0be4abc83b494966cdd1
+      internalID: 1220263795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 494
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd49cdc1448d57349a6f3c23e9474d97
+      internalID: 2135258628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_26
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 494
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8da8bf7dbd80aa40b12e94934743084
+      internalID: -380648035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 494
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2987ea8beee2b78408bd23c609d8f8e7
+      internalID: 1207505460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_28
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 494
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8f6cdd22fec8441844bd7d9919fa59
+      internalID: 1188670233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_29
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 494
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e748561ea68b54ba2117f1e63d2fbe
+      internalID: -464066479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 494
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46570ca8ecf336e468f3d8350d741f75
+      internalID: -1963785132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 494
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d802c808b19de347be63a5c6a8d9247
+      internalID: -490707902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 425
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce46424a1af78e4881e9e3323dc0839
+      internalID: -1480116135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 425
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7a611bf5ccd854a89079206a2741fd
+      internalID: -1680739553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 425
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9becc6f79604c4d8fa0d4f1b99f1ec
+      internalID: 844816290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_35
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 425
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0257786bbde904d8b9df686e148205
+      internalID: 476073704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_36
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 425
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0a2f1f0ff7bff4ba8cec5986c54179
+      internalID: 1669333570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_37
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 425
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb63f795d6b02f4eb53b098b7f14c8a
+      internalID: -643929414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_38
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 425
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9dc213e5ed915429469d4d71c36772
+      internalID: -1650823483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_39
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 425
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb24aa58b15a134aa8ae304124ac359
+      internalID: -984821628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_40
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 425
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6a3ea5cc9be2d4f9d80aac99ab9ca1
+      internalID: -552376716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_41
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 425
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff01b660f6edfd47be8a7597288d2ce
+      internalID: -1281555546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_42
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 425
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdf6bbfb3dc43744a5cded37c56af4f
+      internalID: 1488892995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_43
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 425
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fa7a6cadc3b0d4f97e6515484304c7
+      internalID: -1867382739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_44
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 425
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cb3a37d5c13d340b2927287666cf4d
+      internalID: -658504474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_45
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 425
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8a1e167979e864b895ccfb43647d51
+      internalID: -2027629123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_46
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 425
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c2eab33eb6c2841b537341f2cf8328
+      internalID: -1263037037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_47
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 425
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5510c229d961479c22c534d5193fe
+      internalID: 1565028192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_48
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 372
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d64e377e2288348933536bf9267803
+      internalID: 2044803859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_49
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 372
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3ea05698946ec49aacda0614b33505
+      internalID: -1596731615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 372
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39799aba9c6587f4fbc3d5f183cbf461
+      internalID: -537641603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_51
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 372
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8498f15d15f6444684c86a7bb854787
+      internalID: -1246179967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_52
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 372
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590394f1a5f3bc941a2910bf0c1d73e5
+      internalID: -1171122474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_53
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 372
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c0b0dda7ee0bb439f7db11f8b00ddf
+      internalID: 1655576298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_54
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 372
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de35dd6423b2fd4284ddc4fb33f59de
+      internalID: -69359616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_55
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 372
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1003dbcbcd7df7a47ba57d6f8ff89f22
+      internalID: -1199754790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_56
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 372
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdc1d90de81e5345839df4b84d787c9
+      internalID: 554557671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_57
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 372
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b735fcaedeaabf64c90f4e2f2b88c6fa
+      internalID: -1216488308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_58
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 372
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efec0bb6b4e3e774dbe046bf46c34e25
+      internalID: 384981248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_59
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 372
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6be20a8845b38468d1560a0f451d1b
+      internalID: 1012879009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_60
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 307
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695cb0d2a0bc304dbf97fef905561ed
+      internalID: -530190026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_61
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 313
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2217ec274200bda48a269712807e53cd
+      internalID: 1041627870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_62
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 313
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd963fc5ceab054d9036210956bd929
+      internalID: 1757792466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_63
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 313
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b032cd6aab03a48a980b100fb9f30b
+      internalID: -2097009355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_64
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 313
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0334b6e53d2e543a8c33699b046ca1
+      internalID: 1865087828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_65
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 313
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c350dfa6f8180444e8d2cd4ac17236d4
+      internalID: 438860297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_66
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 313
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ed3b7ad21fa7c43994dc8695219291
+      internalID: -359066528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_67
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 313
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a9f0b32f6a5794683a39e2a2c7566c
+      internalID: -965652078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_68
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 313
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70706946d1e226442b9c5b859852f032
+      internalID: 1560663813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_69
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 313
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eb9a43c1fe96e4a988687ad02c7a5c
+      internalID: 652527933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_70
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 313
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272b601a037e8ef4c8dd9241107ae797
+      internalID: 712403495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_71
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 313
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfb8542c213b4a40ab4b266110647e3
+      internalID: 371681092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_72
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 313
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16160c3ce169604b968644cdd885a28
+      internalID: -63199467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_73
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 313
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779f8a6ee21f6c14baa4184d9d76b211
+      internalID: 1181009947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_74
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 313
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80b7d2e1d312cd4c92cae6d8761ad8a
+      internalID: 2024901975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_75
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 313
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc333bb40a2707a4e9aaab99f6d03441
+      internalID: -848746634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 256
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4715f66223536541824192c09f0579c
+      internalID: -537716250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_01
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 256
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7876cdba5cce749b0d298bcb14cecb
+      internalID: -1689661500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_02
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c7d5a593336e74fbf9c74085f82914
+      internalID: 708910499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_03
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 256
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbe758d8434700469a121e96dbebff0
+      internalID: -1438122985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_011
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 256
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fbe3d266fb0cb46aa48172e88cbd67
+      internalID: -164560065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_81
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 288
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2def2cf47a5414293149d8f151d14d
+      internalID: 649085228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_82
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 289
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7069549e69322de4e8f5aeb6282c65bc
+      internalID: -2114803271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_83
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c97f3c324d3b847982eff5ca4f07b2
+      internalID: 1628825480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_84
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 289
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68d220c4b5d01b45b831015c8b26a38
+      internalID: 891918581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_85
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 289
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48db21ccc5c896479b8a988e3dc8a34
+      internalID: 187262111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_04
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 256
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83809fb9164d43b4c8ea55bebe626b63
+      internalID: 719904318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_05
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 256
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6ec83204891b341bfd559529d7b035
+      internalID: 879988728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_06
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 256
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f0a84d84c45164b8771ddbbb4f5c45
+      internalID: -1179301709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_07
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 256
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d9d5dee37edfd4ba1b29b88afe6b9c
+      internalID: -81670422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_08
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 256
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f982d61d226d142a54ee83e12288c4
+      internalID: 1171861182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_09
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 256
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e9d56157b1567479b25496e51b15cd
+      internalID: 1903355399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider melee_010
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 256
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195c32bd4b0f8f54da1784bd2236cf60
+      internalID: 326636346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_93
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 265
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c4c750f77bb9545923c9d8661e184b
+      internalID: 644228901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_94
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 266
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e797cd04346d74ebeb375f1040daf5
+      internalID: 534720918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_95
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 266
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e247749554e314e90c1f1ceeda2cbf
+      internalID: -139723148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_96
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 266
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2f8ce5ac9d7b646b77c797a0ff8775
+      internalID: 1923955081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_97
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 266
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a75c509e581b9d49ae8eed5c3102bdb
+      internalID: -1969425991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_98
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 243
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207fe7cf43c5871449c11e9b3b02194c
+      internalID: -117566103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_99
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 244
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b6f2e2f8fe2ec41a8057f7f4079e1e
+      internalID: 1559936681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_100
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 244
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75dd8a8ef935c14aa37a65d43bce1bd
+      internalID: 1071904655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_101
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 244
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f545e6083d64444aee88363e564688
+      internalID: -327566915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_102
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 244
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd6cf9629902234d8853c4bf3fa68dc
+      internalID: 1154996724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_103
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 201
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804b360d2de82564f853e93a528f1eb4
+      internalID: -879581316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_104
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 201
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ce66b07195db240aa40833fc8797ff
+      internalID: 356428059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_105
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 201
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fbf27e264a78d4a8cc21a1398439c9
+      internalID: -28649379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_106
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 201
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25778284118d8824ab4f9e7c93a46d76
+      internalID: 389457080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_107
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 201
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be6f45b1527a954585d5d0a6be9d75d
+      internalID: -1382149225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_108
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 201
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d695b2ce68d36054696a82a3f9b777df
+      internalID: 59979342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_109
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 201
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a28a4028bbd04b40ab126b92f7f9dcc
+      internalID: 716170846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_110
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 201
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b279e4ef08c0337489540b943f95eecd
+      internalID: 1571010380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_111
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 201
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266ada0ea5f017146aacced813c8aae9
+      internalID: -812829697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_112
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 201
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e52b6e57fa34e47a78ab1a7edca951
+      internalID: 910004098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_113
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 201
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e900a7866d5c24fbf85b03e6710b12
+      internalID: 48337870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_114
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 156
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baff7bacd667e1408591b1f47748cc6
+      internalID: 463413879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_115
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 156
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfe05d99034f024cb59af9b28cecb54
+      internalID: -562897115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_116
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 156
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a3400fbcbd9e244a2c3a0605a6e9f6
+      internalID: -1026606275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_117
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 156
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae96b7c0e41d4d4fbc991fc553a9b9f
+      internalID: 1942199969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_118
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 156
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc3c05e4a7981a4eb09f14395211b56
+      internalID: -525422287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_119
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 156
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7345045d60667947b85f94058d82a9e
+      internalID: 713228631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_120
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 156
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44c7950dc9e5ff48b390e9b316b35a5
+      internalID: 1736051756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_121
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 156
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0660942fd30e844b445429933eb51a
+      internalID: 1549721943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_122
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 156
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1a0507beb54d445b6d9f5319d0ecd9
+      internalID: -878450745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_123
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 156
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783fabf3b10716c4c8d0258f72abf78a
+      internalID: 944906363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_124
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 156
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437025625d1bed249adf8870df37d2ce
+      internalID: -609074567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_125
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 156
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b539b41202f594c9da8f9dd7d471e6
+      internalID: -1366831219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_126
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 112
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc42f21690ed87146a1f4efeadda6f72
+      internalID: -2011318514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_127
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 112
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260f179f35919c6408e3ee5383555dc6
+      internalID: 1049748521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_128
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 112
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e986d54b3367cc458f9d29e4b8804e1
+      internalID: 1887140656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_129
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 112
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11874afa1f0027b4ea8433df53d380b8
+      internalID: 73562847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_130
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 112
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9de2302d0e268f4693c4402d1c3ac75
+      internalID: 288885463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_131
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 112
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ac2c890ae663348a9350a94c42dbbb
+      internalID: -1483241587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_132
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 112
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a677230df074664f91d6f7404fc1e5e
+      internalID: 1834050633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_133
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 112
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3778313e36f0c7c4eab8ea938b46e1d2
+      internalID: 1529911354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_134
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c970e8fe1ebc4b49832aee721fed56c
+      internalID: 1657213387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_135
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9d860088d2bd246b00b1f6c79720be
+      internalID: 836013128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_136
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 112
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae63b21df0365141b20f6331a076b8f
+      internalID: 1267151942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_137
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 112
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea0d2bdf17cec64e8a37d25794af4de
+      internalID: -1769141066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_138
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 73
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb2dec275d24704797538e6e5554d35
+      internalID: -288525368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_139
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 73
+        width: 36
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4607417, y: 0.49999976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28fdafec864251429b31f84b452864d
+      internalID: 1914710554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_140
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 73
+        width: 37
+        height: 33
+      alignment: 9
+      pivot: {x: 0.3472109, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5153c2fc7d1e8b14fb34df4c2b43192b
+      internalID: -919901617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_141
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 73
+        width: 41
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3104106, y: 0.51218307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c6a651331280478b9a753ef85485a
+      internalID: -1714979328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_142
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 73
+        width: 40
+        height: 19
+      alignment: 9
+      pivot: {x: 0.1775902, y: 0.7789423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c814c323ed4b94f81e869b8a19ce0e
+      internalID: -1844656239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_143
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 73
+        width: 44
+        height: 17
+      alignment: 9
+      pivot: {x: 0.0984934, y: 0.8741091}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d88054b9da90cb4e8b3b5cde8b94cbe
+      internalID: 592987403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_144
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 73
+        width: 45
+        height: 15
+      alignment: 9
+      pivot: {x: 0.03282538, y: 1.19487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb06f407f59b9d941a995e7b7ed45e0a
+      internalID: 1568916857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_145
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 73
+        width: 45
+        height: 15
+      alignment: 9
+      pivot: {x: 0.02497355, y: 1.183095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af76c720d0ef5941852e090ea6e589d
+      internalID: -1997404001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_146
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 29
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fa9c570ca016f49a6053cf2d527608
+      internalID: -1705979272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_147
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 29
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ee009c5edce9743af9a03ab1201709
+      internalID: -1265062900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_148
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 29
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a77e8c388dda754b86acfaf7e32744d
+      internalID: 29205312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_149
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 29
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77104c83ff801d04eba93ce565e39b0b
+      internalID: -252090428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_150
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 29
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b70c1d11fe38df4b95394a49966052f
+      internalID: 116891724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_151
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 29
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a4c016ecde59d44936888a6e8de4c8
+      internalID: -682941076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_152
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 29
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce2c2c5b11add6488fead3725d4be19
+      internalID: 1941148474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_153
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 29
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc43a731fcb07e408b0ac078c189e64
+      internalID: 1194290052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy solider normal_154
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 29
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546cee03c2a67254e98003c4294a5b16
+      internalID: 1082855033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      enemy solider melee_0: -537716250
+      enemy solider melee_01: -1689661500
+      enemy solider melee_010: 326636346
+      enemy solider melee_011: -164560065
+      enemy solider melee_02: 708910499
+      enemy solider melee_03: -1438122985
+      enemy solider melee_04: 719904318
+      enemy solider melee_05: 879988728
+      enemy solider melee_06: -1179301709
+      enemy solider melee_07: -81670422
+      enemy solider melee_08: 1171861182
+      enemy solider melee_09: 1903355399
+      enemy solider normal_0: -68313946
+      enemy solider normal_1: -963013872
+      enemy solider normal_10: 1547701653
+      enemy solider normal_100: 1071904655
+      enemy solider normal_101: -327566915
+      enemy solider normal_102: 1154996724
+      enemy solider normal_103: -879581316
+      enemy solider normal_104: 356428059
+      enemy solider normal_105: -28649379
+      enemy solider normal_106: 389457080
+      enemy solider normal_107: -1382149225
+      enemy solider normal_108: 59979342
+      enemy solider normal_109: 716170846
+      enemy solider normal_11: 1768079175
+      enemy solider normal_110: 1571010380
+      enemy solider normal_111: -812829697
+      enemy solider normal_112: 910004098
+      enemy solider normal_113: 48337870
+      enemy solider normal_114: 463413879
+      enemy solider normal_115: -562897115
+      enemy solider normal_116: -1026606275
+      enemy solider normal_117: 1942199969
+      enemy solider normal_118: -525422287
+      enemy solider normal_119: 713228631
+      enemy solider normal_12: 660921168
+      enemy solider normal_120: 1736051756
+      enemy solider normal_121: 1549721943
+      enemy solider normal_122: -878450745
+      enemy solider normal_123: 944906363
+      enemy solider normal_124: -609074567
+      enemy solider normal_125: -1366831219
+      enemy solider normal_126: -2011318514
+      enemy solider normal_127: 1049748521
+      enemy solider normal_128: 1887140656
+      enemy solider normal_129: 73562847
+      enemy solider normal_13: -451184569
+      enemy solider normal_130: 288885463
+      enemy solider normal_131: -1483241587
+      enemy solider normal_132: 1834050633
+      enemy solider normal_133: 1529911354
+      enemy solider normal_134: 1657213387
+      enemy solider normal_135: 836013128
+      enemy solider normal_136: 1267151942
+      enemy solider normal_137: -1769141066
+      enemy solider normal_138: -288525368
+      enemy solider normal_139: 1914710554
+      enemy solider normal_14: 955760695
+      enemy solider normal_140: -919901617
+      enemy solider normal_141: -1714979328
+      enemy solider normal_142: -1844656239
+      enemy solider normal_143: 592987403
+      enemy solider normal_144: 1568916857
+      enemy solider normal_145: -1997404001
+      enemy solider normal_146: -1705979272
+      enemy solider normal_147: -1265062900
+      enemy solider normal_148: 29205312
+      enemy solider normal_149: -252090428
+      enemy solider normal_15: -1900848164
+      enemy solider normal_150: 116891724
+      enemy solider normal_151: -682941076
+      enemy solider normal_152: 1941148474
+      enemy solider normal_153: 1194290052
+      enemy solider normal_154: 1082855033
+      enemy solider normal_16: 1341059717
+      enemy solider normal_17: 2059863910
+      enemy solider normal_18: -1937074630
+      enemy solider normal_19: -1907537578
+      enemy solider normal_2: 1685906271
+      enemy solider normal_20: -476396689
+      enemy solider normal_21: -1854219806
+      enemy solider normal_22: -354468878
+      enemy solider normal_23: -886215258
+      enemy solider normal_24: 1220263795
+      enemy solider normal_25: 2135258628
+      enemy solider normal_26: -380648035
+      enemy solider normal_27: 1207505460
+      enemy solider normal_28: 1188670233
+      enemy solider normal_29: -464066479
+      enemy solider normal_3: 1607858256
+      enemy solider normal_30: -1963785132
+      enemy solider normal_31: -490707902
+      enemy solider normal_32: -1480116135
+      enemy solider normal_33: -1680739553
+      enemy solider normal_34: 844816290
+      enemy solider normal_35: 476073704
+      enemy solider normal_36: 1669333570
+      enemy solider normal_37: -643929414
+      enemy solider normal_38: -1650823483
+      enemy solider normal_39: -984821628
+      enemy solider normal_4: 651132309
+      enemy solider normal_40: -552376716
+      enemy solider normal_41: -1281555546
+      enemy solider normal_42: 1488892995
+      enemy solider normal_43: -1867382739
+      enemy solider normal_44: -658504474
+      enemy solider normal_45: -2027629123
+      enemy solider normal_46: -1263037037
+      enemy solider normal_47: 1565028192
+      enemy solider normal_48: 2044803859
+      enemy solider normal_49: -1596731615
+      enemy solider normal_5: 1904823943
+      enemy solider normal_50: -537641603
+      enemy solider normal_51: -1246179967
+      enemy solider normal_52: -1171122474
+      enemy solider normal_53: 1655576298
+      enemy solider normal_54: -69359616
+      enemy solider normal_55: -1199754790
+      enemy solider normal_56: 554557671
+      enemy solider normal_57: -1216488308
+      enemy solider normal_58: 384981248
+      enemy solider normal_59: 1012879009
+      enemy solider normal_6: -777325114
+      enemy solider normal_60: -530190026
+      enemy solider normal_61: 1041627870
+      enemy solider normal_62: 1757792466
+      enemy solider normal_63: -2097009355
+      enemy solider normal_64: 1865087828
+      enemy solider normal_65: 438860297
+      enemy solider normal_66: -359066528
+      enemy solider normal_67: -965652078
+      enemy solider normal_68: 1560663813
+      enemy solider normal_69: 652527933
+      enemy solider normal_7: 1900494686
+      enemy solider normal_70: 712403495
+      enemy solider normal_71: 371681092
+      enemy solider normal_72: -63199467
+      enemy solider normal_73: 1181009947
+      enemy solider normal_74: 2024901975
+      enemy solider normal_75: -848746634
+      enemy solider normal_8: 574250961
+      enemy solider normal_81: 649085228
+      enemy solider normal_82: -2114803271
+      enemy solider normal_83: 1628825480
+      enemy solider normal_84: 891918581
+      enemy solider normal_85: 187262111
+      enemy solider normal_9: -1354321617
+      enemy solider normal_93: 644228901
+      enemy solider normal_94: 534720918
+      enemy solider normal_95: -139723148
+      enemy solider normal_96: 1923955081
+      enemy solider normal_97: -1969425991
+      enemy solider normal_98: -117566103
+      enemy solider normal_99: 1559936681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

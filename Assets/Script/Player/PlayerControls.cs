@@ -79,7 +79,12 @@ public class PlayerControls : SingleTon<PlayerControls>
     
     private void Move()
     {
-        if(PlayerHealth.Instance.isDead) return;
+        if (PlayerHealth.Instance.isDead)
+        {
+            movement = Vector2.zero;
+            return;
+
+        }
         //rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
         if (isCrouch)
         {

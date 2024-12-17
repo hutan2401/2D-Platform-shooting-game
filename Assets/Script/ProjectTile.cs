@@ -79,8 +79,9 @@ public class ProjectTile : MonoBehaviour
                 if (particleOnHitPrefabVFX != null)
                 {
                     Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                    Destroy(gameObject);
                 }
-                Destroy(gameObject);
+                
             }           
         }
         else if (other.isTrigger && (destruct|| destroyBox))
