@@ -254,7 +254,7 @@ public class Pistol : MonoBehaviour
     {
         if (currentBulletType.isUnlimited)
         {
-            bulletAmmoText.text = "0";
+            bulletAmmoText.text = "∞";
         }
         else
         {
