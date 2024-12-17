@@ -229,13 +229,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec9f3ad14818d54a9118ae2e6723c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findPlayer: {fileID: 0}
   enemyMoveSpeed: 2
   distance: 2
   checkPoint: {fileID: 4626200167290830888}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   facingLeft: 0
   pointThrow: {fileID: 3791816432218696452}
   throwRange: 15
@@ -262,7 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 30
+  enemyHealths: 1
+  timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []

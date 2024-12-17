@@ -180,12 +180,13 @@ MonoBehaviour:
   checkPoint: {fileID: 869702322643073193}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   facingLeft: 0
+  bulletPrefab: {fileID: 4532923915312193886, guid: a5ede218b8168884fb5ea65738d8355d, type: 3}
   pointShooting: {fileID: 5602006579279120355}
   shootingRange: 12.97
   fireCooldown: 2.5
-  bulletPrefab: {fileID: 4532923915312193886, guid: a5ede218b8168884fb5ea65738d8355d, type: 3}
+  score: 5
   inRange: 0
 --- !u!95 &7270339968488274312
 Animator:
@@ -220,7 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 1
+  enemyHealths: 1
+  timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []

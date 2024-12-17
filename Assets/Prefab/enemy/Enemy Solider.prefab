@@ -171,9 +171,10 @@ MonoBehaviour:
   checkPoint: {fileID: 4432453613079258032}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   facingLeft: 0
   pointShooting: {fileID: 4769616381454917313}
+  grenadePrefab: {fileID: 829330423816237652, guid: e6edb67d28c19384f9c4abbc4b914262, type: 3}
   throwRange: 5
   thrownCooldown: 3
   meleeRange: 1.5
@@ -181,7 +182,7 @@ MonoBehaviour:
   meleeDamage: 1
   meleeAttackPoint: {fileID: 4315398902649915099}
   meleeRadius: 0.5
-  grenadePrefab: {fileID: 829330423816237652, guid: e6edb67d28c19384f9c4abbc4b914262, type: 3}
+  score: 5
   inRange: 0
 --- !u!114 &7987459551605978355
 MonoBehaviour:
@@ -195,7 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 1
+  enemyHealths: 1
+  timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []

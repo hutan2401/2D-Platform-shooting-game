@@ -263,7 +263,7 @@ MonoBehaviour:
   checkPoint: {fileID: 1041300821580206422}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   facingLeft: 0
   inRange: 0
   attackRange: 3.52
@@ -284,7 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2
+  enemyHealths: 1
+  timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []
