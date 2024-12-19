@@ -28,6 +28,7 @@ public class PointShooting1 : MonoBehaviour
         {
             enemy.Attack(); // Gọi hàm Attack của `Shooter`
             StartCoroutine(AttackCooldownRoutine());
+            ManagerAudioSound.Instance.PlayHitSound("MiniGunSoundSFX");
         }
     }
 

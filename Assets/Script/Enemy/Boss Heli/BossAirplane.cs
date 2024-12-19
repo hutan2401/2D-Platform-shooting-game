@@ -86,10 +86,12 @@ public class BossAirplane : MonoBehaviour
     private void ShootRocket()
     {
         Instantiate(RocketPrefab, pointCurve.position, Quaternion.identity);
+        ManagerAudioSound.Instance.PlayHitSound("FireRocketSoundSFX");
     }
     private void ShootRocket2()
     {
         Instantiate(RocketPrefab, pointCurve2.position, Quaternion.identity);
+        ManagerAudioSound.Instance.PlayHitSound("FireRocketSoundSFX");
     }
     private IEnumerator RandomRocket()
     {
@@ -115,6 +117,7 @@ public class BossAirplane : MonoBehaviour
         isDead = true;
         Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
+        //GameManager.Instance.OnBossDefeated();
     }
 
     private void OnDrawGizmosSelected()

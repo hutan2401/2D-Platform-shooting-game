@@ -20,13 +20,16 @@ public class EnemyRiffle : MonoBehaviour
     [SerializeField] private int score = 5;
     private float cooldownTimer = 0f;
 
-    
-    public bool inRange = false;
+    [Header("Sounds Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipSoundEnemyDie;
 
+    public bool inRange = false;
     private Animator animator;
     private bool isDead = false;
     private void Start()
     {
+       // explosionController = GetComponent<BossExplosionController>();
         animator = GetComponent<Animator>();
         EnemyHealth healthComponent = GetComponent<EnemyHealth>();
         if (healthComponent != null)
@@ -96,7 +99,12 @@ public class EnemyRiffle : MonoBehaviour
 
     public void DeathAnimation()
     {
+        if(isDead) return;
         isDead = true;
+        if (audioSource != null && audioClipSoundEnemyDie != null)
+        {
+            audioSource.PlayOneShot(audioClipSoundEnemyDie);
+        }
         ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {

@@ -103,6 +103,7 @@ MonoBehaviour:
   projectTileRange: 10
   damage: 1
   direction: {x: 1, y: 0, z: 0}
+  effectPrefab: {fileID: 0}
 --- !u!50 &3366748551373306236
 Rigidbody2D:
   serializedVersion: 4

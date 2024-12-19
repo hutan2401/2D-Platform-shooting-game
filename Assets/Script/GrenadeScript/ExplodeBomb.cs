@@ -8,12 +8,12 @@ public class ExplodeBomb : MonoBehaviour
     [SerializeField] private int damageGrenade = 2;
     [SerializeField] private GameObject explodeEffect;
 
-    private AudioHitSound hitSound;
+    //private AudioHitSound hitSound;
 
-    private void Awake()
-    {
-        hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
-    }
+    //private void Awake()
+    //{
+    //    hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+    //}
 
     private void Start()
     {
@@ -55,7 +55,7 @@ public class ExplodeBomb : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy") || destruct)
         {
             Instantiate(explodeEffect, transform.position,Quaternion.identity);
-            hitSound.PlaySFX(hitSound.hitBombSoundSFX);
+            ManagerAudioSound.Instance.PlayHitSound("HitBombSoundSFX");
             Explode();
         }
     }

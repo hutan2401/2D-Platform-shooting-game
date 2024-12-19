@@ -234,7 +234,7 @@ MonoBehaviour:
   checkPoint: {fileID: 4626200167290830888}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   facingLeft: 0
   pointThrow: {fileID: 3791816432218696452}
   throwRange: 15
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealths: 1
+  enemyHealth: 1
   timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
