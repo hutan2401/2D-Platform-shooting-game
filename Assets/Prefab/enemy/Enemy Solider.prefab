@@ -172,7 +172,7 @@ MonoBehaviour:
   checkPoint: {fileID: 4432453613079258032}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   facingLeft: 0
   pointShooting: {fileID: 4769616381454917313}
   grenadePrefab: {fileID: 829330423816237652, guid: e6edb67d28c19384f9c4abbc4b914262, type: 3}

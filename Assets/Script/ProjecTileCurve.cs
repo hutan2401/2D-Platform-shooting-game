@@ -60,8 +60,7 @@ public class ProjecTileCurve : MonoBehaviour
         PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
         if (!collision.isTrigger &  player)
         {
-            player.TakeDamage(damageEnemy, transform);
-            Instantiate(splatterPrefab, transform.position, Quaternion.identity);
+            player.TakeDamage(damageEnemy, transform);         
             if (playHitSound && !string.IsNullOrEmpty(hitSoundName))
             {
                 ManagerAudioSound.Instance.PlayHitSound(hitSoundName);
@@ -74,7 +73,7 @@ public class ProjecTileCurve : MonoBehaviour
             {
                 ManagerAudioSound.Instance.PlayHitSound(hitSoundName);
             }
-            Instantiate(splatterPrefab,transform.position, Quaternion.identity);
+           // Instantiate(splatterPrefab,transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

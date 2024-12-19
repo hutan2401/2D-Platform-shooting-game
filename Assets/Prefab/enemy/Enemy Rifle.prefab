@@ -181,7 +181,7 @@ MonoBehaviour:
   checkPoint: {fileID: 869702322643073193}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   facingLeft: 0
   bulletPrefab: {fileID: 4532923915312193886, guid: a5ede218b8168884fb5ea65738d8355d, type: 3}
   pointShooting: {fileID: 5602006579279120355}

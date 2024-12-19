@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be48aca02a06b194781ddf9ad3283f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuScene: MainMenu
+  mainMenuScene: Main Menu
   settingsScene: Settings
   endGameScene: EndGame
   bossDefeatDelay: 3
-  stageNames: []
+  stageNames:
+  - Scene1
+  - Scene2
