@@ -1394,7 +1394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 527098893}
-  - component: {fileID: 527098892}
   - component: {fileID: 527098894}
   m_Layer: 0
   m_Name: ManagerSceneLevel
@@ -1403,20 +1402,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &527098892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527098891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4920909b26e969c4e8d02e860e0fd5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  victoryMenu: {fileID: 0}
-  delayBeforeTranstion: 3
 --- !u!4 &527098893
 Transform:
   m_ObjectHideFlags: 0
@@ -1447,6 +1432,8 @@ MonoBehaviour:
   mainMenuScene: MainMenu
   settingsScene: Settings
   endGameScene: EndGame
+  bossDefeatDelay: 3
+  stageNames: []
 --- !u!114 &714999484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
@@ -1897,11 +1884,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.51
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.29
+      value: 8.06
       objectReference: {fileID: 0}
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1934,6 +1921,14 @@ PrefabInstance:
     - target: {fileID: 3509035012158923901, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107670308598603536, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107670308598603536, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7901934107267282013, guid: a2cf3021094d5c44aa73adc4507d316a, type: 3}
       propertyPath: m_Name
@@ -2058,6 +2053,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1086676482}
     - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: textLives
       value: 
       objectReference: {fileID: 1834770642}
@@ -2174,6 +2173,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3795845357431819298, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -26.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795845357431819298, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -2183,6 +2190,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5672208613311882750, guid: 0a0d0da439db50f44b3341ea6de4df47, type: 2}
     - target: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150322070286317763, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_fontSize
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150322070286317763, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 78c260b05f4145143ae5d11782fa4221, type: 2}
+    - target: {fileID: 6150322070286317763, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150322070286317763, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8160953086707751665, guid: 78c260b05f4145143ae5d11782fa4221, type: 2}
+    - target: {fileID: 6150322070286317763, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -2458,6 +2485,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53b603bc86104824d9cfbeaf2a6421b4, type: 3}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[4].name
+      value: HitRocketSoundSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 998e81305dce9e84696ba7456ebed5cd, type: 3}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[5].name
+      value: FireRocketSoundSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e152985c398fb234283126c268cadf12, type: 3}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: hitSounds.Array.data[6].name
+      value: MiniGunSoundSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117073241975919065, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
+      propertyPath: bulletSounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 100da11f1636a3c46923f3a806ece19f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
