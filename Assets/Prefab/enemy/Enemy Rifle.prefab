@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 1802759579, guid: 9bba29798abb54a4790a3f53651abe18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   checkPoint: {fileID: 869702322643073193}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   facingLeft: 0
   bulletPrefab: {fileID: 4532923915312193886, guid: a5ede218b8168884fb5ea65738d8355d, type: 3}
   pointShooting: {fileID: 5602006579279120355}

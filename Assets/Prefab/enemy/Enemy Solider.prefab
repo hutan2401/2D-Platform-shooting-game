@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: -68313946, guid: 2dc64cf2ecf50c6409188a429c090686, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   checkPoint: {fileID: 4432453613079258032}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   facingLeft: 0
   pointShooting: {fileID: 4769616381454917313}
   grenadePrefab: {fileID: 829330423816237652, guid: e6edb67d28c19384f9c4abbc4b914262, type: 3}
