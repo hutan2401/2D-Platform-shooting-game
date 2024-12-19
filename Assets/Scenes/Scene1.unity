@@ -22960,6 +22960,10 @@ PrefabInstance:
       propertyPath: attackRange
       value: 10.92
       objectReference: {fileID: 0}
+    - target: {fileID: 2178873047682951663, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.2

@@ -1434,6 +1434,63 @@ MonoBehaviour:
   endGameScene: EndGame
   bossDefeatDelay: 3
   stageNames: []
+--- !u!1001 &588863564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13357341
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045764099864690874, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691378100774465900, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_Name
+      value: Enemy Patroll
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
 --- !u!114 &714999484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5172602462139484919, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
@@ -1812,11 +1869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7595177148727500570, guid: 3af1952ddbcae124aa6b692c09803b60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.02
+      value: 30.7
       objectReference: {fileID: 0}
     - target: {fileID: 7595177148727500570, guid: 3af1952ddbcae124aa6b692c09803b60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.78
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7595177148727500570, guid: 3af1952ddbcae124aa6b692c09803b60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2660,3 +2717,4 @@ SceneRoots:
   - {fileID: 1548354974}
   - {fileID: 2988940495800639135}
   - {fileID: 6093899658228809967}
+  - {fileID: 588863564}
