@@ -30,13 +30,13 @@ public class Pistol : MonoBehaviour
     private bool isLookUp;
     private bool isCrouch;
 
-    private AudioHitSound hitSound;
+    //private AudioHitSound hitSound;
 
     private void Awake()
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-        hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+       // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
 
     }
 
@@ -142,8 +142,8 @@ public class Pistol : MonoBehaviour
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                //enemyHealth.TakeDamage(damageAmount);
-                hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
+                enemyHealth.TakeDamage(damageAmount);
+                ManagerAudioSound.Instance.PlayHitSound("KnifeHitSoundSFX");
             }
         }
     }
@@ -183,11 +183,10 @@ public class Pistol : MonoBehaviour
                 bulletSpawnPoint.position = defaultPosition.position;
                 bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
             }
+            animator.SetTrigger("Attack");
         }
-        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
-        //GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        //ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
-        //bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+        ManagerAudioSound.Instance.PlayBulletSound(currentBulletType.bulletTypeName);
+
         if (currentBulletType.burstCount > 1)
         {
             StartCoroutine(BurstFire());
@@ -197,10 +196,9 @@ public class Pistol : MonoBehaviour
             FireBullet();
             currentAmmo--;
         }
-        animator.SetTrigger("Attack");
+
         if (!currentBulletType.isUnlimited)
         {
-            //currentAmmo--;
             {
                 if (currentAmmo <= 0)
                 {

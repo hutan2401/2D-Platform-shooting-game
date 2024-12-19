@@ -131,8 +131,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1.0118713
-      value: -0.016212463
+      time: 1.2919617
+      value: -0.17142487
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -146,6 +146,8 @@ MonoBehaviour:
   splatterPrefab: {fileID: 85498987692427801, guid: ecdedc505d8f7414e92e947eb32f4463, type: 3}
   isRotatingProjectile: 1
   damageEnemy: 5
+  hitSoundName: HitRocketSoundSFX
+  playHitSound: 1
 --- !u!70 &7231681489770315838
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
