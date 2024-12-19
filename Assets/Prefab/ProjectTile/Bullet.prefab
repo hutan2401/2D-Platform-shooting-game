@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 7fdc9f6d1daed1d4e8ae680925af6d08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,6 +130,8 @@ MonoBehaviour:
   projectTileRange: 10
   damage: 2
   particleOnHitPrefabVFX: {fileID: 4932042523241954632, guid: 0539354d09b12c34d972fde5b1524970, type: 3}
+  isCanExplode: 0
+  explosionRadius: 2
 --- !u!70 &9036030119593684324
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
