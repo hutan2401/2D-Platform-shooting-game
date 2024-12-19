@@ -184,6 +184,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f57e2280ceacb2a48b854f6fb7ad17ff, type: 3}
   - name: HitBombSoundSFX
     clip: {fileID: 8300000, guid: 7ee06a07c8c73ab4fb8f1751c4e93740, type: 3}
+  - name: HitRocketSoundSFX
+    clip: {fileID: 8300000, guid: 53b603bc86104824d9cfbeaf2a6421b4, type: 3}
+  - name: FireRocketSoundSFX
+    clip: {fileID: 8300000, guid: 998e81305dce9e84696ba7456ebed5cd, type: 3}
+  - name: MiniGunSoundSFX
+    clip: {fileID: 8300000, guid: e152985c398fb234283126c268cadf12, type: 3}
   explodeSounds:
   - name: ExplodeTank
     clip: {fileID: 8300000, guid: 631cb0493acaa1d40a9ad50bfe8d8180, type: 3}
@@ -191,6 +197,6 @@ MonoBehaviour:
   - name: Pistol
     clip: {fileID: 8300000, guid: 7b600a900e2edf54696437f49c6baa18, type: 3}
   - name: MachineGun
-    clip: {fileID: 8300000, guid: 9b58e3fe14726c7429dc8074ff95b84f, type: 3}
+    clip: {fileID: 8300000, guid: 100da11f1636a3c46923f3a806ece19f, type: 3}
   - name: Rocket
     clip: {fileID: 8300000, guid: 0366ebc121171424b9d27a103a0ebac4, type: 3}
