@@ -1156,6 +1156,17 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &539399423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
+  m_PrefabInstance: {fileID: 596402456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be48aca02a06b194781ddf9ad3283f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &562339650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,9 +2406,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337762913}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 539399423}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
