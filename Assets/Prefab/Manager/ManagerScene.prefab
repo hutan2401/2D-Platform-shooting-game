@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuScene: Main Menu
   settingsScene: Settings
-  endGameScene: EndGame
+  endGameScene: Scene2
   bossDefeatDelay: 3
   stageNames:
   - Scene1

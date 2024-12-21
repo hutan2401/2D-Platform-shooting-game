@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     //private bool isGameActive = false;
     [Header("Stage Names")]
     public List<string> stageNames;
+    [Header("Player Respawn")]
+    public Vector3 respawnPosition = Vector3.zero; // Default respawn position
+    public string respawnScene; // Scene where the player should respawn
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of GameManager exists
@@ -39,7 +42,7 @@ public class GameManager : MonoBehaviour
     #region Public methos
     public void StartGame()
     {
-        //isGameActive = true;
+        SetRespawn(SceneManager.GetActiveScene().name, respawnPosition);
         LoadSceneByName(stageNames[0]);
     }
     public void OpenSettings()
@@ -52,7 +55,6 @@ public class GameManager : MonoBehaviour
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
 
-        // Check if the current stage is the last gameplay stage
         if (IsFinalStage(currentSceneName))
         {
             LoadSceneByName(endGameScene);
@@ -62,6 +64,7 @@ public class GameManager : MonoBehaviour
             int nextStageIndex = stageNames.IndexOf(currentSceneName) + 1;
             if (nextStageIndex < stageNames.Count)
             {
+                SetRespawn(stageNames[nextStageIndex], respawnPosition); // Update respawn for the next stage
                 LoadSceneByName(stageNames[nextStageIndex]);
             }
         }
@@ -80,7 +83,18 @@ public class GameManager : MonoBehaviour
     {
         LoadSceneByName(mainMenuScene);
     }
-
+    public void SetRespawn(string sceneName, Vector3 position)
+    {
+        respawnScene = sceneName;
+        respawnPosition = position;
+    }
+    public void RespawnPlayer(GameObject player)
+    {
+        if (SceneManager.GetActiveScene().name == respawnScene && player != null)
+        {
+            player.transform.position = respawnPosition;
+        }
+    }
     public void ExitGame()
     {
     #if UNITY_EDITOR
@@ -101,6 +115,7 @@ public class GameManager : MonoBehaviour
     // Load a scene by its name
     private void LoadSceneByName(string sceneName)
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -108,6 +123,18 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(bossDefeatDelay);
         OnStageComplete();
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from sceneLoaded event
+
+        // Respawn the player in the correct position
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            RespawnPlayer(player);
+        }
+        CameraController.Instance.SetPlayerCameraFollow();
     }
 
     #endregion

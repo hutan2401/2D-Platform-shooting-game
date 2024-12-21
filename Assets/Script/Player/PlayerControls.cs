@@ -64,10 +64,13 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController.Player.Crouching.started += _ => Crouch();
         playerController.Player.Crouching.canceled += _ => StandUp();
     }
-    private void OnDisable()
-    {
-        playerController.Disable();
-    }
+    //private void OnDisable()
+    //{
+    //    if (playerController != null)
+    //    {
+    //        playerController.Disable();
+    //    }
+    //}
 
     private void PlayerInput()
     {

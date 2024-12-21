@@ -12,6 +12,7 @@ public class SingleTon<T> : MonoBehaviour where T : SingleTon<T>
         if (instance != null && this.gameObject != null)
         {
             Destroy(this.gameObject);
+            return;
         }
         else
         {
