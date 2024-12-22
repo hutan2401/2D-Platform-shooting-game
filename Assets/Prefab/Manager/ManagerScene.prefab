@@ -47,7 +47,12 @@ MonoBehaviour:
   mainMenuScene: Main Menu
   settingsScene: Settings
   endGameScene: Scene2
-  bossDefeatDelay: 3
+  bossDefeatDelay: 10
   stageNames:
   - Scene1
   - Scene2
+  respawnPosition: {x: 0, y: 0, z: 0}
+  respawnScene: 
+  victoryUI: {fileID: 0}
+  victoryAnim: {fileID: 0}
+  delayTime: 10

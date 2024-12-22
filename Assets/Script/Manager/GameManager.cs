@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour
     [Header("Player Respawn")]
     public Vector3 respawnPosition = Vector3.zero; // Default respawn position
     public string respawnScene; // Scene where the player should respawn
+
+    [Header("Victory Show UI")]
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private Animator victoryAnim;
+    [SerializeField] private float delayTime = 10;
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of GameManager exists
@@ -57,6 +63,7 @@ public class GameManager : MonoBehaviour
 
         if (IsFinalStage(currentSceneName))
         {
+            Debug.Log("load end scene");
             LoadSceneByName(endGameScene);
         }
         else
@@ -122,6 +129,14 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleBossDefeat()
     {
         yield return new WaitForSeconds(bossDefeatDelay);
+        if (victoryUI != null)
+        {
+            victoryUI.SetActive(true); // Show the victory UI
+            victoryAnim.SetTrigger("Show");
+            yield return new WaitForSeconds(delayTime); // Wait for a few seconds
+            //victoryAnim.SetTrigger("hide");
+            victoryUI.SetActive(false); // Hide the victory UI
+        }
         OnStageComplete();
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -133,6 +148,11 @@ public class GameManager : MonoBehaviour
         if (player != null)
         {
             RespawnPlayer(player);
+        }
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.HealPlayer(playerHealth.MaxHealth);
         }
         CameraController.Instance.SetPlayerCameraFollow();
     }

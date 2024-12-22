@@ -452,6 +452,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+--- !u!95 &261904960 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 36652139788899048, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 261904959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &261904961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1027530932020590123, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+  m_PrefabInstance: {fileID: 261904959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &338050446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4327629057886573039, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
@@ -27323,6 +27333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManagerScene
       objectReference: {fileID: 0}
+    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
+      propertyPath: victoryUI
+      value: 
+      objectReference: {fileID: 261904961}
+    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
+      propertyPath: victoryAnim
+      value: 
+      objectReference: {fileID: 261904960}
     - target: {fileID: 8655144447140688876, guid: a4a3558ccadc7604486259164f962728, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

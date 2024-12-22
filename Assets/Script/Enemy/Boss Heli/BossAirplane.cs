@@ -117,7 +117,7 @@ public class BossAirplane : MonoBehaviour
         isDead = true;
         Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
-        //GameManager.Instance.OnBossDefeated();
+        GameManager.Instance.OnBossDefeated();
     }
 
     private void OnDrawGizmosSelected()

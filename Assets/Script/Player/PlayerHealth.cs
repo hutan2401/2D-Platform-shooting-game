@@ -33,6 +33,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
    // public Transform lastSafePosition;
     public bool isDead { get; private set; }
+    public int MaxHealth => maxHealth;
     private Vector3 respawnPosition;
     private void Start()
     {
