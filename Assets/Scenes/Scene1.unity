@@ -279,6 +279,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 36652139788899048, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 391279456054509277, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_Value
       value: 1
@@ -286,6 +290,10 @@ PrefabInstance:
     - target: {fileID: 556095126940277807, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -5.3200912
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530932020590123, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1762582650160902692, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -395,6 +403,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.010986328
       objectReference: {fileID: 0}
+    - target: {fileID: 5880710176832996662, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6505514768287733176, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -40
@@ -446,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 8221667105655869901, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.000045776367
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560207491410289084, guid: 8059a6290cce05b4e91b7267225e2b50, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27053,9 +27069,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: maxLives
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: deathMenu
       value: 
       objectReference: {fileID: 1800629236}
+    - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: textLives
       value: 
@@ -27907,6 +27931,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: delayTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: victoryUI
+      value: 
+      objectReference: {fileID: 261904961}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: victoryAnim
+      value: 
+      objectReference: {fileID: 261904960}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46665,8 +46701,8 @@ SceneRoots:
   - {fileID: 2051897778}
   - {fileID: 131868528}
   - {fileID: 1988406481}
-  - {fileID: 631245675}
   - {fileID: 261904959}
+  - {fileID: 631245675}
   - {fileID: 369883754}
   - {fileID: 1661129792}
   - {fileID: 370708839}

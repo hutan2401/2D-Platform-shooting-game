@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class AudioClipEntry
@@ -9,12 +10,12 @@ public class AudioClipEntry
     public AudioClip clip;    // Đoạn âm thanh
 }
 
-//[System.Serializable]
-//public class BulletSoundEntry
-//{
-//    public string bulletType; // Tên loại đạn
-//    public AudioClip clip;    // Đoạn âm thanh bắn đạn
-//}
+[System.Serializable]
+public class SceneMusicEntry
+{
+    public string sceneName;     // Tên Scene
+    public AudioClip musicClip;  // Đoạn nhạc cho Scene
+}
 public class ManagerAudioSound : MonoBehaviour
 {
     public static ManagerAudioSound Instance;
@@ -34,6 +35,10 @@ public class ManagerAudioSound : MonoBehaviour
     [Header("Bullet Sounds")]
     public List<AudioClipEntry> bulletSounds; // Danh sách âm thanh đạn
     private Dictionary<string, AudioClip> bulletSoundDict;
+
+    [Header("Scene Music")]
+    public List<SceneMusicEntry> sceneMusicList; // Danh sách nhạc từng Scene
+    private Dictionary<string, AudioClip> sceneMusicDict; // Từ điển nhạc từng Scene
 
     private float soundCooldown = 0.25f;
     private float lastSoundPlayTime = 0f;
@@ -76,6 +81,13 @@ public class ManagerAudioSound : MonoBehaviour
         {
             if (!bulletSoundDict.ContainsKey(sound.name))
                 bulletSoundDict.Add(sound.name, sound.clip);
+        }
+
+        sceneMusicDict = new Dictionary<string, AudioClip>();
+        foreach (var entry in sceneMusicList)
+        {
+            if (!sceneMusicDict.ContainsKey(entry.sceneName))
+                sceneMusicDict.Add(entry.sceneName, entry.musicClip);
         }
     }
 
@@ -137,6 +149,32 @@ public class ManagerAudioSound : MonoBehaviour
     public void StopMusic()
     {
         if (musicSource.isPlaying) musicSource.Stop();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Lấy tên Scene hiện tại
+        string currentSceneName = scene.name;
+
+        // Kiểm tra và phát nhạc tương ứng với Scene
+        if (sceneMusicDict.TryGetValue(currentSceneName, out AudioClip musicClip))
+        {
+            PlayMusic(musicClip);
+        }
+        else
+        {
+            Debug.LogWarning($"No music assigned for Scene '{currentSceneName}'!");
+        }
     }
     #endregion
 }

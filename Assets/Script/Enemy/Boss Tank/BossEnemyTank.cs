@@ -38,6 +38,11 @@ public class BossEnemyTank : MonoBehaviour
     private float specialAttackTimer = 0f;
     private bool isSpecialAttackActive = false;
 
+    [Header("Victory Show UI")]
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private Animator victoryAnim;
+    [SerializeField] private float delayTime = 10;
+
     private bool isDead = false;
     private EnemyHealth enemyHealth;
     private Animator animator;
@@ -48,6 +53,11 @@ public class BossEnemyTank : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.OnEnemyDeath.AddListener(BossDeath);
+        }
+        GameObject menuObject = GameObject.Find("VictoryUI");
+        if (menuObject != null)
+        {
+            victoryAnim = menuObject.GetComponent<Animator>();
         }
     }
 
@@ -176,7 +186,31 @@ public class BossEnemyTank : MonoBehaviour
         isDead = true;
         Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
+        StartCoroutine(ShowUI());
         GameManager.Instance.OnBossDefeated();
+    }
+    private IEnumerator ShowUI()
+    {
+        if (victoryUI != null)
+        {
+            victoryUI.SetActive(true);
+            Debug.Log("Victory UI activated.");
+
+            if (victoryAnim != null)
+            {
+                victoryAnim.SetTrigger("ShowUI");
+                Debug.Log("Victory animation triggered.");
+            }
+
+            yield return new WaitForSeconds(delayTime);
+            victoryAnim.SetTrigger("hide");
+            victoryUI.SetActive(false); 
+            Debug.Log("Victory UI deactivated.");
+        }
+        else
+        {
+            Debug.LogError("Victory UI is not assigned!");
+        }
     }
     private void OnDrawGizmosSelected()
     {
