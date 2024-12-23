@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -35,6 +35,7 @@ public class PlayerHealth : SingleTon<PlayerHealth>
     public bool isDead { get; private set; }
     public int MaxHealth => maxHealth;
     private Vector3 respawnPosition;
+
     private void Start()
     {
         currentHealth = maxHealth;

@@ -36,7 +36,8 @@ public class Pistol : MonoBehaviour
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-       // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+
+        // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
 
     }
 
@@ -91,7 +92,7 @@ public class Pistol : MonoBehaviour
             animator.SetLayerWeight(currentLayer, 0);
         }
     }
-    private void SwitchToDefaultWeapon()
+    public void SwitchToDefaultWeapon()
     {
         currentBulletType = defaultBulletType;
         currentAmmo = int.MaxValue;
@@ -217,11 +218,6 @@ public class Pistol : MonoBehaviour
     }
     private IEnumerator BurstFire()
     {
-        //for(int i = 0; i < currentBulletType.burstCount; i++)
-        //{
-        //    FireBullet();
-        //    yield return new WaitForSeconds(currentBulletType.burstDelayTime);
-        //}
         int shotsFired = 0;
         for (int i = 0; i < currentBulletType.burstCount; i++)
         {

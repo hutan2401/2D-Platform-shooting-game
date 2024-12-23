@@ -19,11 +19,6 @@ public class GameManager : MonoBehaviour
     public Vector3 respawnPosition = Vector3.zero; // Default respawn position
     public string respawnScene; // Scene where the player should respawn
 
-    //[Header("Victory Show UI")]
-    //[SerializeField] private GameObject victoryUI;
-    //[SerializeField] private Animator victoryAnim;
-    //[SerializeField] private float delayTime = 10;
-
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of GameManager exists
@@ -44,11 +39,6 @@ public class GameManager : MonoBehaviour
         {
             ReturnToMainMenu();
         }
-        //GameObject menuObject = GameObject.Find("VictoryUI");
-        //if (menuObject != null)
-        //{
-        //    victoryAnim = menuObject.GetComponent<Animator>();
-        //}
     }
     #region Public methos
     public void StartGame()
@@ -97,7 +87,7 @@ public class GameManager : MonoBehaviour
     // Return to the Main Menu
     public void ReturnToMainMenu()
     {
-        LoadSceneByName(mainMenuScene);
+        SceneManager.LoadScene(mainMenuScene);
     }
     public void SetRespawn(string sceneName, Vector3 position)
     {
@@ -109,6 +99,9 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == respawnScene && player != null)
         {
             player.transform.position = respawnPosition;
+
+            //Pistol pistol  = new Pistol();
+            //pistol.SwitchToDefaultWeapon();
         }
     }
     public void ExitGame()
@@ -131,6 +124,7 @@ public class GameManager : MonoBehaviour
     // Load a scene by its name
     private void LoadSceneByName(string sceneName)
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(sceneName);
     }
@@ -144,14 +138,24 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from sceneLoaded event
-
-        // Respawn the player in the correct position
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
+        if (scene.name == endGameScene)
         {
-            RespawnPlayer(player);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                Destroy(player); // Xóa Player trong EndScene
+            }
+            return;
         }
-        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        // Respawn the player in the correct position
+        GameObject respawnPlayer = GameObject.FindGameObjectWithTag("Player");
+        if (respawnPlayer != null)
+        {
+            RespawnPlayer(respawnPlayer);
+           
+
+        }
+        PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
             playerHealth.HealPlayer(playerHealth.MaxHealth);
