@@ -22,7 +22,7 @@ public class enemyMelee : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private float delayAttackAnimation = 1.5f;
     [SerializeField] private int damage =1;
-
+    [SerializeField] private LayerMask playerLayer;
     [Header("Points Settings")]
     [SerializeField] private int score = 5;
 
@@ -96,14 +96,12 @@ public class enemyMelee : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D collHit = Physics2D.OverlapCircle(attackPoint.position, radius);
-        if (collHit != null)
+        Collider2D collHit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
+        if (collHit)
         {
             PlayerHealth playerHealth = collHit.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
+
                 playerHealth.TakeDamage(damage, transform);
-            }
         }
     }
     private void TriggerAttack()
