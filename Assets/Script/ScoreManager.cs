@@ -8,6 +8,8 @@ public class ScoreManager : SingleTon<ScoreManager>
 {
     private TMP_Text scoreText;
     private int currentScore = 0;
+    private Dictionary<string, int> levelScores = new Dictionary<string, int>(); 
+    private int totalScore = 0; 
     const string SCORE_AMOUNT_TEXT = "txtScorePoint";
     public void UpdateScore(int amount)
     {
@@ -20,5 +22,38 @@ public class ScoreManager : SingleTon<ScoreManager>
 
         scoreText.text = currentScore.ToString("D3");
     }
+    public void SaveScoreForCurrentLevel(string levelName)
+    {
+        if (!levelScores.ContainsKey(levelName))
+        {
+            levelScores.Add(levelName, currentScore);
+        }
+        else
+        {
+            levelScores[levelName] = currentScore;
+        }
 
+        Debug.Log($"Score for {levelName}: {currentScore}");
+    }
+
+    public void ResetScoreForNextLevel()
+    {
+        currentScore = 0;
+    }
+
+    public int GetTotalScore()
+    {
+        totalScore = 0;
+        foreach (var score in levelScores.Values)
+        {
+            totalScore += score;
+        }
+
+        return totalScore;
+    }
+
+    public Dictionary<string, int> GetLevelScores()
+    {
+        return new Dictionary<string, int>(levelScores);
+    }
 }

@@ -65,10 +65,13 @@ public class GameManager : MonoBehaviour
     public void OnStageComplete()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-
+        ScoreManager.Instance.SaveScoreForCurrentLevel(currentSceneName);
+        ScoreManager.Instance.ResetScoreForNextLevel();
         if (IsFinalStage(currentSceneName))
         {
             Debug.Log("load end scene");
+            int totalScore = ScoreManager.Instance.GetTotalScore();
+            PlayerPrefs.SetInt("TotalScore", totalScore);
             LoadSceneByName(endGameScene);
         }
         else
@@ -138,30 +141,6 @@ public class GameManager : MonoBehaviour
         
         OnStageComplete();
     }
-    //private IEnumerator ShowUI()
-    //{
-    //    if (victoryUI != null)
-    //    {
-    //        victoryUI.SetActive(true); // Hiển thị UI
-    //        Debug.Log("Victory UI activated.");
-
-    //        //if (victoryAnim != null)
-    //        //{
-    //        //    victoryAnim.SetTrigger("ShowUI"); // Kích hoạt animation
-    //        //    Debug.Log("Victory animation triggered.");
-    //        //}
-
-    //        // Chờ thời gian hiển thị UI
-    //        yield return new WaitForSeconds(delayTime);
-
-    //        victoryUI.SetActive(false); // Ẩn UI sau khi hoàn thành
-    //        Debug.Log("Victory UI deactivated.");
-    //    }
-    //    else
-    //    {
-    //        Debug.LogError("Victory UI is not assigned!");
-    //    }
-    //}
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from sceneLoaded event
