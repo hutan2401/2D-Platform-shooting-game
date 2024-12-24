@@ -830,10 +830,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4336292700674915122, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 746386555105270635, guid: 8929be85d2b541b4780138d0ffa38b5a, type: 2}
     - target: {fileID: 5731297716199046627, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
       propertyPath: m_Name
       value: ManagerAudioSound
@@ -878,10 +874,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8951752042948465523, guid: 7b043bd4d40cf294aa62c95b607645ff, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -1047324366302817388, guid: 8929be85d2b541b4780138d0ffa38b5a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

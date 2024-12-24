@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public Vector3 respawnPosition = Vector3.zero; // Default respawn position
     public string respawnScene; // Scene where the player should respawn
 
+    [SerializeField]private BulletType bullet;
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of GameManager exists
@@ -82,7 +83,6 @@ public class GameManager : MonoBehaviour
 
         // Check if it's the final stage
         StartCoroutine(HandleBossDefeat());
-       // StartCoroutine(ShowUI());
     }
 
     // Return to the Main Menu
@@ -100,9 +100,6 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == respawnScene && player != null)
         {
             player.transform.position = respawnPosition;
-
-            //Pistol pistol  = new Pistol();
-            //pistol.SwitchToDefaultWeapon();
         }
     }
     public void ExitGame()
@@ -118,7 +115,6 @@ public class GameManager : MonoBehaviour
     #region Private Methods
     private bool IsFinalStage(string currentSceneName)
     {
-        // Assuming "Stage3" is the final stage
         return currentSceneName == stageNames[stageNames.Count - 1];
     }
 
@@ -166,7 +162,7 @@ public class GameManager : MonoBehaviour
             Pistol pistol = respawnPlayer.GetComponent<Pistol>();
             if (pistol != null)
             {
-                pistol.SwitchToDefaultWeapon();
+                pistol.SwitchWeapon(bullet);
             }
 
             Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
