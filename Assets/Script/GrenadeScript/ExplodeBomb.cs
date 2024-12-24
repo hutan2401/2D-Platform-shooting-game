@@ -52,7 +52,7 @@ public class ExplodeBomb : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destructible destruct = collision.gameObject.GetComponent<Destructible>();
-        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy") || destruct)
+        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Enemy") || destruct)
         {
             Instantiate(explodeEffect, transform.position,Quaternion.identity);
             ManagerAudioSound.Instance.PlayHitSound("HitBombSoundSFX");

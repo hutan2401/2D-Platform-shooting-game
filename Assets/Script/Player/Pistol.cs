@@ -96,7 +96,8 @@ public class Pistol : MonoBehaviour
     public void SwitchToDefaultWeapon()
     {
         currentBulletType = defaultBulletType;
-        currentAmmo = int.MaxValue;
+        //currentAmmo = int.MaxValue;
+        currentAmmo = defaultBulletType.isUnlimited ? int.MaxValue : defaultBulletType.maxAmmo;
         UpdateAmmoUI();
     }
     public void SwitchWeapon(BulletType newBulletType)
