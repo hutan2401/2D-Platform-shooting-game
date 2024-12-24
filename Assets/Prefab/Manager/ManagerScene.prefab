@@ -51,5 +51,6 @@ MonoBehaviour:
   stageNames:
   - Scene1
   - Scene2
+  - endScene
   respawnPosition: {x: 0, y: 0, z: 0}
   respawnScene: 

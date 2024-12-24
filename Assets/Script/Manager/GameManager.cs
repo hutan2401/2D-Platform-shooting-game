@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -147,20 +148,35 @@ public class GameManager : MonoBehaviour
             }
             return;
         }
-        // Respawn the player in the correct position
-        GameObject respawnPlayer = GameObject.FindGameObjectWithTag("Player");
-        if (respawnPlayer != null)
+        else
         {
-            RespawnPlayer(respawnPlayer);
-           
+            // Respawn the player in the correct position
+            GameObject respawnPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (respawnPlayer != null)
+            {
+                RespawnPlayer(respawnPlayer);
 
+
+            }
+            PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.HealPlayer(playerHealth.MaxHealth);
+            }
+            Pistol pistol = respawnPlayer.GetComponent<Pistol>();
+            if (pistol != null)
+            {
+                pistol.SwitchToDefaultWeapon();
+            }
+
+            Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
+            if (throwBombScript != null)
+            {
+                TMP_Text newGrenadeText = GameObject.Find("grenadeAmmoText")?.GetComponent<TMP_Text>(); // Replace "GrenadeText" with your UI element's name
+                throwBombScript.AssignGrenadeText(newGrenadeText);
+            }
+            CameraController.Instance.SetPlayerCameraFollow();
         }
-        PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
-        if (playerHealth != null)
-        {
-            playerHealth.HealPlayer(playerHealth.MaxHealth);
-        }
-        CameraController.Instance.SetPlayerCameraFollow();
     }
 
     #endregion

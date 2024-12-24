@@ -52,10 +52,6 @@ public class PlayerControls : SingleTon<PlayerControls>
         Move();
         FlipSprite();
         CheckGrounded();
-        //if(Input.GetKeyDown(KeyCode.C))
-        //{
-        //    ChangeLayer();
-        //}
     }
 
     private void OnEnable()
@@ -64,13 +60,15 @@ public class PlayerControls : SingleTon<PlayerControls>
         playerController.Player.Crouching.started += _ => Crouch();
         playerController.Player.Crouching.canceled += _ => StandUp();
     }
-    //private void OnDisable()
-    //{
-    //    if (playerController != null)
-    //    {
-    //        playerController.Disable();
-    //    }
-    //}
+    private void OnDisable()
+    {
+        if (playerController != null)
+        {
+            playerController.Player.Crouching.started -= _ => Crouch();
+            playerController.Player.Crouching.canceled -= _ => StandUp();
+            playerController.Disable();
+        }
+    }
 
     private void PlayerInput()
     {
