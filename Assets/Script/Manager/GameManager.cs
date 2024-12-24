@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,10 @@ public class GameManager : MonoBehaviour
     //private bool isGameActive = false;
     [Header("Stage Names")]
     public List<string> stageNames;
+    [Header("Player Respawn")]
+    public Vector3 respawnPosition = Vector3.zero; // Default respawn position
+    public string respawnScene; // Scene where the player should respawn
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of GameManager exists
@@ -39,7 +44,7 @@ public class GameManager : MonoBehaviour
     #region Public methos
     public void StartGame()
     {
-        //isGameActive = true;
+        SetRespawn(SceneManager.GetActiveScene().name, respawnPosition);
         LoadSceneByName(stageNames[0]);
     }
     public void OpenSettings()
@@ -51,10 +56,13 @@ public class GameManager : MonoBehaviour
     public void OnStageComplete()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-
-        // Check if the current stage is the last gameplay stage
+        ScoreManager.Instance.SaveScoreForCurrentLevel(currentSceneName);
+        ScoreManager.Instance.ResetScoreForNextLevel();
         if (IsFinalStage(currentSceneName))
         {
+            Debug.Log("load end scene");
+            int totalScore = ScoreManager.Instance.GetTotalScore();
+            PlayerPrefs.SetInt("TotalScore", totalScore);
             LoadSceneByName(endGameScene);
         }
         else
@@ -62,6 +70,7 @@ public class GameManager : MonoBehaviour
             int nextStageIndex = stageNames.IndexOf(currentSceneName) + 1;
             if (nextStageIndex < stageNames.Count)
             {
+                SetRespawn(stageNames[nextStageIndex], respawnPosition); // Update respawn for the next stage
                 LoadSceneByName(stageNames[nextStageIndex]);
             }
         }
@@ -73,14 +82,29 @@ public class GameManager : MonoBehaviour
 
         // Check if it's the final stage
         StartCoroutine(HandleBossDefeat());
+       // StartCoroutine(ShowUI());
     }
 
     // Return to the Main Menu
     public void ReturnToMainMenu()
     {
-        LoadSceneByName(mainMenuScene);
+        SceneManager.LoadScene(mainMenuScene);
     }
+    public void SetRespawn(string sceneName, Vector3 position)
+    {
+        respawnScene = sceneName;
+        respawnPosition = position;
+    }
+    public void RespawnPlayer(GameObject player)
+    {
+        if (SceneManager.GetActiveScene().name == respawnScene && player != null)
+        {
+            player.transform.position = respawnPosition;
 
+            //Pistol pistol  = new Pistol();
+            //pistol.SwitchToDefaultWeapon();
+        }
+    }
     public void ExitGame()
     {
     #if UNITY_EDITOR
@@ -101,13 +125,58 @@ public class GameManager : MonoBehaviour
     // Load a scene by its name
     private void LoadSceneByName(string sceneName)
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(sceneName);
     }
 
     private IEnumerator HandleBossDefeat()
     {
         yield return new WaitForSeconds(bossDefeatDelay);
+        
         OnStageComplete();
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from sceneLoaded event
+        if (scene.name == endGameScene)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                Destroy(player); // Xóa Player trong EndScene
+            }
+            return;
+        }
+        else
+        {
+            // Respawn the player in the correct position
+            GameObject respawnPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (respawnPlayer != null)
+            {
+                RespawnPlayer(respawnPlayer);
+
+
+            }
+            PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.HealPlayer(playerHealth.MaxHealth);
+            }
+            Pistol pistol = respawnPlayer.GetComponent<Pistol>();
+            if (pistol != null)
+            {
+                pistol.SwitchToDefaultWeapon();
+            }
+
+            Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
+            if (throwBombScript != null)
+            {
+                TMP_Text newGrenadeText = GameObject.Find("grenadeAmmoText")?.GetComponent<TMP_Text>(); // Replace "GrenadeText" with your UI element's name
+                throwBombScript.AssignGrenadeText(newGrenadeText);
+            }
+            CameraController.Instance.SetPlayerCameraFollow();
+        }
     }
 
     #endregion

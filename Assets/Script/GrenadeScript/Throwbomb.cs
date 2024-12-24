@@ -11,7 +11,7 @@ public class Throwbomb : MonoBehaviour
     [SerializeField] private GameObject grenadePrefab;
     [SerializeField] private int maxGrenade = 10;
     [SerializeField] private TMP_Text grenadeText;
-    private int currentGrenade;
+    private static int currentGrenade;
     private Animator animator;
 
     private PlayerController playerController;
@@ -25,7 +25,10 @@ public class Throwbomb : MonoBehaviour
 
     private void Start()
     {
-        currentGrenade = maxGrenade;
+        if (currentGrenade == 0)
+        {
+            currentGrenade = maxGrenade;
+        }
         UpdateGrenadeUI();
         playerController.Player.ThrowGrenade.performed += _ => ThrowGrenade();
         playerController.Player.Crouching.performed += _ => SetCrouch(true);
@@ -84,5 +87,10 @@ public class Throwbomb : MonoBehaviour
         {
             grenadeText.text = ":"+ currentGrenade;
         }
+    }
+    public void AssignGrenadeText(TMP_Text newGrenadeText)
+    {
+        grenadeText = newGrenadeText;
+        UpdateGrenadeUI();
     }
 }

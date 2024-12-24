@@ -46,8 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuScene: Main Menu
   settingsScene: Settings
-  endGameScene: EndGame
-  bossDefeatDelay: 3
+  endGameScene: endScene
+  bossDefeatDelay: 10
   stageNames:
   - Scene1
   - Scene2
+  - endScene
+  respawnPosition: {x: 0, y: 0, z: 0}
+  respawnScene: 

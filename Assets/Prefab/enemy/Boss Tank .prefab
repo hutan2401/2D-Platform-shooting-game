@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 4003258598295522272}
   m_Layer: 0
   m_Name: 'Boss Tank '
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +249,9 @@ MonoBehaviour:
   specialAttackPrefab: {fileID: 8784895214249566536, guid: 2b888ed81ec817b4cb63ad264e430bcf, type: 3}
   specialAttackPoint: {fileID: 2005482666433578473}
   randomAttackCooldown: 2
+  victoryUI: {fileID: 0}
+  victoryAnim: {fileID: 0}
+  delayTime: 10
 --- !u!114 &600795784923571748
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,6 +15,12 @@ public class BossAirplane : MonoBehaviour
     [SerializeField] private Transform pointCurve2;
     [SerializeField] private GameObject RocketPrefab;
     [SerializeField] private float rocketCooldown = 5f; // Cooldown between rockets
+
+    [Header("Victory Show UI")]
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private Animator victoryAnim;
+    [SerializeField] private float delayTime = 10;
+
     private bool canShootRocket = true;
     private Animator animator;
     private bool isDead = false;
@@ -25,6 +31,11 @@ public class BossAirplane : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.OnEnemyDeath.AddListener(BossDeath);
+        }
+        GameObject menuObject = GameObject.Find("VictoryUI");
+        if (menuObject != null)
+        {
+            victoryAnim = menuObject.GetComponent<Animator>();
         }
     }
     private void Update()
@@ -117,9 +128,32 @@ public class BossAirplane : MonoBehaviour
         isDead = true;
         Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
-        //GameManager.Instance.OnBossDefeated();
+        StartCoroutine(ShowUI());
+        GameManager.Instance.OnBossDefeated();
     }
+    private IEnumerator ShowUI()
+    {
+        if (victoryUI != null)
+        {
+            victoryUI.SetActive(true);
+            Debug.Log("Victory UI activated.");
 
+            if (victoryAnim != null)
+            {
+                victoryAnim.SetTrigger("ShowUI");
+                Debug.Log("Victory animation triggered.");
+            }
+
+            yield return new WaitForSeconds(delayTime);
+            victoryAnim.SetTrigger("hide");
+            victoryUI.SetActive(false);
+            Debug.Log("Victory UI deactivated.");
+        }
+        else
+        {
+            Debug.LogError("Victory UI is not assigned!");
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

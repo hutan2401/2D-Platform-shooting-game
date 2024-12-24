@@ -21,7 +21,8 @@ public class enemyMelee : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float radius;
     [SerializeField] private float delayAttackAnimation = 1.5f;
-
+    [SerializeField] private int damage =1;
+    [SerializeField] private LayerMask playerLayer;
     [Header("Points Settings")]
     [SerializeField] private int score = 5;
 
@@ -52,12 +53,13 @@ public class enemyMelee : MonoBehaviour
 
         if (inRange)
         {
-            Debug.Log("chasing player");
-
-            if (playerPosition.x > transform.position.x && facingLeft == true)
+            if (playerPosition.x > transform.position.x && facingLeft)
             {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingLeft = false;
+                FLip();
+            }
+            else if (playerPosition.x < transform.position.x && !facingLeft)
+            {
+                FLip();
             }
 
             if (Vector2.Distance(transform.position, playerPosition) > retrieveDistance)
@@ -68,7 +70,7 @@ public class enemyMelee : MonoBehaviour
             }
             else
             {
-                Debug.Log("Attack"); // set animator setbool
+                //Debug.Log("Attack");
                 TriggerAttack();
             }
         }
@@ -94,11 +96,12 @@ public class enemyMelee : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D collHit = Physics2D.OverlapCircle(attackPoint.position, radius);
+        Collider2D collHit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
         if (collHit)
         {
-            Debug.Log(collHit.transform.name);
-            collHit.gameObject.GetComponent<PlayerHealth>().TakeDamage(1, transform);
+            PlayerHealth playerHealth = collHit.gameObject.GetComponent<PlayerHealth>();
+
+                playerHealth.TakeDamage(damage, transform);
         }
     }
     private void TriggerAttack()
@@ -127,6 +130,12 @@ public class enemyMelee : MonoBehaviour
         {
             animator.SetTrigger("Die");
         }
+    }
+    private void FLip()
+    {
+        facingLeft = !facingLeft;
+        float rotationY = facingLeft ? 0 : -180;
+        transform.eulerAngles = new Vector3(0, y: rotationY, 0);
     }
     private void OnDrawGizmosSelected()
     {

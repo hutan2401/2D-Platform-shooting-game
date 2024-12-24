@@ -36,7 +36,9 @@ public class Pistol : MonoBehaviour
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-       // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
+
+        DontDestroyOnLoad(gameObject);
+        // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
 
     }
 
@@ -91,10 +93,11 @@ public class Pistol : MonoBehaviour
             animator.SetLayerWeight(currentLayer, 0);
         }
     }
-    private void SwitchToDefaultWeapon()
+    public void SwitchToDefaultWeapon()
     {
         currentBulletType = defaultBulletType;
-        currentAmmo = int.MaxValue;
+        //currentAmmo = int.MaxValue;
+        currentAmmo = defaultBulletType.isUnlimited ? int.MaxValue : defaultBulletType.maxAmmo;
         UpdateAmmoUI();
     }
     public void SwitchWeapon(BulletType newBulletType)
@@ -102,6 +105,7 @@ public class Pistol : MonoBehaviour
         currentBulletType = newBulletType;
         currentAmmo = currentBulletType.isUnlimited ? int.MaxValue : currentBulletType.maxAmmo;
         Debug.Log("Switched to new bullet type: " + currentBulletType.name);
+        UpdateAmmoUI();
     }
     private void SetLookUp(bool lookUp)
     {
@@ -217,11 +221,6 @@ public class Pistol : MonoBehaviour
     }
     private IEnumerator BurstFire()
     {
-        //for(int i = 0; i < currentBulletType.burstCount; i++)
-        //{
-        //    FireBullet();
-        //    yield return new WaitForSeconds(currentBulletType.burstDelayTime);
-        //}
         int shotsFired = 0;
         for (int i = 0; i < currentBulletType.burstCount; i++)
         {
@@ -248,15 +247,26 @@ public class Pistol : MonoBehaviour
             ChangeLayer(1);
         }
     }
-    private void UpdateAmmoUI()
+    public void UpdateAmmoUI()
     {
-        if (currentBulletType.isUnlimited)
+        //if (currentBulletType.isUnlimited)
+        //{
+        //    bulletAmmoText.text = "∞";
+        //}
+        //else
+        //{
+        //    bulletAmmoText.text =currentAmmo.ToString();
+        //}
+        if (bulletAmmoText == null)
         {
-            bulletAmmoText.text = "∞";
+            bulletAmmoText = GameObject.Find("bulletAmmoText")?.GetComponent<TMP_Text>();
+            if (bulletAmmoText == null)
+            {
+                Debug.LogError("Bullet Ammo Text not found in scene!");
+                return;
+            }
         }
-        else
-        {
-            bulletAmmoText.text =currentAmmo.ToString();
-        }
+
+        bulletAmmoText.text = currentBulletType.isUnlimited ? "∞" : currentAmmo.ToString();
     }
 }
