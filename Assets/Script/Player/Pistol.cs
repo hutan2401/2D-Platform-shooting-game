@@ -270,12 +270,11 @@ public class Pistol : MonoBehaviour
         bulletAmmoText.text = currentBulletType.isUnlimited ? "∞" : currentAmmo.ToString();
     }
 
-    public void CheckBullet()
+    public void ResetWeapon()
     {
-        if(currentBulletType.name != "Pistol")
-        {
-            Debug.Log("current bullet is not pistol");
-            SwitchToDefaultWeapon();
-        }
+      
+        ChangeLayer(1);    
+        SwitchToDefaultWeapon();
+        UpdateAmmoUI();
     }
 }

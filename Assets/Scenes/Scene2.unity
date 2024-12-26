@@ -25919,6 +25919,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e3828185c83413448b36578482c38884, type: 2}
     - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
+      propertyPath: respawnPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
+      propertyPath: respawnPosition.y
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
       propertyPath: stageNames.Array.size
       value: 3
       objectReference: {fileID: 0}

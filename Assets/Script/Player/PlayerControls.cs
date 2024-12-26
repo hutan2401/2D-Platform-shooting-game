@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControls : SingleTon<PlayerControls>
+public class PlayerControls : MonoBehaviour
 {
+    public static PlayerControls Instance { get; private set; }
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpingPower = 15f;
     public Rigidbody2D rb;
@@ -26,9 +27,17 @@ public class PlayerControls : SingleTon<PlayerControls>
 
     //private Pistol pistol;
 
-    protected override void Awake()
+     private void Awake()
     {
-        base.Awake();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         playerController = new PlayerController();
         rb = GetComponent<Rigidbody2D>();

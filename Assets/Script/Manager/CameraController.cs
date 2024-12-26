@@ -3,10 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : SingleTon<CameraController>
+public class CameraController : MonoBehaviour
 {
+    public static CameraController Instance { get; private set; }
     private CinemachineVirtualCamera cinemachineVirtualCamera;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         SetPlayerCameraFollow();

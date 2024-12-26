@@ -4,13 +4,26 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : SingleTon<ScoreManager>
+public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager Instance { get; private set; }
     private TMP_Text scoreText;
     private int currentScore = 0;
     private Dictionary<string, int> levelScores = new Dictionary<string, int>(); 
     private int totalScore = 0; 
     const string SCORE_AMOUNT_TEXT = "txtScorePoint";
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     public void UpdateScore(int amount)
     {
         currentScore += amount;

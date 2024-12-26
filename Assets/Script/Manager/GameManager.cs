@@ -23,15 +23,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]private BulletType bullet;
     private void Awake()
     {
-        // Singleton pattern to ensure only one instance of GameManager exists
+  
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Keep GameManager across scenes
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
-            Destroy(gameObject); // Destroy duplicate GameManager instances
+            Destroy(gameObject); 
         }
     }
     private void Start()
@@ -151,27 +151,26 @@ public class GameManager : MonoBehaviour
             if (respawnPlayer != null)
             {
                 RespawnPlayer(respawnPlayer);
+     
+                PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
+                if (playerHealth != null)
+                {
+                    playerHealth.HealPlayer(playerHealth.MaxHealth);
+                }
+                Pistol pistol = respawnPlayer.GetComponent<Pistol>();
+                if (pistol != null)
+                {
+                   pistol.ResetWeapon();
+                }
 
-
+                Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
+                if (throwBombScript != null)
+                {
+                    TMP_Text newGrenadeText = GameObject.Find("grenadeAmmoText")?.GetComponent<TMP_Text>(); // Replace "GrenadeText" with your UI element's name
+                    throwBombScript.AssignGrenadeText(newGrenadeText);
+                }
+                CameraController.Instance.SetPlayerCameraFollow();
             }
-            PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.HealPlayer(playerHealth.MaxHealth);
-            }
-            Pistol pistol = respawnPlayer.GetComponent<Pistol>();
-            if (pistol != null)
-            {
-                pistol.SwitchWeapon(bullet);
-            }
-
-            Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
-            if (throwBombScript != null)
-            {
-                TMP_Text newGrenadeText = GameObject.Find("grenadeAmmoText")?.GetComponent<TMP_Text>(); // Replace "GrenadeText" with your UI element's name
-                throwBombScript.AssignGrenadeText(newGrenadeText);
-            }
-            CameraController.Instance.SetPlayerCameraFollow();
         }
     }
 
