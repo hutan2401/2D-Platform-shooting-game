@@ -45,13 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuScene: Main Menu
-  settingsScene: Settings
   endGameScene: endScene
   bossDefeatDelay: 10
   stageNames:
   - Scene1
   - Scene2
   - endScene
-  respawnPosition: {x: 0, y: 0, z: 0}
-  respawnScene: 
-  bullet: {fileID: 11400000, guid: e3828185c83413448b36578482c38884, type: 2}
+  respawnPosition: {x: 0, y: -3, z: 0}
+  respawnScene: Scene2

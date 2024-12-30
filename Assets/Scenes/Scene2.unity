@@ -25427,11 +25427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3644892920083266486, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.442384
+      value: 3.9635015
       objectReference: {fileID: 0}
     - target: {fileID: 3644892920083266486, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9250727
+      value: -1.8867126
       objectReference: {fileID: 0}
     - target: {fileID: 6378321751771963369, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -25579,11 +25579,11 @@ PrefabInstance:
       objectReference: {fileID: 555883700}
     - target: {fileID: 7126339020826579429, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.442384
+      value: 3.662384
       objectReference: {fileID: 0}
     - target: {fileID: 7126339020826579429, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9250727
+      value: -1.8850727
       objectReference: {fileID: 0}
     - target: {fileID: 7413385290633370191, guid: c65625dc0d8d3d94e8a861a6e2d22996, type: 3}
       propertyPath: m_Name
@@ -25902,45 +25902,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManagerScene
       objectReference: {fileID: 0}
-    - target: {fileID: 1168281694254216496, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: victoryUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: victoryAnim
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: currentBulletType
-      value: 
-      objectReference: {fileID: 11400000, guid: e3828185c83413448b36578482c38884, type: 2}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: respawnPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: respawnPosition.y
-      value: -3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: stageNames.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3423235015634010729, guid: a4a3558ccadc7604486259164f962728, type: 3}
-      propertyPath: stageNames.Array.data[2]
-      value: endScene
-      objectReference: {fileID: 0}
     - target: {fileID: 8655144447140688876, guid: a4a3558ccadc7604486259164f962728, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 8655144447140688876, guid: a4a3558ccadc7604486259164f962728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.12
       objectReference: {fileID: 0}
     - target: {fileID: 8655144447140688876, guid: a4a3558ccadc7604486259164f962728, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26696,11 +26664,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4327629057886573039, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4327629057886573039, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 4327629057886573039, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26773,8 +26741,8 @@ SceneRoots:
   - {fileID: 2009051538}
   - {fileID: 2138785116}
   - {fileID: 174784498}
+  - {fileID: 1189991350}
   - {fileID: 1004334450}
   - {fileID: 840384985}
-  - {fileID: 1189991350}
   - {fileID: 1178512598}
   - {fileID: 84381824}

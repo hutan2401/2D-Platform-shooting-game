@@ -12,6 +12,8 @@ public class ScoreManager : MonoBehaviour
     private Dictionary<string, int> levelScores = new Dictionary<string, int>(); 
     private int totalScore = 0; 
     const string SCORE_AMOUNT_TEXT = "txtScorePoint";
+    //private TMP_Text finalScore;
+    //const string FinalTotalScore = "FinalScoreText";
     private void Awake()
     {
         if (Instance == null)
@@ -59,14 +61,23 @@ public class ScoreManager : MonoBehaviour
         totalScore = 0;
         foreach (var score in levelScores.Values)
         {
-            totalScore += score;
+            totalScore += score;         
         }
-
+        //if (finalScore == null)
+        //{
+        //    finalScore=GameObject.Find(FinalTotalScore).GetComponent<TMP_Text>();
+        //}
+        //finalScore.text = totalScore.ToString("D3");
         return totalScore;
     }
 
     public Dictionary<string, int> GetLevelScores()
     {
         return new Dictionary<string, int>(levelScores);
+    }
+
+    public void FinalScore()
+    {
+
     }
 }

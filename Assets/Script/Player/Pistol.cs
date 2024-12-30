@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
+
     [Header("Shooting Settings")]
     [SerializeField] private BulletType defaultBulletType;
     [SerializeField] private Transform bulletSpawnPoint;
@@ -36,10 +37,7 @@ public class Pistol : MonoBehaviour
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-
         DontDestroyOnLoad(gameObject);
-        // hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
-
     }
 
     private void Start()
@@ -255,7 +253,7 @@ public class Pistol : MonoBehaviour
         //}
         //else
         //{
-        //    bulletAmmoText.text =currentAmmo.ToString();
+        //    bulletAmmoText.text = currentAmmo.ToString();
         //}
         if (bulletAmmoText == null)
         {
@@ -269,7 +267,6 @@ public class Pistol : MonoBehaviour
 
         bulletAmmoText.text = currentBulletType.isUnlimited ? "∞" : currentAmmo.ToString();
     }
-
     public void ResetWeapon()
     {
       

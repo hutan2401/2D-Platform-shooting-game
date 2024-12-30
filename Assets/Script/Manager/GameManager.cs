@@ -10,28 +10,26 @@ public class GameManager : MonoBehaviour
 
     [Header("Scene Management")]
     public string mainMenuScene = "MainMenu";
-    public string settingsScene = "Settings";
     public string endGameScene = "EndGame";
     public float bossDefeatDelay = 3f;
     //private bool isGameActive = false;
     [Header("Stage Names")]
     public List<string> stageNames;
     [Header("Player Respawn")]
-    public Vector3 respawnPosition = Vector3.zero; // Default respawn position
-    public string respawnScene; // Scene where the player should respawn
+    public Vector3 respawnPosition;
+    public string respawnScene;
 
-    [SerializeField]private BulletType bullet;
     private void Awake()
     {
-  
+
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
     }
     private void Start()
@@ -48,12 +46,7 @@ public class GameManager : MonoBehaviour
         SetRespawn(SceneManager.GetActiveScene().name, respawnPosition);
         LoadSceneByName(stageNames[0]);
     }
-    public void OpenSettings()
-    {
-        LoadSceneByName(settingsScene);
-    }
-
-    // Triggered when a stage is complete
+        // Triggered when a stage is complete
     public void OnStageComplete()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
@@ -76,12 +69,19 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    // Triggered when the player defeats the boss
     public void OnBossDefeated()
     {
         Debug.Log("Boss defeated!");
 
-        // Check if it's the final stage
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            Pistol pistol = player.GetComponent<Pistol>();
+            if (pistol != null)
+            {
+                pistol.ResetWeapon(); // Đặt lại vũ khí về mặc định
+            }
+        }
         StartCoroutine(HandleBossDefeat());
     }
 
@@ -101,16 +101,17 @@ public class GameManager : MonoBehaviour
         {
             player.transform.position = respawnPosition;
         }
+
     }
     public void ExitGame()
     {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-    #endif
+#endif
         Application.Quit();
     }
 
-#endregion
+    #endregion
 
     #region Private Methods
     private bool IsFinalStage(string currentSceneName)
@@ -129,7 +130,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleBossDefeat()
     {
         yield return new WaitForSeconds(bossDefeatDelay);
-        
+
         OnStageComplete();
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -146,22 +147,17 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Respawn the player in the correct position
             GameObject respawnPlayer = GameObject.FindGameObjectWithTag("Player");
             if (respawnPlayer != null)
             {
                 RespawnPlayer(respawnPlayer);
-     
                 PlayerHealth playerHealth = respawnPlayer.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
                     playerHealth.HealPlayer(playerHealth.MaxHealth);
                 }
                 Pistol pistol = respawnPlayer.GetComponent<Pistol>();
-                if (pistol != null)
-                {
-                   pistol.ResetWeapon();
-                }
+                pistol.ResetWeapon();
 
                 Throwbomb throwBombScript = respawnPlayer.GetComponent<Throwbomb>();
                 if (throwBombScript != null)
@@ -173,7 +169,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
     #endregion
 
 }

@@ -8,13 +8,6 @@ public class ExplodeBomb : MonoBehaviour
     [SerializeField] private int damageGrenade = 2;
     [SerializeField] private GameObject explodeEffect;
 
-    //private AudioHitSound hitSound;
-
-    //private void Awake()
-    //{
-    //    hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
-    //}
-
     private void Start()
     {
         Collider2D playerCollider = GameObject.FindWithTag("Player").GetComponent<Collider2D>();
@@ -28,22 +21,19 @@ public class ExplodeBomb : MonoBehaviour
         if (radius > 0)
         {
             // Detect enemies within the explosion radius
-            var hitColliders = Physics2D.OverlapCircleAll(transform.position, radius);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radius);
 
-            foreach (var hitCollider in hitColliders)
+            foreach (Collider2D hitCollider in hitColliders)
             {
-                var enemy = hitCollider.GetComponent<EnemyHealth>();
+                EnemyHealth enemy = hitCollider.GetComponent<EnemyHealth>();
                 if (enemy != null)
                 {
                     // Calculate damage based on proximity to the explosion
-                    var closestPoint = hitCollider.ClosestPoint(transform.position);
-                    var distance = Vector3.Distance(closestPoint, transform.position);
-                    var damagePercent = Mathf.InverseLerp(radius, 0, distance);
-                    var totalDamage = (int)(damagePercent * damageGrenade);
-
-                    // Apply damage to the enemy
-                    Debug.Log(totalDamage);
-                    //enemy.TakeDamage(totalDamage);      
+                    Vector2 closestPoint = hitCollider.ClosestPoint(transform.position);
+                    float distance = Vector3.Distance(closestPoint, transform.position);
+                    float damagePercent = Mathf.InverseLerp(radius, 0, distance);
+                    int totalDamage = (int)(damagePercent * damageGrenade);
+                    enemy.TakeDamage(totalDamage);      
                 }
             }
             Destroy(gameObject); 
@@ -52,7 +42,8 @@ public class ExplodeBomb : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destructible destruct = collision.gameObject.GetComponent<Destructible>();
-        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Enemy") || destruct)
+        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+        if(collision.gameObject.CompareTag("Ground") || enemy || destruct)
         {
             Instantiate(explodeEffect, transform.position,Quaternion.identity);
             ManagerAudioSound.Instance.PlayHitSound("HitBombSoundSFX");

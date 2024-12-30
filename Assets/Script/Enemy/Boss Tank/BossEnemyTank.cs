@@ -15,7 +15,7 @@ public class BossEnemyTank : MonoBehaviour
     [SerializeField] private float throwRange = 5f;
     [SerializeField] private float thrownCooldown = 2.0f;
     [SerializeField] private GameObject grenadePrefab;
-    //private float cooldownTimerThrow = 0f;
+    public BossExplosionController explode;
 
     [Header("Shooting Attack Settings")]
     [SerializeField] private Transform pointShooting;
@@ -186,8 +186,14 @@ public class BossEnemyTank : MonoBehaviour
         isDead = true;
         Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
+        if(explode != null)
+        {
+            explode.TriggerExplosions();
+        }
         StartCoroutine(ShowUI());
         GameManager.Instance.OnBossDefeated();
+       // Pistol.Instance.ResetWeapon();
+        //GameManager.Instance.LoadScene2();
     }
     private IEnumerator ShowUI()
     {
@@ -204,13 +210,20 @@ public class BossEnemyTank : MonoBehaviour
 
             yield return new WaitForSeconds(delayTime);
             victoryAnim.SetTrigger("hide");
-            victoryUI.SetActive(false); 
+            victoryUI.SetActive(false);
+
             Debug.Log("Victory UI deactivated.");
         }
         else
         {
             Debug.LogError("Victory UI is not assigned!");
         }
+    }
+    private IEnumerator Explosion()
+    {
+
+
+        yield return new WaitForSeconds(delayTime);
     }
     private void OnDrawGizmosSelected()
     {
