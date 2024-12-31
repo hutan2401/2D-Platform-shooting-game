@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class ExplosionPoint
+{
+    public GameObject explosionPrefab;
+    public Transform point;
+    public float delay;
+}
+
 public class BossEnemyTank : MonoBehaviour
 {
     [SerializeField] private float enemyMoveSpeed = 2f;
@@ -15,7 +23,7 @@ public class BossEnemyTank : MonoBehaviour
     [SerializeField] private float throwRange = 5f;
     [SerializeField] private float thrownCooldown = 2.0f;
     [SerializeField] private GameObject grenadePrefab;
-    public BossExplosionController explode;
+    //public BossExplosionController explode;
 
     [Header("Shooting Attack Settings")]
     [SerializeField] private Transform pointShooting;
@@ -42,6 +50,9 @@ public class BossEnemyTank : MonoBehaviour
     [SerializeField] private GameObject victoryUI;
     [SerializeField] private Animator victoryAnim;
     [SerializeField] private float delayTime = 10;
+    [Header("Explosion Points")]
+    [SerializeField] private List<ExplosionPoint> explosionPoints;
+
 
     private bool isDead = false;
     private EnemyHealth enemyHealth;
@@ -184,16 +195,15 @@ public class BossEnemyTank : MonoBehaviour
     private void BossDeath()
     {
         isDead = true;
-        Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
-        if(explode != null)
-        {
-            explode.TriggerExplosions();
-        }
+        //if(explode != null)
+        //{
+        //    explode.TriggerExplosions();
+        //}
+        StartCoroutine(Explosion());
         StartCoroutine(ShowUI());
         GameManager.Instance.OnBossDefeated();
-       // Pistol.Instance.ResetWeapon();
-        //GameManager.Instance.LoadScene2();
+
     }
     private IEnumerator ShowUI()
     {
@@ -222,8 +232,11 @@ public class BossEnemyTank : MonoBehaviour
     private IEnumerator Explosion()
     {
 
-
-        yield return new WaitForSeconds(delayTime);
+        foreach (var explosionPoint in explosionPoints)
+        {
+            Instantiate(explosionPoint.explosionPrefab, explosionPoint.point.position, Quaternion.identity);
+            yield return new WaitForSeconds(explosionPoint.delay);
+        }
     }
     private void OnDrawGizmosSelected()
     {

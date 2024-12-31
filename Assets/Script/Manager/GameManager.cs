@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Scene Management")]
     public string mainMenuScene = "MainMenu";
     public string endGameScene = "EndGame";
-    public float bossDefeatDelay = 3f;
+    public float bossDefeatDelay = 5f;
     //private bool isGameActive = false;
     [Header("Stage Names")]
     public List<string> stageNames;

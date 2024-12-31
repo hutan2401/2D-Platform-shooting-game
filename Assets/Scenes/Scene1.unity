@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8477218988870705350, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8691378100774465900, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
       propertyPath: m_Name
       value: Enemy Patroll
@@ -27901,6 +27905,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 600795784923571748, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: timingDestroy
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3450384366054781656, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_Name
       value: 'Boss Tank '
@@ -27911,11 +27919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.56
+      value: 41.72
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.67
+      value: 2.63
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27950,12 +27958,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: point1
+      value: 
+      objectReference: {fileID: 442158067}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: point2
+      value: 
+      objectReference: {fileID: 212218911}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: explode
       value: 
-      objectReference: {fileID: 1253285602}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explode1
+      value: 
+      objectReference: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explode2
+      value: 
+      objectReference: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: delayTime
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: victoryUI
@@ -27965,48 +27989,55 @@ PrefabInstance:
       propertyPath: victoryAnim
       value: 
       objectReference: {fileID: 261904960}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 442158068}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[1].delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 212218912}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[2].delay
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 1766986897}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[0].explosionPrefab
+      value: 
+      objectReference: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[1].explosionPrefab
+      value: 
+      objectReference: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
+    - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
+      propertyPath: explosionPoints.Array.data[2].explosionPrefab
+      value: 
+      objectReference: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1920402185}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3450384366054781656, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1253285602}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
---- !u!1 &1253285600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3450384366054781656, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
-  m_PrefabInstance: {fileID: 1253285599}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1253285601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
   m_PrefabInstance: {fileID: 1253285599}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1253285602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253285600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7c9ec223ac08464eaf702159fae95c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPoints:
-  - explosionPrefab: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
-    delay: 0
-    explosionTransform: {fileID: 442158068}
-    explosionSoundName: 
-  - explosionPrefab: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
-    delay: 2
-    explosionTransform: {fileID: 212218912}
-    explosionSoundName: 
 --- !u!1001 &1275035513
 PrefabInstance:
   m_ObjectHideFlags: 0
