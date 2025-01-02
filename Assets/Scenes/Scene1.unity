@@ -28016,15 +28016,15 @@ PrefabInstance:
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: explosionPoints.Array.data[0].explosionPrefab
       value: 
-      objectReference: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
+      objectReference: {fileID: 7312700812478007539, guid: e2990aecb48fdac498d0a8dbc24bdcdf, type: 3}
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: explosionPoints.Array.data[1].explosionPrefab
       value: 
-      objectReference: {fileID: 2180849277303050851, guid: d3612c02034e3b14c922449f0da16c29, type: 3}
+      objectReference: {fileID: 7312700812478007539, guid: e2990aecb48fdac498d0a8dbc24bdcdf, type: 3}
     - target: {fileID: 6626023311005033278, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: explosionPoints.Array.data[2].explosionPrefab
       value: 
-      objectReference: {fileID: 6256962039895339577, guid: dba354ece8a4228459efdca865021e04, type: 3}
+      objectReference: {fileID: 7312700812478007539, guid: e2990aecb48fdac498d0a8dbc24bdcdf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

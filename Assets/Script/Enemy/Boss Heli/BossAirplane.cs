@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static BossExplosionController;
 
 public class BossAirplane : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class BossAirplane : MonoBehaviour
     [SerializeField] private GameObject victoryUI;
     [SerializeField] private Animator victoryAnim;
     [SerializeField] private float delayTime = 10;
+
+    [Header("Explosion Points")]
+    [SerializeField] private List<ExplosionPoint> explosionPoints;
 
     private bool canShootRocket = true;
     private Animator animator;
@@ -152,6 +156,15 @@ public class BossAirplane : MonoBehaviour
         else
         {
             Debug.LogError("Victory UI is not assigned!");
+        }
+    }
+    private IEnumerator Explosion()
+    {
+
+        foreach (var explosionPoint in explosionPoints)
+        {
+            Instantiate(explosionPoint.explosionPrefab, explosionPoint.point.position, Quaternion.identity);
+            yield return new WaitForSeconds(explosionPoint.delay);
         }
     }
     private void OnDrawGizmosSelected()

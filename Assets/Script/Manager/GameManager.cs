@@ -143,6 +143,7 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(player); // Xóa Player trong EndScene
             }
+            ScoreManager.Instance.DisplayFinalScore();
             return;
         }
         else

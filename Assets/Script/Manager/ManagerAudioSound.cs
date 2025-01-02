@@ -173,6 +173,7 @@ public class ManagerAudioSound : MonoBehaviour
         }
         else
         {
+            StopMusic();    
             Debug.LogWarning($"No music assigned for Scene '{currentSceneName}'!");
         }
     }

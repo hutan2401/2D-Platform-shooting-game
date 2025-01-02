@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,8 +12,8 @@ public class ScoreManager : MonoBehaviour
     private Dictionary<string, int> levelScores = new Dictionary<string, int>(); 
     private int totalScore = 0; 
     const string SCORE_AMOUNT_TEXT = "txtScorePoint";
-    //private TMP_Text finalScore;
-    //const string FinalTotalScore = "FinalScoreText";
+    private TMP_Text finalScore;
+    const string FINAL_TOTAL_SCORE_TEXT = "FinalScoreText";
     private void Awake()
     {
         if (Instance == null)
@@ -63,14 +63,20 @@ public class ScoreManager : MonoBehaviour
         {
             totalScore += score;         
         }
-        //if (finalScore == null)
-        //{
-        //    finalScore=GameObject.Find(FinalTotalScore).GetComponent<TMP_Text>();
-        //}
-        //finalScore.text = totalScore.ToString("D3");
         return totalScore;
     }
+    public void DisplayFinalScore()
+    {
+        if (finalScore == null)
+        {
+            finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT)?.GetComponent<TMP_Text>();
+        }
 
+        if (finalScore != null)
+        {
+            finalScore.text ="Score: "+ GetTotalScore().ToString("D3"); // Hiển thị tổng điểm trên màn EndGame
+        }
+    }
     public Dictionary<string, int> GetLevelScores()
     {
         return new Dictionary<string, int>(levelScores);
