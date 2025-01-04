@@ -283,7 +283,7 @@ MonoBehaviour:
   pointShooting: {fileID: 1589907757426514939}
   shootingRange: 14
   fireCooldown: 5
-  score: 5
+  score: 20
   audioSFX: {fileID: 7421324678365470577}
   FireSound: {fileID: 8300000, guid: a2b0bac38736e404e95b7d8199663a45, type: 3}
   inRange: 0
