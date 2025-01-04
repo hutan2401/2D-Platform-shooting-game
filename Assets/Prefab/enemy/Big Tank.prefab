@@ -300,8 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 1
-  timingDestroy: 1
+  enemyHealth: 25
+  timingDestroy: 5
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []

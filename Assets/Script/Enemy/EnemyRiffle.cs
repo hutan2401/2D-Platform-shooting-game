@@ -66,6 +66,7 @@ public class EnemyRiffle : MonoBehaviour
             if (cooldownTimer <= 0)
             {
                 animator.SetTrigger("Shooting");
+                ManagerAudioSound.Instance.PlayHitSound("RifleGunSoundSFX");
                 FireBullet();
                 cooldownTimer = fireCooldown;
             }
