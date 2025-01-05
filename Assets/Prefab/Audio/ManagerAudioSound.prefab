@@ -334,3 +334,7 @@ MonoBehaviour:
   sceneMusicList:
   - sceneName: Main Menu
     musicClip: {fileID: 8300000, guid: c6d96c3aac94ed6428073cfea5a54b6d, type: 3}
+  - sceneName: Scene1
+    musicClip: {fileID: 8300000, guid: 980136cae4b812c4fa306f0eb1aefd1c, type: 3}
+  - sceneName: Scene2
+    musicClip: {fileID: 8300000, guid: d4bee82430d5d2f4687c1e3cac80e2e6, type: 3}
