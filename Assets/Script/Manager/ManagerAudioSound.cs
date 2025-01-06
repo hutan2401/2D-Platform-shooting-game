@@ -40,6 +40,13 @@ public class ManagerAudioSound : MonoBehaviour
     public List<SceneMusicEntry> sceneMusicList; // Danh sách nhạc từng Scene
     private Dictionary<string, AudioClip> sceneMusicDict; // Từ điển nhạc từng Scene
 
+    [Header("Special Music")]
+    public AudioClip bossMusic;        // Music during the boss fight
+    public AudioClip victoryMusic;     // Music after defeating the boss
+
+    private bool bossMusicPlayed = false;       // Prevent boss music replay
+    private bool victoryMusicPlayed = false;
+
     private float soundCooldown = 0.25f;
     private float lastSoundPlayTime = 0f;
 
@@ -165,7 +172,8 @@ public class ManagerAudioSound : MonoBehaviour
     {
         // Lấy tên Scene hiện tại
         string currentSceneName = scene.name;
-
+        bossMusicPlayed = false;
+        victoryMusicPlayed = false;
         // Kiểm tra và phát nhạc tương ứng với Scene
         if (sceneMusicDict.TryGetValue(currentSceneName, out AudioClip musicClip))
         {
@@ -175,6 +183,25 @@ public class ManagerAudioSound : MonoBehaviour
         {
             StopMusic();    
             Debug.LogWarning($"No music assigned for Scene '{currentSceneName}'!");
+        }
+    }
+    #endregion
+    #region Boss and Victory Music
+    public void PlayBossMusic()
+    {
+        if (!bossMusicPlayed)
+        {
+            bossMusicPlayed = true;
+            PlayMusic(bossMusic);
+        }
+    }
+
+    public void PlayVictoryMusic()
+    {
+        if (!victoryMusicPlayed)
+        {
+            victoryMusicPlayed = true;
+            PlayMusic(victoryMusic);
         }
     }
     #endregion

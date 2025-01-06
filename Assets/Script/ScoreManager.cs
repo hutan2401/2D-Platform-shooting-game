@@ -82,8 +82,8 @@ public class ScoreManager : MonoBehaviour
         return new Dictionary<string, int>(levelScores);
     }
 
-    public void FinalScore()
+    public void ResertAllScores()
     {
-
+        PlayerPrefs.DeleteAll();
     }
 }

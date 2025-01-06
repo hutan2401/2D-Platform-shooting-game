@@ -58,11 +58,14 @@ public class EnemyRiffle : MonoBehaviour
         if (inRange)
         {
 
-            if (playerPosition.x > transform.position.x && facingLeft == true)
+            if (playerPosition.x > transform.position.x && facingLeft)
             {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingLeft = false;
-            }         
+                FLip();
+            }
+            else if (playerPosition.x < transform.position.x && !facingLeft)
+            {
+                FLip();
+            }
             if (cooldownTimer <= 0)
             {
                 animator.SetTrigger("Shooting");
@@ -111,6 +114,12 @@ public class EnemyRiffle : MonoBehaviour
         {
             animator.SetTrigger("Die");
         }
+    }
+    private void FLip()
+    {
+        facingLeft = !facingLeft;
+        float rotationY = facingLeft ? 0 : -180;
+        transform.eulerAngles = new Vector3(0, y: rotationY, 0);
     }
     private void OnDrawGizmosSelected()
     {

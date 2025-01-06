@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 188052948404637887}
   - component: {fileID: 2392845983740309253}
   - component: {fileID: 7906274327532324348}
+  - component: {fileID: -7037568113508175045}
   m_Layer: 0
   m_Name: Boss Air Plane
   m_TagString: Boss
@@ -332,6 +333,7 @@ MonoBehaviour:
   victoryUI: {fileID: 0}
   victoryAnim: {fileID: 0}
   delayTime: 10
+  explosionPoints: []
 --- !u!114 &2392845983740309253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +372,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7037568113508175045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901934107267282013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b014a70fd45d884e9c8c17911400724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 0c4ce0311d1bb57428b3bbd6acac6f20, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!1 &8089397283135235555
 GameObject:
   m_ObjectHideFlags: 0

@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 2178873047682951663}
   - component: {fileID: 4150453179027625546}
   - component: {fileID: 6863951357637921056}
+  - component: {fileID: 7139079627167245242}
   m_Layer: 0
   m_Name: Enemy Patroll
   m_TagString: Enemy
@@ -210,7 +211,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.07108593, y: -0.38563}
@@ -393,3 +394,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7139079627167245242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8691378100774465900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b014a70fd45d884e9c8c17911400724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 0c4ce0311d1bb57428b3bbd6acac6f20, type: 2}
+  restoreDefaultMatTime: 0.2

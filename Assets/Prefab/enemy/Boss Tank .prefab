@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 6626023311005033278}
   - component: {fileID: 600795784923571748}
   - component: {fileID: 4003258598295522272}
+  - component: {fileID: 1301620656663478704}
   m_Layer: 0
   m_Name: 'Boss Tank '
   m_TagString: Boss
@@ -291,6 +292,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1301620656663478704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450384366054781656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b014a70fd45d884e9c8c17911400724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 0c4ce0311d1bb57428b3bbd6acac6f20, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!1 &4304193228574094404
 GameObject:
   m_ObjectHideFlags: 0

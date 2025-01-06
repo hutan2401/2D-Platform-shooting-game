@@ -13,8 +13,10 @@ public class EnemyHealth : MonoBehaviour
     public UnityEvent OnEnemyDeath;
     public int CurrentHealth => currentHealth; 
     public int MaxHealth => enemyHealth;
+    private Flash flash;
     private void Start()
     {
+        flash = GetComponent<Flash>();
         currentHealth = enemyHealth;
         enemyCollider = GetComponent<Collider2D>();
         if (enemyCollider == null)
@@ -25,6 +27,10 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        if (flash != null)
+        {
+            StartCoroutine(flash.FlashRoutine());
+        }
         if(currentHealth <= 0 )
         {
             Die();

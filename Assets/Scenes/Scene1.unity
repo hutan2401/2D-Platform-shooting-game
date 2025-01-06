@@ -319,10 +319,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8477218988870705350, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8691378100774465900, guid: 943a2a377ba1ea2498a891bfe784bb82, type: 3}
       propertyPath: m_Name
       value: Enemy Patroll
@@ -27090,7 +27086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: maxLives
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6266518083489456935, guid: 4c9e9a94d2e39e442a5f63e1ea502756, type: 3}
       propertyPath: deathMenu
@@ -27923,11 +27919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 438
+      value: 38.2
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.5
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 6480965751543917761, guid: 3afb94f4cd7f2fa4aa2473503380a879, type: 3}
       propertyPath: m_LocalPosition.z
