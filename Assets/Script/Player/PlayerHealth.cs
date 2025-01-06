@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,8 +6,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerHealth : SingleTon<PlayerHealth>
+public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth Instance { get; private set; }
     [Header("Health Settings")]
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float damageRecoveryTime = 1f;
@@ -33,7 +34,21 @@ public class PlayerHealth : SingleTon<PlayerHealth>
 
    // public Transform lastSafePosition;
     public bool isDead { get; private set; }
+    public int MaxHealth => maxHealth;
     private Vector3 respawnPosition;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         currentHealth = maxHealth;

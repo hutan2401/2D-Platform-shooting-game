@@ -10,6 +10,8 @@ public class ProjecTileCurve : MonoBehaviour
     [SerializeField] private GameObject splatterPrefab;
     [SerializeField] private bool isRotatingProjectile = false;
     [SerializeField] private int damageEnemy = 1;
+    [SerializeField] private string hitSoundName = "";
+    [SerializeField] private bool playHitSound = true;
     private void Start()
     {
       
@@ -58,11 +60,20 @@ public class ProjecTileCurve : MonoBehaviour
         PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
         if (!collision.isTrigger &  player)
         {
-            player.TakeDamage(damageEnemy, transform);
+            player.TakeDamage(damageEnemy, transform);         
+            if (playHitSound && !string.IsNullOrEmpty(hitSoundName))
+            {
+                ManagerAudioSound.Instance.PlayHitSound(hitSoundName);
+            }
             Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
+            if (playHitSound && !string.IsNullOrEmpty(hitSoundName))
+            {
+                ManagerAudioSound.Instance.PlayHitSound(hitSoundName);
+            }
+           // Instantiate(splatterPrefab,transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

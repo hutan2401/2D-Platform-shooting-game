@@ -20,13 +20,16 @@ public class EnemyRiffle : MonoBehaviour
     [SerializeField] private int score = 5;
     private float cooldownTimer = 0f;
 
-    
-    public bool inRange = false;
+    [Header("Sounds Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipSoundEnemyDie;
 
+    public bool inRange = false;
     private Animator animator;
     private bool isDead = false;
     private void Start()
     {
+       // explosionController = GetComponent<BossExplosionController>();
         animator = GetComponent<Animator>();
         EnemyHealth healthComponent = GetComponent<EnemyHealth>();
         if (healthComponent != null)
@@ -55,14 +58,18 @@ public class EnemyRiffle : MonoBehaviour
         if (inRange)
         {
 
-            if (playerPosition.x > transform.position.x && facingLeft == true)
+            if (playerPosition.x > transform.position.x && facingLeft)
             {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingLeft = false;
-            }         
+                FLip();
+            }
+            else if (playerPosition.x < transform.position.x && !facingLeft)
+            {
+                FLip();
+            }
             if (cooldownTimer <= 0)
             {
                 animator.SetTrigger("Shooting");
+                ManagerAudioSound.Instance.PlayHitSound("RifleGunSoundSFX");
                 FireBullet();
                 cooldownTimer = fireCooldown;
             }
@@ -96,12 +103,23 @@ public class EnemyRiffle : MonoBehaviour
 
     public void DeathAnimation()
     {
+        if(isDead) return;
         isDead = true;
+        if (audioSource != null && audioClipSoundEnemyDie != null)
+        {
+            audioSource.PlayOneShot(audioClipSoundEnemyDie);
+        }
         ScoreManager.Instance.UpdateScore(score);
         if (animator != null)
         {
             animator.SetTrigger("Die");
         }
+    }
+    private void FLip()
+    {
+        facingLeft = !facingLeft;
+        float rotationY = facingLeft ? 0 : -180;
+        transform.eulerAngles = new Vector3(0, y: rotationY, 0);
     }
     private void OnDrawGizmosSelected()
     {

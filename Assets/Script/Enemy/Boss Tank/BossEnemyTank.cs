@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class ExplosionPoint
+{
+    public GameObject explosionPrefab;
+    public Transform point;
+    public float delay;
+}
+
 public class BossEnemyTank : MonoBehaviour
 {
     [SerializeField] private float enemyMoveSpeed = 2f;
@@ -15,7 +23,7 @@ public class BossEnemyTank : MonoBehaviour
     [SerializeField] private float throwRange = 5f;
     [SerializeField] private float thrownCooldown = 2.0f;
     [SerializeField] private GameObject grenadePrefab;
-    //private float cooldownTimerThrow = 0f;
+    //public BossExplosionController explode;
 
     [Header("Shooting Attack Settings")]
     [SerializeField] private Transform pointShooting;
@@ -38,6 +46,14 @@ public class BossEnemyTank : MonoBehaviour
     private float specialAttackTimer = 0f;
     private bool isSpecialAttackActive = false;
 
+    [Header("Victory Show UI")]
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private Animator victoryAnim;
+    [SerializeField] private float delayTime = 10;
+    [Header("Explosion Points")]
+    [SerializeField] private List<ExplosionPoint> explosionPoints;
+
+
     private bool isDead = false;
     private EnemyHealth enemyHealth;
     private Animator animator;
@@ -48,6 +64,11 @@ public class BossEnemyTank : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.OnEnemyDeath.AddListener(BossDeath);
+        }
+        GameObject menuObject = GameObject.Find("VictoryUI");
+        if (menuObject != null)
+        {
+            victoryAnim = menuObject.GetComponent<Animator>();
         }
     }
 
@@ -174,8 +195,48 @@ public class BossEnemyTank : MonoBehaviour
     private void BossDeath()
     {
         isDead = true;
-        Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
+        //if(explode != null)
+        //{
+        //    explode.TriggerExplosions();
+        //}
+        StartCoroutine(Explosion());
+        StartCoroutine(ShowUI());
+        GameManager.Instance.OnBossDefeated();
+
+    }
+    private IEnumerator ShowUI()
+    {
+        if (victoryUI != null)
+        {
+            victoryUI.SetActive(true);
+            Debug.Log("Victory UI activated.");
+
+            if (victoryAnim != null)
+            {
+                victoryAnim.SetTrigger("ShowUI");
+                Debug.Log("Victory animation triggered.");
+            }
+
+            yield return new WaitForSeconds(delayTime);
+            victoryAnim.SetTrigger("hide");
+            victoryUI.SetActive(false);
+
+            Debug.Log("Victory UI deactivated.");
+        }
+        else
+        {
+            Debug.LogError("Victory UI is not assigned!");
+        }
+    }
+    private IEnumerator Explosion()
+    {
+
+        foreach (var explosionPoint in explosionPoints)
+        {
+            Instantiate(explosionPoint.explosionPrefab, explosionPoint.point.position, Quaternion.identity);
+            yield return new WaitForSeconds(explosionPoint.delay);
+        }
     }
     private void OnDrawGizmosSelected()
     {

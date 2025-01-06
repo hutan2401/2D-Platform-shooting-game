@@ -77,9 +77,10 @@ GameObject:
   - component: {fileID: 6626023311005033278}
   - component: {fileID: 600795784923571748}
   - component: {fileID: 4003258598295522272}
+  - component: {fileID: 1301620656663478704}
   m_Layer: 0
   m_Name: 'Boss Tank '
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +235,7 @@ MonoBehaviour:
   checkPoint: {fileID: 4626200167290830888}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   facingLeft: 0
   pointThrow: {fileID: 3791816432218696452}
   throwRange: 15
@@ -249,6 +250,10 @@ MonoBehaviour:
   specialAttackPrefab: {fileID: 8784895214249566536, guid: 2b888ed81ec817b4cb63ad264e430bcf, type: 3}
   specialAttackPoint: {fileID: 2005482666433578473}
   randomAttackCooldown: 2
+  victoryUI: {fileID: 0}
+  victoryAnim: {fileID: 0}
+  delayTime: 10
+  explosionPoints: []
 --- !u!114 &600795784923571748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ac7120f24f3dc4a8569472c4191456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealths: 1
+  enemyHealth: 90
   timingDestroy: 1
   OnEnemyDeath:
     m_PersistentCalls:
@@ -287,6 +292,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1301620656663478704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450384366054781656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b014a70fd45d884e9c8c17911400724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 0c4ce0311d1bb57428b3bbd6acac6f20, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!1 &4304193228574094404
 GameObject:
   m_ObjectHideFlags: 0

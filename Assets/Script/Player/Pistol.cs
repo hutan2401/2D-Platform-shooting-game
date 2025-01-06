@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
+
     [Header("Shooting Settings")]
     [SerializeField] private BulletType defaultBulletType;
     [SerializeField] private Transform bulletSpawnPoint;
@@ -30,14 +31,13 @@ public class Pistol : MonoBehaviour
     private bool isLookUp;
     private bool isCrouch;
 
-    private AudioHitSound hitSound;
+    //private AudioHitSound hitSound;
 
     private void Awake()
     {
         playerController = new PlayerController();
         animator = GetComponent<Animator>();
-        hitSound = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioHitSound>();
-
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -91,10 +91,11 @@ public class Pistol : MonoBehaviour
             animator.SetLayerWeight(currentLayer, 0);
         }
     }
-    private void SwitchToDefaultWeapon()
+    public void SwitchToDefaultWeapon()
     {
         currentBulletType = defaultBulletType;
-        currentAmmo = int.MaxValue;
+        //currentAmmo = int.MaxValue;
+        currentAmmo = defaultBulletType.isUnlimited ? int.MaxValue : defaultBulletType.maxAmmo;
         UpdateAmmoUI();
     }
     public void SwitchWeapon(BulletType newBulletType)
@@ -102,6 +103,7 @@ public class Pistol : MonoBehaviour
         currentBulletType = newBulletType;
         currentAmmo = currentBulletType.isUnlimited ? int.MaxValue : currentBulletType.maxAmmo;
         Debug.Log("Switched to new bullet type: " + currentBulletType.name);
+        UpdateAmmoUI();
     }
     private void SetLookUp(bool lookUp)
     {
@@ -142,8 +144,8 @@ public class Pistol : MonoBehaviour
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                //enemyHealth.TakeDamage(damageAmount);
-                hitSound.PlaySFX(hitSound.KnifeHitSoundSFX);
+                enemyHealth.TakeDamage(damageAmount);
+                ManagerAudioSound.Instance.PlayHitSound("KnifeHitSoundSFX");
             }
         }
     }
@@ -183,11 +185,10 @@ public class Pistol : MonoBehaviour
                 bulletSpawnPoint.position = defaultPosition.position;
                 bulletSpawnPoint.rotation = Quaternion.Euler(0, 0, 180); // Rotate to shoot left
             }
+            animator.SetTrigger("Attack");
         }
-        AudioManager.Instance.PlayShootingSound(currentBulletType.bulletTypeName);
-        //GameObject newBullet = Instantiate(currentBulletType.bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        //ProjectTile bulletScript = newBullet.GetComponent<ProjectTile>();
-        //bulletScript.Initialize(currentBulletType.speed, currentBulletType.projectTileRange, currentBulletType.damage);
+        ManagerAudioSound.Instance.PlayBulletSound(currentBulletType.bulletTypeName);
+
         if (currentBulletType.burstCount > 1)
         {
             StartCoroutine(BurstFire());
@@ -197,10 +198,9 @@ public class Pistol : MonoBehaviour
             FireBullet();
             currentAmmo--;
         }
-        animator.SetTrigger("Attack");
+
         if (!currentBulletType.isUnlimited)
         {
-            //currentAmmo--;
             {
                 if (currentAmmo <= 0)
                 {
@@ -219,11 +219,6 @@ public class Pistol : MonoBehaviour
     }
     private IEnumerator BurstFire()
     {
-        //for(int i = 0; i < currentBulletType.burstCount; i++)
-        //{
-        //    FireBullet();
-        //    yield return new WaitForSeconds(currentBulletType.burstDelayTime);
-        //}
         int shotsFired = 0;
         for (int i = 0; i < currentBulletType.burstCount; i++)
         {
@@ -250,15 +245,33 @@ public class Pistol : MonoBehaviour
             ChangeLayer(1);
         }
     }
-    private void UpdateAmmoUI()
+    public void UpdateAmmoUI()
     {
-        if (currentBulletType.isUnlimited)
+        //if (currentBulletType.isUnlimited)
+        //{
+        //    bulletAmmoText.text = "∞";
+        //}
+        //else
+        //{
+        //    bulletAmmoText.text = currentAmmo.ToString();
+        //}
+        if (bulletAmmoText == null)
         {
-            bulletAmmoText.text = "0";
+            bulletAmmoText = GameObject.Find("bulletAmmoText")?.GetComponent<TMP_Text>();
+            if (bulletAmmoText == null)
+            {
+                Debug.LogError("Bullet Ammo Text not found in scene!");
+                return;
+            }
         }
-        else
-        {
-            bulletAmmoText.text =currentAmmo.ToString();
-        }
+
+        bulletAmmoText.text = currentBulletType.isUnlimited ? "∞" : currentAmmo.ToString();
+    }
+    public void ResetWeapon()
+    {
+      
+        ChangeLayer(1);    
+        SwitchToDefaultWeapon();
+        UpdateAmmoUI();
     }
 }
