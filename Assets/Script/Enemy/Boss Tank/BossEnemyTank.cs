@@ -158,6 +158,7 @@ public class BossEnemyTank : MonoBehaviour
     {
         Debug.Log("Boss performs a special attack!");
         Instantiate(specialAttackPrefab, specialAttackPoint.position, Quaternion.identity);
+        ManagerAudioSound.Instance.PlayHitSound("FireRocketSoundSFX");
     }
 
     private void ThrowBomb()

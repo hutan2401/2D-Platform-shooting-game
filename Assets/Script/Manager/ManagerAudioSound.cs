@@ -201,8 +201,17 @@ public class ManagerAudioSound : MonoBehaviour
         if (!victoryMusicPlayed)
         {
             victoryMusicPlayed = true;
-            PlayMusic(victoryMusic);
+            StartCoroutine(PlayVictoryMusicOnce());
         }
+    }
+    private IEnumerator PlayVictoryMusicOnce()
+    {
+        PlayMusic(victoryMusic, loop: false); // Play without looping
+
+        // Wait for the music clip to finish playing
+        yield return new WaitForSeconds(victoryMusic.length);
+
+        StopMusic(); // Stop music after it finishes
     }
     #endregion
 }
