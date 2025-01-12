@@ -500,7 +500,7 @@ MonoBehaviour:
   m_fontColorGradient:
     topLeft: {r: 1, g: 0.96134776, b: 0.54905653, a: 1}
     topRight: {r: 1, g: 0.9607843, b: 0.54901963, a: 1}
-    bottomLeft: {r: 0.4415095, g: 0.37890923, b: 0.015827637, a: 1}
+    bottomLeft: {r: 0.93207544, g: 0.4235233, b: 0.05451757, a: 1}
     bottomRight: {r: 0.2754717, g: 0.25720257, b: 0.030665694, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   m_fontColorGradient:
     topLeft: {r: 1, g: 0.9607843, b: 0.54901963, a: 1}
     topRight: {r: 1, g: 0.9607843, b: 0.54901963, a: 1}
-    bottomLeft: {r: 0.44313726, g: 0.38039216, b: 0.015686275, a: 1}
+    bottomLeft: {r: 0.93333334, g: 0.42352942, b: 0.05490196, a: 1}
     bottomRight: {r: 0.27450982, g: 0.25882354, b: 0.03137255, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 12.031963, y: 0, z: 0.23134804, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

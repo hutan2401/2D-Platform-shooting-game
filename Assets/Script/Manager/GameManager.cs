@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
     public void OnBossDefeated()
     {
         Debug.Log("Boss defeated!");
-
+        ManagerAudioSound.Instance.PlayVictoryMusic();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
