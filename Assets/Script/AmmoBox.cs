@@ -22,6 +22,7 @@ public class AmmoBox : MonoBehaviour
                 pistol.SwitchWeapon(bulletType);
                 Destroy(gameObject);  // Ammo box disappears after pickup
             }
+            ManagerAudioSound.Instance.PlayHitSound("ObtainSoundSFX");
         }
     }
     /* public int weaponIndex; // Index of the weapon to switch to

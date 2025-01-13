@@ -17,4 +17,4 @@ MonoBehaviour:
   dropChance: 30
   pickUpType: 1
   score: 0
-  healpoint: 15
+  healpoint: 10

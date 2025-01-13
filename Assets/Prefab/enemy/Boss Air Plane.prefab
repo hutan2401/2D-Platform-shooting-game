@@ -470,7 +470,7 @@ MonoBehaviour:
     delay: 0.75
   - explosionPrefab: {fileID: 7312700812478007539, guid: e2990aecb48fdac498d0a8dbc24bdcdf, type: 3}
     point: {fileID: 5830173445027348480}
-    delay: 1
+    delay: 1.25
 --- !u!114 &2392845983740309253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 100
-  timingDestroy: 1
+  timingDestroy: 5
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []

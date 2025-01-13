@@ -199,10 +199,7 @@ public class BossEnemyTank : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger("Die");
-        //if(explode != null)
-        //{
-        //    explode.TriggerExplosions();
-        //}
+        ManagerAudioSound.Instance.PlayExplodeSound("ExplodeBossTank");
         StartCoroutine(Explosion());
         StartCoroutine(ShowUI());
         GameManager.Instance.OnBossDefeated();

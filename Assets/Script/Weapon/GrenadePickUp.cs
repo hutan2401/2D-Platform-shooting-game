@@ -15,6 +15,7 @@ public class GrenadePickUp : MonoBehaviour
                 grenade.AddAGrenade();
                 Destroy(gameObject);
             }
+            ManagerAudioSound.Instance.PlayHitSound("ObtainSoundSFX");
         }
     }
 }

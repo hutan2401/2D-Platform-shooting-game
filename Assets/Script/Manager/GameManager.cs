@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("Player Respawn")]
     public Vector3 respawnPosition;
     public string respawnScene;
-
+    const string FINAL_TOTAL_SCORE_TEXT = "FinalScoreText";
     private void Awake()
     {
 
@@ -143,7 +143,18 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(player); // Xóa Player trong EndScene
             }
-            ScoreManager.Instance.DisplayFinalScore();
+            int savedTotalScore = PlayerPrefs.GetInt("TotalScore", 0);
+            Debug.Log("Loaded Total Score from PlayerPrefs: " + savedTotalScore);
+
+            TMP_Text finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT)?.GetComponent<TMP_Text>();
+            if (finalScore != null)
+            {
+                finalScore.text = "Score: " + savedTotalScore.ToString("D3");
+            }
+            else
+            {
+                Debug.LogError("FinalScoreText not found in EndScene!");
+            }
             return;
         }
         else

@@ -130,8 +130,9 @@ public class BossAirplane : MonoBehaviour
     private void BossDeath()
     {
         isDead = true;
-        Debug.Log("Boss is dead!");
         animator.SetTrigger("Die");
+        ManagerAudioSound.Instance.PlayExplodeSound("ExplodeBossAirPlane");
+        StartCoroutine(Explosion());
         StartCoroutine(ShowUI());
         GameManager.Instance.OnBossDefeated();
     }

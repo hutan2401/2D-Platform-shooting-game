@@ -121,7 +121,7 @@ public class EnemyTank : MonoBehaviour
     {
         facingLeft = !facingLeft;
         float rotationY = facingLeft ? 0 : -180;
-        transform.eulerAngles = new Vector3(0, y: rotationY, 0);
+        transform.eulerAngles = new Vector3(0, rotationY, 0);
     }
     private void OnDrawGizmosSelected()
     {

@@ -325,9 +325,15 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9b997d0b85b26e04f82dcebe3e28c078, type: 3}
   - name: GunTankFireSoundSFX
     clip: {fileID: 8300000, guid: 9b997d0b85b26e04f82dcebe3e28c078, type: 3}
+  - name: ObtainSoundSFX
+    clip: {fileID: 8300000, guid: 1c2f4bb29532247439dc63ffd7525d04, type: 3}
   explodeSounds:
   - name: ExplodeTank
     clip: {fileID: 8300000, guid: 631cb0493acaa1d40a9ad50bfe8d8180, type: 3}
+  - name: ExplodeBossTank
+    clip: {fileID: 8300000, guid: 79aacbfbcb76ff047b5257df592051b1, type: 3}
+  - name: ExplodeBossAirPlane
+    clip: {fileID: 8300000, guid: 7923d4b78967fea41b4f27f7685c1939, type: 3}
   bulletSounds:
   - name: Pistol
     clip: {fileID: 8300000, guid: e4737710dd1e81942a1f548545a76278, type: 3}
