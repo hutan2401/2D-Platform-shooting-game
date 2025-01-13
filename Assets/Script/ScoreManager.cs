@@ -74,7 +74,8 @@ public class ScoreManager : MonoBehaviour
 
         if (finalScore != null)
         {
-            finalScore.text ="Score: "+ GetTotalScore().ToString("D3"); // Hiển thị tổng điểm trên màn EndGame
+            int calculatedTotalScore = GetTotalScore();
+            finalScore.text ="Score: "+ calculatedTotalScore.ToString("D3"); // Hiển thị tổng điểm trên màn EndGame
         }
     }
     public Dictionary<string, int> GetLevelScores()

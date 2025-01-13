@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4958470140058829910}
   - component: {fileID: 7073419759929640217}
   - component: {fileID: 5617010077594298683}
+  - component: {fileID: 6921300024372596785}
   m_Layer: 0
   m_Name: Bullet Tank
   m_TagString: Untagged
@@ -146,8 +147,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.3125, y: 1.5}
+  m_Offset: {x: -0.011526465, y: 0.007684233}
+  m_Size: {x: 2.136998, y: 0.9007422}
   m_Direction: 1
 --- !u!114 &5617010077594298683
 MonoBehaviour:
@@ -166,3 +167,24 @@ MonoBehaviour:
   damage: 1
   direction: {x: -1, y: 0, z: 0}
   effectPrefab: {fileID: 7071183561270099121, guid: ad2be0ebf9c9a8c48838202c28084034, type: 3}
+--- !u!95 &6921300024372596785
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276342305999904026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e868b13d4a662644a2acd00e80db755, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

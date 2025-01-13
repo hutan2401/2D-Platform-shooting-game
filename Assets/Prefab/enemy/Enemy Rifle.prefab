@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7270339968488274312}
   - component: {fileID: 3950934794165461068}
   - component: {fileID: 7958830134888919145}
+  - component: {fileID: -7889889538068715931}
   m_Layer: 0
   m_Name: Enemy Rifle
   m_TagString: Enemy
@@ -325,6 +326,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7889889538068715931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741572131894074252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b014a70fd45d884e9c8c17911400724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 0c4ce0311d1bb57428b3bbd6acac6f20, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!1 &7467288016022002342
 GameObject:
   m_ObjectHideFlags: 0

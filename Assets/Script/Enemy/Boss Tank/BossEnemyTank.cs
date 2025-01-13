@@ -158,11 +158,13 @@ public class BossEnemyTank : MonoBehaviour
     {
         Debug.Log("Boss performs a special attack!");
         Instantiate(specialAttackPrefab, specialAttackPoint.position, Quaternion.identity);
+        ManagerAudioSound.Instance.PlayHitSound("FireRocketSoundSFX");
     }
 
     private void ThrowBomb()
     {
         Instantiate(grenadePrefab, pointThrow.position, Quaternion.identity);
+        ManagerAudioSound.Instance.PlayHitSound("GunTankCurveSoundSFX");
     }
 
     private void FireBullet()
@@ -170,6 +172,7 @@ public class BossEnemyTank : MonoBehaviour
         //Debug.Log("Boss fires a bullet!");
         GameObject newBullet = Instantiate(bulletPrefab, pointShooting.position, Quaternion.identity);
         newBullet.GetComponent<EnemyProjectile>()?.UpdateMoveSpeed(5f);
+        ManagerAudioSound.Instance.PlayHitSound("GunTankFireSoundSFX");
     }
 
 
