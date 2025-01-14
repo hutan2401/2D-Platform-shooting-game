@@ -55,8 +55,6 @@ public class GameManager : MonoBehaviour
         if (IsFinalStage(currentSceneName))
         {
             Debug.Log("load end scene");
-            int totalScore = ScoreManager.Instance.GetTotalScore();
-            PlayerPrefs.SetInt("TotalScore", totalScore);
             LoadSceneByName(endGameScene);
         }
         else
@@ -143,18 +141,18 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(player); // Xóa Player trong EndScene
             }
-            int savedTotalScore = PlayerPrefs.GetInt("TotalScore", 0);
-            Debug.Log("Loaded Total Score from PlayerPrefs: " + savedTotalScore);
+            //int totalScore = ScoreManager.Instance.GetTotalScore();
 
-            TMP_Text finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT)?.GetComponent<TMP_Text>();
-            if (finalScore != null)
-            {
-                finalScore.text = "Score: " + savedTotalScore.ToString("D3");
-            }
-            else
-            {
-                Debug.LogError("FinalScoreText not found in EndScene!");
-            }
+            //TMP_Text finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT).GetComponent<TMP_Text>();
+            //if (finalScore != null)
+            //{
+            //    finalScore.text = "Score: " + totalScore.ToString("D3");
+            //}
+            //else
+            //{
+            //    Debug.LogError("FinalScoreText not found in EndScene!");
+            //}
+            ScoreManager.Instance.DisplayFinalScore();
             return;
         }
         else

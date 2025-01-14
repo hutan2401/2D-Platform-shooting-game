@@ -327,6 +327,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9b997d0b85b26e04f82dcebe3e28c078, type: 3}
   - name: ObtainSoundSFX
     clip: {fileID: 8300000, guid: 1c2f4bb29532247439dc63ffd7525d04, type: 3}
+  - name: ObtainCoinSoundSFX
+    clip: {fileID: 8300000, guid: 5ed191921e37aa448b91b02355267126, type: 3}
   explodeSounds:
   - name: ExplodeTank
     clip: {fileID: 8300000, guid: 631cb0493acaa1d40a9ad50bfe8d8180, type: 3}
@@ -348,5 +350,7 @@ MonoBehaviour:
     musicClip: {fileID: 8300000, guid: 980136cae4b812c4fa306f0eb1aefd1c, type: 3}
   - sceneName: Scene2
     musicClip: {fileID: 8300000, guid: d4bee82430d5d2f4687c1e3cac80e2e6, type: 3}
+  - sceneName: endScene
+    musicClip: {fileID: 8300000, guid: 09fb736ed65f1874e873d5528c948068, type: 3}
   bossMusic: {fileID: 0}
   victoryMusic: {fileID: 8300000, guid: 8b289e5ec37df5d4a800973e24f0427b, type: 3}

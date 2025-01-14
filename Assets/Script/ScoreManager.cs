@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
     public void UpdateScore(int amount)
@@ -63,20 +64,33 @@ public class ScoreManager : MonoBehaviour
         {
             totalScore += score;         
         }
+        Debug.Log("Total Score Calculated: " + totalScore);
         return totalScore;
     }
     public void DisplayFinalScore()
     {
+        //if (finalScore == null)
+        //{
+        //    finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT).GetComponent<TMP_Text>();
+        //}
+
+        //if (finalScore != null)
+        //{
+        //    int calculatedTotalScore = GetTotalScore();
+        //    finalScore.text ="Score: "+ calculatedTotalScore.ToString("D3"); // Hiển thị tổng điểm trên màn EndGame
+        //}
         if (finalScore == null)
         {
             finalScore = GameObject.Find(FINAL_TOTAL_SCORE_TEXT)?.GetComponent<TMP_Text>();
+            if (finalScore == null)
+            {
+                Debug.LogError("FinalScoreText not found in EndScene!");
+                return;
+            }
         }
 
-        if (finalScore != null)
-        {
-            int calculatedTotalScore = GetTotalScore();
-            finalScore.text ="Score: "+ calculatedTotalScore.ToString("D3"); // Hiển thị tổng điểm trên màn EndGame
-        }
+        int calculatedTotalScore = GetTotalScore();
+        finalScore.text = "Score: " + calculatedTotalScore.ToString("D3");
     }
     public Dictionary<string, int> GetLevelScores()
     {
@@ -86,5 +100,12 @@ public class ScoreManager : MonoBehaviour
     public void ResertAllScores()
     {
         PlayerPrefs.DeleteAll();
+    }
+    public void SaveTotalScoreToPrefs()
+    {
+        int calculatedTotalScore = GetTotalScore();
+        PlayerPrefs.SetInt("TotalScore", calculatedTotalScore);
+        PlayerPrefs.Save();
+        Debug.Log("Saved Total Score: " + calculatedTotalScore);
     }
 }

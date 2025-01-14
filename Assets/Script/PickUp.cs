@@ -17,6 +17,7 @@ public class PickUp : MonoBehaviour
         {
             case LootItem.PickUpType.ScorePoint:
                 ScoreManager.Instance.UpdateScore(lootItem.score); // Use score from LootItem
+                ManagerAudioSound.Instance.PlayHitSound("ObtainCoinSoundSFX");
                 break;
 
             case LootItem.PickUpType.HealthGlobe:
