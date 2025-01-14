@@ -101,6 +101,23 @@ public class ProjectTile : MonoBehaviour
             }
             Destroy(gameObject) ;
         }
+        else if (other.CompareTag("Ground"))
+        {
+            if (isCanExplode)
+            {
+                Explode();
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundRocketSFX");
+            }
+            else
+            {
+                ManagerAudioSound.Instance.PlayHitSound("HitSoundSFX");
+                if (particleOnHitPrefabVFX != null)
+                {
+                    Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                }
+            }
+            Destroy(gameObject);
+        }
     }
 
     private void Explode()
